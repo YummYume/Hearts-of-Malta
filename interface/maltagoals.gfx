@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_focus_malta_awakens"
+		texturefile = "gfx/interfaces/goals/Malta_Awakens.dds"
+	}
+}

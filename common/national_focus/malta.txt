@@ -1,0 +1,1940 @@
+focus_tree = {
+    id = malta_focus
+    continuous_focus_position = { x = 250 y = 1550 }
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 1000
+            tag = MLT
+        }
+    }
+
+    # Malta Awakens
+    focus = {
+        id = MLT_malta_awakens
+        x = 15
+        y = 1
+        prerequisite = {  }
+        icon = GFX_focus_malta_awakens
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.1
+        }
+    }
+
+    # The Heart of the Mediterranean Sea
+    focus = {
+        id = MLT_heart_mediterraenean_sea
+        x = 6
+        y = 2
+        prerequisite = { focus = MLT_malta_awakens }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.2
+        }
+    }
+
+    # The Industry in Valletta
+    focus = {
+        id = MLT_industry_in_valleta
+        x = 3
+        y = 3
+        prerequisite = { focus = MLT_heart_mediterraenean_sea }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+            has_full_control_of_state = 116
+        }
+        search_filters = {  }
+        completion_reward = {
+            116 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Maltese Railways
+    focus = {
+        id = MLT_maltese_railways
+        x = 6
+        y = 3
+        prerequisite = { focus = MLT_heart_mediterraenean_sea }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+            has_full_control_of_state = 116
+        }
+        search_filters = {  }
+        completion_reward = {
+            116 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Maltese Shipbuilding
+    focus = {
+        id = MLT_maltese_shipbuilding
+        x = 9
+        y = 3
+        prerequisite = { focus = MLT_heart_mediterraenean_sea }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+            has_full_control_of_state = 116
+        }
+        search_filters = {  }
+        completion_reward = {
+            116 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    # Eradicate Unemployment
+    focus = {
+        id = MLT_eradicate_unemployment
+        x = 3
+        y = 4
+        prerequisite = { focus = MLT_industry_in_valleta }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            add_ideas = MLT_Eradicate_unemployment
+        }
+    }
+
+    # Speech for the Workers
+    focus = {
+        id = MLT_speech_workers
+        x = 6
+        y = 4
+        prerequisite = { focus = MLT_maltese_railways }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.3
+        }
+    }
+
+    # Fishing Industry
+    focus = {
+        id = MLT_fishing_industry
+        x = 9
+        y = 4
+        prerequisite = { focus = MLT_maltese_shipbuilding }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = 50
+                producer = MLT
+            }
+            add_ideas = MLT_Fishing_industry
+        }
+    }
+
+    # Under the Maltese Flag
+    focus = {
+        id = MLT_under_maltese_flag
+        x = 6
+        y = 5
+        prerequisite = { focus = MLT_eradicate_unemployment }
+        prerequisite = { focus = MLT_speech_workers }
+        prerequisite = { focus = MLT_fishing_industry }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 1
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            add_ideas = MLT_Under_maltese_flag
+        }
+    }
+
+    # The Political Turmoil
+    focus = {
+        id = MLT_political_turmoil
+        x = 25
+        y = 2
+        prerequisite = { focus = MLT_malta_awakens }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 20
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Maltese Language Question
+    focus = {
+        id = MLT_maltese_language_question
+        x = 25
+        y = 3
+        prerequisite = { focus = MLT_political_turmoil }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The 1936 Elections
+    focus = {
+        id = MLT_maltese_election
+        x = 25
+        y = 4
+        prerequisite = { focus = MLT_maltese_language_question }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Constitutional Party
+    focus = {
+        id = MLT_constitutional_party
+        x = 20
+        y = 5
+        prerequisite = { focus = MLT_maltese_election }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Labour Party
+    focus = {
+        id = MLT_labour_party
+        x = 23
+        y = 5
+        prerequisite = { focus = MLT_maltese_election }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Nationalist Party
+    focus = {
+        id = MLT_nationalist_party
+        x = 27
+        y = 5
+        prerequisite = { focus = MLT_maltese_election }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Independents Party
+    focus = {
+        id = MLT_independent_party
+        x = 30
+        y = 5
+        prerequisite = { focus = MLT_maltese_election }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The British Pounds
+    focus = {
+        id = MLT_british_pounds
+        x = 23
+        y = 6
+        prerequisite = { focus = MLT_constitutional_party focus = MLT_labour_party focus = MLT_nationalist_party }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Maltese Lira
+    focus = {
+        id = MLT_maltese_lira
+        x = 27
+        y = 6
+        prerequisite = { focus = MLT_labour_party focus = MLT_nationalist_party focus = MLT_independent_party }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Maltese Strategy
+    focus = {
+        id = MLT_maltese_strategy
+        x = 15
+        y = 2
+        prerequisite = { focus = MLT_malta_awakens }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.4
+        }
+    }
+
+    # Study St Elmo Bridge
+    focus = {
+        id = MLT_study_stelmo_bridge
+        x = 15
+        y = 3
+        prerequisite = { focus = MLT_maltese_strategy }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.5
+        }
+    }
+
+    # Study the Azure Window
+    focus = {
+        id = MLT_study_azure_window
+        x = 13
+        y = 4
+        prerequisite = { focus = MLT_study_stelmo_bridge }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.6
+        }
+    }
+
+    # Study the Dingli Cliffs
+    focus = {
+        id = MLT_study_dingli_cliffs
+        x = 17
+        y = 4
+        prerequisite = { focus = MLT_study_stelmo_bridge }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.7
+        }
+    }
+
+    # Adopt a new Strategy
+    focus = {
+        id = MLT_adopt_new_strategy
+        x = 15
+        y = 5
+        prerequisite = { focus = MLT_study_azure_window }
+        prerequisite = { focus = MLT_study_dingli_cliffs }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.8
+        }
+    }
+
+    # The First Floor
+    focus = {
+        id = MLT_first_floor
+        x = 15
+        y = 6
+        prerequisite = { focus = MLT_adopt_new_strategy }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.9
+        }
+    }
+
+    # The Second Floor
+    focus = {
+        id = MLT_second_floor
+        x = 15
+        y = 7
+        prerequisite = { focus = MLT_first_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.10
+        }
+    }
+
+    # Mediterranean Bastion
+    focus = {
+        id = MLT_mediterranean_bastion
+        x = 6
+        y = 7
+        prerequisite = { focus = MLT_first_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            
+        }
+    }
+
+    # Floating Fortress
+    focus = {
+        id = MLT_floating_fortress
+        x = 4
+        y = 8
+        prerequisite = { focus = MLT_mediterranean_bastion }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Air Denial
+    focus = {
+        id = MLT_air_denial
+        x = 4
+        y = 9
+        prerequisite = { focus = MLT_floating_fortress }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Shores of Malta...
+    focus = {
+        id = MLT_shores_of_malta
+        x = 8
+        y = 8
+        prerequisite = { focus = MLT_mediterranean_bastion }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Where None Shall Land
+    focus = {
+        id = MLT_where_none_shall_land
+        x = 8
+        y = 9
+        prerequisite = { focus = MLT_shores_of_malta }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Counteroffensive Tactics
+    focus = {
+        id = MLT_counteroffensive_tactics
+        x = 6
+        y = 10
+        prerequisite = { focus = MLT_air_denial focus = MLT_where_none_shall_land }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Colonial Question
+    focus = {
+        id = MLT_colonial_question
+        x = 25
+        y = 7
+        prerequisite = { focus = MLT_first_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # A Free Malta
+    focus = {
+        id = MLT_free_malta
+        x = 21
+        y = 8
+        prerequisite = { focus = MLT_colonial_question }
+	mutually_exclusive = { focus = MLT_loayal_malta }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Keep British Ties
+    focus = {
+        id = MLT_keep_british_ties
+        x = 19
+        y = 9
+        prerequisite = { focus = MLT_free_malta }
+	mutually_exclusive = { focus = MLT_seek_new_friendships }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Old Friends are Still Friends
+    focus = {
+        id = MLT_old_friends_still_friends
+        x = 19
+        y = 10
+        prerequisite = { focus = MLT_keep_british_ties }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Seek New Friendships
+    focus = {
+        id = MLT_seek_new_friendships
+        x = 24
+        y = 9
+        prerequisite = { focus = MLT_free_malta }
+	mutually_exclusive = { focus = MLT_keep_british_ties }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Picking a Side
+    focus = {
+        id = MLT_picking_a_side
+        x = 24
+        y = 10
+        prerequisite = { focus = MLT_seek_new_friendships }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # A Loyal Malta
+    focus = {
+        id = MLT_loayal_malta
+        x = 29
+        y = 8
+        prerequisite = { focus = MLT_colonial_question }
+	mutually_exclusive = { focus = MLT_free_malta }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Share Secrets of the Tower
+    focus = {
+        id = MLT_share_secrets_town
+        x = 29
+        y = 9
+        prerequisite = { focus = MLT_loayal_malta }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Mutual Aid
+    focus = {
+        id = MLT_mutual_aid
+        x = 29
+        y = 10
+        prerequisite = { focus = MLT_share_secrets_town }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Third Floor
+    focus = {
+        id = MLT_third_floor
+        x = 15
+        y = 8
+        prerequisite = { focus = MLT_second_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.11
+        }
+    }
+
+    # Attract Investors in the Tower
+    focus = {
+        id = MLT_attract_investors_tower
+        x = 15
+        y = 9
+        prerequisite = { focus = MLT_third_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.12
+        }
+    }
+
+    # The Tenth Floor
+    focus = {
+        id = MLT_tenth_floor
+        x = 15
+        y = 10
+        prerequisite = { focus = MLT_attract_investors_tower }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.13
+        }
+    }
+
+    # Send Someone On a Journey
+    focus = {
+        id = MLT_send_someone_journey
+        x = 15
+        y = 11
+        prerequisite = { focus = MLT_tenth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.14
+        }
+    }
+
+    # Improve the Economy...
+    focus = {
+        id = MLT_improve_economy_tower
+        x = 15
+        y = 12
+        prerequisite = { focus = MLT_send_someone_journey }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.15
+        }
+    }
+
+    # With Coastal Raids
+    focus = {
+        id = MLT_with_coastal_raids
+        x = 12
+        y = 13
+        prerequisite = { focus = MLT_improve_economy_tower }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_with_coastal_raids_tt
+        }
+    }
+
+    # With Fishing Boats
+    focus = {
+        id = MLT_with_fishing_boats
+        x = 15
+        y = 13
+        prerequisite = { focus = MLT_improve_economy_tower }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_with_fishing_boats_tt
+        }
+    }
+
+    # With Privateering
+    focus = {
+        id = MLT_with_piratry
+        x = 18
+        y = 13
+        prerequisite = { focus = MLT_improve_economy_tower }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_with_piratry_tt
+        }
+    }
+
+    # You're in Maltese Water, Thus it is Legal
+    focus = {
+        id = MLT_maltese_water_thus_legal
+        x = 15
+        y = 14
+        prerequisite = { focus = MLT_with_coastal_raids focus = MLT_with_fishing_boats focus = MLT_with_piratry }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.16
+        }
+    }
+
+    # The Fiftieth Floor
+    focus = {
+        id = MLT_fiftieth_floor
+        x = 15
+        y = 15
+        prerequisite = { focus = MLT_maltese_water_thus_legal }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_fiftieth_floor_tt
+        }
+    }
+
+    # Land, Air and Sea
+    focus = {
+        id = MLT_land_air_and_sea
+        x = 6
+        y = 16
+        prerequisite = { focus = MLT_fiftieth_floor }
+        icon = GFX_
+        cost = 10
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            add_research_slot = 1
+
+            add_tech_bonus = {
+				name = MLT_land_air_and_sea
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+
+			add_tech_bonus = {
+				name = MLT_land_air_and_sea
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+
+            add_tech_bonus = {
+				name = MLT_land_air_and_sea
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
+        }
+    }
+
+    # Maltese Elite Mountaineers
+    focus = {
+        id = MLT_maltese_elite_mountaineers
+        x = 3
+        y = 17
+        prerequisite = { focus = MLT_land_air_and_sea }
+	    mutually_exclusive = { focus = MLT_maltese_elite_paratroopers }
+	    mutually_exclusive = { focus = MLT_maltese_elite_marines }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Maltese Elite Paratroopers
+    focus = {
+        id = MLT_maltese_elite_paratroopers
+        x = 6
+        y = 17
+        prerequisite = { focus = MLT_land_air_and_sea }
+	    mutually_exclusive = { focus = MLT_maltese_elite_mountaineers }
+	    mutually_exclusive = { focus = MLT_maltese_elite_marines }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Maltese Elite Marines
+    focus = {
+        id = MLT_maltese_elite_marines
+        x = 9
+        y = 17
+        prerequisite = { focus = MLT_land_air_and_sea }
+	    mutually_exclusive = { focus = MLT_maltese_elite_mountaineers }
+	    mutually_exclusive = { focus = MLT_maltese_elite_paratroopers }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Protectors of the Tower...
+    focus = {
+        id = MLT_protectors_of_the_towers
+        x = 6
+        y = 18
+        prerequisite = { focus = MLT_maltese_elite_mountaineers focus = MLT_maltese_elite_paratroopers focus = MLT_maltese_elite_marines }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # On the Shores!
+    focus = {
+        id = MLT_on_the_shores
+        x = 3
+        y = 19
+        prerequisite = { focus = MLT_protectors_of_the_towers }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # On Waters!
+    focus = {
+        id = MLT_on_the_water
+        x = 6
+        y = 19
+        prerequisite = { focus = MLT_protectors_of_the_towers }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # in the Air!
+    focus = {
+        id = MLT_in_the_air
+        x = 9
+        y = 19
+        prerequisite = { focus = MLT_protectors_of_the_towers }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Foreign Politics
+    focus = {
+        id = MLT_foreign_politics
+        x = 25
+        y = 16
+        prerequisite = { focus = MLT_fiftieth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Approach Italy
+    focus = {
+        id = MLT_approach_italy
+        x = 22
+        y = 17
+        prerequisite = { focus = MLT_foreign_politics }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Approach France
+    focus = {
+        id = MLT_approach_france
+        x = 25
+        y = 17
+        prerequisite = { focus = MLT_foreign_politics }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Approach Germany
+    focus = {
+        id = MLT_approach_germany
+        x = 28
+        y = 17
+        prerequisite = { focus = MLT_foreign_politics }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Seek More Useful Allies...
+    focus = {
+        id = MLT_seek_more_useful_allies
+        x = 25
+        y = 18
+        prerequisite = { focus = MLT_approach_italy focus = MLT_approach_france focus = MLT_approach_germany }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Approach Luxembourg
+    focus = {
+        id = MLT_approach_luxembourg
+        x = 22
+        y = 19
+        prerequisite = { focus = MLT_seek_more_useful_allies }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Approach Bhutan
+    focus = {
+        id = MLT_approach_bhutan
+        x = 25
+        y = 19
+        prerequisite = { focus = MLT_seek_more_useful_allies }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Approach El Salvador
+    focus = {
+        id = MLT_approach_elsalvador
+        x = 28
+        y = 19
+        prerequisite = { focus = MLT_seek_more_useful_allies }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Invest in Elevator Music...
+    focus = {
+        id = MLT_invest_elevator_music
+        x = 15
+        y = 16
+        prerequisite = { focus = MLT_fiftieth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.17
+        }
+    }
+
+    # Or in Jetpacks
+    focus = {
+        id = MLT_invest_in_jetpacks
+        x = 15
+        y = 17
+        prerequisite = { focus = MLT_invest_elevator_music }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.18
+        }
+    }
+
+    # The Hundredth Floor
+    focus = {
+        id = MLT_hundreth_floor
+        x = 15
+        y = 18
+        prerequisite = { focus = MLT_invest_in_jetpacks }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_hundreth_floor_tt
+        }
+    }
+
+    # The Thousandth Floor
+    focus = {
+        id = MLT_thousandth_floor
+        x = 15
+        y = 19
+        prerequisite = { focus = MLT_hundreth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_thousandth_floor_tt
+        }
+    }
+
+    # The Leaning Tower
+    focus = {
+        id = MLT_leaning_tower
+        x = 15
+        y = 20
+        prerequisite = { focus = MLT_thousandth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            country_event = malta.19
+        }
+    }
+
+    # The Nine Thousand Nine Hundred and Ninety Ninth Floor
+    focus = {
+        id = MLT_nine_thousand_nine_hundred_ninety_ninth_floor
+        x = 15
+        y = 21
+        prerequisite = { focus = MLT_leaning_tower }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_nine_thousand_nine_hundred_ninety_ninth_floor_tt
+        }
+    }
+
+    # The Neverending Tower
+    focus = {
+        id = MLT_neverending_tower
+        x = 15
+        y = 22
+        prerequisite = { focus = MLT_nine_thousand_nine_hundred_ninety_ninth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+            custom_effect_tooltip = MLT_neverending_tower_tt
+        }
+    }
+
+    # Maltese Pride
+    focus = {
+        id = MLT_maltese_pride
+        x = 15
+        y = 23
+        prerequisite = { focus = MLT_neverending_tower }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # The Great Crusade
+    focus = {
+        id = MLT_the_great_crusade
+        x = 9
+        y = 24
+        prerequisite = { focus = MLT_maltese_pride }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Maltese League of Nations
+    focus = {
+        id = MLT_maltese_league_of_nations
+        x = 13
+        y = 24
+        prerequisite = { focus = MLT_maltese_pride }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Master of the Mediterranean Sea
+    focus = {
+        id = MLT_matser_of_mediterranean_sea
+        x = 17
+        y = 24
+        prerequisite = { focus = MLT_maltese_pride }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Master of the Shores
+    focus = {
+        id = MLT_master_of_shores
+        x = 21
+        y = 24
+        prerequisite = { focus = MLT_maltese_pride }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Protectors of All Seas
+    focus = {
+        id = MLT_protectors_of_all_seas
+        x = 11
+        y = 25
+        prerequisite = { focus = MLT_the_great_crusade focus = MLT_maltese_league_of_nations }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # Greater Malta
+    focus = {
+        id = MLT_greater_malta
+        x = 19
+        y = 25
+        prerequisite = { focus = MLT_matser_of_mediterranean_sea focus = MLT_master_of_shores }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+
+    # A Bright Future
+    focus = {
+        id = MLT_bright_future
+        x = 15
+        y = 26
+        prerequisite = { focus = MLT_protectors_of_all_seas focus = MLT_greater_malta }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+
+        }
+        search_filters = {  }
+        completion_reward = {
+
+        }
+    }
+}

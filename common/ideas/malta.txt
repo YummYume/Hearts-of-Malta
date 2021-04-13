@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+        MLT_Independence_movements = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                stability_factor = -0.1
+                political_power_cost = 0.1
+                communism_acceptance = 10
+                fascism_acceptance = 10
+            }
+        }
+
+		MLT_Eradicate_unemployment = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                monthly_population = 0.15
+                consumer_goods_factor = -0.05
+            }
+        }
+
+        MLT_Fishing_industry = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                max_fuel_factor = 0.5
+            }
+
+            equipment_bonus = {
+                convoy = {
+					build_cost_ic = -0.5
+                    instant = yes
+				}
+            }
+        }
+
+        MLT_Under_maltese_flag = {
+
+            removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = eng_the_sun_never_sets
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.1
+                    naval_range = 0.25
+                    build_cost_ic = -0.25
+                    instant = yes
+				}
+				carrier = {
+					naval_speed = 0.1
+                    naval_range = 0.25
+                    build_cost_ic = -0.25
+                    instant = yes
+				}
+				capital_ship = {
+					naval_speed = 0.1
+                    naval_range = 0.25
+                    build_cost_ic = -0.25
+                    instant = yes
+				}
+				submarine = {
+					naval_speed = 0.1
+                    naval_range = 0.25
+                    build_cost_ic = -0.25
+                    instant = yes
+				}
+			}
+		}
+
+    }
+}

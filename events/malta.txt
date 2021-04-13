@@ -1,0 +1,485 @@
+add_namespace = malta
+
+# Malta Awakens
+country_event = {
+    id = malta.1
+    title = malta.1.t
+    desc = malta.1.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # Our Time is Coming
+    option = {
+        name = malta.1.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Heart of the Mediterranean Sea
+country_event = {
+    id = malta.2
+    title = malta.2.t
+    desc = malta.2.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # Truly the Heart of the Mediterranean
+    option = {
+        name = malta.2.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Speech for the Workers
+country_event = {
+    id = malta.3
+    title = malta.3.t
+    desc = malta.3.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # First Option
+    option = {
+        name = malta.3.a
+        ai_chance = {
+            factor = 50
+        }
+
+    }
+
+    # Second option
+    option = {
+        name = malta.3.b
+        ai_chance = {
+            factor = 50
+        }
+
+    }
+}
+
+# Maltese Strategy
+country_event = {
+    id = malta.4
+    title = malta.4.t
+    desc = malta.4.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # Our strategy is infallible
+    option = {
+        name = malta.4.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# The Study of St Elmo Bridge
+country_event = {
+    id = malta.5
+    title = malta.5.t
+    desc = malta.5.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # This Tower is the Key to our Success !
+    option = {
+        name = malta.5.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# The Study of the Azure Window
+country_event = {
+    id = malta.6
+    title = malta.6.t
+    desc = malta.6.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # Our Knowledge grows stronger
+    option = {
+        name = malta.6.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# The Study of the Dingli Cliffs
+country_event = {
+    id = malta.7
+    title = malta.7.t
+    desc = malta.7.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # the Dingli Cliffs are Truly Unbreakable !
+    option = {
+        name = malta.7.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Adoption of a New Strategy
+country_event = {
+    id = malta.8
+    title = malta.8.t
+    desc = malta.8.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # Our Tower is truly Magnificent
+    option = {
+        name = malta.8.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Completion of the First Floor
+country_event = {
+    id = malta.9
+    title = malta.9.t
+    desc = malta.9.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # Finally, the First Floor is done
+    option = {
+        name = malta.9.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Completion of the Second Floor
+country_event = {
+    id = malta.10
+    title = malta.10.t
+    desc = malta.10.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # The Project is progressing slowly
+    option = {
+        name = malta.10.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Completion of the Third Floor
+country_event = {
+    id = malta.11
+    title = malta.11.t
+    desc = malta.11.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # There is still Works to do
+    option = {
+        name = malta.11.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Question of the Investors
+country_event = {
+    id = malta.12
+    title = malta.12.t
+    desc = malta.12.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # We have to Attract them one way or Another
+    option = {
+        name = malta.12.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Completion of the Tenth Floor
+country_event = {
+    id = malta.13
+    title = malta.13.t
+    desc = malta.13.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # We Have no Money Left ...
+    option = {
+        name = malta.13.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# ..... Journey
+country_event = {
+    id = malta.14
+    title = malta.14.t
+    desc = malta.14.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # His Future Wisdom Will Help us
+    option = {
+        name = malta.14.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Plans to Improve the Economy
+country_event = {
+    id = malta.15
+    title = malta.15.t
+    desc = malta.15.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # We Need that Money
+    option = {
+        name = malta.15.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Maltese Water thus it's legale
+country_event = {
+    id = malta.16
+    title = malta.16.t
+    desc = malta.16.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # I don't Know
+    option = {
+        name = malta.16.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Invest in Elevator Music
+country_event = {
+    id = malta.17
+    title = malta.17.t
+    desc = malta.17.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did sucide rates increased by 20% !?
+    option = {
+        name = malta.17.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Invest in Jetpacks
+country_event = {
+    id = malta.18
+    title = malta.18.t
+    desc = malta.18.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # What do we do with the Remaining Elevators ?
+    option = {
+        name = malta.18.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# Leaning Tower
+country_event = {
+    id = malta.19
+    title = malta.19.t
+    desc = malta.19.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.19.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# 20th Event
+country_event = {
+    id = malta.20
+    title = malta.20.t
+    desc = malta.20.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.20.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# 21th Event
+country_event = {
+    id = malta.21
+    title = malta.21.t
+    desc = malta.21.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.21.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# 22th Event
+country_event = {
+    id = malta.22
+    title = malta.22.t
+    desc = malta.22.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.22.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# 23th Event
+country_event = {
+    id = malta.23
+    title = malta.23.t
+    desc = malta.23.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.23.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# 24th Event
+country_event = {
+    id = malta.24
+    title = malta.24.t
+    desc = malta.24.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.24.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
+
+# 25th Event
+country_event = {
+    id = malta.25
+    title = malta.25.t
+    desc = malta.25.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # How did we fucked up this badly ?
+    option = {
+        name = malta.25.a
+        ai_chance = {
+            factor = 100
+        }
+
+    }
+}
