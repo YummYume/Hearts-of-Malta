@@ -110,5 +110,43 @@ ideas = {
 			}
 		}
 
+        MLT_Motivated_workers = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                industrial_capacity_factory = 0.25
+                industrial_capacity_dockyard = 0.25
+            }
+        }
+
+        MLT_Glorified_workers = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                production_speed_buildings_factor = 0.25
+            }
+        }
     }
 }

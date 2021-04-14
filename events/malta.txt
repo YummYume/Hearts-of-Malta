@@ -5,7 +5,7 @@ country_event = {
     id = malta.1
     title = malta.1.t
     desc = malta.1.d
-    picture = GFX_
+    picture = GFX_report_event_ast_parliament_house
 
     is_triggered_only = yes
 
@@ -15,7 +15,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_political_power = 100
     }
 }
 
@@ -24,7 +24,7 @@ country_event = {
     id = malta.2
     title = malta.2.t
     desc = malta.2.d
-    picture = GFX_
+    picture = GFX_report_event_ast_navy
 
     is_triggered_only = yes
 
@@ -34,7 +34,14 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        116 = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }
+        }
     }
 }
 
@@ -43,7 +50,7 @@ country_event = {
     id = malta.3
     title = malta.3.t
     desc = malta.3.d
-    picture = GFX_
+    picture = GFX_report_event_communists_cheer
 
     is_triggered_only = yes
 
@@ -53,7 +60,7 @@ country_event = {
         ai_chance = {
             factor = 50
         }
-
+        add_ideas = MLT_Motivated_workers
     }
 
     # Second option
@@ -62,7 +69,10 @@ country_event = {
         ai_chance = {
             factor = 50
         }
-
+        116 = {
+            add_extra_state_shared_building_slots = 1
+        }
+        add_ideas = MLT_Glorified_workers
     }
 }
 
@@ -71,7 +81,7 @@ country_event = {
     id = malta.4
     title = malta.4.t
     desc = malta.4.d
-    picture = GFX_
+    picture = GFX_report_event_generic_sign_treaty2
 
     is_triggered_only = yes
 
@@ -81,7 +91,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_political_power = 50
     }
 }
 
@@ -100,7 +110,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_political_power = 25
     }
 }
 
@@ -119,7 +129,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_political_power = 25
     }
 }
 
@@ -138,7 +148,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_political_power = 25
     }
 }
 
