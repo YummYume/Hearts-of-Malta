@@ -494,3 +494,183 @@ country_event = {
 
     }
 }
+
+# Coastal Raid result
+country_event = {
+    id = malta.26
+    title = malta.26.t
+    desc = malta.26.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            set_variable = { coastal_raid_jewelry_loot = 0 }
+            randomize_variable = {
+                var = coastal_raid_jewelry_loot
+                distribution = uniform
+                min = current_min_jewelry_coastal_raid
+                max = current_max_jewelry_coastal_raid
+            }
+            round_variable = coastal_raid_jewelry_loot
+
+            set_variable = { coastal_raid_diamond_loot = 0 }
+            randomize_variable = {
+                var = coastal_raid_diamond_loot
+                distribution = uniform
+                min = current_min_diamond_coastal_raid
+                max = current_max_diamond_coastal_raid
+            }
+            round_variable = coastal_raid_diamond_loot
+
+            add_manpower = temp_manpower_coastal_raid
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = temp_convoy_coastal_raid
+            }
+        }
+    }
+
+    # Result
+    option = {
+        name = malta.26.a
+        ai_chance = {
+            factor = 100
+        }
+        #TODO tooltips
+        add_to_variable = { jewelry_currency = coastal_raid_jewelry_loot }
+        add_to_variable = { diamond_currency = coastal_raid_diamond_loot }
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+        }
+        clr_country_flag = MLT_ongoing_coastal_raid_mission
+    }
+}
+
+# Fishing result
+country_event = {
+    id = malta.27
+    title = malta.27.t
+    desc = malta.27.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            set_variable = { fishing_food_loot = 0 }
+            randomize_variable = {
+                var = fishing_food_loot
+                distribution = uniform
+                min = current_min_food_fishing
+                max = current_max_food_fishing
+            }
+            round_variable = fishing_food_loot
+
+            set_variable = { fishing_diamond_loot = 0 }
+            randomize_variable = {
+                var = fishing_diamond_loot
+                distribution = uniform
+                min = current_min_diamond_fishing
+                max = current_max_diamond_fishing
+            }
+            round_variable = fishing_diamond_loot
+
+            add_manpower = temp_manpower_fishing
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = temp_convoy_fishing
+            }
+        }
+    }
+
+    # Result
+    option = {
+        name = malta.27.a
+        ai_chance = {
+            factor = 100
+        }
+        #TODO tooltips
+        add_to_variable = { food_currency = fishing_food_loot }
+        add_to_variable = { diamond_currency = fishing_diamond_loot }
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+        }
+        clr_country_flag = MLT_ongoing_fishing_mission
+    }
+}
+
+# Privateering result
+country_event = {
+    id = malta.28
+    title = malta.28.t
+    desc = malta.28.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            set_variable = { privateering_gold_loot = 0 }
+            randomize_variable = {
+                var = privateering_gold_loot
+                distribution = uniform
+                min = current_min_gold_privateering
+                max = current_max_gold_privateering
+            }
+            round_variable = privateering_gold_loot
+
+            set_variable = { privateering_diamond_loot = 0 }
+            randomize_variable = {
+                var = privateering_diamond_loot
+                distribution = uniform
+                min = current_min_diamond_privateering
+                max = current_max_diamond_privateering
+            }
+            round_variable = privateering_diamond_loot
+
+            add_manpower = temp_manpower_privateering
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = temp_convoy_privateering
+            }
+        }
+    }
+
+    # Result
+    option = {
+        name = malta.28.a
+        ai_chance = {
+            factor = 100
+        }
+        #TODO tooltips
+        add_to_variable = { gold_currency = privateering_gold_loot }
+        add_to_variable = { diamond_currency = privateering_diamond_loot }
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+        }
+        clr_country_flag = MLT_ongoing_privateering_mission
+    }
+}
