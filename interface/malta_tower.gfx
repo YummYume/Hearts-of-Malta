@@ -1,0 +1,91 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_tower_window"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_gui_window.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_add_button"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_add_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_remove_button"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_remove_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_cancel_button"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_cancel_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_confirm_button"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_confirm_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_refresh_button"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_refresh_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_civilian_factory_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_civilian_factory_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_military_factory_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_military_factory_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_dockyard_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_dockyard_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_aluminium_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_aluminium_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_steel_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_steel_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_chromium_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_chromium_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_oil_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_oil_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_tungsten_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_tungsten_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_manpower_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_manpower_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_convoy_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_convoy_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_mission_frame"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_mission_frame.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_count_bg"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_display_count_bg.dds"
+    }
+}
