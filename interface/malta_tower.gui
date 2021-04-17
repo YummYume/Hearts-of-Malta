@@ -1,0 +1,607 @@
+# Presets :
+
+# GUI
+guiTypes = {
+    containerWindowType = {
+        name = "mlt_tower_window"
+		position = { x = 0 y = 0 }
+		size = { width = 1280 height = 720 }
+		orientation = center
+		origo = center
+		moveable = yes
+        fade_type = linear
+        fade_time = 100
+        click_to_front = no
+        clipping = no
+
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tower_window"
+        }
+
+        containerWindowType = {
+            name = "mlt_tower_window_content"
+            position = { x = 0 y = 0 }
+		    size = { width = 1280 height = 720 }
+            orientation = center
+            origo = center
+            moveable = no
+            fade_type = linear
+            fade_time = 100
+            click_to_front = no
+            clipping = no
+
+            buttonType = {
+                name = "mlt_close_button"
+                position = { x = -60 y = 15 }
+                orientation = "UPPER_RIGHT"
+                spriteType = "GFX_tower_cancel_button"
+                buttonText = ""
+                shortcut = "ESCAPE"
+                buttonFont = cg_18b
+                alwaystransparent = no
+            }
+
+            instantTextBoxType = {
+                name = "mlt_tower_window_tower_title"
+                position = { x = 0 y = 10 }
+                maxWidth = 640
+                orientation = "UPPER_LEFT"
+                text = LOC_mlt_tower_window_tower_title
+                font = hoi_36header
+                format = centre
+                borderSize = {x = 0 y = 0}
+                alwaystransparent = yes
+            }
+
+            instantTextBoxType = {
+                name = "mlt_tower_window_mission_title"
+                position = { x = 640 y = 10 }
+                maxWidth = 640
+                orientation = "UPPER_LEFT"
+                text = LOC_mlt_tower_window_mission_title
+                font = hoi_36header
+                format = centre
+                borderSize = {x = 0 y = 0}
+                alwaystransparent = yes
+            }
+
+            # Left part
+            containerWindowType = {
+                name = "mlt_tower_window_content_left"
+                position = { x = 25 y = 60 }
+                size = { width = 615 height = 600 }
+                moveable = no
+                fade_type = linear
+                fade_time = 100
+                click_to_front = no
+                clipping = no
+
+                instantTextBoxType = {
+                    name = "mlt_tower_window_current_floor"
+                    position = { x = 0 y = 0 }
+                    maxWidth = 615
+                    orientation = "UPPER_LEFT"
+                    text = LOC_mlt_tower_window_current_floor
+                    font = hoi4_typewriter22
+                    format = centre
+                    borderSize = {x = 0 y = 0}
+                    alwaystransparent = yes
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_window_max_floor"
+                    position = { x = 0 y = 40 }
+                    maxWidth = 615
+                    orientation = "UPPER_LEFT"
+                    text = LOC_mlt_tower_window_max_floor
+                    font = hoi4_typewriter22
+                    format = centre
+                    borderSize = {x = 0 y = 0}
+                    alwaystransparent = yes
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_window_resource_count"
+                    position = { x = 0 y = 80 }
+                    maxWidth = 615
+                    orientation = "UPPER_LEFT"
+                    text = LOC_mlt_tower_window_resource_count
+                    font = hoi4_typewriter22
+                    format = centre
+                    borderSize = {x = 0 y = 0}
+                    alwaystransparent = yes
+                }
+
+                iconType = {
+                    name = "mlt_tower_window_civilian_factory_icon"
+                    position = { x = 50 y = 120 }
+                    orientation = "UPPER_LEFT"
+                    alwaystransparent = yes
+                    centerposition = yes
+                    spriteType = "GFX_tower_civilian_factory_icon"
+                }
+            }
+
+            # Right part
+            containerWindowType = {
+                name = "mlt_tower_window_content_right"
+                position = { x = 615 y = 60 }
+                size = { width = 615 height = 600 }
+                moveable = no
+                fade_type = linear
+                fade_time = 100
+                click_to_front = no
+                clipping = no
+
+                # Coastal Raid
+                containerWindowType = {
+                    name = "mlt_tower_window_coastal_raid"
+                    position = { x = 10 y = 10 }
+                    size = { width = 615 height = 180 }
+                    moveable = no
+                    fade_type = linear
+                    fade_time = 100
+                    click_to_front = no
+                    clipping = no
+
+                    background = {
+                        name = "Background_coastal_raid"
+                        quadTextureSprite = "GFX_tower_mission_frame"
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_coastal_raid_title"
+                        position = { x = 0 y = 10 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_coastal_raid_title
+                        font = hoi_36header
+                        format = centre
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_coastal_raid_estimated_loot"
+                        position = { x = 25 y = 50 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_coastal_raid_estimated_loot
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_coastal_raid_estiamted_days"
+                        position = { x = 25 y = 80 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_coastal_raid_estiamted_days
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_coastal_raid_manpower_icon"
+                        position = { x = 45 y = 135 }
+                        orientation = "UPPER_LEFT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_manpower_icon"
+                        pdx_tooltip = LOC_mlt_tower_manpower_required_tt
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_coastal_raid_manpower"
+                        position = { x = 80 y = 115 }
+                        size = { width = 120 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_coastal_raid_manpower"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        buttonType = {
+                            name = "mlt_tower_window_coastal_raid_add_button"
+                            position = { x = -20 y = 4 }
+                            orientation = "UPPER_RIGHT"
+                            spriteType = "GFX_tower_add_button"
+                            buttonText = ""
+                            buttonFont = cg_18b
+                        }
+
+                        buttonType = {
+                            name = "mlt_tower_window_coastal_raid_remove_button"
+                            position = { x = -15 y = 4 }
+                            orientation = "UPPER_LEFT"
+                            spriteType = "GFX_tower_remove_button"
+                            buttonText = ""
+                            buttonFont = cg_18b
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_coastal_raid_manpower_count"
+                            position = { x = 0 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_coastal_raid_manpower_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_coastal_raid_convoy_icon"
+                        position = { x = 250 y = 135 }
+                        orientation = "UPPER_LEFT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_convoy_icon"
+                        pdx_tooltip = LOC_mlt_tower_convoys_required_tt
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_coastal_raid_convoy"
+                        position = { x = 275 y = 115 }
+                        size = { width = 120 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_coastal_raid_convoy"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_coastal_raid_convoy_count"
+                            position = { x = 0 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_coastal_raid_convoy_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_coastal_raid_confirm_button"
+                        position = { x = -200 y = -64 }
+                        orientation = "LOWER_RIGHT"
+                        spriteType = "GFX_tower_confirm_button"
+                        buttonText = "Start Mission"
+                        buttonFont = cg_18b
+                    }
+                }
+
+                # Fishing
+                containerWindowType = {
+                    name = "mlt_tower_window_content_fishing"
+                    position = { x = 10 y = 210 }
+                    size = { width = 615 height = 180 }
+                    moveable = no
+                    fade_type = linear
+                    fade_time = 100
+                    click_to_front = no
+                    clipping = no
+
+                    background = {
+                        name = "Background_fishing"
+                        quadTextureSprite = "GFX_tower_mission_frame"
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_fishing_title"
+                        position = { x = 0 y = 10 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_fishing_title
+                        font = hoi_36header
+                        format = centre
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_fishing_estimated_loot"
+                        position = { x = 25 y = 50 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_fishing_estimated_loot
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_fishing_estiamted_days"
+                        position = { x = 25 y = 80 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_fishing_estiamted_days
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_fishing_manpower_icon"
+                        position = { x = 45 y = 135 }
+                        orientation = "UPPER_LEFT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_manpower_icon"
+                        pdx_tooltip = LOC_mlt_tower_manpower_required_tt
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_fishing_manpower"
+                        position = { x = 80 y = 115 }
+                        size = { width = 120 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_fishing_manpower"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        buttonType = {
+                            name = "mlt_tower_window_fishing_add_button"
+                            position = { x = -20 y = 4 }
+                            orientation = "UPPER_RIGHT"
+                            spriteType = "GFX_tower_add_button"
+                            buttonText = ""
+                            buttonFont = cg_18b
+                        }
+
+                        buttonType = {
+                            name = "mlt_tower_window_fishing_remove_button"
+                            position = { x = -15 y = 4 }
+                            orientation = "UPPER_LEFT"
+                            spriteType = "GFX_tower_remove_button"
+                            buttonText = ""
+                            buttonFont = cg_18b
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_fishing_manpower_count"
+                            position = { x = 0 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_fishing_manpower_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_fishing_convoy_icon"
+                        position = { x = 250 y = 135 }
+                        orientation = "UPPER_LEFT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_convoy_icon"
+                        pdx_tooltip = LOC_mlt_tower_convoys_required_tt
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_fishing_convoy"
+                        position = { x = 275 y = 115 }
+                        size = { width = 120 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_fishing_convoy"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_fishing_convoy_count"
+                            position = { x = 0 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_fishing_convoy_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_fishing_confirm_button"
+                        position = { x = -200 y = -64 }
+                        orientation = "LOWER_RIGHT"
+                        spriteType = "GFX_tower_confirm_button"
+                        buttonText = "Start Mission"
+                        buttonFont = cg_18b
+                    }
+                }
+
+                # Privateering
+                containerWindowType = {
+                    name = "mlt_tower_window_content_privateering"
+                    position = { x = 10 y = 410 }
+                    size = { width = 615 height = 180 }
+                    moveable = no
+                    fade_type = linear
+                    fade_time = 100
+                    click_to_front = no
+                    clipping = no
+
+                    background = {
+                        name = "Background_privateering"
+                        quadTextureSprite = "GFX_tower_mission_frame"
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_privateering_title"
+                        position = { x = 0 y = 10 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_privateering_title
+                        font = hoi_36header
+                        format = centre
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_privateering_estimated_loot"
+                        position = { x = 25 y = 50 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_privateering_estimated_loot
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_privateering_estiamted_days"
+                        position = { x = 25 y = 80 }
+                        maxWidth = 615
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_privateering_estiamted_days
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_privateering_manpower_icon"
+                        position = { x = 45 y = 135 }
+                        orientation = "UPPER_LEFT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_manpower_icon"
+                        pdx_tooltip = LOC_mlt_tower_manpower_required_tt
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_privateering_manpower"
+                        position = { x = 80 y = 115 }
+                        size = { width = 120 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_privateering_manpower"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        buttonType = {
+                            name = "mlt_tower_window_privateering_add_button"
+                            position = { x = -20 y = 4 }
+                            orientation = "UPPER_RIGHT"
+                            spriteType = "GFX_tower_add_button"
+                            buttonText = ""
+                            buttonFont = cg_18b
+                        }
+
+                        buttonType = {
+                            name = "mlt_tower_window_privateering_remove_button"
+                            position = { x = -15 y = 4 }
+                            orientation = "UPPER_LEFT"
+                            spriteType = "GFX_tower_remove_button"
+                            buttonText = ""
+                            buttonFont = cg_18b
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_privateering_manpower_count"
+                            position = { x = 0 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_privateering_manpower_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_privateering_convoy_icon"
+                        position = { x = 250 y = 135 }
+                        orientation = "UPPER_LEFT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_convoy_icon"
+                        pdx_tooltip = LOC_mlt_tower_convoys_required_tt
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_privateering_convoy"
+                        position = { x = 275 y = 115 }
+                        size = { width = 120 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_privateering_convoy"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_privateering_convoy_count"
+                            position = { x = 0 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_privateering_convoy_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_privateering_confirm_button"
+                        position = { x = -200 y = -64 }
+                        orientation = "LOWER_RIGHT"
+                        spriteType = "GFX_tower_confirm_button"
+                        buttonText = "Start Mission"
+                        buttonFont = cg_18b
+                    }
+                }
+            }
+        }
+    }
+}

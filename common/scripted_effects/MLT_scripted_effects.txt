@@ -1,0 +1,158 @@
+# Coastal Raids
+coastal_raids_calculate_loot = {
+    set_variable = { current_min_jewelry_coastal_raid = temp_manpower_coastal_raid }
+    divide_variable = { current_min_jewelry_coastal_raid = 260 }
+    multiply_variable = { current_min_jewelry_coastal_raid = mission_naval_efficiency }
+    round_variable = current_min_jewelry_coastal_raid
+
+    set_variable = { current_max_jewelry_coastal_raid = temp_manpower_coastal_raid }
+    divide_variable = { current_max_jewelry_coastal_raid = 240 }
+    multiply_variable = { current_max_jewelry_coastal_raid = mission_naval_efficiency }
+    round_variable = current_max_jewelry_coastal_raid
+
+    set_variable = { current_min_diamond_coastal_raid = temp_manpower_coastal_raid }
+    divide_variable = { current_min_diamond_coastal_raid = 360 }
+    multiply_variable = { current_min_diamond_coastal_raid = mission_naval_efficiency }
+    round_variable = current_min_diamond_coastal_raid
+
+    set_variable = { current_max_diamond_coastal_raid = temp_manpower_coastal_raid }
+    divide_variable = { current_max_diamond_coastal_raid = 340 }
+    multiply_variable = { current_max_diamond_coastal_raid = mission_naval_efficiency }
+    round_variable = current_max_diamond_coastal_raid
+}
+
+coastal_raids_calculate_days = {
+    if = {
+        limit = {
+            check_variable = {
+                var = temp_manpower_coastal_raid
+                value = 0
+                compare = greater_than
+            }
+        }
+        set_variable = { current_days_coastal_raid = temp_manpower_coastal_raid }
+        divide_variable = { current_days_coastal_raid = 2500 }
+        add_to_variable = { current_days_coastal_raid = 15 }
+        round_variable = current_days_coastal_raid
+        clamp_variable = {
+            var = current_days_coastal_raid
+            min = 15
+            max = 45
+        }
+    }
+    else {
+        set_variable = { current_days_coastal_raid = 0 }
+    }
+}
+
+coastal_raids_calculate_convoy = {
+    set_variable = { temp_convoy_coastal_raid = temp_manpower_coastal_raid }
+    multiply_variable = { temp_convoy_coastal_raid = 0.01 }
+    round_variable = temp_convoy_coastal_raid
+}
+
+# Fishing
+fishing_calculate_loot = {
+    set_variable = { current_min_food_fishing = temp_manpower_fishing }
+    divide_variable = { current_min_food_fishing = 260 }
+    multiply_variable = { current_min_food_fishing = mission_naval_efficiency }
+    round_variable = current_min_food_fishing
+
+    set_variable = { current_max_food_fishing = temp_manpower_fishing }
+    divide_variable = { current_max_food_fishing = 240 }
+    multiply_variable = { current_max_food_fishing = mission_naval_efficiency }
+    round_variable = current_max_food_fishing
+
+    set_variable = { current_min_diamond_fishing = temp_manpower_fishing }
+    divide_variable = { current_min_diamond_fishing = 360 }
+    multiply_variable = { current_min_diamond_fishing = mission_naval_efficiency }
+    round_variable = current_min_diamond_fishing
+
+    set_variable = { current_max_diamond_fishing = temp_manpower_fishing }
+    divide_variable = { current_max_diamond_fishing = 340 }
+    multiply_variable = { current_max_diamond_fishing = mission_naval_efficiency }
+    round_variable = current_max_diamond_fishing
+}
+
+fishing_calculate_days = {
+    if = {
+        limit = {
+            check_variable = {
+                var = temp_manpower_fishing
+                value = 0
+                compare = greater_than
+            }
+        }
+        set_variable = { current_days_fishing = temp_manpower_fishing }
+        divide_variable = { current_days_fishing = 2500 }
+        add_to_variable = { current_days_fishing = 15 }
+        round_variable = current_days_fishing
+        clamp_variable = {
+            var = current_days_fishing
+            min = 15
+            max = 45
+        }
+    }
+    else = {
+        set_variable = { current_days_fishing = 0 }
+    }
+}
+
+fishing_calculate_convoy = {
+    set_variable = { temp_convoy_fishing = temp_manpower_fishing }
+    multiply_variable = { temp_convoy_fishing = 0.01 }
+    round_variable = temp_convoy_fishing
+}
+
+# Privateering
+privateering_calculate_loot = {
+    set_variable = { current_min_gold_privateering = temp_manpower_privateering }
+    divide_variable = { current_min_gold_privateering = 260 }
+    multiply_variable = { current_min_gold_privateering = mission_naval_efficiency }
+    round_variable = current_min_gold_privateering
+
+    set_variable = { current_max_gold_privateering = temp_manpower_privateering }
+    divide_variable = { current_max_gold_privateering = 240 }
+    multiply_variable = { current_max_gold_privateering = mission_naval_efficiency }
+    round_variable = current_max_gold_privateering
+
+    set_variable = { current_min_diamond_privateering = temp_manpower_privateering }
+    divide_variable = { current_min_diamond_privateering = 360 }
+    multiply_variable = { current_min_diamond_privateering = mission_naval_efficiency }
+    round_variable = current_min_diamond_privateering
+
+    set_variable = { current_max_diamond_privateering = temp_manpower_privateering }
+    divide_variable = { current_max_diamond_privateering = 340 }
+    multiply_variable = { current_max_diamond_privateering = mission_naval_efficiency }
+    round_variable = current_max_diamond_privateering
+}
+
+privateering_calculate_days = {
+    if = {
+        limit = {
+            check_variable = {
+                var = temp_manpower_privateering
+                value = 0
+                compare = greater_than
+            }
+        }
+        set_variable = { current_days_privateering = temp_manpower_privateering }
+        divide_variable = { current_days_privateering = 2500 }
+        add_to_variable = { current_days_privateering = 15 }
+        round_variable = current_days_privateering
+        clamp_variable = {
+            var = current_days_privateering
+            min = 15
+            max = 45
+        }
+    }
+    else = {
+        set_variable = { current_days_privateering = 0 }
+    }
+}
+
+privateering_calculate_convoy = {
+    set_variable = { temp_convoy_privateering = temp_manpower_privateering }
+    multiply_variable = { temp_convoy_privateering = 0.01 }
+    round_variable = temp_convoy_privateering
+}

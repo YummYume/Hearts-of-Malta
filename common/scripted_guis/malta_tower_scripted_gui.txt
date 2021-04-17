@@ -1,0 +1,368 @@
+scripted_gui = {
+    sov_national_obligation_scripted_gui = {
+        window_name = "mlt_tower_window"
+        context_type = player_context
+
+        visible = {
+            original_tag = MLT
+            has_country_flag = mlt_custom_gui_tower_opened
+        }
+
+        properties = {
+            #
+        }
+
+        effects = {
+            mlt_close_button_click = {
+                clr_country_flag = mlt_custom_gui_tower_opened
+            }
+
+            # Coastal Raids
+            mlt_tower_window_coastal_raid_add_button_click = {
+                add_to_variable = { temp_manpower_coastal_raid = 500 }
+
+                clamp_variable = {
+                    var = temp_manpower_coastal_raid
+                    min = 0
+                    max = 100000
+                }
+
+                coastal_raids_calculate_loot = yes
+                coastal_raids_calculate_days = yes
+                coastal_raids_calculate_convoy = yes
+            }
+
+            mlt_tower_window_coastal_raid_add_button_shift_click = {
+                add_to_variable = { temp_manpower_coastal_raid = 10000 }
+
+                clamp_variable = {
+                    var = temp_manpower_coastal_raid
+                    min = 0
+                    max = 100000
+                }
+
+                coastal_raids_calculate_loot = yes
+                coastal_raids_calculate_days = yes
+                coastal_raids_calculate_convoy = yes
+            }
+
+            mlt_tower_window_coastal_raid_add_button_control_click = {
+                set_variable = { temp_manpower_coastal_raid = 100000 }
+
+                coastal_raids_calculate_loot = yes
+                coastal_raids_calculate_days = yes
+                coastal_raids_calculate_convoy = yes
+            }
+
+            mlt_tower_window_coastal_raid_remove_button_click = {
+                add_to_variable = { temp_manpower_coastal_raid = -500 }
+
+                clamp_variable = {
+                    var = temp_manpower_coastal_raid
+                    min = 0
+                    max = 100000
+                }
+
+                coastal_raids_calculate_loot = yes
+                coastal_raids_calculate_days = yes
+                coastal_raids_calculate_convoy = yes
+            }
+
+            mlt_tower_window_coastal_raid_remove_button_shift_click = {
+                add_to_variable = { temp_manpower_coastal_raid = -10000 }
+
+                clamp_variable = {
+                    var = temp_manpower_coastal_raid
+                    min = 0
+                    max = 100000
+                }
+
+                coastal_raids_calculate_loot = yes
+                coastal_raids_calculate_days = yes
+                coastal_raids_calculate_convoy = yes
+            }
+
+            mlt_tower_window_coastal_raid_remove_button_control_click = {
+                set_variable = { temp_manpower_coastal_raid = 0 }
+
+                coastal_raids_calculate_loot = yes
+                coastal_raids_calculate_days = yes
+                coastal_raids_calculate_convoy = yes
+            }
+
+            # Fishing
+            mlt_tower_window_fishing_add_button_click = {
+                add_to_variable = { temp_manpower_fishing = 500 }
+
+                clamp_variable = {
+                    var = temp_manpower_fishing
+                    min = 0
+                    max = 100000
+                }
+
+                fishing_calculate_loot = yes
+                fishing_calculate_days = yes
+                fishing_calculate_convoy = yes
+            }
+
+            mlt_tower_window_fishing_add_button_shift_click = {
+                add_to_variable = { temp_manpower_fishing = 10000 }
+
+                clamp_variable = {
+                    var = temp_manpower_fishing
+                    min = 0
+                    max = 100000
+                }
+
+                fishing_calculate_loot = yes
+                fishing_calculate_days = yes
+                fishing_calculate_convoy = yes
+            }
+
+            mlt_tower_window_fishing_add_button_control_click = {
+                set_variable = { temp_manpower_fishing = 100000 }
+
+                fishing_calculate_loot = yes
+                fishing_calculate_days = yes
+                fishing_calculate_convoy = yes
+            }
+
+            mlt_tower_window_fishing_remove_button_click = {
+                add_to_variable = { temp_manpower_fishing = -500 }
+
+                clamp_variable = {
+                    var = temp_manpower_fishing
+                    min = 0
+                    max = 100000
+                }
+
+                fishing_calculate_loot = yes
+                fishing_calculate_days = yes
+                fishing_calculate_convoy = yes
+            }
+
+            mlt_tower_window_fishing_remove_button_shift_click = {
+                add_to_variable = { temp_manpower_fishing = -10000 }
+
+                clamp_variable = {
+                    var = temp_manpower_fishing
+                    min = 0
+                    max = 100000
+                }
+
+                fishing_calculate_loot = yes
+                fishing_calculate_days = yes
+                fishing_calculate_convoy = yes
+            }
+
+            mlt_tower_window_fishing_remove_button_control_click = {
+                set_variable = { temp_manpower_fishing = 0 }
+
+                fishing_calculate_loot = yes
+                fishing_calculate_days = yes
+                fishing_calculate_convoy = yes
+            }
+
+            # Privateering
+            mlt_tower_window_privateering_add_button_click = {
+                add_to_variable = { temp_manpower_privateering = 500 }
+
+                clamp_variable = {
+                    var = temp_manpower_privateering
+                    min = 0
+                    max = 100000
+                }
+
+                privateering_calculate_loot = yes
+                privateering_calculate_days = yes
+                privateering_calculate_convoy = yes
+            }
+
+            mlt_tower_window_privateering_add_button_shift_click = {
+                add_to_variable = { temp_manpower_privateering = 10000 }
+
+                clamp_variable = {
+                    var = temp_manpower_privateering
+                    min = 0
+                    max = 100000
+                }
+
+                privateering_calculate_loot = yes
+                privateering_calculate_days = yes
+                privateering_calculate_convoy = yes
+            }
+
+            mlt_tower_window_privateering_add_button_control_click = {
+                set_variable = { temp_manpower_privateering = 100000 }
+
+                privateering_calculate_loot = yes
+                privateering_calculate_days = yes
+                privateering_calculate_convoy = yes
+            }
+
+            mlt_tower_window_privateering_remove_button_click = {
+                add_to_variable = { temp_manpower_privateering = -500 }
+
+                clamp_variable = {
+                    var = temp_manpower_privateering
+                    min = 0
+                    max = 100000
+                }
+
+                privateering_calculate_loot = yes
+                privateering_calculate_days = yes
+                privateering_calculate_convoy = yes
+            }
+
+            mlt_tower_window_privateering_remove_button_shift_click = {
+                add_to_variable = { temp_manpower_privateering = -10000 }
+
+                clamp_variable = {
+                    var = temp_manpower_privateering
+                    min = 0
+                    max = 100000
+                }
+
+                privateering_calculate_loot = yes
+                privateering_calculate_days = yes
+                privateering_calculate_convoy = yes
+            }
+
+            mlt_tower_window_privateering_remove_button_control_click = {
+                set_variable = { temp_manpower_privateering = 0 }
+
+                privateering_calculate_loot = yes
+                privateering_calculate_days = yes
+                privateering_calculate_convoy = yes
+            }
+        }
+
+        triggers = {
+            # Coastal Raids
+            mlt_tower_window_coastal_raid_add_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_coastal_raid
+                    value = 100000
+                    compare = less_than
+                }
+            }
+
+            mlt_tower_window_coastal_raid_remove_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_coastal_raid
+                    value = 0
+                    compare = greater_than
+                }
+            }
+
+            mlt_tower_window_coastal_raid_confirm_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_coastal_raid
+                    value = 100000
+                    compare = less_than_or_equals
+                }
+                check_variable = {
+                    var = temp_manpower_coastal_raid
+                    value = 0
+                    compare = greater_than
+                }
+                has_manpower > temp_manpower_coastal_raid
+                OR = {
+                    has_equipment = {
+                        convoy > temp_convoy_coastal_raid
+                    }
+                    has_equipment = {
+                        convoy = temp_convoy_coastal_raid
+                    }
+                }
+                NOT = {
+                    has_country_flag = MLT_ongoing_coastal_raid_mission
+                }
+            }
+
+            # Fishing
+            mlt_tower_window_fishing_add_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_fishing
+                    value = 100000
+                    compare = less_than
+                }
+            }
+
+            mlt_tower_window_fishing_remove_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_fishing
+                    value = 0
+                    compare = greater_than
+                }
+            }
+
+            mlt_tower_window_fishing_confirm_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_fishing
+                    value = 100000
+                    compare = less_than_or_equals
+                }
+                check_variable = {
+                    var = temp_manpower_fishing
+                    value = 0
+                    compare = greater_than
+                }
+                has_manpower > temp_manpower_fishing
+                OR = {
+                    has_equipment = {
+                        convoy > temp_convoy_fishing
+                    }
+                    has_equipment = {
+                        convoy = temp_convoy_fishing
+                    }
+                }
+                NOT = {
+                    has_country_flag = MLT_ongoing_fishing_mission
+                }
+            }
+
+            # Privateering
+            mlt_tower_window_privateering_add_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_privateering
+                    value = 100000
+                    compare = less_than
+                }
+            }
+
+            mlt_tower_window_privateering_remove_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_privateering
+                    value = 0
+                    compare = greater_than
+                }
+            }
+
+            mlt_tower_window_privateering_confirm_button_click_enabled = {
+                check_variable = {
+                    var = temp_manpower_privateering
+                    value = 100000
+                    compare = less_than_or_equals
+                }
+                check_variable = {
+                    var = temp_manpower_privateering
+                    value = 0
+                    compare = greater_than
+                }
+                has_manpower > temp_manpower_privateering
+                OR = {
+                    has_equipment = {
+                        convoy > temp_convoy_privateering
+                    }
+                    has_equipment = {
+                        convoy = temp_convoy_privateering
+                    }
+                }
+                NOT = {
+                    has_country_flag = MLT_ongoing_privateering_mission
+                }
+            }
+        }
+    }
+}

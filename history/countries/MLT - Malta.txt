@@ -57,6 +57,23 @@ set_convoys = 25
 
 add_ideas = MLT_Independence_movements
 
+# Tower stuff
+set_variable = { current_tower_floor = 0 }
+set_variable = { max_tower_floor = 0 }
+set_variable = { current_building_level_tower = 0 } # Civilian + military
+set_variable = { max_building_level_tower = 0 }
+set_variable = { current_dockyard_level_tower = 0 }
+set_variable = { max_dockyard_level_tower = 0 }
+set_variable = { current_manpower_level_tower = 0 }
+set_variable = { gold_currency = 0 }
+set_variable = { food_currency = 0 }
+set_variable = { jewelry_currency = 0 }
+set_variable = { diamond_currency = 0 }
+set_variable = { bitcoin_currency = 0 }
+set_variable = { max_manpower_level_tower = 0 }
+set_variable = { max_manpower_level_tower = 0 }
+set_variable = { mission_naval_efficiency = 0.5 }
+
 create_country_leader = {
 	name = "Gerald Strickland"
 	desc = "POLITICS_GERALD_STRICKLAND_DESC"

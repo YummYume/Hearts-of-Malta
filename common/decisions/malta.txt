@@ -1,0 +1,86 @@
+# Hearts of Malta decisions
+MLT_tower_of_malta = {
+
+    MLT_upgrade_tower = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			check_variable = {
+                var = max_tower_floor
+                value = 1
+                compare = greater_than_or_equals
+            }
+		}
+
+		available = {
+			has_full_control_of_state = 116
+            NOT = {
+                has_country_flag = mlt_custom_gui_tower_opened
+            }
+		}
+
+		ai_will_do = {
+			factor = 10
+			#TODO
+		}
+
+		complete_effect = {
+            set_country_flag = mlt_custom_gui_tower_opened
+        }
+	}
+
+	MLT_add_gold = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+            add_to_variable = { gold_currency = 50 }
+        }
+	}
+
+	MLT_add_food = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+            add_to_variable = { food_currency = 50 }
+        }
+	}
+
+	MLT_add_jewelry = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+            add_to_variable = { jewelry_currency = 50 }
+        }
+	}
+
+	MLT_add_diamond = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+            add_to_variable = { diamond_currency = 50 }
+        }
+	}
+
+	MLT_add_bitcoin = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+            add_to_variable = { bitcoin_currency = 5 }
+        }
+	}
+}
