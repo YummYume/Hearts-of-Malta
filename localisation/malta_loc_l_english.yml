@@ -193,6 +193,7 @@
  malta.9.t:0 ""
  malta.9.d:0 ""
  malta.9.a:0 ""
+ tower_modifiers_tooltip_idea:0 "Gains National spirit §YTower of Malta§!, which grants (Weekly manpower: §G+10§!, Refitting Speed: §G+1%§!, Ideology Drift Defense: §G+1%§!)"
  malta.10.t:0 ""
  malta.10.d:0 ""
  malta.10.a:0 ""
@@ -220,9 +221,9 @@
  malta.18.t:0 ""
  malta.18.d:0 ""
  malta.18.a:0 ""
- malta.19.t:0 ""
+ malta.19.t:0 "Catastrophe at the Tower !"
  malta.19.d:0 ""
- malta.19.a:0 ""
+ malta.19.a:0 "How did we fucked up this badly ?"
  malta.20.t:0 ""
  malta.20.d:0 ""
  malta.20.a:0 ""
@@ -253,10 +254,33 @@
  MLT_Under_maltese_flag_desc:0 ""
  MLT_Motivated_workers:0 "Motivated Workers"
  MLT_Motivated_workers_desc:0 ""
- MLT_Glorified_workers.0 "Glorified Workers"
+ MLT_Glorified_workers:0 "Glorified Workers"
  MLT_Glorified_workers_desc:0 ""
+ MLT_Maltese_pride:0 "Maltese Pride"
+ MLT_Maltese_pride_desc:0 ""
+ MLT_The_tower_malta:0 "Tower of Malta"
+ MLT_The_tower_malta_desc:0 "[MLT.GetTowerOfMaltaManpower]\n[MLT.GetTowerOfMaltaRequiredGarrison]\n[MLT.GetTowerOfMaltaDriftDefence]"
+ Tower_of_malta_tt:0 "§CDecisions§! can be taken to §YImprove§! the §YTower§!"
 
  #Decisions
 
  #Traits
  sixth_count_della_catena:0 "Sixth Count Della Catena"
+
+ #Research Bonus
+ MAL_counteroffensive_military_tact:0 "Counter-offensive Tactics"
+ MLT_land_air_and_sea_tech:0 "Land, Air and Sea Technology"
+ MLT_on_the_shores_tech:0 "On the Shore Technology"
+ MLT_on_the_water_tech:0 "On the Water Technology"
+ MLT_in_the_air_tech:0 "In the Aire Technology"
+
+#Dynamic Modifiers
+ tower_of_malta_modifier:0 "Tower of Malta"
+
+#Scripted Localization
+MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC:0 "§WWeekly Manpower:§! §G+[?weekly_manpower_tower_malta]§!"
+MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC_NOT:0 ""
+MTL_REFITTING_SPEED_TOWER_MALTA_LOC:0 "§WRefitting Speed:§! §G+[?loca_refitting_speed_tower_malta]%§!"
+MTL_REFITTING_SPEED_TOWER_MALTA_LOC_NOT:0 ""
+MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC:0 "§WIdeology drift defense:§! §G+[?loca_drift_defence_factor_tower_malta]%§!"
+MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC_NOT:0 ""

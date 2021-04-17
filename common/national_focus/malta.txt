@@ -638,7 +638,14 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            
+            116 = {
+                set_building_level = {
+                    type = bunker
+                    level = 3
+                    instant_build = yes
+                    province = 12003
+                }
+            }
         }
     }
 
@@ -661,7 +668,14 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            116 = {
+                set_building_level = {
+                    type = bunker
+                    level = 10
+                    instant_build = yes
+                    province = 12003
+                }
+            }
         }
     }
 
@@ -684,7 +698,13 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            116 = {
+                set_building_level = {
+                    type = anti_air_building
+                    level = 5
+                    instant_build = yes
+                }
+            }
         }
     }
 
@@ -707,7 +727,14 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            116 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 4
+                    instant_build = yes
+                    province = 12003
+                }
+            }
         }
     }
 
@@ -730,7 +757,14 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            116 = {
+                set_building_level = {
+                    type = coastal_bunker
+                    level = 10
+                    instant_build = yes
+                    province = 12003
+                }
+            }
         }
     }
 
@@ -753,7 +787,12 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_tech_bonus = {
+				name = MAL_counteroffensive_military_tact
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
         }
     }
 
@@ -1220,21 +1259,21 @@ focus_tree = {
             add_research_slot = 1
 
             add_tech_bonus = {
-				name = MLT_land_air_and_sea
+				name = MLT_land_air_and_sea_tech
 				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
 
 			add_tech_bonus = {
-				name = MLT_land_air_and_sea
+				name = MLT_land_air_and_sea_tech
 				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
 
             add_tech_bonus = {
-				name = MLT_land_air_and_sea
+				name = MLT_land_air_and_sea_tech
 				bonus = 1
 				uses = 1
 				category = naval_doctrine
@@ -1263,7 +1302,28 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            division_template = {
+				name = "Mountaineers Squadron of the Armed Forces of Malta"
+				priority = 2
+                regiments = {
+                    mountaineers = { x = 0 y = 0 }	
+                    mountaineers = { x = 0 y = 1 }
+                    mountaineers = { x = 0 y = 2 }	
+                    mountaineers = { x = 1 y = 0 }
+                    mountaineers = { x = 1 y = 1 }
+                    mountaineers = { x = 1 y = 2 }
+                    mountaineers = { x = 2 y = 0 }	
+                    mountaineers = { x = 2 y = 1 }	
+                    mountaineers = { x = 2 y = 2 }	
+                    mountaineers = { x = 3 y = 0 }	
+                    mountaineers = { x = 3 y = 1 }	
+                    mountaineers = { x = 3 y = 2 }	
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    artillery = { x = 0 y = 1 }
+                }
+			}
         }
     }
 
@@ -1288,7 +1348,28 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            division_template = {
+				name = "Armed Forces of Malta Air Wing"
+				priority = 2
+                regiments = {
+                    paratrooper = { x = 0 y = 0 }	
+                    paratrooper = { x = 0 y = 1 }
+                    paratrooper = { x = 0 y = 2 }	
+                    paratrooper = { x = 1 y = 0 }
+                    paratrooper = { x = 1 y = 1 }
+                    paratrooper = { x = 1 y = 2 }
+                    paratrooper = { x = 2 y = 0 }	
+                    paratrooper = { x = 2 y = 1 }	
+                    paratrooper = { x = 2 y = 2 }	
+                    paratrooper = { x = 3 y = 0 }	
+                    paratrooper = { x = 3 y = 1 }	
+                    paratrooper = { x = 3 y = 2 }	
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    artillery = { x = 0 y = 1 }
+                }
+			}
         }
     }
 
@@ -1313,7 +1394,28 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            division_template = {
+				name = "Maritime Squadron of the Armed Forces of Malta"
+				priority = 2
+                regiments = {
+                    marine = { x = 0 y = 0 }	
+                    marine = { x = 0 y = 1 }
+                    marine = { x = 0 y = 2 }	
+                    marine = { x = 1 y = 0 }
+                    marine = { x = 1 y = 1 }
+                    marine = { x = 1 y = 2 }
+                    marine = { x = 2 y = 0 }	
+                    marine = { x = 2 y = 1 }	
+                    marine = { x = 2 y = 2 }	
+                    marine = { x = 3 y = 0 }	
+                    marine = { x = 3 y = 1 }	
+                    marine = { x = 3 y = 2 }	
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    artillery = { x = 0 y = 1 }
+                }
+			}
         }
     }
 
@@ -1359,7 +1461,12 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_tech_bonus = {
+				name = MLT_on_the_shores_tech
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
         }
     }
 
@@ -1382,7 +1489,12 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_tech_bonus = {
+				name = MLT_on_the_water_tech
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
         }
     }
 
@@ -1405,7 +1517,12 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_tech_bonus = {
+				name = MLT_in_the_air_tech
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
         }
     }
 
@@ -1447,7 +1564,10 @@ focus_tree = {
 
         }
         available = {
-
+            OR = {
+                has_government = neutrality
+                has_government = fascism
+            }
         }
         search_filters = {  }
         completion_reward = {
@@ -1470,7 +1590,7 @@ focus_tree = {
 
         }
         available = {
-
+            has_government = democratic
         }
         search_filters = {  }
         completion_reward = {
@@ -1493,7 +1613,7 @@ focus_tree = {
 
         }
         available = {
-
+            has_government = fascism
         }
         search_filters = {  }
         completion_reward = {
@@ -1773,7 +1893,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_ideas = MLT_Maltese_pride
         }
     }
 
@@ -1792,7 +1912,7 @@ focus_tree = {
 
         }
         available = {
-
+            has_government = neutrality
         }
         search_filters = {  }
         completion_reward = {
@@ -1815,7 +1935,7 @@ focus_tree = {
 
         }
         available = {
-
+            has_government = democratic
         }
         search_filters = {  }
         completion_reward = {
@@ -1838,7 +1958,7 @@ focus_tree = {
 
         }
         available = {
-
+            has_government = communism
         }
         search_filters = {  }
         completion_reward = {
@@ -1861,7 +1981,7 @@ focus_tree = {
 
         }
         available = {
-
+            has_government = fascism
         }
         search_filters = {  }
         completion_reward = {

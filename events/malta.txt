@@ -186,7 +186,11 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        hidden_effect = {
+            add_dynamic_modifier = { modifier = tower_of_malta_modifier }
+            add_ideas = MLT_The_tower_malta
+        }
+        custom_effect_tooltip = tower_modifiers_tooltip_idea
     }
 }
 
@@ -376,7 +380,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_manpower = -500
     }
 }
 
