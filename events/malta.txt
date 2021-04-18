@@ -529,6 +529,9 @@ country_event = {
                 type = convoy
                 amount = temp_convoy_coastal_raid
             }
+
+            clr_country_flag = MLT_ongoing_coastal_raid_mission
+            set_variable = { coastal_raid_days_remaining = 0 }
         }
     }
 
@@ -538,9 +541,10 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        #TODO tooltips
         add_to_variable = { jewelry_currency = coastal_raid_jewelry_loot }
         add_to_variable = { diamond_currency = coastal_raid_diamond_loot }
+        custom_effect_tooltip = MLT_add_jewelry_to_reserve_coastal_raid
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_coastal_raid
         if = {
             limit = {
                 check_variable = {
@@ -550,8 +554,9 @@ country_event = {
                 }
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
         }
-        clr_country_flag = MLT_ongoing_coastal_raid_mission
+        clr_country_flag = MLT_ongoing_coastal_raid_mission_event
     }
 }
 
@@ -589,6 +594,9 @@ country_event = {
                 type = convoy
                 amount = temp_convoy_fishing
             }
+
+            clr_country_flag = MLT_ongoing_fishing_mission
+            set_variable = { fishing_days_remaining = 0 }
         }
     }
 
@@ -601,6 +609,8 @@ country_event = {
         #TODO tooltips
         add_to_variable = { food_currency = fishing_food_loot }
         add_to_variable = { diamond_currency = fishing_diamond_loot }
+        custom_effect_tooltip = MLT_add_food_to_reserve_fishing
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_fishing
         if = {
             limit = {
                 check_variable = {
@@ -610,8 +620,9 @@ country_event = {
                 }
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
         }
-        clr_country_flag = MLT_ongoing_fishing_mission
+        clr_country_flag = MLT_ongoing_fishing_mission_event
     }
 }
 
@@ -649,6 +660,9 @@ country_event = {
                 type = convoy
                 amount = temp_convoy_privateering
             }
+
+            clr_country_flag = MLT_ongoing_privateering_mission
+            set_variable = { privateering_days_remaining = 0 }
         }
     }
 
@@ -661,6 +675,8 @@ country_event = {
         #TODO tooltips
         add_to_variable = { gold_currency = privateering_gold_loot }
         add_to_variable = { diamond_currency = privateering_diamond_loot }
+        custom_effect_tooltip = MLT_add_gold_to_reserve_privateering
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_privateering
         if = {
             limit = {
                 check_variable = {
@@ -670,7 +686,8 @@ country_event = {
                 }
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
         }
-        clr_country_flag = MLT_ongoing_privateering_mission
+        clr_country_flag = MLT_ongoing_privateering_mission_event
     }
 }

@@ -25,8 +25,8 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_tower_refresh_button"
-        texturefile = "gfx/interfaces/scripted_gui/GFX_refresh_button.dds"
+        name = "GFX_tower_help_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_help_icon.dds"
     }
 
     spriteType = {

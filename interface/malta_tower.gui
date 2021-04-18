@@ -163,6 +163,21 @@ guiTypes = {
                     }
 
                     instantTextBoxType = {
+                        name = "mlt_tower_window_coastal_raid_status"
+                        position = { x = -140 y = 20 }
+                        maxWidth = 120
+                        maxHeight = 25
+                        orientation = "UPPER_RIGHT"
+                        text = LOC_mlt_tower_status
+                        font = hoi4_typewriter22
+                        format = center
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = no
+                        pdx_tooltip = LOC_mlt_tower_window_coastal_raid_status
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_coastal_raid_status_tt
+                    }
+
+                    instantTextBoxType = {
                         name = "mlt_tower_window_coastal_raid_estimated_loot"
                         position = { x = 25 y = 50 }
                         maxWidth = 615
@@ -193,7 +208,8 @@ guiTypes = {
                         alwaystransparent = no
                         centerposition = yes
                         spriteType = "GFX_tower_manpower_icon"
-                        pdx_tooltip = LOC_mlt_tower_manpower_required_tt
+                        pdx_tooltip = LOC_mlt_tower_manpower_required
+                        pdx_tooltip_delayed = LOC_mlt_tower_manpower_required_tt
                     }
 
                     containerWindowType = {
@@ -218,6 +234,7 @@ guiTypes = {
                             spriteType = "GFX_tower_add_button"
                             buttonText = ""
                             buttonFont = cg_18b
+                            pdx_tooltip = LOC_mlt_tower_add_button
                         }
 
                         buttonType = {
@@ -227,6 +244,7 @@ guiTypes = {
                             spriteType = "GFX_tower_remove_button"
                             buttonText = ""
                             buttonFont = cg_18b
+                            pdx_tooltip = LOC_mlt_tower_remove_button
                         }
 
                         instantTextBoxType = {
@@ -249,7 +267,8 @@ guiTypes = {
                         alwaystransparent = no
                         centerposition = yes
                         spriteType = "GFX_tower_convoy_icon"
-                        pdx_tooltip = LOC_mlt_tower_convoys_required_tt
+                        pdx_tooltip = LOC_mlt_tower_convoys_required
+                        pdx_tooltip_delayed = LOC_mlt_tower_convoys_required_tt
                     }
 
                     containerWindowType = {
@@ -288,6 +307,17 @@ guiTypes = {
                         buttonText = "Start Mission"
                         buttonFont = cg_18b
                     }
+
+                    iconType = {
+                        name = "mlt_tower_window_coastal_raid_help_icon"
+                        position = { x = -50 y = -46 }
+                        orientation = "LOWER_RIGHT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_help_icon"
+                        pdx_tooltip = LOC_mlt_tower_window_help_icon
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_coastal_raid_help_icon_tt
+                    }
                 }
 
                 # Fishing
@@ -316,6 +346,21 @@ guiTypes = {
                         format = centre
                         borderSize = {x = 0 y = 0}
                         alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_fishing_status"
+                        position = { x = -140 y = 20 }
+                        maxWidth = 120
+                        maxHeight = 25
+                        orientation = "UPPER_RIGHT"
+                        text = LOC_mlt_tower_status
+                        font = hoi4_typewriter22
+                        format = center
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = no
+                        pdx_tooltip = LOC_mlt_tower_window_fishing_status
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_fishing_status_tt
                     }
 
                     instantTextBoxType = {
@@ -349,7 +394,8 @@ guiTypes = {
                         alwaystransparent = no
                         centerposition = yes
                         spriteType = "GFX_tower_manpower_icon"
-                        pdx_tooltip = LOC_mlt_tower_manpower_required_tt
+                        pdx_tooltip = LOC_mlt_tower_manpower_required
+                        pdx_tooltip_delayed = LOC_mlt_tower_manpower_required_tt
                     }
 
                     containerWindowType = {
@@ -374,6 +420,7 @@ guiTypes = {
                             spriteType = "GFX_tower_add_button"
                             buttonText = ""
                             buttonFont = cg_18b
+                            pdx_tooltip = LOC_mlt_tower_add_button
                         }
 
                         buttonType = {
@@ -383,6 +430,7 @@ guiTypes = {
                             spriteType = "GFX_tower_remove_button"
                             buttonText = ""
                             buttonFont = cg_18b
+                            pdx_tooltip = LOC_mlt_tower_remove_button
                         }
 
                         instantTextBoxType = {
@@ -405,7 +453,8 @@ guiTypes = {
                         alwaystransparent = no
                         centerposition = yes
                         spriteType = "GFX_tower_convoy_icon"
-                        pdx_tooltip = LOC_mlt_tower_convoys_required_tt
+                        pdx_tooltip = LOC_mlt_tower_convoys_required
+                        pdx_tooltip_delayed = LOC_mlt_tower_convoys_required_tt
                     }
 
                     containerWindowType = {
@@ -444,6 +493,17 @@ guiTypes = {
                         buttonText = "Start Mission"
                         buttonFont = cg_18b
                     }
+
+                    iconType = {
+                        name = "mlt_tower_window_fishing_help_icon"
+                        position = { x = -50 y = -46 }
+                        orientation = "LOWER_RIGHT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_help_icon"
+                        pdx_tooltip = LOC_mlt_tower_window_help_icon
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_fishing_help_icon_tt
+                    }
                 }
 
                 # Privateering
@@ -472,6 +532,21 @@ guiTypes = {
                         format = centre
                         borderSize = {x = 0 y = 0}
                         alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_privateering_status"
+                        position = { x = -140 y = 20 }
+                        maxWidth = 120
+                        maxHeight = 25  
+                        orientation = "UPPER_RIGHT"
+                        text = LOC_mlt_tower_status
+                        font = hoi4_typewriter22
+                        format = center
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = no
+                        pdx_tooltip = LOC_mlt_tower_window_privateering_status
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_privateering_status_tt
                     }
 
                     instantTextBoxType = {
@@ -505,7 +580,8 @@ guiTypes = {
                         alwaystransparent = no
                         centerposition = yes
                         spriteType = "GFX_tower_manpower_icon"
-                        pdx_tooltip = LOC_mlt_tower_manpower_required_tt
+                        pdx_tooltip = LOC_mlt_tower_manpower_required
+                        pdx_tooltip_delayed = LOC_mlt_tower_manpower_required_tt
                     }
 
                     containerWindowType = {
@@ -530,6 +606,7 @@ guiTypes = {
                             spriteType = "GFX_tower_add_button"
                             buttonText = ""
                             buttonFont = cg_18b
+                            pdx_tooltip = LOC_mlt_tower_add_button
                         }
 
                         buttonType = {
@@ -539,6 +616,7 @@ guiTypes = {
                             spriteType = "GFX_tower_remove_button"
                             buttonText = ""
                             buttonFont = cg_18b
+                            pdx_tooltip = LOC_mlt_tower_remove_button
                         }
 
                         instantTextBoxType = {
@@ -561,7 +639,8 @@ guiTypes = {
                         alwaystransparent = no
                         centerposition = yes
                         spriteType = "GFX_tower_convoy_icon"
-                        pdx_tooltip = LOC_mlt_tower_convoys_required_tt
+                        pdx_tooltip = LOC_mlt_tower_convoys_required
+                        pdx_tooltip_delayed = LOC_mlt_tower_convoys_required_tt
                     }
 
                     containerWindowType = {
@@ -599,6 +678,17 @@ guiTypes = {
                         spriteType = "GFX_tower_confirm_button"
                         buttonText = "Start Mission"
                         buttonFont = cg_18b
+                    }
+
+                    iconType = {
+                        name = "mlt_tower_window_privateering_help_icon"
+                        position = { x = -50 y = -46 }
+                        orientation = "LOWER_RIGHT"
+                        alwaystransparent = no
+                        centerposition = yes
+                        spriteType = "GFX_tower_help_icon"
+                        pdx_tooltip = LOC_mlt_tower_window_help_icon
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_privateering_help_icon_tt
                     }
                 }
             }

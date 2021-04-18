@@ -33,7 +33,7 @@ scripted_gui = {
             }
 
             mlt_tower_window_coastal_raid_add_button_shift_click = {
-                add_to_variable = { temp_manpower_coastal_raid = 10000 }
+                add_to_variable = { temp_manpower_coastal_raid = 5000 }
 
                 clamp_variable = {
                     var = temp_manpower_coastal_raid
@@ -69,7 +69,7 @@ scripted_gui = {
             }
 
             mlt_tower_window_coastal_raid_remove_button_shift_click = {
-                add_to_variable = { temp_manpower_coastal_raid = -10000 }
+                add_to_variable = { temp_manpower_coastal_raid = -5000 }
 
                 clamp_variable = {
                     var = temp_manpower_coastal_raid
@@ -90,6 +90,26 @@ scripted_gui = {
                 coastal_raids_calculate_convoy = yes
             }
 
+            mlt_tower_window_coastal_raid_confirm_button_click = {
+                set_country_flag = MLT_ongoing_coastal_raid_mission
+                set_country_flag = MLT_ongoing_coastal_raid_mission_event
+
+                set_variable = { coastal_raid_days_remaining = current_days_coastal_raid }
+
+                set_variable = { manpower_coastal_raid_minus = temp_manpower_coastal_raid }
+                multiply_variable = { manpower_coastal_raid_minus = -1 }
+                add_manpower = manpower_coastal_raid_minus
+
+                set_variable = { convoy_coastal_raid_minus = temp_convoy_coastal_raid }
+                multiply_variable = { convoy_coastal_raid_minus = -1 }
+                add_equipment_to_stockpile = {
+                    type = convoy_1
+                    amount = convoy_coastal_raid_minus
+                }
+
+                country_event = { id = malta.26 days = current_days_coastal_raid }
+            }
+
             # Fishing
             mlt_tower_window_fishing_add_button_click = {
                 add_to_variable = { temp_manpower_fishing = 500 }
@@ -106,7 +126,7 @@ scripted_gui = {
             }
 
             mlt_tower_window_fishing_add_button_shift_click = {
-                add_to_variable = { temp_manpower_fishing = 10000 }
+                add_to_variable = { temp_manpower_fishing = 5000 }
 
                 clamp_variable = {
                     var = temp_manpower_fishing
@@ -142,7 +162,7 @@ scripted_gui = {
             }
 
             mlt_tower_window_fishing_remove_button_shift_click = {
-                add_to_variable = { temp_manpower_fishing = -10000 }
+                add_to_variable = { temp_manpower_fishing = -5000 }
 
                 clamp_variable = {
                     var = temp_manpower_fishing
@@ -163,6 +183,26 @@ scripted_gui = {
                 fishing_calculate_convoy = yes
             }
 
+            mlt_tower_window_fishing_confirm_button_click = {
+                set_country_flag = MLT_ongoing_fishing_mission
+                set_country_flag = MLT_ongoing_fishing_mission_event
+
+                set_variable = { fishing_days_remaining = current_days_fishing }
+
+                set_variable = { manpower_fishing_minus = temp_manpower_fishing }
+                multiply_variable = { manpower_fishing_minus = -1 }
+                add_manpower = manpower_fishing_minus
+
+                set_variable = { convoy_fishing_minus = temp_convoy_fishing }
+                multiply_variable = { convoy_fishing_minus = -1 }
+                add_equipment_to_stockpile = {
+                    type = convoy_1
+                    amount = convoy_fishing_minus
+                }
+
+                country_event = { id = malta.27 days = current_days_fishing }
+            }
+
             # Privateering
             mlt_tower_window_privateering_add_button_click = {
                 add_to_variable = { temp_manpower_privateering = 500 }
@@ -179,7 +219,7 @@ scripted_gui = {
             }
 
             mlt_tower_window_privateering_add_button_shift_click = {
-                add_to_variable = { temp_manpower_privateering = 10000 }
+                add_to_variable = { temp_manpower_privateering = 5000 }
 
                 clamp_variable = {
                     var = temp_manpower_privateering
@@ -215,7 +255,7 @@ scripted_gui = {
             }
 
             mlt_tower_window_privateering_remove_button_shift_click = {
-                add_to_variable = { temp_manpower_privateering = -10000 }
+                add_to_variable = { temp_manpower_privateering = -5000 }
 
                 clamp_variable = {
                     var = temp_manpower_privateering
@@ -235,16 +275,44 @@ scripted_gui = {
                 privateering_calculate_days = yes
                 privateering_calculate_convoy = yes
             }
+
+            mlt_tower_window_privateering_confirm_button_click = {
+                set_country_flag = MLT_ongoing_privateering_mission
+                set_country_flag = MLT_ongoing_privateering_mission_event
+
+                set_variable = { privateering_days_remaining = current_days_privateering }
+
+                set_variable = { manpower_privateering_minus = temp_manpower_privateering }
+                multiply_variable = { manpower_privateering_minus = -1 }
+                add_manpower = manpower_privateering_minus
+
+                set_variable = { convoy_privateering_minus = temp_convoy_privateering }
+                multiply_variable = { convoy_privateering_minus = -1 }
+                add_equipment_to_stockpile = {
+                    type = convoy_1
+                    amount = convoy_privateering_minus
+                }
+
+                country_event = { id = malta.28 days = current_days_privateering }
+            }
         }
 
         triggers = {
             # Coastal Raids
+            mlt_tower_window_coastal_raid_status_visible = {
+                has_country_flag = MLT_ongoing_coastal_raid_mission
+            }
+
             mlt_tower_window_coastal_raid_add_button_click_enabled = {
                 check_variable = {
                     var = temp_manpower_coastal_raid
                     value = 100000
                     compare = less_than
                 }
+                NOT = {
+                    has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                }
+                has_completed_focus = MLT_with_coastal_raids
             }
 
             mlt_tower_window_coastal_raid_remove_button_click_enabled = {
@@ -253,6 +321,10 @@ scripted_gui = {
                     value = 0
                     compare = greater_than
                 }
+                NOT = {
+                    has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                }
+                has_completed_focus = MLT_with_coastal_raids
             }
 
             mlt_tower_window_coastal_raid_confirm_button_click_enabled = {
@@ -266,7 +338,15 @@ scripted_gui = {
                     value = 0
                     compare = greater_than
                 }
-                has_manpower > temp_manpower_coastal_raid
+                OR = {
+                    has_manpower > temp_manpower_coastal_raid
+                    # Can't use = compare for has_manpower so we check directly with the variable instead
+                    check_variable = {
+                        var = MLT.manpower
+                        value = temp_manpower_coastal_raid
+                        compare = equals
+                    }
+                }
                 OR = {
                     has_equipment = {
                         convoy > temp_convoy_coastal_raid
@@ -276,17 +356,26 @@ scripted_gui = {
                     }
                 }
                 NOT = {
-                    has_country_flag = MLT_ongoing_coastal_raid_mission
+                    has_country_flag = MLT_ongoing_coastal_raid_mission_event
                 }
+                has_completed_focus = MLT_with_coastal_raids
             }
 
             # Fishing
+            mlt_tower_window_fishing_status_visible = {
+                has_country_flag = MLT_ongoing_fishing_mission
+            }
+
             mlt_tower_window_fishing_add_button_click_enabled = {
                 check_variable = {
                     var = temp_manpower_fishing
                     value = 100000
                     compare = less_than
                 }
+                NOT = {
+                    has_country_flag = MLT_ongoing_fishing_mission_event
+                }
+                has_completed_focus = MLT_with_fishing_boats
             }
 
             mlt_tower_window_fishing_remove_button_click_enabled = {
@@ -295,6 +384,10 @@ scripted_gui = {
                     value = 0
                     compare = greater_than
                 }
+                NOT = {
+                    has_country_flag = MLT_ongoing_fishing_mission_event
+                }
+                has_completed_focus = MLT_with_fishing_boats
             }
 
             mlt_tower_window_fishing_confirm_button_click_enabled = {
@@ -308,7 +401,14 @@ scripted_gui = {
                     value = 0
                     compare = greater_than
                 }
-                has_manpower > temp_manpower_fishing
+                OR = {
+                    has_manpower > temp_manpower_fishing
+                    check_variable = {
+                        var = MLT.manpower
+                        value = temp_manpower_fishing
+                        compare = equals
+                    }
+                }
                 OR = {
                     has_equipment = {
                         convoy > temp_convoy_fishing
@@ -318,17 +418,26 @@ scripted_gui = {
                     }
                 }
                 NOT = {
-                    has_country_flag = MLT_ongoing_fishing_mission
+                    has_country_flag = MLT_ongoing_fishing_mission_event
                 }
+                has_completed_focus = MLT_with_fishing_boats
             }
 
             # Privateering
+            mlt_tower_window_privateering_status_visible = {
+                has_country_flag = MLT_ongoing_privateering_mission
+            }
+
             mlt_tower_window_privateering_add_button_click_enabled = {
                 check_variable = {
                     var = temp_manpower_privateering
                     value = 100000
                     compare = less_than
                 }
+                NOT = {
+                    has_country_flag = MLT_ongoing_privateering_mission_event
+                }
+                has_completed_focus = MLT_with_piratry
             }
 
             mlt_tower_window_privateering_remove_button_click_enabled = {
@@ -337,6 +446,10 @@ scripted_gui = {
                     value = 0
                     compare = greater_than
                 }
+                NOT = {
+                    has_country_flag = MLT_ongoing_privateering_mission_event
+                }
+                has_completed_focus = MLT_with_piratry
             }
 
             mlt_tower_window_privateering_confirm_button_click_enabled = {
@@ -350,7 +463,14 @@ scripted_gui = {
                     value = 0
                     compare = greater_than
                 }
-                has_manpower > temp_manpower_privateering
+                OR = {
+                    has_manpower > temp_manpower_privateering
+                    check_variable = {
+                        var = MLT.manpower
+                        value = temp_manpower_privateering
+                        compare = equals
+                    }
+                }
                 OR = {
                     has_equipment = {
                         convoy > temp_convoy_privateering
@@ -360,8 +480,9 @@ scripted_gui = {
                     }
                 }
                 NOT = {
-                    has_country_flag = MLT_ongoing_privateering_mission
+                    has_country_flag = MLT_ongoing_privateering_mission_event
                 }
+                has_completed_focus = MLT_with_piratry
             }
         }
     }
