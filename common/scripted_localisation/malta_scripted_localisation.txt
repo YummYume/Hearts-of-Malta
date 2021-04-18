@@ -1,0 +1,50 @@
+defined_text = {
+	name = GetTowerOfMaltaManpower
+	text = {
+		trigger = {
+			check_variable = {
+				var = weekly_manpower_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC_NOT
+	}
+}
+
+defined_text = {
+	name = GetTowerOfMaltaRequiredGarrison
+	text = {
+		trigger = {
+			check_variable = {
+				var = refitting_speed_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = MTL_REFITTING_SPEED_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = MTL_REFITTING_SPEED_TOWER_MALTA_LOC_NOT
+	}
+}
+
+defined_text = {
+	name = GetTowerOfMaltaDriftDefence
+	text = {
+		trigger = {
+			check_variable = {
+				var = drift_defence_factor_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC_NOT
+	}
+}
