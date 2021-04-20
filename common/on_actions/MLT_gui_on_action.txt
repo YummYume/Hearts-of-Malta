@@ -1,6 +1,6 @@
 on_actions = {
 
-	#Show remaining days for missions
+	# Show remaining days for missions
 	on_daily_MLT = {
 		effect = {
 			if = {
@@ -39,6 +39,36 @@ on_actions = {
                     max = 45
                 }
 			}
+		}
+	}
+
+	# Each week, a new resource gets a discount (only 50% for now)
+	on_weekly_MLT = {
+		effect = {
+			set_variable = { old_discount_index = current_discount_index }
+
+			while_loop_effect = {
+				break = break_array
+				limit = {
+					check_variable = {
+						var = current_discount_index
+						value = old_discount_index
+						compare = equals
+					}
+				}
+				
+				randomize_variable = {
+					var = current_discount_index
+					distribution = uniform
+					min = -0.49
+					max = 5.49
+				}
+
+				round_variable = current_discount_index
+			}
+
+			set_variable = { MLT.resource_discount^var:old_discount_index = 1 }
+            set_variable = { MLT.resource_discount^var:current_discount_index = 0.5 }
 		}
 	}
 }

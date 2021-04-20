@@ -298,6 +298,175 @@ scripted_gui = {
         }
 
         triggers = {
+            # Discount on resources
+            Background_oil_discount_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^0
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^0
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            mlt_tower_window_oil_discount_display_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^0
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^0
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            Background_aluminum_discount_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^1
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^1
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            mlt_tower_window_aluminum_discount_display_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^1
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^1
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            Background_rubber_discount_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^2
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^2
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            mlt_tower_window_rubber_discount_display_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^2
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^2
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            Background_tungsten_discount_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^3
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^3
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            mlt_tower_window_tungsten_discount_display_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^3
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^3
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            Background_steel_discount_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^4
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^4
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            mlt_tower_window_steel_discount_display_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^4
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^4
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            Background_chromium_discount_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^5
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^5
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
+            mlt_tower_window_chromium_discount_display_visible = {
+                check_variable = {
+                    var = MLT.resource_discount^5
+                    value = 1
+                    compare = less_than
+                }
+
+                check_variable = {
+                    var = MLT.resource_discount^5
+                    value = 0
+                    compare = greater_than_or_equals
+                }
+            }
+
             # Coastal Raids
             mlt_tower_window_coastal_raid_status_visible = {
                 has_country_flag = MLT_ongoing_coastal_raid_mission

@@ -48,3 +48,35 @@ defined_text = {
 		localization_key = MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC_NOT
 	}
 }
+
+defined_text = {
+	name = GetTowerOfMaltaNavalEfficiency
+	text = {
+		trigger = {
+			check_variable = {
+				var = mission_naval_efficiency
+				value = 1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = mission_naval_efficiency
+				value = 1.5
+				compare = less_than
+			}
+		}
+		localization_key = MLT_NAVAL_EFFICIENCY_NORMAL
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = mission_naval_efficiency
+				value = 1.5
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_NAVAL_EFFICIENCY_HIGH
+	}
+	text = {
+		localization_key = MLT_NAVAL_EFFICIENCY_LOW
+	}
+}

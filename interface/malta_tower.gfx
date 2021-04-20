@@ -45,8 +45,8 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_tower_aluminium_icon"
-        texturefile = "gfx/interfaces/scripted_gui/GFX_aluminium_icon.dds"
+        name = "GFX_tower_aluminum_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_aluminum_icon.dds"
     }
 
     spriteType = {
@@ -70,6 +70,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_tower_rubber_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_rubber_icon.dds"
+    }
+
+    spriteType = {
         name = "GFX_tower_manpower_icon"
         texturefile = "gfx/interfaces/scripted_gui/GFX_manpower_icon.dds"
     }
@@ -87,5 +92,30 @@ spriteTypes = {
     spriteType = {
         name = "GFX_tower_count_bg"
         texturefile = "gfx/interfaces/scripted_gui/GFX_display_count_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_resource_bg"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_display_resource_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_population_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_population_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_discount_tab"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_discount_tab.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_price_tab"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_display_price.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_price_resource_tab"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_display_price_resource.dds"
     }
 }

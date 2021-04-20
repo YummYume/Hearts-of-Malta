@@ -315,7 +315,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            
         }
     }
 

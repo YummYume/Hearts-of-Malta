@@ -5,16 +5,6 @@ set_war_support = 0.1
 
 #oob = ""
 
-#Variables for the tower
-set_variable = { weekly_manpower_tower_malta = 10 }
-set_variable = { loca_weekly_manpower_tower_malta = weekly_manpower_tower_malta }
-set_variable = { refitting_speed_tower_malta = 0.01 }
-set_variable = { loca_refitting_speed_tower_malta = refitting_speed_tower_malta }
-multiply_variable = { loca_refitting_speed_tower_malta = 100 }
-set_variable = { drift_defence_factor_tower_malta = 0.01 }
-set_variable = { loca_drift_defence_factor_tower_malta = drift_defence_factor_tower_malta }
-multiply_variable = { loca_drift_defence_factor_tower_malta = 100 }
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -58,21 +48,60 @@ set_convoys = 25
 add_ideas = MLT_Independence_movements
 
 # Tower stuff
+# Modifier
+set_variable = { weekly_manpower_tower_malta = 10 }
+set_variable = { loca_weekly_manpower_tower_malta = weekly_manpower_tower_malta }
+set_variable = { refitting_speed_tower_malta = 0.01 }
+set_variable = { loca_refitting_speed_tower_malta = refitting_speed_tower_malta }
+multiply_variable = { loca_refitting_speed_tower_malta = 100 }
+set_variable = { drift_defence_factor_tower_malta = 0.01 }
+set_variable = { loca_drift_defence_factor_tower_malta = drift_defence_factor_tower_malta }
+multiply_variable = { loca_drift_defence_factor_tower_malta = 100 }
+
+# GUI
 set_variable = { current_tower_floor = 0 }
 set_variable = { max_tower_floor = 0 }
-set_variable = { current_building_level_tower = 0 } # Civilian + military
+set_variable = { current_building_level_tower = 0 } # Civilian + military + dockyards
 set_variable = { max_building_level_tower = 0 }
-set_variable = { current_dockyard_level_tower = 0 }
-set_variable = { max_dockyard_level_tower = 0 }
-set_variable = { current_manpower_level_tower = 0 }
+set_variable = { current_population_level_tower = 0 }
+set_variable = { max_population_level_tower = 0 }
 set_variable = { gold_currency = 0 }
 set_variable = { food_currency = 0 }
 set_variable = { jewelry_currency = 0 }
 set_variable = { diamond_currency = 0 }
 set_variable = { bitcoin_currency = 0 }
-set_variable = { max_manpower_level_tower = 0 }
-set_variable = { max_manpower_level_tower = 0 }
-set_variable = { mission_naval_efficiency = 0.5 }
+set_variable = { mission_naval_efficiency = 0.5 } #50%
+set_variable = { oil_tower_price = 15 }
+set_variable = { aluminum_tower_price = 15 }
+set_variable = { rubber_tower_price = 15 }
+set_variable = { tungsten_tower_price = 15 }
+set_variable = { steel_tower_price = 15 }
+set_variable = { chromium_tower_price = 15 }
+set_variable = { current_oil_tower_price = oil_tower_price }
+set_variable = { current_aluminum_tower_price = aluminum_tower_price }
+set_variable = { current_rubber_tower_price = rubber_tower_price }
+set_variable = { current_tungsten_tower_price = tungsten_tower_price }
+set_variable = { current_steel_tower_price = steel_tower_price }
+set_variable = { current_chromium_tower_price = chromium_tower_price }
+set_variable = { current_discount_index = 0 }
+
+randomize_variable = {
+	var = current_discount_index
+	distribution = uniform
+	min = 0
+	max = 5
+}
+
+round_variable = current_discount_index
+
+resize_array = {
+	array = MLT.resource_discount
+	value = 1
+	size = 6
+}
+
+set_variable = { MLT.resource_discount^var:current_discount_index = 0.5 }
+# End of tower stuff
 
 create_country_leader = {
 	name = "Gerald Strickland"
