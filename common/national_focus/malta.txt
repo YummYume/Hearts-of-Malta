@@ -764,6 +764,12 @@ focus_tree = {
                     instant_build = yes
                     province = 12003
                 }
+                set_building_level = {
+                    type = naval_base
+                    level = 6
+                    instant_build = yes
+                    province = 12003
+                }
             }
         }
     }
@@ -1302,28 +1308,39 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            division_template = {
-				name = "Mountaineers Squadron of the Armed Forces of Malta"
-				priority = 2
-                regiments = {
-                    mountaineers = { x = 0 y = 0 }	
-                    mountaineers = { x = 0 y = 1 }
-                    mountaineers = { x = 0 y = 2 }	
-                    mountaineers = { x = 1 y = 0 }
-                    mountaineers = { x = 1 y = 1 }
-                    mountaineers = { x = 1 y = 2 }
-                    mountaineers = { x = 2 y = 0 }	
-                    mountaineers = { x = 2 y = 1 }	
-                    mountaineers = { x = 2 y = 2 }	
-                    mountaineers = { x = 3 y = 0 }	
-                    mountaineers = { x = 3 y = 1 }	
-                    mountaineers = { x = 3 y = 2 }	
+            set_technology = {
+                tech_mountaineers = 1
+            }
+            MLT = {
+                division_template = {
+                    name = "Mountaineers Squadron of the Armed Forces of Malta"
+                    priority = 2
+                    regiments = {
+                        mountaineers = { x = 0 y = 0 }	
+                        mountaineers = { x = 0 y = 1 }
+                        mountaineers = { x = 0 y = 2 }	
+                        mountaineers = { x = 1 y = 0 }
+                        mountaineers = { x = 1 y = 1 }
+                        mountaineers = { x = 1 y = 2 }
+                        mountaineers = { x = 2 y = 0 }	
+                        mountaineers = { x = 2 y = 1 }	
+                        mountaineers = { x = 2 y = 2 }	
+                        mountaineers = { x = 3 y = 0 }	
+                        mountaineers = { x = 3 y = 1 }	
+                        mountaineers = { x = 3 y = 2 }	
+                    }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        artillery = { x = 0 y = 1 }
+                    }
                 }
-                support = {
-                    engineer = { x = 0 y = 0 }
-                    artillery = { x = 0 y = 1 }
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Mountaineers Squadron of the Armed Forces of Malta\" division_template = \"Mountaineers Squadron of the Armed Forces of Malta\" start_experience_factor = 1 start_equipment_factor = 1"
+                    owner = MLT
                 }
-			}
+            }
         }
     }
 
@@ -1348,28 +1365,39 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            division_template = {
-				name = "Armed Forces of Malta Air Wing"
-				priority = 2
-                regiments = {
-                    paratrooper = { x = 0 y = 0 }	
-                    paratrooper = { x = 0 y = 1 }
-                    paratrooper = { x = 0 y = 2 }	
-                    paratrooper = { x = 1 y = 0 }
-                    paratrooper = { x = 1 y = 1 }
-                    paratrooper = { x = 1 y = 2 }
-                    paratrooper = { x = 2 y = 0 }	
-                    paratrooper = { x = 2 y = 1 }	
-                    paratrooper = { x = 2 y = 2 }	
-                    paratrooper = { x = 3 y = 0 }	
-                    paratrooper = { x = 3 y = 1 }	
-                    paratrooper = { x = 3 y = 2 }	
+            set_technology = {
+                paratroopers = 1
+            }
+            MLT = {
+                division_template = {
+                    name = "Armed Forces of Malta Air Wing"
+                    priority = 2
+                    regiments = {
+                        paratrooper = { x = 0 y = 0 }	
+                        paratrooper = { x = 0 y = 1 }
+                        paratrooper = { x = 0 y = 2 }	
+                        paratrooper = { x = 1 y = 0 }
+                        paratrooper = { x = 1 y = 1 }
+                        paratrooper = { x = 1 y = 2 }
+                        paratrooper = { x = 2 y = 0 }	
+                        paratrooper = { x = 2 y = 1 }	
+                        paratrooper = { x = 2 y = 2 }	
+                        paratrooper = { x = 3 y = 0 }	
+                        paratrooper = { x = 3 y = 1 }	
+                        paratrooper = { x = 3 y = 2 }	
+                    }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        artillery = { x = 0 y = 1 }
+                    }
                 }
-                support = {
-                    engineer = { x = 0 y = 0 }
-                    artillery = { x = 0 y = 1 }
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Armed Forces of Malta Air Wing\" division_template = \"Armed Forces of Malta Air Wing\" start_experience_factor = 1 start_equipment_factor = 1"
+                    owner = MLT
                 }
-			}
+            }
         }
     }
 
@@ -1394,28 +1422,39 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            division_template = {
-				name = "Maritime Squadron of the Armed Forces of Malta"
-				priority = 2
-                regiments = {
-                    marine = { x = 0 y = 0 }	
-                    marine = { x = 0 y = 1 }
-                    marine = { x = 0 y = 2 }	
-                    marine = { x = 1 y = 0 }
-                    marine = { x = 1 y = 1 }
-                    marine = { x = 1 y = 2 }
-                    marine = { x = 2 y = 0 }	
-                    marine = { x = 2 y = 1 }	
-                    marine = { x = 2 y = 2 }	
-                    marine = { x = 3 y = 0 }	
-                    marine = { x = 3 y = 1 }	
-                    marine = { x = 3 y = 2 }	
+            set_technology = {
+                marines = 1
+            }
+            MLT = {
+                division_template = {
+                    name = "Maritime Squadron of the Armed Forces of Malta"
+                    priority = 2
+                    regiments = {
+                        marine = { x = 0 y = 0 }	
+                        marine = { x = 0 y = 1 }
+                        marine = { x = 0 y = 2 }	
+                        marine = { x = 1 y = 0 }
+                        marine = { x = 1 y = 1 }
+                        marine = { x = 1 y = 2 }
+                        marine = { x = 2 y = 0 }	
+                        marine = { x = 2 y = 1 }	
+                        marine = { x = 2 y = 2 }	
+                        marine = { x = 3 y = 0 }	
+                        marine = { x = 3 y = 1 }	
+                        marine = { x = 3 y = 2 }	
+                    }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        artillery = { x = 0 y = 1 }
+                    }
                 }
-                support = {
-                    engineer = { x = 0 y = 0 }
-                    artillery = { x = 0 y = 1 }
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maritime Squadron of the Armed Forces of Malta\" division_template = \"Maritime Squadron of the Armed Forces of Malta\" start_experience_factor = 1 start_equipment_factor = 1"
+                    owner = MLT
                 }
-			}
+            }
         }
     }
 
@@ -1438,7 +1477,24 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_tech_bonus = {
+				name = MLT_protectors_of_tower_tech
+				bonus = 1
+				uses = 1
+				category = para_tech 
+			}
+            add_tech_bonus = {
+				name = MLT_protectors_of_tower_tech
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech 
+			}
+            add_tech_bonus = {
+				name = MLT_protectors_of_tower_tech
+				bonus = 1
+				uses = 1
+				category = marine_tech 
+			}
         }
     }
 
@@ -1464,8 +1520,20 @@ focus_tree = {
             add_tech_bonus = {
 				name = MLT_on_the_shores_tech
 				bonus = 1
-				uses = 1
-				category = land_doctrine
+				uses = 2
+				category = infantry_weapons
+			}
+            add_tech_bonus = {
+				name = MLT_on_the_shores_tech
+				bonus = 1
+				uses = 2
+				category = cat_light_armor
+			}
+            add_tech_bonus = {
+				name = MLT_on_the_shores_tech
+				bonus = 1
+				uses = 2
+				category = support_tech
 			}
         }
     }
@@ -1492,8 +1560,20 @@ focus_tree = {
             add_tech_bonus = {
 				name = MLT_on_the_water_tech
 				bonus = 1
-				uses = 1
-				category = naval_doctrine
+				uses = 2
+				category = ss_tech
+			}
+            add_tech_bonus = {
+				name = MLT_on_the_water_tech
+				bonus = 1
+				uses = 2
+				category = bb_tech
+			}
+            add_tech_bonus = {
+				name = MLT_on_the_water_tech
+				bonus = 1
+				uses = 2
+				category = dd_tech
 			}
         }
     }
@@ -1520,8 +1600,20 @@ focus_tree = {
             add_tech_bonus = {
 				name = MLT_in_the_air_tech
 				bonus = 1
-				uses = 1
-				category = air_doctrine
+				uses = 2
+				category = cas_bomber
+			}
+            add_tech_bonus = {
+				name = MLT_in_the_air_tech
+				bonus = 1
+				uses = 2
+				category = light_fighter
+			}
+            add_tech_bonus = {
+				name = MLT_in_the_air_tech
+				bonus = 1
+				uses = 2
+				category = tactical_bomber
 			}
         }
     }

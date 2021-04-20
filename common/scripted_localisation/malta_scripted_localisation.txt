@@ -48,3 +48,20 @@ defined_text = {
 		localization_key = MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC_NOT
 	}
 }
+
+defined_text = {
+	name = GetTowerOfMaltaTradeOpinion
+	text = {
+		trigger = {
+			check_variable = {
+				var = trade_opinion_factor_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = MTL_TRADE_OPINION_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = MTL_TRADE_OPINION_TOWER_MALTA_LOC_NOT
+	}
+}

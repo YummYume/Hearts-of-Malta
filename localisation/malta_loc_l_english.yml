@@ -190,10 +190,10 @@
  malta.8.t:0 "Adoption of a New Strategy"
  malta.8.d:0 ""
  malta.8.a:0 "Our Tower is Magnificent"
- malta.9.t:0 ""
+ malta.9.t:0 "The First Floor"
  malta.9.d:0 ""
  malta.9.a:0 ""
- tower_modifiers_tooltip_idea:0 "Gains National spirit §YTower of Malta§!, which grants (Weekly manpower: §G+10§!, Refitting Speed: §G+1%§!, Ideology Drift Defense: §G+1%§!)"
+ tower_modifiers_tooltip_idea:0 "Gains National spirit §YTower of Malta§!, which grants (Weekly manpower: §G+10§!, Refitting Speed: §G+1%§!, Ideology Drift Defense: §G+1%§!, Trade deal opinion factor: §Y+1%§!)"
  malta.10.t:0 ""
  malta.10.d:0 ""
  malta.10.a:0 ""
@@ -275,7 +275,7 @@
  MLT_Maltese_pride:0 "Maltese Pride"
  MLT_Maltese_pride_desc:0 ""
  MLT_The_tower_malta:0 "Tower of Malta"
- MLT_The_tower_malta_desc:0 "[MLT.GetTowerOfMaltaManpower]\n[MLT.GetTowerOfMaltaRequiredGarrison]\n[MLT.GetTowerOfMaltaDriftDefence]"
+ MLT_The_tower_malta_desc:0 "[MLT.GetTowerOfMaltaManpower]\n[MLT.GetTowerOfMaltaRequiredGarrison]\n[MLT.GetTowerOfMaltaDriftDefence]\n[MLT.GetTowerOfMaltaTradeOpinion]"
  Tower_of_malta_tt:0 "§CDecisions§! can be taken to §YImprove§! the §YTower§!"
 
  #Decisions
@@ -302,7 +302,8 @@
  MLT_land_air_and_sea_tech:0 "Land, Air and Sea Technology"
  MLT_on_the_shores_tech:0 "On the Shore Technology"
  MLT_on_the_water_tech:0 "On the Water Technology"
- MLT_in_the_air_tech:0 "In the Aire Technology"
+ MLT_in_the_air_tech:0 "In the Air Technology"
+ MLT_protectors_of_tower_tech:0 "Protectors of the Towers Technology"
 
 #Dynamic Modifiers
  tower_of_malta_modifier:0 "Tower of Malta"
@@ -314,6 +315,8 @@
  MTL_REFITTING_SPEED_TOWER_MALTA_LOC_NOT:0 ""
  MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC:0 "§WIdeology drift defense:§! §G+[?loca_drift_defence_factor_tower_malta]%§!"
  MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC_NOT:0 ""
+ MTL_TRADE_OPINION_TOWER_MALTA_LOC:0 "§WTrade deal opinion factor:§! §Y+[?loca_trade_opinion_factor_tower_malta]%§!"
+ MTL_TRADE_OPINION_TOWER_MALTA_LOC_NOT:0 ""
 
 #GUI
  LOC_mlt_tower_window_current_floor:0 "§WCurrent number of floors in the tower :§! §Y[?current_tower_floor]§!"
