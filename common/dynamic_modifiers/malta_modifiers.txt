@@ -2,4 +2,5 @@ tower_of_malta_modifier = {
 	weekly_manpower = weekly_manpower_tower_malta
 	refit_speed = required_garrison_factor_tower_malta
 	drift_defence_factor = drift_defence_factor_tower_malta
+	trade_opinion_factor = trade_opinion_factor_tower_malta
 }

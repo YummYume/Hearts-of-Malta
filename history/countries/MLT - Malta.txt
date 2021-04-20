@@ -57,6 +57,9 @@ multiply_variable = { loca_refitting_speed_tower_malta = 100 }
 set_variable = { drift_defence_factor_tower_malta = 0.01 }
 set_variable = { loca_drift_defence_factor_tower_malta = drift_defence_factor_tower_malta }
 multiply_variable = { loca_drift_defence_factor_tower_malta = 100 }
+set_variable = { trade_opinion_factor_tower_malta = 0.01 }
+set_variable = { loca_trade_opinion_factor_tower_malta = trade_opinion_factor_tower_malta }
+multiply_variable = { loca_trade_opinion_factor_tower_malta = 100 }
 
 # GUI
 set_variable = { current_tower_floor = 0 }
@@ -148,4 +151,12 @@ set_popularities = {
 	fascism = 30
 	communism = 10
 	neutrality = 3
+}
+
+ENG = {
+	set_autonomy = {
+		target = MLT
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
 }
