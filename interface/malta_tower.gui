@@ -13,6 +13,9 @@ guiTypes = {
         fade_time = 100
         click_to_front = no
         clipping = no
+        show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
 
         background = {
             name = "Background"
@@ -40,6 +43,7 @@ guiTypes = {
                 shortcut = "ESCAPE"
                 buttonFont = cg_18b
                 alwaystransparent = no
+                clicksound = menu_close_window
             }
 
             instantTextBoxType = {
@@ -79,7 +83,7 @@ guiTypes = {
 
                 instantTextBoxType = {
                     name = "mlt_tower_window_info_title"
-                    position = { x = 0 y = 10 }
+                    position = { x = 0 y = 5 }
                     maxWidth = 615
                     orientation = "UPPER_LEFT"
                     text = LOC_mlt_tower_window_info_title
@@ -89,81 +93,95 @@ guiTypes = {
                     alwaystransparent = yes
                 }
 
-                instantTextBoxType = {
-                    name = "mlt_tower_window_current_floor"
-                    position = { x = 20 y = 60 }
-                    maxWidth = 307
-                    orientation = "UPPER_LEFT"
-                    text = LOC_mlt_tower_window_current_floor
-                    font = hoi4_typewriter22
-                    format = left
-                    borderSize = {x = 0 y = 0}
-                    alwaystransparent = yes
-                }
+                containerWindowType = {
+                    name = "mlt_tower_window_global_info_display"
+                    position = { x = 25 y = 50 }
+                    size = { width = 615 height = 200 }
+                    moveable = no
+                    fade_type = linear
+                    fade_time = 100
+                    click_to_front = no
+                    clipping = no
 
-                instantTextBoxType = {
-                    name = "mlt_tower_window_max_floor"
-                    position = { x = 20 y = 100 }
-                    maxWidth = 307
-                    orientation = "UPPER_LEFT"
-                    text = LOC_mlt_tower_window_max_floor
-                    font = hoi4_typewriter22
-                    format = left
-                    borderSize = {x = 0 y = 0}
-                    alwaystransparent = yes
-                }
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_current_floor"
+                        position = { x = 20 y = 0 }
+                        maxWidth = 307
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_current_floor
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
 
-                instantTextBoxType = {
-                    name = "mlt_tower_window_naval_efficiency"
-                    position = { x = 20 y = 140 }
-                    maxWidth = 307
-                    orientation = "UPPER_LEFT"
-                    text = LOC_mlt_tower_window_naval_efficiency
-                    font = hoi4_typewriter22
-                    format = left
-                    borderSize = {x = 0 y = 0}
-                    alwaystransparent = yes
-                }
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_max_floor"
+                        position = { x = 20 y = 40 }
+                        maxWidth = 307
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_max_floor
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
 
-                instantTextBoxType = {
-                    name = "mlt_tower_window_number_factories"
-                    position = { x = -307 y = 60 }
-                    maxWidth = 307
-                    orientation = "UPPER_RIGHT"
-                    text = LOC_mlt_tower_window_number_factories
-                    font = hoi4_typewriter22
-                    format = left
-                    borderSize = {x = 0 y = 0}
-                    alwaystransparent = yes
-                }
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_naval_efficiency"
+                        position = { x = 20 y = 80 }
+                        maxWidth = 307
+                        maxHeight = 30
+                        orientation = "UPPER_LEFT"
+                        text = LOC_mlt_tower_window_naval_efficiency
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = no
+                        pdx_tooltip = LOC_mlt_tower_window_naval_efficiency_tt
+                        pdx_tooltip_delayed = LOC_mlt_tower_window_naval_efficiency_tt_desc
+                    }
 
-                instantTextBoxType = {
-                    name = "mlt_tower_window_max_factories"
-                    position = { x = -307 y = 100 }
-                    maxWidth = 307
-                    orientation = "UPPER_RIGHT"
-                    text = LOC_mlt_tower_window_max_factories
-                    font = hoi4_typewriter22
-                    format = left
-                    borderSize = {x = 0 y = 0}
-                    alwaystransparent = yes
-                }
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_number_factories"
+                        position = { x = -307 y = 0 }
+                        maxWidth = 307
+                        orientation = "UPPER_RIGHT"
+                        text = LOC_mlt_tower_window_number_factories
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
 
-                instantTextBoxType = {
-                    name = "mlt_tower_window_max_population"
-                    position = { x = -307 y = 140 }
-                    maxWidth = 307
-                    orientation = "UPPER_RIGHT"
-                    text = LOC_mlt_tower_window_max_population
-                    font = hoi4_typewriter22
-                    format = left
-                    borderSize = {x = 0 y = 0}
-                    alwaystransparent = yes
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_max_factories"
+                        position = { x = -307 y = 40 }
+                        maxWidth = 307
+                        orientation = "UPPER_RIGHT"
+                        text = LOC_mlt_tower_window_max_factories
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
+
+                    instantTextBoxType = {
+                        name = "mlt_tower_window_max_population"
+                        position = { x = -307 y = 80 }
+                        maxWidth = 307
+                        orientation = "UPPER_RIGHT"
+                        text = LOC_mlt_tower_window_max_population
+                        font = hoi4_typewriter22
+                        format = left
+                        borderSize = {x = 0 y = 0}
+                        alwaystransparent = yes
+                    }
                 }
 
                 instantTextBoxType = {
                     name = "mlt_tower_window_resource_title"
-                    position = { x = 0 y = 170 }
+                    position = { x = 0 y = 160 }
                     maxWidth = 615
                     orientation = "UPPER_LEFT"
                     text = LOC_mlt_tower_window_resource_title
@@ -175,7 +193,7 @@ guiTypes = {
 
                 containerWindowType = {
                     name = "mlt_tower_window_resource_count"
-                    position = { x = 0 y = 220 }
+                    position = { x = 0 y = 200 }
                     size = { width = 615 height = 40 }
                     moveable = no
                     fade_type = linear
@@ -247,7 +265,7 @@ guiTypes = {
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
-                            spriteType = "GFX_tower_help_icon"
+                            spriteType = "GFX_tower_food_icon"
                             pdx_tooltip = LOC_mlt_tower_window_food_icon
                             pdx_tooltip_delayed = LOC_mlt_tower_window_food_icon_tt
                         }
@@ -288,7 +306,7 @@ guiTypes = {
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
-                            spriteType = "GFX_tower_help_icon"
+                            spriteType = "GFX_tower_gold_icon"
                             pdx_tooltip = LOC_mlt_tower_window_gold_icon
                             pdx_tooltip_delayed = LOC_mlt_tower_window_gold_icon_tt
                         }
@@ -348,54 +366,270 @@ guiTypes = {
                     }
                 }
 
-                iconType = {
-                    name = "mlt_tower_window_tower_icon"
-                    position = { x = 50 y = 280 }
-                    orientation = "UPPER_LEFT"
-                    alwaystransparent = no
-                    centerposition = yes
-                    spriteType = "GFX_tower_help_icon"
-                }
+                containerWindowType = {
+                    name = "mlt_tower_window_general_purchase"
+                    position = { x = 0 y = 220 }
+                    size = { width = 615 height = 250 }
+                    moveable = no
+                    fade_type = linear
+                    fade_time = 100
+                    click_to_front = no
+                    clipping = no
 
-                iconType = {
-                    name = "mlt_tower_window_civilian_factory_icon"
-                    position = { x = 50 y = 320 }
-                    orientation = "UPPER_LEFT"
-                    alwaystransparent = no
-                    centerposition = yes
-                    spriteType = "GFX_tower_civilian_factory_icon"
-                }
+                    containerWindowType = {
+                        name = "mlt_tower_window_floor_preview"
+                        position = { x = -230 y = -80 }
+                        orientation = center
+                        origo = center
+                        size = { width = 80 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
 
-                iconType = {
-                    name = "mlt_tower_window_military_factory_icon"
-                    position = { x = 50 y = 360 }
-                    orientation = "UPPER_LEFT"
-                    alwaystransparent = no
-                    centerposition = yes
-                    spriteType = "GFX_tower_military_factory_icon"
-                }
+                        background = {
+                            name = "Background_floor"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
 
-                iconType = {
-                    name = "mlt_tower_window_dockyard_icon"
-                    position = { x = 50 y = 400 }
-                    orientation = "UPPER_LEFT"
-                    alwaystransparent = no
-                    centerposition = yes
-                    spriteType = "GFX_tower_dockyard_icon"
-                }
+                        iconType = {
+                            name = "mlt_tower_window_tower_icon"
+                            position = { x = 5 y = 20 }
+                            orientation = "UPPER_LEFT"
+                            alwaystransparent = no
+                            centerposition = yes
+                            spriteType = "GFX_tower_help_icon"
+                        }
 
-                iconType = {
-                    name = "mlt_tower_window_population_icon"
-                    position = { x = 50 y = 440 }
-                    orientation = "UPPER_LEFT"
-                    alwaystransparent = no
-                    centerposition = yes
-                    spriteType = "GFX_tower_population_icon"
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_floor_count"
+                            position = { x = 5 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_floor_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_floor_purchase"
+                        position = { x = -50 y = -95 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        clicksound = MLT_construction_buttons
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_civilian_factory_preview"
+                        position = { x = -230 y = -35 }
+                        orientation = center
+                        origo = center
+                        size = { width = 80 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_civilian_factory"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        iconType = {
+                            name = "mlt_tower_window_civilian_factory_icon"
+                            position = { x = 5 y = 20 }
+                            orientation = "UPPER_LEFT"
+                            alwaystransparent = no
+                            centerposition = yes
+                            spriteType = "GFX_tower_civilian_factory_icon"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_civilian_factory_count"
+                            position = { x = 5 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_civilian_factory_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_civilian_factory_purchase"
+                        position = { x = -50 y = -50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        clicksound = MLT_construction_buttons
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_military_factory_preview"
+                        position = { x = -230 y = 10 }
+                        orientation = center
+                        origo = center
+                        size = { width = 80 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_military_factory"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        iconType = {
+                            name = "mlt_tower_window_military_factory_icon"
+                            position = { x = 5 y = 20 }
+                            orientation = "UPPER_LEFT"
+                            alwaystransparent = no
+                            centerposition = yes
+                            spriteType = "GFX_tower_military_factory_icon"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_military_factory_count"
+                            position = { x = 5 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_military_factory_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_military_factory_purchase"
+                        position = { x = -50 y = -5 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        clicksound = MLT_construction_buttons
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_dockyard_preview"
+                        position = { x = -230 y = 55 }
+                        orientation = center
+                        origo = center
+                        size = { width = 80 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_dockyard"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        iconType = {
+                            name = "mlt_tower_window_dockyard_icon"
+                            position = { x = 5 y = 20 }
+                            orientation = "UPPER_LEFT"
+                            alwaystransparent = no
+                            centerposition = yes
+                            spriteType = "GFX_tower_dockyard_icon"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_dockyard_count"
+                            position = { x = 5 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_dockyard_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_dockyard_purchase"
+                        position = { x = -50 y = 40 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        clicksound = MLT_construction_buttons
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_population_preview"
+                        position = { x = -230 y = 100 }
+                        orientation = center
+                        origo = center
+                        size = { width = 80 height = 40 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_population"
+                            quadTextureSprite = "GFX_tower_count_bg"
+                        }
+
+                        iconType = {
+                            name = "mlt_tower_window_population_icon"
+                            position = { x = 5 y = 20 }
+                            orientation = "UPPER_LEFT"
+                            alwaystransparent = no
+                            centerposition = yes
+                            spriteType = "GFX_tower_population_icon"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_population_count"
+                            position = { x = 5 y = 8 }
+                            maxWidth = 120
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_population_count
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = yes
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_population_purchase"
+                        position = { x = -50 y = 85 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        clicksound = MLT_construction_buttons
+                    }
                 }
 
                 containerWindowType = {
                     name = "mlt_tower_window_resource_purchase"
-                    position = { x = 0 y = 490 }
+                    position = { x = 0 y = 495 }
                     size = { width = 615 height = 40 }
                     moveable = no
                     fade_type = linear
@@ -422,25 +656,25 @@ guiTypes = {
 
                         iconType = {
                             name = "mlt_tower_window_oil_icon"
-                            position = { x = 5 y = 20 }
+                            position = { x = 0 y = 20 }
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
                             spriteType = "GFX_tower_oil_icon"
-                            pdx_tooltip = LOC_mlt_tower_window_oil_icon
-                            pdx_tooltip_delayed = LOC_mlt_tower_window_oil_icon_tt
                         }
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_oil_count"
-                            position = { x = 5 y = 8 }
-                            maxWidth = 80
+                            position = { x = 1 y = 8 }
+                            maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_oil_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_oil_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_oil_count_tt_desc
                         }
                     }
 
@@ -468,13 +702,16 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_oil_discount_display"
                             position = { x = 0 y = 3 }
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_oil_discount_display
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_discount
+                            pdx_tooltip_delayed = LOC_mlt_tower_discount_tt
                         }
                     }
 
@@ -492,7 +729,7 @@ guiTypes = {
 
                         background = {
                             name = "Background_oil_price"
-                            quadTextureSprite = "GFX_tower_price_resource_tab"
+                            quadTextureSprite = "GFX_tower_price_tab"
                         }
 
                         instantTextBoxType = {
@@ -504,8 +741,21 @@ guiTypes = {
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_oil_price_display_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_oil_price_display_tt_desc
                         }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_oil_purchase"
+                        position = { x = -288 y = 50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_oil_purchase
+                        clicksound = MLT_construction_buttons
                     }
 
                     containerWindowType = {
@@ -527,25 +777,25 @@ guiTypes = {
 
                         iconType = {
                             name = "mlt_tower_window_aluminum_icon"
-                            position = { x = 5 y = 20 }
+                            position = { x = 0 y = 20 }
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
                             spriteType = "GFX_tower_aluminum_icon"
-                            pdx_tooltip = LOC_mlt_tower_window_aluminum_icon
-                            pdx_tooltip_delayed = LOC_mlt_tower_window_aluminum_icon_tt
                         }
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_aluminum_count"
-                            position = { x = 5 y = 8 }
-                            maxWidth = 80
+                            position = { x = 1 y = 8 }
+                            maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_aluminum_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_aluminum_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_aluminum_count_tt_desc
                         }
                     }
 
@@ -573,14 +823,60 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_aluminum_discount_display"
                             position = { x = 0 y = 3 }
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_aluminum_discount_display
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_discount
+                            pdx_tooltip_delayed = LOC_mlt_tower_discount_tt
                         }
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_aluminum_price"
+                        position = { x = -150 y = 32 }
+                        orientation = center
+                        origo = center
+                        size = { width = 85 height = 30 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_aluminum_price"
+                            quadTextureSprite = "GFX_tower_price_tab"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_aluminum_price_display"
+                            position = { x = 0 y = 3 }
+                            maxWidth = 85
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_aluminum_price_display
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_aluminum_price_display_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_aluminum_price_display_tt_desc
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_aluminum_purchase"
+                        position = { x = -188 y = 50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_aluminum_purchase
+                        clicksound = MLT_construction_buttons
                     }
 
                     containerWindowType = {
@@ -602,25 +898,25 @@ guiTypes = {
 
                         iconType = {
                             name = "mlt_tower_window_rubber_icon"
-                            position = { x = 5 y = 20 }
+                            position = { x = 0 y = 20 }
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
                             spriteType = "GFX_tower_rubber_icon"
-                            pdx_tooltip = LOC_mlt_tower_window_rubber_icon
-                            pdx_tooltip_delayed = LOC_mlt_tower_window_rubber_icon_tt
                         }
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_rubber_count"
-                            position = { x = 5 y = 8 }
-                            maxWidth = 80
+                            position = { x = 1 y = 8 }
+                            maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_rubber_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_rubber_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_rubber_count_tt_desc
                         }
                     }
 
@@ -648,14 +944,60 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_rubber_discount_display"
                             position = { x = 0 y = 3 }
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_rubber_discount_display
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_discount
+                            pdx_tooltip_delayed = LOC_mlt_tower_discount_tt
                         }
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_rubber_price"
+                        position = { x = -50 y = 32 }
+                        orientation = center
+                        origo = center
+                        size = { width = 85 height = 30 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_rubber_price"
+                            quadTextureSprite = "GFX_tower_price_tab"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_rubber_price_display"
+                            position = { x = 0 y = 3 }
+                            maxWidth = 85
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_rubber_price_display
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_rubber_price_display_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_rubber_price_display_tt_desc
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_rubber_purchase"
+                        position = { x = -88 y = 50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_rubber_purchase
+                        clicksound = MLT_construction_buttons
                     }
 
                     containerWindowType = {
@@ -677,25 +1019,25 @@ guiTypes = {
 
                         iconType = {
                             name = "mlt_tower_window_tungsten_icon"
-                            position = { x = 5 y = 20 }
+                            position = { x = 0 y = 20 }
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
                             spriteType = "GFX_tower_tungsten_icon"
-                            pdx_tooltip = LOC_mlt_tower_window_tungsten_icon
-                            pdx_tooltip_delayed = LOC_mlt_tower_window_tungsten_icon_tt
                         }
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_tungsten_count"
-                            position = { x = 5 y = 8 }
-                            maxWidth = 80
+                            position = { x = 1 y = 8 }
+                            maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_tungsten_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_tungsten_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_tungsten_count_tt_desc
                         }
                     }
 
@@ -723,14 +1065,60 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_tungsten_discount_display"
                             position = { x = 0 y = 3 }
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_tungsten_discount_display
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_discount
+                            pdx_tooltip_delayed = LOC_mlt_tower_discount_tt
                         }
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_tungsten_price"
+                        position = { x = 50 y = 32 }
+                        orientation = center
+                        origo = center
+                        size = { width = 85 height = 30 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_tungsten_price"
+                            quadTextureSprite = "GFX_tower_price_tab"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_tungsten_price_display"
+                            position = { x = 0 y = 3 }
+                            maxWidth = 85
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_tungsten_price_display
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_tungsten_price_display_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_tungsten_price_display_tt_desc
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_tungsten_purchase"
+                        position = { x = 12 y = 50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_tungsten_purchase
+                        clicksound = MLT_construction_buttons
                     }
 
                     containerWindowType = {
@@ -752,25 +1140,25 @@ guiTypes = {
 
                         iconType = {
                             name = "mlt_tower_window_steel_icon"
-                            position = { x = 5 y = 20 }
+                            position = { x = 0 y = 20 }
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
                             spriteType = "GFX_tower_steel_icon"
-                            pdx_tooltip = LOC_mlt_tower_window_steel_icon
-                            pdx_tooltip_delayed = LOC_mlt_tower_window_steel_icon_tt
                         }
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_steel_count"
-                            position = { x = 5 y = 8 }
-                            maxWidth = 80
+                            position = { x = 1 y = 8 }
+                            maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_steel_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_steel_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_steel_count_tt_desc
                         }
                     }
 
@@ -798,14 +1186,60 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_steel_discount_display"
                             position = { x = 0 y = 3 }
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_steel_discount_display
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_discount
+                            pdx_tooltip_delayed = LOC_mlt_tower_discount_tt
                         }
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_steel_price"
+                        position = { x = 150 y = 32 }
+                        orientation = center
+                        origo = center
+                        size = { width = 85 height = 30 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_steel_price"
+                            quadTextureSprite = "GFX_tower_price_tab"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_steel_price_display"
+                            position = { x = 0 y = 3 }
+                            maxWidth = 85
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_steel_price_display
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_steel_price_display_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_steel_price_display_tt_desc
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_steel_purchase"
+                        position = { x = 112 y = 50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_steel_purchase
+                        clicksound = MLT_construction_buttons
                     }
 
                     containerWindowType = {
@@ -827,25 +1261,25 @@ guiTypes = {
 
                         iconType = {
                             name = "mlt_tower_window_chromium_icon"
-                            position = { x = 5 y = 20 }
+                            position = { x = 0 y = 20 }
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
                             spriteType = "GFX_tower_chromium_icon"
-                            pdx_tooltip = LOC_mlt_tower_window_chromium_icon
-                            pdx_tooltip_delayed = LOC_mlt_tower_window_chromium_icon_tt
                         }
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_chromium_count"
-                            position = { x = 5 y = 8 }
-                            maxWidth = 80
+                            position = { x = 1 y = 8 }
+                            maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_chromium_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_chromium_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_chromium_count_tt_desc
                         }
                     }
 
@@ -873,14 +1307,60 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_chromium_discount_display"
                             position = { x = 0 y = 3 }
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_chromium_discount_display
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_discount
+                            pdx_tooltip_delayed = LOC_mlt_tower_discount_tt
                         }
+                    }
+
+                    containerWindowType = {
+                        name = "mlt_tower_window_chromium_price"
+                        position = { x = 250 y = 32 }
+                        orientation = center
+                        origo = center
+                        size = { width = 85 height = 30 }
+                        moveable = no
+                        fade_type = linear
+                        fade_time = 100
+                        click_to_front = no
+                        clipping = no
+
+                        background = {
+                            name = "Background_chromium_price"
+                            quadTextureSprite = "GFX_tower_price_tab"
+                        }
+
+                        instantTextBoxType = {
+                            name = "mlt_tower_window_chromium_price_display"
+                            position = { x = 0 y = 3 }
+                            maxWidth = 85
+                            orientation = "UPPER_LEFT"
+                            text = LOC_mlt_tower_window_chromium_price_display
+                            font = hoi4_typewriter22
+                            format = centre
+                            borderSize = {x = 0 y = 0}
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_chromium_price_display_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_chromium_price_display_tt_desc
+                        }
+                    }
+
+                    buttonType = {
+                        name = "mlt_tower_window_chromium_purchase"
+                        position = { x = 212 y = 50 }
+                        orientation = center
+                        spriteType = "GFX_tower_buy_button"
+                        buttonText = "Buy"
+                        buttonFont = cg_18b
+                        pdx_tooltip = LOC_mlt_tower_window_chromium_purchase
+                        clicksound = MLT_construction_buttons
                     }
                 }
             }
@@ -1068,6 +1548,7 @@ guiTypes = {
                         spriteType = "GFX_tower_confirm_button"
                         buttonText = "Start Mission"
                         buttonFont = cg_18b
+                        clicksound = naval_mapmode
                     }
 
                     iconType = {
@@ -1254,6 +1735,7 @@ guiTypes = {
                         spriteType = "GFX_tower_confirm_button"
                         buttonText = "Start Mission"
                         buttonFont = cg_18b
+                        clicksound = naval_mapmode
                     }
 
                     iconType = {
@@ -1440,6 +1922,7 @@ guiTypes = {
                         spriteType = "GFX_tower_confirm_button"
                         buttonText = "Start Mission"
                         buttonFont = cg_18b
+                        clicksound = naval_mapmode
                     }
 
                     iconType = {

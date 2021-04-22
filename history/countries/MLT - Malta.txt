@@ -66,26 +66,40 @@ set_variable = { current_tower_floor = 0 }
 set_variable = { max_tower_floor = 0 }
 set_variable = { current_building_level_tower = 0 } # Civilian + military + dockyards
 set_variable = { max_building_level_tower = 0 }
+set_variable = { current_civilian_factory_tower = 0 }
+set_variable = { current_military_factory_tower = 0 }
+set_variable = { current_dockyard_factory_tower = 0 }
 set_variable = { current_population_level_tower = 0 }
+set_variable = { current_population_level_tower_k = 0 } # * 0.001
+set_variable = { current_population_level_tower_m = 0 } # * 0.000001
 set_variable = { max_population_level_tower = 0 }
 set_variable = { gold_currency = 0 }
 set_variable = { food_currency = 0 }
 set_variable = { jewelry_currency = 0 }
 set_variable = { diamond_currency = 0 }
 set_variable = { bitcoin_currency = 0 }
+set_variable = { max_currency = 10000 } # Not used
 set_variable = { mission_naval_efficiency = 0.5 } #50%
-set_variable = { oil_tower_price = 15 }
-set_variable = { aluminum_tower_price = 15 }
-set_variable = { rubber_tower_price = 15 }
-set_variable = { tungsten_tower_price = 15 }
-set_variable = { steel_tower_price = 15 }
-set_variable = { chromium_tower_price = 15 }
-set_variable = { current_oil_tower_price = oil_tower_price }
-set_variable = { current_aluminum_tower_price = aluminum_tower_price }
-set_variable = { current_rubber_tower_price = rubber_tower_price }
-set_variable = { current_tungsten_tower_price = tungsten_tower_price }
-set_variable = { current_steel_tower_price = steel_tower_price }
-set_variable = { current_chromium_tower_price = chromium_tower_price }
+resize_array = {
+	array = MLT.base_resource_price
+	value = 15
+	size = 6
+}
+resize_array = {
+	array = MLT.resource_price
+	value = 15
+	size = 6
+}
+resize_array = {
+	array = MLT.resource_inflation
+	value = 1
+	size = 6
+}
+resize_array = {
+	array = MLT.resource_count
+	value = 0
+	size = 6
+}
 set_variable = { current_discount_index = 0 }
 
 randomize_variable = {
@@ -104,6 +118,13 @@ resize_array = {
 }
 
 set_variable = { MLT.resource_discount^var:current_discount_index = 0.5 }
+
+oil_calculate_price = yes
+aluminum_calculate_price = yes
+rubber_calculate_price = yes
+tungsten_calculate_price = yes
+steel_calculate_price = yes
+chromium_calculate_price = yes
 # End of tower stuff
 
 create_country_leader = {

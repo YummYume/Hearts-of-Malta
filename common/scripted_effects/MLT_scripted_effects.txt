@@ -156,3 +156,47 @@ privateering_calculate_convoy = {
     multiply_variable = { temp_convoy_privateering = 0.01 }
     round_variable = temp_convoy_privateering
 }
+
+# Resources
+
+oil_calculate_price = {
+    set_variable = { MLT.resource_price^0 = MLT.base_resource_price^0 }
+    multiply_variable = { MLT.resource_price^0 = MLT.resource_inflation^0 }
+    multiply_variable = { MLT.resource_price^0 = MLT.resource_discount^0 }
+    round_variable = MLT.resource_price^0
+}
+
+aluminum_calculate_price = {
+    set_variable = { MLT.resource_price^1 = MLT.base_resource_price^1 }
+    multiply_variable = { MLT.resource_price^1 = MLT.resource_inflation^1 }
+    multiply_variable = { MLT.resource_price^1 = MLT.resource_discount^1 }
+    round_variable = MLT.resource_price^1
+}
+
+rubber_calculate_price = {
+    set_variable = { MLT.resource_price^2 = MLT.base_resource_price^2 }
+    multiply_variable = { MLT.resource_price^2 = MLT.resource_inflation^2 }
+    multiply_variable = { MLT.resource_price^2 = MLT.resource_discount^2 }
+    round_variable = MLT.resource_price^2
+}
+
+tungsten_calculate_price = {
+    set_variable = { MLT.resource_price^3 = MLT.base_resource_price^3 }
+    multiply_variable = { MLT.resource_price^3 = MLT.resource_inflation^3 }
+    multiply_variable = { MLT.resource_price^3 = MLT.resource_discount^3 }
+    round_variable = MLT.resource_price^3
+}
+
+steel_calculate_price = {
+    set_variable = { MLT.resource_price^4 = MLT.base_resource_price^4 }
+    multiply_variable = { MLT.resource_price^4 = MLT.resource_inflation^4 }
+    multiply_variable = { MLT.resource_price^4 = MLT.resource_discount^4 }
+    round_variable = MLT.resource_price^4
+}
+
+chromium_calculate_price = {
+    set_variable = { MLT.resource_price^5 = MLT.base_resource_price^5 }
+    multiply_variable = { MLT.resource_price^5 = MLT.resource_inflation^5 }
+    multiply_variable = { MLT.resource_price^5 = MLT.resource_discount^5 }
+    round_variable = MLT.resource_price^5
+}

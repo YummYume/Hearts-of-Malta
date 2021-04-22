@@ -1,0 +1,19 @@
+soundeffect = {
+	name = MLT_construction_buttons
+	volume = 0.7
+	sounds = {
+		sound = construction01
+		sound = construction02
+		sound = construction03
+        sound = construction04
+        sound = construction05
+	} 
+}
+
+soundeffect = {
+	name = MLT_population_button
+	volume = 0.7
+	sounds = {
+		sound = select_army04
+	} 
+} 

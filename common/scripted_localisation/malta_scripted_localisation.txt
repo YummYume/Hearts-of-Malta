@@ -97,3 +97,337 @@ defined_text = {
 		localization_key = MLT_NAVAL_EFFICIENCY_LOW
 	}
 }
+
+defined_text = {
+	name = GetCurrentTowerAdjective
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 1
+				compare = less_than
+			}
+		}
+		localization_key = MLT_TOWER_FLOOR_NONE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = MLT_TOWER_FLOOR_ST
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = MLT_TOWER_FLOOR_ND
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = MLT_TOWER_FLOOR_RD
+	}
+	text = {
+		localization_key = MLT_TOWER_FLOOR_TH
+	}
+}
+
+defined_text = {
+	name = GetPopulationStatusTower
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_population_level_tower
+				value = 1000000
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_M_POPULATION
+	}
+	text = {
+		localization_key = MLT_K_POPULATION
+	}
+}
+
+defined_text = {
+	name = GetCoastalRaidFocusStatus
+	text = {
+		trigger = {
+			MLT = {
+				has_completed_focus = MLT_with_coastal_raids
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetFishingBoatsFocusStatus
+	text = {
+		trigger = {
+			MLT = {
+				has_completed_focus = MLT_with_fishing_boats
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetPrivateeringFocusStatus
+	text = {
+		trigger = {
+			MLT = {
+				has_completed_focus = MLT_with_piratry
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetCoastalRaidManpowerStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = temp_manpower_coastal_raid
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = MLT_TRIGGER_UNSET
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_manpower > temp_manpower_coastal_raid
+				check_variable = {
+					var = MLT.manpower
+					value = temp_manpower_coastal_raid
+					compare = equals
+				}
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetFishingBoatsManpowerStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = temp_manpower_fishing
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = MLT_TRIGGER_UNSET
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_manpower > temp_manpower_fishing
+				check_variable = {
+					var = MLT.manpower
+					value = temp_manpower_fishing
+					compare = equals
+				}
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetPrivateeringManpowerStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = temp_manpower_privateering
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = MLT_TRIGGER_UNSET
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_manpower > temp_manpower_privateering
+				check_variable = {
+					var = MLT.manpower
+					value = temp_manpower_privateering
+					compare = equals
+				}
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetCoastalRaidConvoyStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = temp_convoy_coastal_raid
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = MLT_TRIGGER_UNSET
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_equipment = {
+					convoy > temp_convoy_coastal_raid
+				}
+				has_equipment = {
+					convoy = temp_convoy_coastal_raid
+				}
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetFishingBoatsConvoyStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = temp_convoy_fishing
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = MLT_TRIGGER_UNSET
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_equipment = {
+					convoy > temp_convoy_fishing
+				}
+				has_equipment = {
+					convoy = temp_convoy_fishing
+				}
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetPrivateeringConvoyStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = temp_convoy_privateering
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = MLT_TRIGGER_UNSET
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_equipment = {
+					convoy > temp_convoy_privateering
+				}
+				has_equipment = {
+					convoy = temp_convoy_privateering
+				}
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetCoastalRaidMissionStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_ongoing_coastal_raid_mission_event
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetFishingBoatsMissionStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_ongoing_fishing_mission_event
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}
+
+defined_text = {
+	name = GetPrivateeringMissionStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_ongoing_privateering_mission_event
+			}
+		}
+		localization_key = MLT_TRIGGER_YES
+	}
+	text = {
+		localization_key = MLT_TRIGGER_NO
+	}
+}

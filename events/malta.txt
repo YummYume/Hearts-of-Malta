@@ -196,8 +196,8 @@ country_event = {
             add_ideas = MLT_The_tower_malta
         }
         custom_effect_tooltip = tower_modifiers_tooltip_idea
-        add_to_variable = { max_tower_floor = 1 }
-        add_to_variable = { current_tower_floor = 1 }
+        set_variable = { max_tower_floor = 1 }
+        add_to_variable = { gold_currency = 10 }
     }
 }
 
@@ -216,7 +216,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        set_variable = { max_tower_floor = 2 }
+        add_to_variable = { gold_currency = 10 }
     }
 }
 
@@ -235,7 +236,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        set_variable = { max_tower_floor = 3 }
+        add_to_variable = { gold_currency = 10 }
     }
 }
 
@@ -273,7 +275,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        set_variable = { max_tower_floor = 10 }
+        add_to_variable = { gold_currency = 70 }
     }
 }
 
@@ -311,7 +314,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        set_country_flag = MLT_can_purchase_in_tower
     }
 }
 
@@ -568,6 +571,117 @@ country_event = {
         }
         clr_country_flag = MLT_ongoing_coastal_raid_mission_event
     }
+
+    # Result + Re-open GUI
+    option = {
+        name = malta.26.b
+        trigger = {
+            NOT = {
+                has_country_flag = mlt_custom_gui_tower_opened
+            }
+        }
+        ai_chance = {
+            factor = 0
+        }
+        add_to_variable = { jewelry_currency = coastal_raid_jewelry_loot }
+        add_to_variable = { diamond_currency = coastal_raid_diamond_loot }
+        custom_effect_tooltip = MLT_add_jewelry_to_reserve_coastal_raid
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_coastal_raid
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        clr_country_flag = MLT_ongoing_coastal_raid_mission_event
+        set_country_flag = mlt_custom_gui_tower_opened
+        custom_effect_tooltip = MLT_open_custom_GUI
+    }
+
+    # Result + Re-launch mission
+    option = {
+        name = malta.26.c
+        ai_chance = {
+            factor = 0
+        }
+        add_to_variable = { jewelry_currency = coastal_raid_jewelry_loot }
+        add_to_variable = { diamond_currency = coastal_raid_diamond_loot }
+        custom_effect_tooltip = MLT_add_jewelry_to_reserve_coastal_raid
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_coastal_raid
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        clr_country_flag = MLT_ongoing_coastal_raid_mission_event
+
+        if = {
+            limit = {
+                check_variable = {
+                    var = temp_manpower_coastal_raid
+                    value = 100000
+                    compare = less_than_or_equals
+                }
+                check_variable = {
+                    var = temp_manpower_coastal_raid
+                    value = 0
+                    compare = greater_than
+                }
+                OR = {
+                    has_manpower > temp_manpower_coastal_raid
+                    # Can't use = compare for has_manpower so we check directly with the variable instead
+                    check_variable = {
+                        var = MLT.manpower
+                        value = temp_manpower_coastal_raid
+                        compare = equals
+                    }
+                }
+                OR = {
+                    has_equipment = {
+                        convoy > temp_convoy_coastal_raid
+                    }
+                    has_equipment = {
+                        convoy = temp_convoy_coastal_raid
+                    }
+                }
+                has_completed_focus = MLT_with_coastal_raids
+            }
+            custom_effect_tooltip = MLT_relaunch_coastal_raid_mission
+            hidden_effect = {
+                set_country_flag = MLT_ongoing_coastal_raid_mission
+                set_country_flag = MLT_ongoing_coastal_raid_mission_event
+
+                set_variable = { coastal_raid_days_remaining = current_days_coastal_raid }
+
+                set_variable = { manpower_coastal_raid_minus = temp_manpower_coastal_raid }
+                multiply_variable = { manpower_coastal_raid_minus = -1 }
+                add_manpower = manpower_coastal_raid_minus
+
+                set_variable = { convoy_coastal_raid_minus = temp_convoy_coastal_raid }
+                multiply_variable = { convoy_coastal_raid_minus = -1 }
+                add_equipment_to_stockpile = {
+                    type = convoy_1
+                    amount = convoy_coastal_raid_minus
+                }
+
+                country_event = { id = malta.26 days = current_days_coastal_raid }
+            }
+        }
+        else = {
+            custom_effect_tooltip = MLT_cannot_relaunch_coastal_raid_mission
+        }
+    }
 }
 
 # Fishing result
@@ -616,7 +730,6 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        #TODO tooltips
         add_to_variable = { food_currency = fishing_food_loot }
         add_to_variable = { diamond_currency = fishing_diamond_loot }
         custom_effect_tooltip = MLT_add_food_to_reserve_fishing
@@ -633,6 +746,116 @@ country_event = {
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         clr_country_flag = MLT_ongoing_fishing_mission_event
+    }
+
+    # Result + Re-open GUI
+    option = {
+        name = malta.27.b
+        trigger = {
+            NOT = {
+                has_country_flag = mlt_custom_gui_tower_opened
+            }
+        }
+        ai_chance = {
+            factor = 0
+        }
+        add_to_variable = { food_currency = fishing_food_loot }
+        add_to_variable = { diamond_currency = fishing_diamond_loot }
+        custom_effect_tooltip = MLT_add_food_to_reserve_fishing
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_fishing
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        clr_country_flag = MLT_ongoing_fishing_mission_event
+        set_country_flag = mlt_custom_gui_tower_opened
+        custom_effect_tooltip = MLT_open_custom_GUI
+    }
+
+    # Result + Re-launch mission
+    option = {
+        name = malta.27.c
+        ai_chance = {
+            factor = 0
+        }
+        add_to_variable = { food_currency = fishing_food_loot }
+        add_to_variable = { diamond_currency = fishing_diamond_loot }
+        custom_effect_tooltip = MLT_add_food_to_reserve_fishing
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_fishing
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        clr_country_flag = MLT_ongoing_fishing_mission_event
+
+        if = {
+            limit = {
+                check_variable = {
+                    var = temp_manpower_fishing
+                    value = 100000
+                    compare = less_than_or_equals
+                }
+                check_variable = {
+                    var = temp_manpower_fishing
+                    value = 0
+                    compare = greater_than
+                }
+                OR = {
+                    has_manpower > temp_manpower_fishing
+                    check_variable = {
+                        var = MLT.manpower
+                        value = temp_manpower_fishing
+                        compare = equals
+                    }
+                }
+                OR = {
+                    has_equipment = {
+                        convoy > temp_convoy_fishing
+                    }
+                    has_equipment = {
+                        convoy = temp_convoy_fishing
+                    }
+                }
+                has_completed_focus = MLT_with_fishing_boats
+            }
+            custom_effect_tooltip = MLT_relaunch_fishing_mission
+            hidden_effect = {
+                set_country_flag = MLT_ongoing_fishing_mission
+                set_country_flag = MLT_ongoing_fishing_mission_event
+
+                set_variable = { fishing_days_remaining = current_days_fishing }
+
+                set_variable = { manpower_fishing_minus = temp_manpower_fishing }
+                multiply_variable = { manpower_fishing_minus = -1 }
+                add_manpower = manpower_fishing_minus
+
+                set_variable = { convoy_fishing_minus = temp_convoy_fishing }
+                multiply_variable = { convoy_fishing_minus = -1 }
+                add_equipment_to_stockpile = {
+                    type = convoy_1
+                    amount = convoy_fishing_minus
+                }
+
+                country_event = { id = malta.27 days = current_days_fishing }
+            }
+        }
+        else = {
+            custom_effect_tooltip = MLT_cannot_relaunch_fishing_mission
+        }
     }
 }
 
@@ -682,7 +905,6 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        #TODO tooltips
         add_to_variable = { gold_currency = privateering_gold_loot }
         add_to_variable = { diamond_currency = privateering_diamond_loot }
         custom_effect_tooltip = MLT_add_gold_to_reserve_privateering
@@ -699,5 +921,115 @@ country_event = {
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         clr_country_flag = MLT_ongoing_privateering_mission_event
+    }
+
+    # Result + Re-open GUI
+    option = {
+        name = malta.28.b
+        trigger = {
+            NOT = {
+                has_country_flag = mlt_custom_gui_tower_opened
+            }
+        }
+        ai_chance = {
+            factor = 0
+        }
+        add_to_variable = { gold_currency = privateering_gold_loot }
+        add_to_variable = { diamond_currency = privateering_diamond_loot }
+        custom_effect_tooltip = MLT_add_gold_to_reserve_privateering
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_privateering
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        clr_country_flag = MLT_ongoing_privateering_mission_event
+        custom_effect_tooltip = MLT_open_custom_GUI
+        set_country_flag = mlt_custom_gui_tower_opened
+    }
+
+    # Result + Re-launch mission
+    option = {
+        name = malta.28.c
+        ai_chance = {
+            factor = 0
+        }
+        add_to_variable = { gold_currency = privateering_gold_loot }
+        add_to_variable = { diamond_currency = privateering_diamond_loot }
+        custom_effect_tooltip = MLT_add_gold_to_reserve_privateering
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_privateering
+        if = {
+            limit = {
+                check_variable = {
+                    var = mission_naval_efficiency
+                    value = 2
+                    compare = less_than
+                }
+            }
+            add_to_variable = { mission_naval_efficiency = 0.03 }
+            custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        clr_country_flag = MLT_ongoing_privateering_mission_event
+
+        if = {
+            limit = {
+                check_variable = {
+                    var = temp_manpower_privateering
+                    value = 100000
+                    compare = less_than_or_equals
+                }
+                check_variable = {
+                    var = temp_manpower_privateering
+                    value = 0
+                    compare = greater_than
+                }
+                OR = {
+                    has_manpower > temp_manpower_privateering
+                    check_variable = {
+                        var = MLT.manpower
+                        value = temp_manpower_privateering
+                        compare = equals
+                    }
+                }
+                OR = {
+                    has_equipment = {
+                        convoy > temp_convoy_privateering
+                    }
+                    has_equipment = {
+                        convoy = temp_convoy_privateering
+                    }
+                }
+                has_completed_focus = MLT_with_piratry
+            }
+            custom_effect_tooltip = MLT_relaunch_privateering_mission
+            hidden_effect = {
+                set_country_flag = MLT_ongoing_privateering_mission
+                set_country_flag = MLT_ongoing_privateering_mission_event
+
+                set_variable = { privateering_days_remaining = current_days_privateering }
+
+                set_variable = { manpower_privateering_minus = temp_manpower_privateering }
+                multiply_variable = { manpower_privateering_minus = -1 }
+                add_manpower = manpower_privateering_minus
+
+                set_variable = { convoy_privateering_minus = temp_convoy_privateering }
+                multiply_variable = { convoy_privateering_minus = -1 }
+                add_equipment_to_stockpile = {
+                    type = convoy_1
+                    amount = convoy_privateering_minus
+                }
+
+                country_event = { id = malta.28 days = current_days_privateering }
+            }
+        }
+        else = {
+            custom_effect_tooltip = MLT_cannot_relaunch_privateering_mission
+        }
     }
 }

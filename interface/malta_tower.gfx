@@ -111,11 +111,39 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_tower_price_tab"
-        texturefile = "gfx/interfaces/scripted_gui/GFX_display_price.dds"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_price_tab.dds"
     }
 
     spriteType = {
-        name = "GFX_tower_price_resource_tab"
-        texturefile = "gfx/interfaces/scripted_gui/GFX_display_price_resource.dds"
+        name = "GFX_tower_buy_button"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_buy_button.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_gold_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_gold_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_gold_texticon"
+        texturefile = "gfx/texticons/GFX_gold_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_tower_food_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_food_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_food_texticon"
+        texturefile = "gfx/texticons/GFX_food_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_trigger_unset"
+        texturefile = "gfx/texticons/trigger_unset.dds"
+        legacy_lazy_load = no
     }
 }

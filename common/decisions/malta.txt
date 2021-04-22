@@ -31,6 +31,7 @@ MLT_tower_of_malta = {
 
 		complete_effect = {
             set_country_flag = mlt_custom_gui_tower_opened
+			custom_effect_tooltip = MLT_open_custom_GUI
         }
 	}
 

@@ -69,6 +69,13 @@ on_actions = {
 
 			set_variable = { MLT.resource_discount^var:old_discount_index = 1 }
             set_variable = { MLT.resource_discount^var:current_discount_index = 0.5 }
+
+			oil_calculate_price = yes
+			aluminum_calculate_price = yes
+			rubber_calculate_price = yes
+			tungsten_calculate_price = yes
+			steel_calculate_price = yes
+			chromium_calculate_price = yes
 		}
 	}
 }
