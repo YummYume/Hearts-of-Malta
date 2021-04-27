@@ -115,6 +115,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_tower_price_tab_side"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_price_tab_side.dds"
+    }
+
+    spriteType = {
         name = "GFX_tower_buy_button"
         texturefile = "gfx/interfaces/scripted_gui/GFX_buy_button.dds"
     }
@@ -142,8 +147,47 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_tower_jewelry_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_jewelry_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_jewelry_texticon"
+        texturefile = "gfx/texticons/GFX_jewelry_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_tower_diamond_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_diamond_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_diamond_texticon"
+        texturefile = "gfx/texticons/GFX_diamond_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_tower_bitcoin_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_bitcoin_icon.dds"
+    }
+
+    spriteType = {
+        name = "GFX_tower_bitcoin_texticon"
+        texturefile = "gfx/texticons/GFX_bitcoin_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
         name = "GFX_trigger_unset"
-        texturefile = "gfx/texticons/trigger_unset.dds"
+        texturefile = "gfx/texticons/GFX_trigger_unset_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_in_progress"
+        texturefile = "gfx/texticons/GFX_in_progress_texticon.dds"
         legacy_lazy_load = no
     }
 }

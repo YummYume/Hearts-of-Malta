@@ -256,7 +256,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        set_country_flag = MLT_can_purchase_in_tower
     }
 }
 

@@ -157,6 +157,42 @@ privateering_calculate_convoy = {
     round_variable = temp_convoy_privateering
 }
 
+# Factories
+
+civilian_factory_calculate_percentage = {
+    set_variable = { max_civilian_factory_tower = max_building_tower }
+    multiply_variable = { max_civilian_factory_tower = 0.5 }
+    round_variable = max_civilian_factory_tower
+}
+
+military_factory_calculate_percentage = {
+    set_variable = { max_military_factory_tower = max_building_tower }
+    multiply_variable = { max_military_factory_tower = 0.45 }
+    round_variable = max_military_factory_tower
+}
+
+dockyard_calculate_percentage = {
+    set_variable = { max_dockyard_tower = max_building_tower }
+    multiply_variable = { max_dockyard_tower = 0.3 }
+    round_variable = max_dockyard_tower
+}
+
+# Population
+
+set_population_k_m_b = {
+    set_variable = { current_population_tower_k = current_population_tower_m } # / 0.001
+    divide_variable = { current_population_tower_k = 0.001 }
+    set_variable = { current_population_tower_b = current_population_tower_m } # * 0.001
+    multiply_variable = { current_population_tower_b = 0.001 }
+}
+
+set_max_population_k_m_b = {
+    set_variable = { max_population_tower_k = max_population_tower_m } # / 0.001
+    divide_variable = { max_population_tower_k = 0.001 }
+    set_variable = { max_population_tower_b = max_population_tower_m } # * 0.001
+    multiply_variable = { max_population_tower_b = 0.001 }
+}
+
 # Resources
 
 oil_calculate_price = {
