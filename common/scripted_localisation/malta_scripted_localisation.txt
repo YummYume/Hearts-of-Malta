@@ -218,15 +218,88 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = current_population_level_tower
-				value = 1000000
+				var = current_population_tower_m
+				value = 1
 				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = current_population_tower_b
+				value = 1
+				compare = less_than
 			}
 		}
 		localization_key = MLT_M_POPULATION
 	}
 	text = {
+		trigger = {
+			check_variable = {
+				var = current_population_tower_b
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_B_POPULATION
+	}
+	text = {
 		localization_key = MLT_K_POPULATION
+	}
+}
+
+defined_text = {
+	name = GetMaxPopulationStatusTower
+	text = {
+		trigger = {
+			check_variable = {
+				var = max_population_tower_m
+				value = 1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = max_population_tower_b
+				value = 1
+				compare = less_than
+			}
+		}
+		localization_key = MLT_M_POPULATION_MAX
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = max_population_tower_b
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_B_POPULATION_MAX
+	}
+	text = {
+		localization_key = MLT_K_POPULATION_MAX
+	}
+}
+
+defined_text = {
+	name = GetFloorPriceStatus
+	text = {
+		trigger = {
+			has_country_flag = tower_floor_price_increased
+		}
+		localization_key = MLT_FLOOR_PRICE_INCREASED
+	}
+	text = {
+		localization_key = MLT_FLOOR_PRICE
+	}
+}
+
+defined_text = {
+	name = GetPopulationPriceStatus
+	text = {
+		trigger = {
+			has_country_flag = tower_population_price_increased
+		}
+		localization_key = MLT_POPULATION_PRICE_INCREASED
+	}
+	text = {
+		localization_key = MLT_POPULATION_PRICE
 	}
 }
 

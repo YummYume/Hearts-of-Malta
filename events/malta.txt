@@ -256,7 +256,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        set_country_flag = MLT_can_purchase_in_tower
     }
 }
 
@@ -280,7 +280,7 @@ country_event = {
     }
 }
 
-# ..... Journey
+# [ROOT.GetLeader] Journey
 country_event = {
     id = malta.14
     title = malta.14.t
@@ -333,7 +333,9 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_to_variable = { gold_currency = 30 }
+        add_to_variable = { food_currency = 30 }
+        add_to_variable = { jewelry_currency = 30 }
     }
 }
 
@@ -346,7 +348,7 @@ country_event = {
 
     is_triggered_only = yes
 
-    # How did sucide rates increased by 20% !?
+    # How did sucide rates increase by 20% !?
     option = {
         name = malta.17.a
         ai_chance = {
@@ -508,6 +510,8 @@ country_event = {
             has_government = democratic
         }
     }
+
+    hidden = yes
 
     immediate = {
         add_ideas = MLT_Trade_partners

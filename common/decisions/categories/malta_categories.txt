@@ -21,6 +21,7 @@ MLT_tower_of_malta = {
             value = 1
             compare = greater_than_or_equals
         }
+        has_full_control_of_state = 116
     }
 }
 

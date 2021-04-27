@@ -6,6 +6,7 @@ scripted_gui = {
         visible = {
             original_tag = MLT
             has_country_flag = mlt_custom_gui_tower_opened
+            has_full_control_of_state = 116
         }
 
         properties = {
@@ -15,6 +16,60 @@ scripted_gui = {
         effects = {
             mlt_close_button_click = {
                 clr_country_flag = mlt_custom_gui_tower_opened
+            }
+
+            mlt_tower_window_floor_purchase_click = {
+                subtract_from_variable = { gold_currency = price_tower_floor }
+                add_to_variable = { current_tower_floor = 1 }
+                set_variable = { max_building_tower = current_tower_floor }
+                add_to_variable = { max_population_tower_m = 0.100 }
+
+                civilian_factory_calculate_percentage = yes
+                military_factory_calculate_percentage = yes
+                dockyard_calculate_percentage = yes
+                set_max_population_k_m_b = yes
+                increase_tower_modifier = yes
+                increase_tower_puppet_modifier = yes
+            }
+
+            mlt_tower_window_civilian_factory_purchase_click = {
+                subtract_from_variable = { jewelry_currency = price_civilian_factory_tower }
+                add_to_variable = { current_civilian_factory_tower = 1 }
+                add_to_variable = { current_building_tower = 1 }
+                add_offsite_building = {
+                    type = industrial_complex
+                    level = 1
+                }
+            }
+
+            mlt_tower_window_military_factory_purchase_click = {
+                subtract_from_variable = { jewelry_currency = price_military_factory_tower }
+                add_to_variable = { current_military_factory_tower = 1 }
+                add_to_variable = { current_building_tower = 1 }
+                add_offsite_building = {
+                    type = arms_factory
+                    level = 1
+                }
+            }
+
+            mlt_tower_window_dockyard_purchase_click = {
+                subtract_from_variable = { jewelry_currency = price_dockyard_tower }
+                add_to_variable = { current_dockyard_tower = 1 }
+                add_to_variable = { current_building_tower = 1 }
+                add_offsite_building = {
+                    type = dockyard
+                    level = 1
+                }
+            }
+
+            mlt_tower_window_population_purchase_click = {
+                subtract_from_variable = { food_currency = price_population_tower }
+                add_to_variable = { current_population_tower_m = 0.025 }
+                116 = {
+                    add_manpower = 25000
+                }
+
+                set_population_k_m_b = yes
             }
 
             # Resources
@@ -414,6 +469,108 @@ scripted_gui = {
         }
 
         triggers = {
+            # Tower purchase
+
+            mlt_tower_window_floor_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
+                check_variable = {
+                    var = gold_currency
+                    value = price_tower_floor
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = current_tower_floor
+                    value = max_tower_floor
+                    compare = less_than
+                }
+
+                has_country_flag = MLT_can_purchase_in_tower
+            }
+
+            mlt_tower_window_civilian_factory_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
+                check_variable = {
+                    var = jewelry_currency
+                    value = price_civilian_factory_tower
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = current_civilian_factory_tower
+                    value = max_civilian_factory_tower
+                    compare = less_than
+                }
+                check_variable = {
+                    var = current_building_tower
+                    value = max_building_tower
+                    compare = less_than
+                }
+
+                has_country_flag = MLT_can_purchase_in_tower
+            }
+
+            mlt_tower_window_military_factory_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
+                check_variable = {
+                    var = jewelry_currency
+                    value = price_military_factory_tower
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = current_military_factory_tower
+                    value = max_military_factory_tower
+                    compare = less_than
+                }
+                check_variable = {
+                    var = current_building_tower
+                    value = max_building_tower
+                    compare = less_than
+                }
+
+                has_country_flag = MLT_can_purchase_in_tower
+            }
+
+            mlt_tower_window_dockyard_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
+                check_variable = {
+                    var = jewelry_currency
+                    value = price_dockyard_factory_tower
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = current_dockyard_factory_tower
+                    value = max_dockyard_factory_tower
+                    compare = less_than
+                }
+                check_variable = {
+                    var = current_building_tower
+                    value = max_building_tower
+                    compare = less_than
+                }
+
+                has_country_flag = MLT_can_purchase_in_tower
+            }
+
+            mlt_tower_window_population_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
+                check_variable = {
+                    var = food_currency
+                    value = price_population_tower
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = current_population_tower_m
+                    value = max_population_tower_m
+                    compare = less_than
+                }
+
+                has_country_flag = MLT_can_purchase_in_tower
+            }
+
             # Discount on resources
 
             Background_oil_discount_visible = {
@@ -585,6 +742,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_oil_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = diamond_currency
                     value = MLT.resource_price^0
@@ -595,6 +754,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_aluminum_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = diamond_currency
                     value = MLT.resource_price^1
@@ -605,6 +766,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_rubber_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = diamond_currency
                     value = MLT.resource_price^2
@@ -615,6 +778,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_tungsten_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = diamond_currency
                     value = MLT.resource_price^3
@@ -625,6 +790,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_steel_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = diamond_currency
                     value = MLT.resource_price^4
@@ -635,6 +802,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_chromium_purchase_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = diamond_currency
                     value = MLT.resource_price^5
@@ -650,6 +819,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_coastal_raid_add_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_coastal_raid
                     value = 100000
@@ -662,6 +833,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_coastal_raid_remove_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_coastal_raid
                     value = 0
@@ -674,6 +847,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_coastal_raid_confirm_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_coastal_raid
                     value = 100000
@@ -713,6 +888,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_fishing_add_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_fishing
                     value = 100000
@@ -725,6 +902,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_fishing_remove_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_fishing
                     value = 0
@@ -737,6 +916,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_fishing_confirm_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_fishing
                     value = 100000
@@ -775,6 +956,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_privateering_add_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_privateering
                     value = 100000
@@ -787,6 +970,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_privateering_remove_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_privateering
                     value = 0
@@ -799,6 +984,8 @@ scripted_gui = {
             }
 
             mlt_tower_window_privateering_confirm_button_click_enabled = {
+                has_full_control_of_state = 116
+
                 check_variable = {
                     var = temp_manpower_privateering
                     value = 100000

@@ -157,6 +157,42 @@ privateering_calculate_convoy = {
     round_variable = temp_convoy_privateering
 }
 
+# Factories
+
+civilian_factory_calculate_percentage = {
+    set_variable = { max_civilian_factory_tower = max_building_tower }
+    multiply_variable = { max_civilian_factory_tower = 0.5 }
+    round_variable = max_civilian_factory_tower
+}
+
+military_factory_calculate_percentage = {
+    set_variable = { max_military_factory_tower = max_building_tower }
+    multiply_variable = { max_military_factory_tower = 0.45 }
+    round_variable = max_military_factory_tower
+}
+
+dockyard_calculate_percentage = {
+    set_variable = { max_dockyard_tower = max_building_tower }
+    multiply_variable = { max_dockyard_tower = 0.3 }
+    round_variable = max_dockyard_tower
+}
+
+# Population
+
+set_population_k_m_b = {
+    set_variable = { current_population_tower_k = current_population_tower_m } # / 0.001
+    divide_variable = { current_population_tower_k = 0.001 }
+    set_variable = { current_population_tower_b = current_population_tower_m } # * 0.001
+    multiply_variable = { current_population_tower_b = 0.001 }
+}
+
+set_max_population_k_m_b = {
+    set_variable = { max_population_tower_k = max_population_tower_m } # / 0.001
+    divide_variable = { max_population_tower_k = 0.001 }
+    set_variable = { max_population_tower_b = max_population_tower_m } # * 0.001
+    multiply_variable = { max_population_tower_b = 0.001 }
+}
+
 # Resources
 
 oil_calculate_price = {
@@ -199,4 +235,68 @@ chromium_calculate_price = {
     multiply_variable = { MLT.resource_price^5 = MLT.resource_inflation^5 }
     multiply_variable = { MLT.resource_price^5 = MLT.resource_discount^5 }
     round_variable = MLT.resource_price^5
+}
+
+# Modifiers
+
+increase_tower_modifier = {
+    add_to_variable = { weekly_manpower_tower_malta = 100 }
+    clamp_variable = {
+        var = weekly_manpower_tower_malta
+        min = 0
+        max = 100000
+    }
+
+    add_to_variable = { refitting_speed_tower_malta = 1 }
+    clamp_variable = {
+        var = refitting_speed_tower_malta
+        min = 0
+        max = 1000
+    }
+
+    add_to_variable = { drift_defence_factor_tower_malta = 1 }
+    clamp_variable = {
+        var = drift_defence_factor_tower_malta
+        min = 0
+        max = 1000
+    }
+
+
+    add_to_variable = { trade_opinion_factor_tower_malta = 1 }
+    clamp_variable = {
+        var = trade_opinion_factor_tower_malta
+        min = 0
+        max = 1000
+    }
+}
+
+increase_tower_puppet_modifier = {
+    add_to_variable = { share_weekly_manpower_tower_malta = 50 }
+    clamp_variable = {
+        var = share_weekly_manpower_tower_malta
+        min = 0
+        max = 50000
+    }
+
+    add_to_variable = { share_refitting_speed_tower_malta = 0.5 }
+    clamp_variable = {
+        var = share_refitting_speed_tower_malta
+        min = 0
+        max = 500
+    }
+
+    add_to_variable = { share_drift_defence_factor_tower_malta = 0.5 }
+    clamp_variable = {
+        var = share_drift_defence_factor_tower_malta
+        min = 0
+        max = 500
+    }
+
+
+    add_to_variable = { share_trade_opinion_factor_tower_malta = 0.5 }
+    clamp_variable = {
+        var = share_trade_opinion_factor_tower_malta
+        min = 0
+        max = 500
+    }
 }
