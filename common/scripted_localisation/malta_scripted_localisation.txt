@@ -67,6 +67,74 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetTowerOfMaltaManpowerPuppet
+	text = {
+		trigger = {
+			check_variable = {
+				var = share_weekly_manpower_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = PUPPET_MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = PUPPET_MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC_NOT
+	}
+}
+
+defined_text = {
+	name = GetTowerOfMaltaRequiredGarrisonPuppet
+	text = {
+		trigger = {
+			check_variable = {
+				var = share_refitting_speed_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = PUPPET_MTL_REFITTING_SPEED_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = PUPPET_MTL_REFITTING_SPEED_TOWER_MALTA_LOC_NOT
+	}
+}
+
+defined_text = {
+	name = GetTowerOfMaltaDriftDefencePuppet
+	text = {
+		trigger = {
+			check_variable = {
+				var = share_drift_defence_factor_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = PUPPET_MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = PUPPET_MTL_DRIFT_DEFENCE_TOWER_MALTA_LOC_NOT
+	}
+}
+
+defined_text = {
+	name = GetTowerOfMaltaTradeOpinionPuppet
+	text = {
+		trigger = {
+			check_variable = {
+				var = share_trade_opinion_factor_tower_malta
+				value = 0
+				compare = greater_than
+			}
+		}
+		localization_key = PUPPET_MTL_TRADE_OPINION_TOWER_MALTA_LOC
+	}
+	text = {
+		localization_key = PUPPET_MTL_TRADE_OPINION_TOWER_MALTA_LOC_NOT
+	}
+}
+
+defined_text = {
 	name = GetTowerOfMaltaNavalEfficiency
 	text = {
 		trigger = {

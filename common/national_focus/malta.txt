@@ -1266,24 +1266,27 @@ focus_tree = {
 
             add_tech_bonus = {
 				name = MLT_land_air_and_sea_tech
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 
 			add_tech_bonus = {
 				name = MLT_land_air_and_sea_tech
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 			}
 
             add_tech_bonus = {
 				name = MLT_land_air_and_sea_tech
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
+            army_experience = 25
+            air_experience = 25
+            navy_experience = 25
         }
     }
 
@@ -1989,9 +1992,9 @@ focus_tree = {
         }
     }
 
-    # The Great Crusade
+    # Master of the Mediterranean Sea
     focus = {
-        id = MLT_the_great_crusade
+        id = MLT_matser_of_mediterranean_sea
         x = 9
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
@@ -2001,14 +2004,49 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-
+    
         }
         available = {
-            has_government = neutrality
+            has_government = communism
         }
         search_filters = {  }
         completion_reward = {
-
+            create_faction = MLT_maltese_communist_faction
+            custom_effect_tooltip = unlock_unique_puppet_type
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        is_subject_of = MLT
+                        NOT = {
+                            has_autonomy_state = autonomy_tower_union
+                        }
+                    }
+                    hidden_effect = {
+                        MLT = {
+                            set_autonomy = {
+                                target = PREV
+                                autonomy_state = autonomy_tower_union
+                            }
+                        }
+                    }
+                    add_ideas = MLT_Share_tower
+                    add_dynamic_modifier = { modifier = share_tower_of_malta_modifier }
+                    set_variable = { share_weekly_manpower_tower_malta = MLT.weekly_manpower_tower_malta }
+                    multiply_variable = { share_weekly_manpower_tower_malta = 0.50 }
+                    set_variable = { share_refitting_speed_tower_malta = MLT.refitting_speed_tower_malta }
+                    multiply_variable = { share_refitting_speed_tower_malta = 0.50 }
+                    set_variable = { share_drift_defence_factor_tower_malta = MLT.drift_defence_factor_tower_malta }
+                    multiply_variable = { share_drift_defence_factor_tower_malta = 0.50 }
+                    set_variable = { share_trade_opinion_factor_tower_malta = MLT.trade_opinion_factor_tower_malta }
+                    multiply_variable = { share_trade_opinion_factor_tower_malta = 0.50 }
+                    set_variable = { loca_share_refitting_speed_tower_malta = share_refitting_speed_tower_malta }
+                    multiply_variable = { loca_share_refitting_speed_tower_malta = 100 }
+                    set_variable = { loca_share_drift_defence_factor_tower_malta = share_drift_defence_factor_tower_malta }
+                    multiply_variable = { loca_share_drift_defence_factor_tower_malta = 100 }
+                    set_variable = { loca_share_trade_opinion_factor_tower_malta = share_trade_opinion_factor_tower_malta }
+                    multiply_variable = { loca_share_trade_opinion_factor_tower_malta = 100 }
+                }
+            }
         }
     }
 
@@ -2031,30 +2069,86 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            create_faction = MLT_maltese_league_of_nations_faction
+            custom_effect_tooltip = unlock_unique_puppet_type
         }
     }
 
-    # Master of the Mediterranean Sea
+    # The Great Crusade
     focus = {
-        id = MLT_matser_of_mediterranean_sea
+        id = MLT_the_great_crusade
         x = 17
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
         icon = GFX_
         cost = 5
-        ai_will_do = {
+         ai_will_do = {
             factor = 2
         }
         bypass = {
-
+    
         }
         available = {
-            has_government = communism
+            has_government = neutrality
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = gains_claim_great_crusade
+            hidden_effect = {
+                add_state_claim = 115
+                add_state_claim = 156
+                add_state_claim = 117
+                add_state_claim = 2
+                add_state_claim = 157
+                add_state_claim = 182
+                add_state_claim = 187
+                add_state_claim = 164
+                add_state_claim = 183
+                add_state_claim = 452
+                add_state_claim = 447
+                add_state_claim = 446
+                add_state_claim = 453
+                add_state_claim = 454
+                add_state_claim = 455
+                add_state_claim = 554
+                add_state_claim = 553
+                add_state_claim = 680
+                add_state_claim = 677
+                add_state_claim = 799
+                add_state_claim = 350
+                add_state_claim = 344
+                add_state_claim = 345
+                add_state_claim = 797
+                add_state_claim = 341
+                add_state_claim = 552
+                add_state_claim = 456
+                add_state_claim = 457
+                add_state_claim = 451
+                add_state_claim = 663
+                add_state_claim = 450
+                add_state_claim = 662
+                add_state_claim = 449
+                add_state_claim = 448
+                add_state_claim = 661
+                add_state_claim = 273
+                add_state_claim = 114
+                add_state_claim = 1
+                add_state_claim = 117
+                add_state_claim = 665
+                add_state_claim = 458
+                add_state_claim = 460
+                add_state_claim = 513
+                add_state_claim = 459
+                add_state_claim = 514
+                add_state_claim = 462
+                add_state_claim = 551
+                add_state_claim = 767
+                add_state_claim = 775
+                add_state_claim = 515
+                add_state_claim = 782
+                add_state_claim = 786
+                add_state_claim = 177
+            }
         }
     }
 
@@ -2077,7 +2171,71 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = gains_claim_state_shore
+            hidden_effect = {
+                add_state_claim = 341
+                add_state_claim = 797
+                add_state_claim = 347
+                add_state_claim = 340
+                add_state_claim = 339
+                add_state_claim = 187
+                add_state_claim = 342
+                add_state_claim = 164
+                add_state_claim = 345
+                add_state_claim = 183
+                add_state_claim = 344
+                add_state_claim = 799
+                add_state_claim = 677
+                add_state_claim = 553
+                add_state_claim = 454
+                add_state_claim = 453
+                add_state_claim = 446
+                add_state_claim = 447
+                add_state_claim = 452
+                add_state_claim = 451
+                add_state_claim = 450
+                add_state_claim = 449
+                add_state_claim = 448
+                add_state_claim = 665
+                add_state_claim = 458
+                add_state_claim = 460
+                add_state_claim = 459
+                add_state_claim = 461
+                add_state_claim = 290
+                add_state_claim = 118
+                add_state_claim = 173
+                add_state_claim = 168
+                add_state_claim = 167
+                add_state_claim = 165
+                add_state_claim = 177
+                add_state_claim = 31
+                add_state_claim = 22
+                add_state_claim = 21
+                add_state_claim = 735
+                add_state_claim = 158
+                add_state_claim = 162
+                add_state_claim = 2
+                add_state_claim = 117
+                add_state_claim = 156
+                add_state_claim = 115
+                add_state_claim = 114
+                add_state_claim = 1
+                add_state_claim = 157
+                add_state_claim = 161
+                add_state_claim = 160
+                add_state_claim = 736
+                add_state_claim = 103
+                add_state_claim = 163
+                add_state_claim = 105
+                add_state_claim = 44
+                add_state_claim = 805
+                add_state_claim = 185
+                add_state_claim = 186
+                add_state_claim = 182
+                add_state_claim = 47
+                add_state_claim = 731
+                add_state_claim = 184
+            }
         }
     }
 
@@ -2086,7 +2244,7 @@ focus_tree = {
         id = MLT_protectors_of_all_seas
         x = 11
         y = 25
-        prerequisite = { focus = MLT_the_great_crusade focus = MLT_maltese_league_of_nations }
+        prerequisite = { focus = MLT_matser_of_mediterranean_sea focus = MLT_maltese_league_of_nations }
         icon = GFX_
         cost = 5
         ai_will_do = {
@@ -2100,7 +2258,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = unlock_decision_faction_expansion
         }
     }
 
@@ -2109,7 +2267,7 @@ focus_tree = {
         id = MLT_greater_malta
         x = 19
         y = 25
-        prerequisite = { focus = MLT_matser_of_mediterranean_sea focus = MLT_master_of_shores }
+        prerequisite = { focus = MLT_the_great_crusade focus = MLT_master_of_shores }
         icon = GFX_
         cost = 5
         ai_will_do = {
@@ -2123,7 +2281,26 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = unlocks_decision_core_claim
+            custom_effect_tooltip = small_debuff_national_spirit_claims
+            every_country = {
+                limit = {
+                    NOT = {
+                        TAG = MLT
+                        is_in_faction_with = MLT
+                        is_subject_of = MLT
+                    }
+                    OR = {
+                        any_owned_state = {
+                            is_claimed_by = MLT
+                        }
+                        any_controlled_state = {
+                            is_claimed_by = MLT
+                        }
+                    }
+                }
+                country_event = { id = malta.20 }
+            }
         }
     }
 
