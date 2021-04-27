@@ -49,15 +49,15 @@ add_ideas = MLT_Independence_movements
 
 # Tower stuff
 # Modifier
-set_variable = { weekly_manpower_tower_malta = 10 }
+set_variable = { weekly_manpower_tower_malta = 0 }
 set_variable = { loca_weekly_manpower_tower_malta = weekly_manpower_tower_malta }
-set_variable = { refitting_speed_tower_malta = 0.01 }
+set_variable = { refitting_speed_tower_malta = 0 }
 set_variable = { loca_refitting_speed_tower_malta = refitting_speed_tower_malta }
 multiply_variable = { loca_refitting_speed_tower_malta = 100 }
-set_variable = { drift_defence_factor_tower_malta = 0.01 }
+set_variable = { drift_defence_factor_tower_malta = 0 }
 set_variable = { loca_drift_defence_factor_tower_malta = drift_defence_factor_tower_malta }
 multiply_variable = { loca_drift_defence_factor_tower_malta = 100 }
-set_variable = { trade_opinion_factor_tower_malta = 0.01 }
+set_variable = { trade_opinion_factor_tower_malta = 0 }
 set_variable = { loca_trade_opinion_factor_tower_malta = trade_opinion_factor_tower_malta }
 multiply_variable = { loca_trade_opinion_factor_tower_malta = 100 }
 
