@@ -236,3 +236,67 @@ chromium_calculate_price = {
     multiply_variable = { MLT.resource_price^5 = MLT.resource_discount^5 }
     round_variable = MLT.resource_price^5
 }
+
+# Modifiers
+
+increase_tower_modifier = {
+    add_to_variable = { weekly_manpower_tower_malta = 100 }
+    clamp_variable = {
+        var = weekly_manpower_tower_malta
+        min = 0
+        max = 100000
+    }
+
+    add_to_variable = { refitting_speed_tower_malta = 1 }
+    clamp_variable = {
+        var = refitting_speed_tower_malta
+        min = 0
+        max = 1000
+    }
+
+    add_to_variable = { drift_defence_factor_tower_malta = 1 }
+    clamp_variable = {
+        var = drift_defence_factor_tower_malta
+        min = 0
+        max = 1000
+    }
+
+
+    add_to_variable = { trade_opinion_factor_tower_malta = 1 }
+    clamp_variable = {
+        var = trade_opinion_factor_tower_malta
+        min = 0
+        max = 1000
+    }
+}
+
+increase_tower_puppet_modifier = {
+    add_to_variable = { share_weekly_manpower_tower_malta = 50 }
+    clamp_variable = {
+        var = share_weekly_manpower_tower_malta
+        min = 0
+        max = 50000
+    }
+
+    add_to_variable = { share_refitting_speed_tower_malta = 0.5 }
+    clamp_variable = {
+        var = share_refitting_speed_tower_malta
+        min = 0
+        max = 500
+    }
+
+    add_to_variable = { share_drift_defence_factor_tower_malta = 0.5 }
+    clamp_variable = {
+        var = share_drift_defence_factor_tower_malta
+        min = 0
+        max = 500
+    }
+
+
+    add_to_variable = { share_trade_opinion_factor_tower_malta = 0.5 }
+    clamp_variable = {
+        var = share_trade_opinion_factor_tower_malta
+        min = 0
+        max = 500
+    }
+}

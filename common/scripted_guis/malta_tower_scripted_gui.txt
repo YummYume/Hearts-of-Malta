@@ -6,6 +6,7 @@ scripted_gui = {
         visible = {
             original_tag = MLT
             has_country_flag = mlt_custom_gui_tower_opened
+            has_full_control_of_state = 116
         }
 
         properties = {
@@ -27,6 +28,8 @@ scripted_gui = {
                 military_factory_calculate_percentage = yes
                 dockyard_calculate_percentage = yes
                 set_max_population_k_m_b = yes
+                increase_tower_modifier = yes
+                increase_tower_puppet_modifier = yes
             }
 
             mlt_tower_window_civilian_factory_purchase_click = {
