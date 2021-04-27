@@ -394,31 +394,31 @@ country_event = {
     }
 }
 
-# 20th Event
+#Countries that holds A claim of Malta
 country_event = {
     id = malta.20
     title = malta.20.t
     desc = malta.20.d
-    picture = GFX_
+    picture = GFX_report_event_fascist_gathering
 
     is_triggered_only = yes
 
-    # How did we fucked up this badly ?
+    #We're in Troubles
     option = {
-        name = malta.20.a
+        name = malta.29.a
         ai_chance = {
             factor = 100
         }
-
+        add_ideas = MLT_Maltese_claims
     }
 }
 
-# 21th Event
+#Malta Offer Alliance
 country_event = {
     id = malta.21
     title = malta.21.t
     desc = malta.21.d
-    picture = GFX_
+    picture = GFX_report_event_generic_sign_treaty2
 
     is_triggered_only = yes
 
@@ -426,66 +426,91 @@ country_event = {
     option = {
         name = malta.21.a
         ai_chance = {
-            factor = 100
+            factor = 80
         }
+        MLT = {
+            country_event = { id = malta.22 days = 1 }
+        }
+    }
 
+    # No business with them
+    option = {
+        name = malta.21.b
+        ai_chance = {
+            factor = 20
+        }
+        MLT = {
+            country_event = { id = malta.23 days = 1 }
+        }
     }
 }
 
-# 22th Event
+#FROM Accepts to join Us
 country_event = {
     id = malta.22
     title = malta.22.t
     desc = malta.22.d
-    picture = GFX_
+    picture = GFX_report_event_japanese_chinese_surrender
 
     is_triggered_only = yes
 
-    # How did we fucked up this badly ?
+    # Welcome to the Faction !
     option = {
         name = malta.22.a
         ai_chance = {
             factor = 100
         }
-
+        MLT = {
+            add_to_faction = FROM
+        }
+        if = {
+            limit = {
+                MLT = {
+                    has_government = democratic
+                }
+            }
+            FROM = {
+                add_ideas = MLT_Trade_partners
+            }
+        }
     }
 }
 
-# 23th Event
+#FROM Refuse
 country_event = {
     id = malta.23
     title = malta.23.t
     desc = malta.23.d
-    picture = GFX_
+    picture = GFX_report_event_poland_rejects
 
     is_triggered_only = yes
 
-    # How did we fucked up this badly ?
+    #that's their choice
     option = {
         name = malta.23.a
         ai_chance = {
             factor = 100
         }
-
     }
 }
 
-# 24th Event
+#hidden Event to give natrional Spirit to countries who weren't invited via the decision
 country_event = {
     id = malta.24
-    title = malta.24.t
-    desc = malta.24.d
-    picture = GFX_
 
-    is_triggered_only = yes
-
-    # How did we fucked up this badly ?
-    option = {
-        name = malta.24.a
-        ai_chance = {
-            factor = 100
+    trigger = {
+        any_country = {
+            is_in_faction_with = MLT
+            NOT = {
+                TAG = MLT
+                has_idea = MLT_Trade_partners
+            }
+            has_government = democratic
         }
+    }
 
+    immediate = {
+        add_ideas = MLT_Trade_partners
     }
 }
 

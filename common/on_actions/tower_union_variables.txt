@@ -1,0 +1,35 @@
+on_actions = {
+
+	#MLT Puppet Tower Union
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = MLT
+						has_completed_focus = MLT_matser_of_mediterranean_sea
+						has_government = communism
+					}
+				}
+				ROOT = {
+					add_ideas = MLT_Share_tower
+                    add_dynamic_modifier = { modifier = share_tower_of_malta_modifier }
+                    set_variable = { share_weekly_manpower_tower_malta = MLT.weekly_manpower_tower_malta }
+                    multiply_variable = { share_weekly_manpower_tower_malta = 0.50 }
+                    set_variable = { share_refitting_speed_tower_malta = MLT.refitting_speed_tower_malta }
+                    multiply_variable = { share_refitting_speed_tower_malta = 0.50 }
+                    set_variable = { share_drift_defence_factor_tower_malta = MLT.drift_defence_factor_tower_malta }
+                    multiply_variable = { share_drift_defence_factor_tower_malta = 0.50 }
+                    set_variable = { share_trade_opinion_factor_tower_malta = MLT.trade_opinion_factor_tower_malta }
+                    multiply_variable = { share_trade_opinion_factor_tower_malta = 0.50 }
+                    set_variable = { loca_share_refitting_speed_tower_malta = share_refitting_speed_tower_malta }
+                    multiply_variable = { loca_share_refitting_speed_tower_malta = 100 }
+                    set_variable = { loca_share_drift_defence_factor_tower_malta = share_drift_defence_factor_tower_malta }
+                    multiply_variable = { loca_share_drift_defence_factor_tower_malta = 100 }
+                    set_variable = { loca_share_trade_opinion_factor_tower_malta = share_trade_opinion_factor_tower_malta }
+                    multiply_variable = { loca_share_trade_opinion_factor_tower_malta = 100 }
+				}
+			}
+		}
+	}
+}

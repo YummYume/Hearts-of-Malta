@@ -192,5 +192,91 @@ ideas = {
                 custom_modifier_tooltip = Tower_of_malta_tt
             }
         }
+
+        MLT_Maltese_claims = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            cancel = {
+                NOT = {
+                    any_state = {
+                        is_owned_by = ROOT
+                        is_controlled_by = ROOT
+                        is_claimed_by = MLT
+                    }
+                }
+            }
+
+            picture = no_picture
+
+            targeted_modifier = {
+                tag = MLT
+                attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+            }
+        }
+
+        MLT_The_great_crusade = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                generate_wargoal_tension = -0.5
+                justify_war_goal_time = -0.75
+                compliance_growth = 0.25
+                resistance_decay = 0.25
+            }
+        }
+
+        MLT_Trade_partners = {
+
+            removal_cost = -1
+
+            cancel = {
+                NOT = {
+                    is_in_faction_with = MLT
+                }
+            }
+
+            allowed = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                trade_opinion_factor = 1
+                min_export = 0.1
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+            }
+        }
+
+        MLT_Share_tower = {
+
+            removal_cost = -1
+
+            cancel = {
+                NOT = {
+                    is_in_faction_with = MLT
+                }
+            }
+
+            allowed = {
+                always = yes
+            }
+
+            picture = no_picture
+        }
     }
 }
