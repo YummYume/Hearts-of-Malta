@@ -501,6 +501,9 @@ country_event = {
     id = malta.24
 
     trigger = {
+        MLT = {
+            has_completed_focus = MLT_maltese_league_of_nations
+        }
         any_country = {
             is_in_faction_with = MLT
             NOT = {
@@ -510,6 +513,8 @@ country_event = {
             has_government = democratic
         }
     }
+
+    mean_time_to_happen = { days = 10 }
 
     hidden = yes
 
@@ -521,19 +526,47 @@ country_event = {
 # 25th Event
 country_event = {
     id = malta.25
-    title = malta.25.t
-    desc = malta.25.d
-    picture = GFX_
 
-    is_triggered_only = yes
-
-    # How did we fucked up this badly ?
-    option = {
-        name = malta.25.a
-        ai_chance = {
-            factor = 100
+    trigger = {
+        MLT = {
+            has_completed_focus = MLT_matser_of_mediterranean_sea
         }
+        any_country = {
+            is_subject_of = MLT
+            NOT = {
+                TAG = MLT
+                has_idea = MLT_Share_tower
+                has_dynamic_modifier = {
+                    modifier = share_tower_of_malta_modifier
+                }
+            }
+            has_government = communism
+        }
+    }
 
+    mean_time_to_happen = { days = 10 }
+
+    hidden = yes
+
+    immediate = {
+        every_country = {
+            limit = {
+                is_subject_of = MLT
+                NOT = {
+                    has_idea = MLT_Share_tower
+                }
+            }
+            add_ideas = MLT_Share_tower
+            add_dynamic_modifier = { modifier = share_tower_of_malta_modifier }
+            set_variable = { share_weekly_manpower_tower_malta = MLT.weekly_manpower_tower_malta }
+            multiply_variable = { share_weekly_manpower_tower_malta = 0.50 }
+            set_variable = { share_refitting_speed_tower_malta = MLT.refitting_speed_tower_malta }
+            multiply_variable = { share_refitting_speed_tower_malta = 0.50 }
+            set_variable = { share_drift_defence_factor_tower_malta = MLT.drift_defence_factor_tower_malta }
+            multiply_variable = { share_drift_defence_factor_tower_malta = 0.50 }
+            set_variable = { share_trade_opinion_factor_tower_malta = MLT.trade_opinion_factor_tower_malta }
+            multiply_variable = { share_trade_opinion_factor_tower_malta = 0.50 }
+        }
     }
 }
 

@@ -22,12 +22,6 @@ on_actions = {
                     multiply_variable = { share_drift_defence_factor_tower_malta = 0.50 }
                     set_variable = { share_trade_opinion_factor_tower_malta = MLT.trade_opinion_factor_tower_malta }
                     multiply_variable = { share_trade_opinion_factor_tower_malta = 0.50 }
-                    set_variable = { loca_share_refitting_speed_tower_malta = share_refitting_speed_tower_malta }
-                    multiply_variable = { loca_share_refitting_speed_tower_malta = 100 }
-                    set_variable = { loca_share_drift_defence_factor_tower_malta = share_drift_defence_factor_tower_malta }
-                    multiply_variable = { loca_share_drift_defence_factor_tower_malta = 100 }
-                    set_variable = { loca_share_trade_opinion_factor_tower_malta = share_trade_opinion_factor_tower_malta }
-                    multiply_variable = { loca_share_trade_opinion_factor_tower_malta = 100 }
 				}
 			}
 		}
