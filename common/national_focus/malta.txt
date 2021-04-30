@@ -1685,7 +1685,7 @@ focus_tree = {
         search_filters = {  }
         completion_reward = {
             ITA = {
-                country_event = {id = malta.29 days = 1 }
+                country_event = {id = malta.33 days = 1 }
             }
         }
     }
@@ -1722,7 +1722,7 @@ focus_tree = {
         search_filters = {  }
         completion_reward = {
             FRA = {
-                country_event = {id = malta.29 days = 1 }
+                country_event = {id = malta.33 days = 1 }
             }
         }
     }
@@ -1756,7 +1756,7 @@ focus_tree = {
         search_filters = {  }
         completion_reward = {
             GER = {
-                country_event = {id = malta.29 days = 1 }
+                country_event = {id = malta.33 days = 1 }
             }
         }
     }
@@ -1824,7 +1824,7 @@ focus_tree = {
                     }
                     50 = {
                         LUX = {
-                            country_event = {id = malta.32 days = 7 }
+                            country_event = {id = malta.36 days = 7 }
                         }
                     }
                 }
@@ -1861,7 +1861,7 @@ focus_tree = {
                     }
                     50 = {
                         BHU = {
-                            country_event = {id = malta.32 days = 7 }
+                            country_event = {id = malta.36 days = 7 }
                         }
                     }
                 }
@@ -1898,7 +1898,7 @@ focus_tree = {
                     }
                     50 = {
                         ELS = {
-                            country_event = {id = malta.32 days = 7 }
+                            country_event = {id = malta.36 days = 7 }
                         }
                     }
                 }
