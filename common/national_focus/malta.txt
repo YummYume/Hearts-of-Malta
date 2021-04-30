@@ -256,7 +256,7 @@ focus_tree = {
         x = 25
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
-        icon = GFX_
+        icon = GFX_goal_generic_forceful_treaty
         cost = 5
         ai_will_do = {
             factor = 20
@@ -625,7 +625,7 @@ focus_tree = {
         x = 6
         y = 7
         prerequisite = { focus = MLT_first_floor }
-        icon = GFX_
+        icon = GFX_goal_generic_fortify_city
         cost = 5
         ai_will_do = {
             factor = 2
@@ -655,7 +655,7 @@ focus_tree = {
         x = 4
         y = 8
         prerequisite = { focus = MLT_mediterranean_bastion }
-        icon = GFX_
+        icon = GFX_goal_generic_construct_military
         cost = 5
         ai_will_do = {
             factor = 2
@@ -685,7 +685,7 @@ focus_tree = {
         x = 4
         y = 9
         prerequisite = { focus = MLT_floating_fortress }
-        icon = GFX_
+        icon = GFX_goal_generic_radar
         cost = 5
         ai_will_do = {
             factor = 2
@@ -714,7 +714,7 @@ focus_tree = {
         x = 8
         y = 8
         prerequisite = { focus = MLT_mediterranean_bastion }
-        icon = GFX_
+        icon = GFX_focus_generic_coastal_fort
         cost = 5
         ai_will_do = {
             factor = 2
@@ -744,7 +744,7 @@ focus_tree = {
         x = 8
         y = 9
         prerequisite = { focus = MLT_shores_of_malta }
-        icon = GFX_
+        icon = GFX_goal_generic_military_sphere
         cost = 5
         ai_will_do = {
             factor = 2
@@ -780,7 +780,7 @@ focus_tree = {
         x = 6
         y = 10
         prerequisite = { focus = MLT_air_denial focus = MLT_where_none_shall_land }
-        icon = GFX_
+        icon = GFX_focus_generic_provoke_border_clashes
         cost = 5
         ai_will_do = {
             factor = 2
@@ -808,7 +808,7 @@ focus_tree = {
         x = 25
         y = 7
         prerequisite = { focus = MLT_first_floor }
-        icon = GFX_
+        icon = GFX_focus_eng_decolonization
         cost = 5
         ai_will_do = {
             factor = 2
@@ -832,7 +832,7 @@ focus_tree = {
         y = 8
         prerequisite = { focus = MLT_colonial_question }
 	mutually_exclusive = { focus = MLT_loayal_malta }
-        icon = GFX_
+        icon = GFX_focus_eng_move_to_secure_the_dominions
         cost = 5
         ai_will_do = {
             factor = 2
@@ -856,7 +856,7 @@ focus_tree = {
         y = 9
         prerequisite = { focus = MLT_free_malta }
 	mutually_exclusive = { focus = MLT_seek_new_friendships }
-        icon = GFX_
+        icon = GFX_focus_chi_british_cooperation
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1249,7 +1249,7 @@ focus_tree = {
         x = 6
         y = 16
         prerequisite = { focus = MLT_fiftieth_floor }
-        icon = GFX_
+        icon = GFX_focus_generic_license_production
         cost = 10
         ai_will_do = {
             factor = 2
@@ -1298,7 +1298,7 @@ focus_tree = {
         prerequisite = { focus = MLT_land_air_and_sea }
 	    mutually_exclusive = { focus = MLT_maltese_elite_paratroopers }
 	    mutually_exclusive = { focus = MLT_maltese_elite_marines }
-        icon = GFX_
+        icon = GFX_goal_generic_special_forces
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1355,7 +1355,7 @@ focus_tree = {
         prerequisite = { focus = MLT_land_air_and_sea }
 	    mutually_exclusive = { focus = MLT_maltese_elite_mountaineers }
 	    mutually_exclusive = { focus = MLT_maltese_elite_marines }
-        icon = GFX_
+        icon = GFX_focus_generic_paratrooper
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1412,7 +1412,7 @@ focus_tree = {
         prerequisite = { focus = MLT_land_air_and_sea }
 	    mutually_exclusive = { focus = MLT_maltese_elite_mountaineers }
 	    mutually_exclusive = { focus = MLT_maltese_elite_paratroopers }
-        icon = GFX_
+        icon = GFX_goal_generic_amphibious_assault
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1507,7 +1507,7 @@ focus_tree = {
         x = 3
         y = 19
         prerequisite = { focus = MLT_protectors_of_the_towers }
-        icon = GFX_
+        icon = GFX_goal_generic_allies_build_infantry
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1547,7 +1547,7 @@ focus_tree = {
         x = 6
         y = 19
         prerequisite = { focus = MLT_protectors_of_the_towers }
-        icon = GFX_
+        icon = GFX_goal_generic_navy_battleship
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1587,7 +1587,7 @@ focus_tree = {
         x = 9
         y = 19
         prerequisite = { focus = MLT_protectors_of_the_towers }
-        icon = GFX_
+        icon = GFX_goal_generic_air_fighter
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1627,7 +1627,7 @@ focus_tree = {
         x = 25
         y = 16
         prerequisite = { focus = MLT_fiftieth_floor }
-        icon = GFX_
+        icon = GFX_focus_generic_diplomatic_treaty
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1650,7 +1650,7 @@ focus_tree = {
         x = 22
         y = 17
         prerequisite = { focus = MLT_foreign_politics }
-        icon = GFX_
+        icon = GFX_focus_befriend_italy
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1676,7 +1676,7 @@ focus_tree = {
         x = 25
         y = 17
         prerequisite = { focus = MLT_foreign_politics }
-        icon = GFX_
+        icon = GFX_focus_chi_reach_out_to_france
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1699,7 +1699,7 @@ focus_tree = {
         x = 28
         y = 17
         prerequisite = { focus = MLT_foreign_politics }
-        icon = GFX_
+        icon = GFX_focus_chi_mission_to_germany
         cost = 5
         ai_will_do = {
             factor = 2
@@ -1722,7 +1722,7 @@ focus_tree = {
         x = 25
         y = 18
         prerequisite = { focus = MLT_approach_italy focus = MLT_approach_france focus = MLT_approach_germany }
-        icon = GFX_
+        icon = GFX_focus_hol_the_foundations_of_defense
         cost = 5
         ai_will_do = {
             factor = 2
@@ -2317,7 +2317,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            add_ideas = MLT_Bright_future
         }
     }
 }

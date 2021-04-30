@@ -523,7 +523,7 @@ country_event = {
     }
 }
 
-# 25th Event
+#Hidden Event to give subjects of Malta variables value and ideas for communist Malta
 country_event = {
     id = malta.25
 

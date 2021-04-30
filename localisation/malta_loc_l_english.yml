@@ -162,7 +162,7 @@
  MLT_matser_of_mediterranean_sea_desc:0 ""
  MLT_master_of_shores:0 "Master of the Shores"
  MLT_master_of_shores_desc:0 ""
- gains_claim_state_shore:0 "Gains §Yclaim§! on all the §Ystates§! that has a shore in §Ythe Mediterranean! !"
+ gains_claim_state_shore:0 "Gains §Yclaim§! on all the §Ystates§! that has a shore in §Ythe Mediterranean§! !"
  MLT_protectors_of_all_seas:0 "Protectors of All Seas"
  MLT_protectors_of_all_seas_desc:0 ""
  unlock_decision_faction_expansion:0 "£decision_icon_small Unlock Decisions : §YExpansion of the Faction§!"
@@ -299,6 +299,8 @@
  MLT_Trade_partners_desc:0 ""
  MLT_Share_tower:0 "Share of the Tower"
  MLT_Share_tower_desc:0 "[ROOT.GetTowerOfMaltaManpowerPuppet]\n[ROOT.GetTowerOfMaltaRequiredGarrisonPuppet]\n[ROOT.GetTowerOfMaltaDriftDefencePuppet]\n[ROOT.GetTowerOfMaltaTradeOpinionPuppet]"
+ MLT_Bright_future:0 "A Bright Future"
+ MLT_Bright_future_desc:0 ""
 
  #Decisions
  MLT_tower_of_malta:0 "The Tower of Malta"

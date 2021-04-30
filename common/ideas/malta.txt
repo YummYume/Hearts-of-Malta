@@ -164,12 +164,9 @@ ideas = {
             picture = no_picture
 
             modifier = {
-                army_attack_factor = 0.15
-                army_defence_factor = 0.15
-                army_speed_factor = 0.25
-                intel_network_gain = 0.3
-                occupation_cost = -0.4
-                recon_factor = 0.1
+                land_night_attack = 0.1
+                invasion_preparation = -0.2
+                amphibious_invasion = 0.3
                 conscription = 0.02
             }
         }
@@ -277,6 +274,32 @@ ideas = {
             }
 
             picture = no_picture
+        }
+
+        MLT_Bright_future = {
+
+            removal_cost = -1
+
+            cancel = {
+                NOT = {
+                    is_in_faction_with = MLT
+                }
+            }
+
+            allowed = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                army_attack_factor = 0.15
+                army_defence_factor = 0.15
+                army_speed_factor = 0.25
+                intel_network_gain = 0.3
+                occupation_cost = -0.4
+                recon_factor = 0.1
+            }
         }
     }
 }
