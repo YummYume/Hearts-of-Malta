@@ -465,6 +465,20 @@ country_event = {
         MLT = {
             add_to_faction = FROM
         }
+        FROM = {
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 500
+            }
+        }
+        MLT = {
+            add_ai_strategy = {
+                type = alliance
+                id = FROM
+                value = 500
+            }
+        }
         if = {
             limit = {
                 MLT = {
@@ -1092,6 +1106,198 @@ country_event = {
         }
         else = {
             custom_effect_tooltip = MLT_cannot_relaunch_privateering_mission
+        }
+    }
+}
+
+#Malta Wants an Alliance
+country_event = {
+    id = malta.29
+    title = malta.29.t
+    desc = malta.29.d
+    picture = GFX_report_event_ast_transfer_singapore
+
+    is_triggered_only = yes
+
+    #Accept
+    option = {
+        name = malta.29.a
+        ai_chance = {
+            factor = 80
+        }
+        MLT = {
+            country_event = { id = malta.30 days = 1 }
+        }
+        if = {
+            limit = {
+                OR = {
+                    TAG = LUX
+                    TAG = BHU
+                    TAG = ELS
+                }
+            }
+            add_ideas = MLT_Maltese_cooperation
+        }
+    }
+
+    #Refuse
+    option = {
+        name = malta.29.b
+        ai_chance = {
+            factor = 20
+        }
+        MLT = {
+            country_event = { id = malta.31 days = 1 }
+        }
+    }
+}
+
+#FROM Accept
+country_event = {
+    id = malta.30
+    title = malta.30.t
+    desc = malta.30.d
+    picture = GFX_report_event_bul_boris_with_hitler
+
+    is_triggered_only = yes
+
+    #Great ! 
+    option = {
+        name = malta.30.a
+        ai_chance = {
+            factor = 100
+        }
+        if = {
+            limit = {
+                FROM = {
+                    is_faction_leader = yes
+                }
+            }
+            FROM = {
+                add_to_faction = MLT
+            }
+        }
+        else_if = {
+            limit = {
+                MLT = {
+                    is_faction_leader = yes
+                }
+            }
+            MLT = {
+                add_to_faction = FROM
+            }
+        }
+        else = {
+            MLT = {
+                create_faction = MLT_mediterranean_sphere
+            }
+            MLT = {
+                add_to_faction = FROM
+            }
+        }
+        FROM = {
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 500
+            }
+        }
+        MLT = {
+            add_ai_strategy = {
+                type = alliance
+                id = FROM
+                value = 500
+            }
+        }
+    }
+}
+
+#FROM Refuse
+country_event = {
+    id = malta.31
+    title = malta.31.t
+    desc = malta.31.d
+    picture = GFX_report_event_poland_rejects
+
+    is_triggered_only = yes
+
+    #Damn
+    option = {
+        name = malta.31.a
+        ai_chance = {
+            factor = 100
+        }
+    }
+}
+
+#Hidden Event for the Lost transmission
+country_event = {
+    id = malta.32
+
+    hidden = yes
+
+    is_triggered_only = yes
+
+    #We have to send it again
+    immediate = {
+        MLT = {
+            country_event = { id = malta.33 days = 1 }
+        }
+    }
+}
+
+#Lost Transmission
+country_event = {
+    id = malta.33
+    title = malta.33.t
+    desc = malta.33.d
+    picture = GFX_report_event_poland_rejects
+
+    is_triggered_only = yes
+
+    #We have to send it again
+    option = {
+        name = malta.33.a
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            FROM = {
+                country_event = { id = malta.34 days = 7 }
+            }
+        }
+    }
+}
+
+#Malta Wants an Alliance - 3 Minors Edition
+country_event = {
+    id = malta.34
+    title = malta.34.t
+    desc = malta.34.d
+    picture = GFX_report_event_ast_transfer_singapore
+
+    is_triggered_only = yes
+
+    #Accept
+    option = {
+        name = malta.34.a
+        ai_chance = {
+            factor = 80
+        }
+        MLT = {
+            country_event = { id = malta.30 days = 1 }
+        }
+        add_ideas = MLT_Maltese_cooperation
+    }
+
+    #Refuse
+    option = {
+        name = malta.34.b
+        ai_chance = {
+            factor = 20
+        }
+        MLT = {
+            country_event = { id = malta.31 days = 1 }
         }
     }
 }

@@ -1636,7 +1636,7 @@ focus_tree = {
 
         }
         available = {
-
+            is_subject = no
         }
         search_filters = {  }
         completion_reward = {
@@ -1656,9 +1656,27 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-
+            has_government = communism
+            NOT = {
+                ITA = {
+                    OR = {
+                        has_government = fascism
+                        has_government = neutrality
+                    }
+                }
+            }
         }
         available = {
+            OR = {
+                is_in_faction = no
+                is_faction_leader = yes
+            }
+            ITA = {
+                OR = {
+                    has_government = fascism
+                    has_government = neutrality
+                }
+            }
             OR = {
                 has_government = neutrality
                 has_government = fascism
@@ -1666,7 +1684,9 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            ITA = {
+                country_event = {id = malta.29 days = 1 }
+            }
         }
     }
 
@@ -1682,14 +1702,28 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-
+            has_government = communism
+            NOT = {
+                FRA = {
+                    has_government = democratic
+                }
+            }
         }
         available = {
+            OR = {
+                is_in_faction = no
+                is_faction_leader = yes
+            }
             has_government = democratic
+            FRA = {
+                has_government = democratic
+            }
         }
         search_filters = {  }
         completion_reward = {
-
+            FRA = {
+                country_event = {id = malta.29 days = 1 }
+            }
         }
     }
 
@@ -1705,14 +1739,25 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-
+            has_government = communism
+            NOT = {
+                GER = {
+                    has_government = fascism
+                }
+            }
         }
         available = {
+            is_in_faction = no
             has_government = fascism
+            GER = {
+                has_government = fascism
+            }
         }
         search_filters = {  }
         completion_reward = {
-
+            GER = {
+                country_event = {id = malta.29 days = 1 }
+            }
         }
     }
 
@@ -1731,11 +1776,22 @@ focus_tree = {
 
         }
         available = {
-
+            OR = {
+                is_in_faction = no
+                is_faction_leader = yes
+            }
         }
         search_filters = {  }
         completion_reward = {
-
+            if = {
+                limit = {
+                    is_faction_leader = yes
+                }
+                set_faction_name = MLT_mediteranean_accord
+            }
+            else = {
+                create_faction = MLT_mediteranean_accord
+            }
         }
     }
 
@@ -1758,7 +1814,21 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = send_transmission_takes_time_lux
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        LUX = {
+                            country_event = {id = malta.34 days = 7 }
+                        }
+                    }
+                    50 = {
+                        LUX = {
+                            country_event = {id = malta.32 days = 7 }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1781,7 +1851,21 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = send_transmission_takes_time_bhu
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        BHU = {
+                            country_event = {id = malta.34 days = 7 }
+                        }
+                    }
+                    50 = {
+                        BHU = {
+                            country_event = {id = malta.32 days = 7 }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1804,7 +1888,21 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            custom_effect_tooltip = send_transmission_takes_time_els
+            hidden_effect = {
+                random_list = {
+                    50 = {
+                        ELS = {
+                            country_event = {id = malta.34 days = 7 }
+                        }
+                    }
+                    50 = {
+                        ELS = {
+                            country_event = {id = malta.32 days = 7 }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -2011,7 +2109,15 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            create_faction = MLT_maltese_communist_faction
+            if = {
+                limit = {
+                    is_faction_leader = yes
+                }
+                set_faction_name = MLT_maltese_communist_faction
+            }
+            else = {
+                create_faction = MLT_maltese_communist_faction
+            }
             custom_effect_tooltip = unlock_unique_puppet_type
             hidden_effect = {
                 every_country = {
@@ -2063,7 +2169,15 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            create_faction = MLT_maltese_league_of_nations_faction
+            if = {
+                limit = {
+                    is_faction_leader = yes
+                }
+                set_faction_name = MLT_maltese_league_of_nations_faction
+            }
+            else = {
+                create_faction = MLT_maltese_league_of_nations_faction
+            }
             custom_effect_tooltip = unlock_unique_puppet_type
         }
     }

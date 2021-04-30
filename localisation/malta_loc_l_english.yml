@@ -132,10 +132,13 @@
  MLT_seek_more_useful_allies_desc:0 ""
  MLT_approach_luxembourg:0 "Approach [LUX.GetNameDef]"
  MLT_approach_luxembourg_desc:0 ""
+ send_transmission_takes_time_lux:0 "We will send a §Ytransmission to the government§! of §Y[LUX.GetNameDef]§!, it will take §Rsome day§! to §Yarrive§!."
  MLT_approach_bhutan:0 "Approach [BHU.GetNameDef]"
  MLT_approach_bhutan_desc:0 ""
+ send_transmission_takes_time_bhu:0 "We will send a §Ytransmission to the government§! of §Y[BHU.GetNameDef]§!, it will take §Rsome day§! to §Yarrive§!."
  MLT_approach_elsalvador:0 "Approach [ELS.GetNameDef]"
  MLT_approach_elsalvador_desc:0 ""
+ send_transmission_takes_time_els:0 "We will send a §Ytransmission to the government§! of §Y[ELS.GetNameDef]§!, it will take §Rsome day§! to §Yarrive§!."
  MLT_invest_elevator_music:0 "Invest in Elevator Music..."
  MLT_invest_elevator_music_desc:0 ""
  MLT_invest_in_jetpacks:0 "Or in Jetpacks"
@@ -172,6 +175,8 @@
  small_debuff_national_spirit_claims:0 "Any §Ycountries§! who is not a §Ysubject§! or in §Yfactrion§! holding our §Yclaims§! will receive a §Rsmall debuff§! against us"
  MLT_bright_future:0 "A Bright Future"
  MLT_bright_future_desc:0 ""
+ MLT_Maltese_cooperation:0 "Maltese Cooperation"
+ MLT_Maltese_cooperation_desc:0 ""
 
  #Events
  malta.1.t:0 "Maltese Awakening"
@@ -272,6 +277,23 @@
  MLT_relaunch_privateering_mission:0 "Relaunch §BPrivateering Mission§! with §Y[?temp_manpower_privateering] Manpower§!, using §Y[?temp_convoy_privateering] Convoys§!."
  MLT_cannot_relaunch_privateering_mission:0 "§RCannot relaunch Privateering Mission.?!"
  MLT_gain_naval_efficiency:0 "Gains §G3%§! §YNaval Effiency§!"
+ malta.29.t:0 "[MLT.GetNameDefCap] Wants to Fromalize an Alliance"
+ malta.29.d:0 ""
+ malta.29.a:0 "We shall protect them"
+ malta.29.b:0 "There is no place for them"
+ malta.30.t:0 "[FROM.GetNameDefCap] Accept !"
+ malta.30.d:0 ""
+ malta.30.a:0 "Great !"
+ malta.31.t:0 "[FROM.GetNameDefCap] Refuse !"
+ malta.31.d:0 ""
+ malta.31.a:0 "Damn it !"
+ malta.33.t:0 "Lost Transmission for [FROM.GetNameDef]"
+ malta.33.d:0 ""
+ malta.33.a:0 "We have to send it again"
+ malta.34.t:0 "[MLT.GetNameDefCap] Wants to Fromalize an Alliance"
+ malta.34.d:0 ""
+ malta.34.a:0 "Together we are stronger !"
+ malta.34.b:0 "We would rather join someone stronger"
 
  #Ideas
  MLT_Independence_movements:0 "Independence Movements"
@@ -409,6 +431,8 @@
 #Faction
  MLT_maltese_league_of_nations_faction:0 "Maltese League of Nations"
  MLT_maltese_communist_faction:0 "Mediterranean Union"
+ MLT_mediteranean_accord:0 "Mediterranean Accord"
+ MLT_mediterranean_sphere:0 "Maltese Sphere"
 
 #cosmetic Tag
  MEDE:0 "Mediterranean Empire"
