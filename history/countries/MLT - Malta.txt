@@ -82,6 +82,9 @@ set_variable = { food_currency = 0 }
 set_variable = { jewelry_currency = 0 }
 set_variable = { diamond_currency = 0 }
 set_variable = { bitcoin_currency = 0 } # Not displayed in the GUI but still a currency
+set_variable = { coastal_raid_bitcoin = 0 }
+set_variable = { fishing_bitcoin = 0 }
+set_variable = { privateering_bitcoin = 0 }
 set_variable = { max_currency = 10000 } # Not used (may use later)
 set_variable = { mission_naval_efficiency = 0.5 } #50% - 200%
 # All resource variables are contained in arrays for facility (from 0 to 5, 0 being oil and 5 being chromium)
