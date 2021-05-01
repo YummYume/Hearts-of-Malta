@@ -256,7 +256,7 @@ focus_tree = {
         x = 25
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
-        icon = GFX_goal_generic_forceful_treaty
+        icon = GFX_
         cost = 5
         ai_will_do = {
             factor = 20
@@ -269,7 +269,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            country_event = malta.30
         }
     }
 
@@ -292,7 +292,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+            country_event = malta.31
         }
     }
 
@@ -315,7 +315,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            
+            country_event = malta.32
         }
     }
 
@@ -334,7 +334,7 @@ focus_tree = {
 
         }
         available = {
-
+			has_government = democratic
         }
         search_filters = {  }
         completion_reward = {
@@ -357,7 +357,7 @@ focus_tree = {
 
         }
         available = {
-
+			has_government = communism
         }
         search_filters = {  }
         completion_reward = {
@@ -380,7 +380,7 @@ focus_tree = {
 
         }
         available = {
-
+			has_government = fascism
         }
         search_filters = {  }
         completion_reward = {
@@ -403,7 +403,7 @@ focus_tree = {
 
         }
         available = {
-
+			has_government = neutrality
         }
         search_filters = {  }
         completion_reward = {
@@ -430,7 +430,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+				add_idea = MLT_british_pounds
         }
     }
 
@@ -453,7 +453,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-
+				add_idea = MLT_maltese_lira
         }
     }
 
@@ -625,7 +625,7 @@ focus_tree = {
         x = 6
         y = 7
         prerequisite = { focus = MLT_first_floor }
-        icon = GFX_goal_generic_fortify_city
+        icon = GFX_
         cost = 5
         ai_will_do = {
             factor = 2
@@ -638,14 +638,7 @@ focus_tree = {
         }
         search_filters = {  }
         completion_reward = {
-            116 = {
-                set_building_level = {
-                    type = bunker
-                    level = 3
-                    instant_build = yes
-                    province = 12003
-                }
-            }
+	        country_event = malta.29
         }
     }
 
