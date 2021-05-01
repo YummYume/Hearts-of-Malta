@@ -1308,6 +1308,165 @@ country_event = {
     }
 }
 
+# Mediterranean Bastion Focus
+country_event = {
+    id = malta.29
+    title = malta.29.t
+    desc = malta.29.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # accept
+    option = {
+        name = malta.29.a
+        ai_chance = {
+            factor = 100
+        }
+        116 = {
+            set_building_level = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = 12003
+            }
+        }
+    }
+}
+
+# Political Turmoil
+country_event = {
+    id = malta.30
+    title = malta.30.t
+    desc = malta.30.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # accept
+    option = {
+        name = malta.30.a
+        ai_chance = {
+            factor = 100
+        }
+		add_political_power = 25
+    }
+}
+
+# The Maltese Language Question
+country_event = {
+    id = malta.31
+    title = malta.31.t
+    desc = malta.31.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # maltese
+    option = {
+        name = malta.31.a
+        ai_chance = {
+            factor = 100
+        }
+		add_timed_idea = { idea = JAP_superior_will days = 1825 }
+		add_timed_idea = { idea = ENG_a_change_in_course_idea days = 182 }
+    }
+
+    # english
+    option = {
+        name = malta.31.b
+        ai_chance = {
+            factor = 100
+        }
+			add_opinion_modifier = {
+	target = ENG
+	modifier = BUL_strengthened_relations_with_us
+		}
+		add_timed_idea = { idea = HOL_caved_to_the_british days = 242 }
+    }
+	
+    # both
+    option = {
+        name = malta.31.c
+        ai_chance = {
+            factor = 100
+        }
+			add_opinion_modifier = {
+	target = ENG
+	modifier = BUL_strengthened_relations_with_us
+		}
+		add_timed_idea = { idea = HOL_caved_to_the_british days = 121 }
+    }
+}
+
+# The 1936 Elections
+country_event = {
+    id = malta.32
+    title = malta.32.t
+    desc = malta.32.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # democratic
+    option = {
+        name = malta.32.a
+        ai_chance = {
+            factor = 100
+        }
+		country_event = political.20
+	hidden_effect = {
+		add_popularity = { ideology = democratic popularity = 0.4 }
+		add_stability = 0.1
+		add_timed_idea = { idea = democratic_influence days = 365 }
+		}
+    }
+	
+    # communist
+    option = {
+        name = malta.32.b
+        ai_chance = {
+            factor = 100
+        }
+		country_event = political.19
+	hidden_effect = {
+		add_popularity = { ideology = communism popularity = 0.4 }
+		add_stability = 0.05
+		add_timed_idea = { idea = communist_influence days = 365 }
+		}
+    }
+	
+    # fascist
+    option = {
+        name = malta.32.c
+        ai_chance = {
+            factor = 100
+        }
+		country_event = political.18
+	hidden_effect = {
+		add_popularity = { ideology = fascism popularity = 0.4 }
+		add_timed_idea = { idea = fascist_influence days = 365 }
+		}
+    }
+	
+    # non-aligned
+    option = {
+        name = malta.32.e
+        ai_chance = {
+            factor = 100
+        }
+	hidden_effect = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = { ideology = neutrality popularity = 0.4 }
+		add_stability = 0.05
+		add_timed_idea = { idea = neutrality_influence days = 365 }
+		}
+    }
+}
+
 #Malta Wants an Alliance
 country_event = {
     id = malta.33

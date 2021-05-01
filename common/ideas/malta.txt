@@ -314,5 +314,49 @@ ideas = {
                 industrial_capacity_factory = 0.25
             }
         }
+		
+        MLT_british_pounds = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = 
+
+            modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_industrial_complex_factor = 0.1
+				stability_factor = -0.2
+				political_power_gain = -0.25
+            }
+        }
+		
+        MLT_maltese_lira = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = 
+
+            modifier = {
+				consumer_goods_factor = 0.10
+				production_speed_industrial_complex_factor = -0.1
+				stability_factor = 0.2
+				political_power_gain = 0.25
+            }
+        }
     }
 }
