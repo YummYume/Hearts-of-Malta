@@ -619,6 +619,15 @@ country_event = {
                 amount = temp_convoy_coastal_raid
             }
 
+            set_variable = { coastal_raid_bitcoin = 0 }
+            randomize_variable = {
+                var = coastal_raid_bitcoin
+                distribution = uniform
+                min = 0
+                max = 0.6
+            }
+            multiply_variable = { coastal_raid_bitcoin = mission_naval_efficiency }
+
             clr_country_flag = MLT_ongoing_coastal_raid_mission
             set_variable = { coastal_raid_days_remaining = 0 }
         }
@@ -644,6 +653,25 @@ country_event = {
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = coastal_raid_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
         }
         clr_country_flag = MLT_ongoing_coastal_raid_mission_event
     }
@@ -674,6 +702,25 @@ country_event = {
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
+        if = {
+            limit = {
+                check_variable = {
+                    var = coastal_raid_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
+        }
         clr_country_flag = MLT_ongoing_coastal_raid_mission_event
         set_country_flag = mlt_custom_gui_tower_opened
         custom_effect_tooltip = MLT_open_custom_GUI
@@ -699,6 +746,25 @@ country_event = {
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = coastal_raid_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
         }
         clr_country_flag = MLT_ongoing_coastal_raid_mission_event
 
@@ -795,6 +861,15 @@ country_event = {
                 amount = temp_convoy_fishing
             }
 
+            set_variable = { fishing_bitcoin = 0 }
+            randomize_variable = {
+                var = fishing_bitcoin
+                distribution = uniform
+                min = 0
+                max = 0.6
+            }
+            multiply_variable = { fishing_bitcoin = mission_naval_efficiency }
+
             clr_country_flag = MLT_ongoing_fishing_mission
             set_variable = { fishing_days_remaining = 0 }
         }
@@ -820,6 +895,25 @@ country_event = {
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = fishing_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
         }
         clr_country_flag = MLT_ongoing_fishing_mission_event
     }
@@ -850,6 +944,25 @@ country_event = {
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
+        if = {
+            limit = {
+                check_variable = {
+                    var = fishing_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
+        }
         clr_country_flag = MLT_ongoing_fishing_mission_event
         set_country_flag = mlt_custom_gui_tower_opened
         custom_effect_tooltip = MLT_open_custom_GUI
@@ -875,6 +988,25 @@ country_event = {
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = fishing_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
         }
         clr_country_flag = MLT_ongoing_fishing_mission_event
 
@@ -970,6 +1102,15 @@ country_event = {
                 amount = temp_convoy_privateering
             }
 
+            set_variable = { privateering_bitcoin = 0 }
+            randomize_variable = {
+                var = privateering_bitcoin
+                distribution = uniform
+                min = 0
+                max = 0.6
+            }
+            multiply_variable = { privateering_bitcoin = mission_naval_efficiency }
+
             clr_country_flag = MLT_ongoing_privateering_mission
             set_variable = { privateering_days_remaining = 0 }
         }
@@ -995,6 +1136,25 @@ country_event = {
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = privateering_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
         }
         clr_country_flag = MLT_ongoing_privateering_mission_event
     }
@@ -1025,6 +1185,25 @@ country_event = {
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
+        if = {
+            limit = {
+                check_variable = {
+                    var = privateering_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
+        }
         clr_country_flag = MLT_ongoing_privateering_mission_event
         custom_effect_tooltip = MLT_open_custom_GUI
         set_country_flag = mlt_custom_gui_tower_opened
@@ -1050,6 +1229,25 @@ country_event = {
             }
             add_to_variable = { mission_naval_efficiency = 0.03 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = privateering_bitcoin
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+            }
+            add_to_variable = { bitcoin_currency = 1 }
+            custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = MLT_bitcoin_discovered
+                    }
+                }
+                set_country_flag = MLT_bitcoin_discovered
+            }
         }
         clr_country_flag = MLT_ongoing_privateering_mission_event
 
@@ -1299,5 +1497,121 @@ country_event = {
         MLT = {
             country_event = { id = malta.35 days = 1 }
         }
+    }
+}
+
+#About Bitcoin
+country_event = {
+    id = malta.39
+    title = malta.39.t
+    desc = malta.39.d
+    picture = GFX_report_event_ast_transfer_singapore
+
+    trigger = {
+        tag = MLT
+        has_country_flag = MLT_bitcoin_discovered
+    }
+
+    fire_only_once = yes
+
+    #Have a free Bitcoin!
+    option = {
+        name = malta.39.a
+        ai_chance = {
+            factor = 100
+        }
+        add_to_variable = { bitcoin_currency = 1 }
+        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        set_country_flag = MLT_can_access_black_market
+        unlock_decision_tooltip = MLT_access_black_market
+    }
+}
+
+#Black Market
+country_event = {
+    id = malta.40
+    title = malta.40.t
+    desc = malta.40.d
+    picture = GFX_report_event_ast_transfer_singapore
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = viewing_black_market
+    }
+
+    #Light tank
+    option = {
+        name = malta.40.a
+        ai_chance = {
+            factor = 20
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = bitcoin_currency
+                    value = 4
+                    compare = greater_than_or_equals
+                }
+            }
+            # TODO
+        }
+        else = {
+            custom_effect_tooltip = MLT_not_enough_bitcoin_light_tank
+        }
+        clr_country_flag = viewing_black_market
+    }
+
+    #Medium tank
+    option = {
+        name = malta.40.b
+        ai_chance = {
+            factor = 20
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = bitcoin_currency
+                    value = 7
+                    compare = greater_than_or_equals
+                }
+            }
+            # TODO
+        }
+        else = {
+            custom_effect_tooltip = MLT_not_enough_bitcoin_medium_tank
+        }
+        clr_country_flag = viewing_black_market
+    }
+
+    #Heavy tank
+    option = {
+        name = malta.40.c
+        ai_chance = {
+            factor = 20
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    var = bitcoin_currency
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+            # TODO
+        }
+        else = {
+            custom_effect_tooltip = MLT_not_enough_bitcoin_heavy_tank
+        }
+        clr_country_flag = viewing_black_market
+    }
+
+    #Let me out of here!
+    option = {
+        name = malta.40.e
+        ai_chance = {
+            factor = 40
+        }
+        clr_country_flag = viewing_black_market
     }
 }

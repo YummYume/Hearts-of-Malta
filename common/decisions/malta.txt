@@ -35,6 +35,30 @@ MLT_tower_of_malta = {
         }
 	}
 
+	MLT_access_black_market = {
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			has_country_flag = MLT_can_access_black_market
+			NOT = {
+				has_country_flag = viewing_black_market
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			#TODO
+		}
+
+		complete_effect = {
+            country_event = malta.40
+        }
+	}
+
 	MLT_add_gold = {
 		visible = {
 			is_debug = yes
@@ -81,7 +105,7 @@ MLT_tower_of_malta = {
 		}
 
 		complete_effect = {
-            add_to_variable = { bitcoin_currency = 5 }
+            add_to_variable = { bitcoin_currency = 10 }
         }
 	}
 }
