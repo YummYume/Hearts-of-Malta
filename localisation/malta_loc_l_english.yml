@@ -336,7 +336,7 @@
  malta.42.a:0 "We shall side with the protectors of democracy"
  malta.42.b:0 "Freedom for all the workers !"
  malta.42.c:0 "Fascism is the way to go"
- malta.42.e:0 "Our caus is the only one to be right"
+ malta.42.e:0 "Our cause is the only one to be right"
 
  #Ideas
  MLT_Independence_movements:0 "Independence Movements"
@@ -394,6 +394,12 @@
  MLT_Towards_freedom_desc:0 ""
  MLT_Loyalty_to_britain:0 "Loyalty to Britain"
  MLT_Loyalty_to_britain_desc:0 ""
+ MLT_Loyalty_to_britain_2:0 "Loyalty to Britain"
+ MLT_Loyalty_to_britain_2_desc:0 ""
+ MLT_Loyalty_to_britain_3:0 "Loyalty to Britain"
+ MLT_Loyalty_to_britain_3_desc:0 ""
+ MLT_Loyalty_to_britain_4:0 "Mutual Aid"
+ MLT_Loyalty_to_britain_4_desc:0 ""
  MLT_New_friendships:0 "New Friendships"
  MLT_New_friendships_desc:0 ""
  MLT_New_friendships_1:0 "New Democrat Friends"
@@ -406,6 +412,10 @@
  MLT_New_friendships_4_desc:0 ""
  MLT_British_navy_help:0 "Help of the British Navy"
  MLT_British_navy_help_desc:0 ""
+ MLT_Secrets_of_tower:0 "The Secrets of the Tower"
+ MLT_Secrets_of_tower_desc:0 ""
+ MLT_Secrets_of_tower_2:0 "The Secrets of the Tower"
+ MLT_Secrets_of_tower_2_desc:0 ""
 
  #Decisions
  MLT_tower_of_malta:0 "The Tower of Malta"
