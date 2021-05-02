@@ -28,7 +28,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.1
         }
@@ -51,7 +51,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.2
         }
@@ -74,7 +74,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             116 = {
                 add_extra_state_shared_building_slots = 2
@@ -109,7 +109,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             116 = {
                 add_building_construction = {
@@ -138,7 +138,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             116 = {
                 add_extra_state_shared_building_slots = 1
@@ -168,7 +168,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             add_ideas = MLT_Eradicate_unemployment
         }
@@ -191,7 +191,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             country_event = malta.3
         }
@@ -214,7 +214,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             add_equipment_to_stockpile = {
                 type = convoy
@@ -244,7 +244,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_ideas = MLT_Under_maltese_flag
         }
@@ -267,7 +267,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.30
         }
@@ -290,7 +290,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.31
         }
@@ -313,7 +313,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.32
         }
@@ -336,7 +336,7 @@ focus_tree = {
         available = {
 			has_government = democratic
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 
         }
@@ -359,7 +359,7 @@ focus_tree = {
         available = {
 			has_government = communism
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 
         }
@@ -382,7 +382,7 @@ focus_tree = {
         available = {
 			has_government = fascism
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 
         }
@@ -405,7 +405,7 @@ focus_tree = {
         available = {
 			has_government = neutrality
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 
         }
@@ -428,7 +428,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 			add_ideas = MLT_british_pounds
         }
@@ -451,7 +451,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 			add_ideas = MLT_maltese_lira
         }
@@ -474,7 +474,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.4
         }
@@ -497,7 +497,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.5
         }
@@ -520,7 +520,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.6
         }
@@ -543,7 +543,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.7
         }
@@ -567,7 +567,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.8
         }
@@ -590,9 +590,16 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.9
+            116 = {
+                set_state_category = tower
+                add_victory_points = {
+                    province = 12003
+                    value = 25
+                }
+            }
         }
     }
 
@@ -613,7 +620,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.10
         }
@@ -636,7 +643,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
 	        country_event = malta.29
         }
@@ -659,7 +666,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             116 = {
                 add_building_construction = {
@@ -689,7 +696,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             116 = {
                 add_building_construction = {
@@ -718,7 +725,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             116 = {
                 add_building_construction  = {
@@ -748,7 +755,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             116 = {
                 add_building_construction = {
@@ -784,7 +791,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_tech_bonus = {
 				name = MAL_counteroffensive_military_tact
@@ -812,7 +819,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -836,7 +843,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -860,7 +867,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -883,7 +890,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -907,7 +914,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -930,7 +937,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -954,7 +961,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -977,7 +984,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -1000,7 +1007,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
 
         }
@@ -1023,7 +1030,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.11
         }
@@ -1046,7 +1053,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.12
         }
@@ -1059,7 +1066,7 @@ focus_tree = {
         y = 10
         prerequisite = { focus = MLT_attract_investors_tower }
         icon = GFX_
-        cost = 5
+        cost = 7
         ai_will_do = {
             factor = 2
         }
@@ -1069,9 +1076,16 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.13
+            if = {
+                limit = {
+                    has_dlc = "La Resistance"
+                    has_intelligence_agency = no
+                }
+                create_intelligence_agency = yes
+            }
         }
     }
 
@@ -1092,7 +1106,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.14
         }
@@ -1115,7 +1129,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.15
         }
@@ -1138,7 +1152,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_with_coastal_raids_tt
         }
@@ -1161,7 +1175,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_with_fishing_boats_tt
         }
@@ -1184,7 +1198,7 @@ focus_tree = {
         available = {
             has_full_control_of_state = 116
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_with_piratry_tt
         }
@@ -1207,7 +1221,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.16
         }
@@ -1230,7 +1244,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_fiftieth_floor_tt
             set_variable = { max_tower_floor = 50 }
@@ -1254,7 +1268,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_research_slot = 1
 
@@ -1303,7 +1317,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             set_technology = {
                 tech_mountaineers = 1
@@ -1360,7 +1374,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             set_technology = {
                 paratroopers = 1
@@ -1417,7 +1431,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             set_technology = {
                 marines = 1
@@ -1472,7 +1486,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_tech_bonus = {
 				name = MLT_protectors_of_tower_tech
@@ -1512,7 +1526,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_tech_bonus = {
 				name = MLT_on_the_shores_tech
@@ -1552,7 +1566,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_tech_bonus = {
 				name = MLT_on_the_water_tech
@@ -1592,7 +1606,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_tech_bonus = {
 				name = MLT_in_the_air_tech
@@ -1632,7 +1646,7 @@ focus_tree = {
         available = {
             is_subject = no
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
 
         }
@@ -1676,7 +1690,7 @@ focus_tree = {
                 has_government = fascism
             }
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             ITA = {
                 country_event = {id = malta.33 days = 1 }
@@ -1713,7 +1727,7 @@ focus_tree = {
                 has_government = democratic
             }
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             FRA = {
                 country_event = {id = malta.33 days = 1 }
@@ -1747,7 +1761,7 @@ focus_tree = {
                 has_government = fascism
             }
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             GER = {
                 country_event = {id = malta.33 days = 1 }
@@ -1775,7 +1789,7 @@ focus_tree = {
                 is_faction_leader = yes
             }
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             if = {
                 limit = {
@@ -1806,7 +1820,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             custom_effect_tooltip = send_transmission_takes_time_lux
             hidden_effect = {
@@ -1843,7 +1857,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             custom_effect_tooltip = send_transmission_takes_time_bhu
             hidden_effect = {
@@ -1880,7 +1894,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             custom_effect_tooltip = send_transmission_takes_time_els
             hidden_effect = {
@@ -1917,7 +1931,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.17
         }
@@ -1940,7 +1954,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.18
         }
@@ -1963,7 +1977,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_hundreth_floor_tt
             set_variable = { max_tower_floor = 100 }
@@ -1987,7 +2001,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_thousandth_floor_tt
             set_variable = { max_tower_floor = 1000 }
@@ -2011,7 +2025,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.19
         }
@@ -2034,7 +2048,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_nine_thousand_nine_hundred_ninety_ninth_floor_tt
             set_variable = { max_tower_floor = 9999 }
@@ -2058,7 +2072,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             custom_effect_tooltip = MLT_neverending_tower_tt
             set_variable = { max_tower_floor = 100000 }
@@ -2082,7 +2096,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             add_ideas = MLT_Maltese_pride
         }
@@ -2105,7 +2119,7 @@ focus_tree = {
         available = {
             has_government = communism
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             if = {
                 limit = {
@@ -2165,7 +2179,7 @@ focus_tree = {
         available = {
             has_government = democratic
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             if = {
                 limit = {
@@ -2197,7 +2211,7 @@ focus_tree = {
         available = {
             has_government = neutrality
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             custom_effect_tooltip = gains_claim_great_crusade
             hidden_effect = {
@@ -2275,7 +2289,7 @@ focus_tree = {
         available = {
             has_government = fascism
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             custom_effect_tooltip = gains_claim_state_shore
             hidden_effect = {
@@ -2362,7 +2376,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             custom_effect_tooltip = unlock_decision_faction_expansion
         }
@@ -2385,7 +2399,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             custom_effect_tooltip = unlocks_decision_core_claim
             custom_effect_tooltip = small_debuff_national_spirit_claims
@@ -2427,7 +2441,7 @@ focus_tree = {
         available = {
 
         }
-        search_filters = {  }
+        search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             add_ideas = MLT_Bright_future
         }

@@ -393,6 +393,8 @@ country_event = {
             factor = 100
         }
         add_manpower = -500
+        set_variable = { price_tower_floor = 13 }
+        set_country_flag = tower_floor_price_increased
     }
 }
 
