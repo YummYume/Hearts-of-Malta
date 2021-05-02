@@ -7,7 +7,7 @@ on_actions = {
 				limit = {
 					FROM = {
 						tag = MLT
-						has_completed_focus = MLT_matser_of_mediterranean_sea
+						has_completed_focus = MLT_master_of_mediterranean_sea
 						has_government = communism
 					}
 				}

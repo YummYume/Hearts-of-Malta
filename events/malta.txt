@@ -543,7 +543,7 @@ country_event = {
 
     trigger = {
         MLT = {
-            has_completed_focus = MLT_matser_of_mediterranean_sea
+            has_completed_focus = MLT_master_of_mediterranean_sea
         }
         any_country = {
             is_subject_of = MLT
@@ -1313,7 +1313,7 @@ country_event = {
     id = malta.29
     title = malta.29.t
     desc = malta.29.d
-    picture = GFX_
+    picture = GFX_report_event_bunker_01
 
     is_triggered_only = yes
 
@@ -1340,7 +1340,7 @@ country_event = {
     id = malta.30
     title = malta.30.t
     desc = malta.30.d
-    picture = GFX_
+    picture = GFX_report_event_gathering_protest
 
     is_triggered_only = yes
 
@@ -1359,7 +1359,7 @@ country_event = {
     id = malta.31
     title = malta.31.t
     desc = malta.31.d
-    picture = GFX_
+    picture = GFX_report_event_bose_meeting
 
     is_triggered_only = yes
 
@@ -1369,8 +1369,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-		add_timed_idea = { idea = JAP_superior_will days = 1825 }
-		add_timed_idea = { idea = ENG_a_change_in_course_idea days = 182 }
+		add_timed_idea = { idea = MLT_Nationalist_sentiments days = 210 }
+		add_ideas = MLT_Maltese_language_official
     }
 
     # english
@@ -1381,9 +1381,16 @@ country_event = {
         }
 		add_opinion_modifier = {
 	        target = ENG
-	        modifier = BUL_strengthened_relations_with_us
+	        modifier = alligned_british
 		}
-		add_timed_idea = { idea = HOL_caved_to_the_british days = 242 }
+        ENG = {
+            add_opinion_modifier = {
+                target = MLT
+                modifier = loyalty_british
+            }
+        }
+		add_timed_idea = { idea = MLT_Elite_English_Support days = 720 }
+        add_ideas = MLT_English_language_official
     }
 	
     # both
@@ -1394,9 +1401,16 @@ country_event = {
         }
 		add_opinion_modifier = {
 	        target = ENG
-	        modifier = BUL_strengthened_relations_with_us
+	        modifier = alligned_british
 		}
-		add_timed_idea = { idea = HOL_caved_to_the_british days = 121 }
+        ENG = {
+            add_opinion_modifier = {
+                target = MLT
+                modifier = loyalty_british
+            }
+        }
+		add_political_power = -100
+        add_ideas = MLT_Harmony_language
     }
 }
 
@@ -1405,7 +1419,7 @@ country_event = {
     id = malta.32
     title = malta.32.t
     desc = malta.32.d
-    picture = GFX_
+    picture = GFX_report_event_election_vote
 
     is_triggered_only = yes
 
@@ -1415,13 +1429,13 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-		country_event = political.20
-	hidden_effect = {
-		add_popularity = { ideology = democratic popularity = 0.4 }
-		add_stability = 0.1
-		add_timed_idea = { idea = democratic_influence days = 365 }
-		}
-    }
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+            last_election = "1936.02.1"
+            election_frequency = 48
+        }
+    }    
 	
     # communist
     option = {
@@ -1429,13 +1443,10 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-		country_event = political.19
-	hidden_effect = {
-		add_popularity = { ideology = communism popularity = 0.4 }
-		add_stability = 0.05
-		add_timed_idea = { idea = communist_influence days = 365 }
-		}
-    }
+		set_politics = {
+            ruling_party = communism
+        }
+    }    
 	
     # fascist
     option = {
@@ -1443,12 +1454,10 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-		country_event = political.18
-	hidden_effect = {
-		add_popularity = { ideology = fascism popularity = 0.4 }
-		add_timed_idea = { idea = fascist_influence days = 365 }
-		}
-    }
+		set_politics = {
+            ruling_party = fascism
+        }
+    }    
 	
     # non-aligned
     option = {
@@ -1456,16 +1465,10 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-	hidden_effect = {
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = no
-		}
-		add_popularity = { ideology = neutrality popularity = 0.4 }
-		add_stability = 0.05
-		add_timed_idea = { idea = neutrality_influence days = 365 }
-		}
-    }
+        set_politics = {
+            ruling_party = neutrality
+        }
+    }    
 }
 
 #Malta Wants an Alliance
@@ -1773,5 +1776,162 @@ country_event = {
             factor = 40
         }
         clr_country_flag = viewing_black_market
+    }
+}
+
+#Colonial Question
+country_event = {
+    id = malta.41
+    title = malta.41.t
+    desc = malta.41.d
+    picture = GFX_report_event_chamberlain
+
+    is_triggered_only = yes
+
+    #Independence
+    option = {
+        name = malta.41.a
+        ai_chance = {
+            factor = 50
+        }
+        MLT = {
+            add_ideas = MLT_Towards_freedom
+        }
+    }
+
+    #Loyalty Towards Britain
+    option = {
+        name = malta.41.b
+        ai_chance = {
+            factor = 50
+        }
+        MLT = {
+            add_ideas = MLT_Loyalty_to_britain
+            add_to_variable = { factory_eng_loyalty = 1 }
+        }
+        add_opinion_modifier = {
+	        target = ENG
+	        modifier = loyalty_british
+		}
+        ENG = {
+            add_opinion_modifier = {
+                target = MLT
+                modifier = loyalty_british
+            }
+        }
+    }
+}
+
+#Choosing a Side
+country_event = {
+    id = malta.42
+    title = malta.42.t
+    desc = malta.42.d
+    picture = GFX_report_event_communist_leader
+
+    is_triggered_only = yes
+
+    #Democratic Alliance
+    option = {
+        name = malta.42.a
+        ai_chance = {
+            factor = 50
+        }
+        swap_ideas = {
+            remove_idea = MLT_New_friendships
+            add_idea = MLT_New_friendships_1
+        }
+        every_country = {
+            limit = {
+                has_government = democratic
+            }
+            add_opinion_modifier = {
+                target = MLT
+                modifier = diplomatic_focus_mlt
+            }
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 50
+            }
+        }
+    }
+
+    #Communist Alliance
+    option = {
+        name = malta.42.b
+        ai_chance = {
+            factor = 50
+        }
+        swap_ideas = {
+            remove_idea = MLT_New_friendships
+            add_idea = MLT_New_friendships_2
+        }
+        every_country = {
+            limit = {
+                has_government = communism
+            }
+            add_opinion_modifier = {
+                target = MLT
+                modifier = diplomatic_focus_mlt
+            }
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 50
+            }
+        }
+    }
+
+    #Fascist Alliance
+    option = {
+        name = malta.42.c
+        ai_chance = {
+            factor = 50
+        }
+        swap_ideas = {
+            remove_idea = MLT_New_friendships
+            add_idea = MLT_New_friendships_3
+        }
+        every_country = {
+            limit = {
+                has_government = fascism
+            }
+            add_opinion_modifier = {
+                target = MLT
+                modifier = diplomatic_focus_mlt
+            }
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 50
+            }
+        }
+    }
+
+    #Neutrality Alliance
+    option = {
+        name = malta.42.e
+        ai_chance = {
+            factor = 50
+        }
+        swap_ideas = {
+            remove_idea = MLT_New_friendships
+            add_idea = MLT_New_friendships_4
+        }
+        every_country = {
+            limit = {
+                has_government = neutrality
+            }
+            add_opinion_modifier = {
+                target = MLT
+                modifier = diplomatic_focus_mlt
+            }
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 50
+            }
+        }
     }
 }

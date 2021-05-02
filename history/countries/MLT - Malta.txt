@@ -47,6 +47,9 @@ set_convoys = 25
 
 add_ideas = MLT_Independence_movements
 
+#Variables
+set_variable = { factory_eng_loyalty = 0 }
+
 # Tower stuff
 # Modifier
 set_variable = { weekly_manpower_tower_malta = 0 }

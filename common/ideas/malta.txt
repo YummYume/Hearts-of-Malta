@@ -198,6 +198,10 @@ ideas = {
                 always = yes
             }
 
+            allowed_civil_war = {
+                always = yes
+            }
+
             cancel = {
                 NOT = {
                     any_state = {
@@ -225,6 +229,10 @@ ideas = {
                 always = yes
             }
 
+            allowed_civil_war = {
+                always = yes
+            }
+
             picture = no_picture
 
             modifier = {
@@ -246,6 +254,10 @@ ideas = {
             }
 
             allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
                 always = yes
             }
 
@@ -273,14 +285,22 @@ ideas = {
                 always = yes
             }
 
+            allowed_civil_war = {
+                always = yes
+            }
+
             picture = no_picture
         }
 
-        MLT_Bright_future = {
+        MLT_Bright_future_idea = {
 
             removal_cost = -1
 
             allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
                 always = yes
             }
 
@@ -303,6 +323,10 @@ ideas = {
                 always = yes
             }
 
+            allowed_civil_war = {
+                always = yes
+            }
+
             picture = no_picture
 
             modifier = {
@@ -314,9 +338,8 @@ ideas = {
                 industrial_capacity_factory = 0.25
             }
         }
-		
-        MLT_british_pounds = {
 
+        MLT_Maltese_language_official = {
             removal_cost = -1
 
             allowed = {
@@ -330,14 +353,187 @@ ideas = {
             picture = no_picture
 
             modifier = {
-				consumer_goods_factor = -0.10
-				production_speed_industrial_complex_factor = 0.1
-				stability_factor = -0.2
-				political_power_gain = -0.25
+                stability_factor = 0.1
+                war_support_factor = 0.25
+            }
+        }
+
+        MLT_Nationalist_sentiments = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                communism_drift = 0.05
+                fascism_drift = 0.05
+                neutrality_drift = 0.05
+                stability_factor = -0.05
+                political_power_factor = -0.25
+            }
+        }
+
+        MLT_English_language_official = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            cancel = {
+                NOT = {
+                    MLT = {
+                        is_subject_of = ENG
+                    }
+                }
+            }
+
+            picture = no_picture
+
+            modifier = {
+                autonomy_gain_global_factor = -0.3
+            }
+        }
+
+        MLT_Elite_English_Support = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                democratic_drift = 0.1
+                consumer_goods_factor = -0.05
+                political_power_gain = 0.1
+            }
+        }
+
+        MLT_Harmony_language = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                stability_factor = 0.05
+                war_support_factor = 0.1
+                autonomy_gain_global_factor = -0.1
+                conscription = 0.05
+                political_power_factor = -0.3
+            }
+        }
+
+        MLT_Constitutional_party_ideas = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                offensive_war_stability_factor = 0.3
+                communism_acceptance = 50
+                enemy_justify_war_goal_time = 0.25
+                guarantee_cost = -0.5
+                political_power_factor = 0.1
+            }
+        }
+
+        MLT_Labour_party_ideas = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                encryption_factor = 0.1
+                decryption_factor = 0.05
+                operation_cost = -0.25
+                operative_slot = 1
+            }
+        }
+
+        MLT_Nationalist_party_ideas = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                army_morale_factor = 0.1
+                army_attack_factor = 0.05
+                war_support_factor = 0.15
+                breakthrough_factor = 0.1
+            }
+        }
+
+        MLT_Independents_party_ideas = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                air_mission_efficiency = 0.1
+                air_range_factor = 0.25
+                air_weather_penalty = -0.15
+                army_bonus_air_superiority_factor = 0.15
             }
         }
 		
-        MLT_maltese_lira = {
+        MLT_british_pounds_ideas = {
 
             removal_cost = -1
 
@@ -352,10 +548,216 @@ ideas = {
             picture = no_picture
 
             modifier = {
-				consumer_goods_factor = 0.10
-				production_speed_industrial_complex_factor = -0.1
-				stability_factor = 0.2
-				political_power_gain = 0.25
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				stability_factor = -0.1
+				political_power_gain = -0.1
+                autonomy_gain_global_factor = -0.2
+            }
+        }
+		
+        MLT_maltese_lira_ideas = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.1
+                war_support_factor = 0.15
+				autonomy_gain_global_factor = 0.2
+            }
+        }
+
+        MLT_Towards_freedom = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+				autonomy_gain = 0.75
+            }
+        }
+
+        MLT_Loyalty_to_britain = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+				autonomy_gain = -0.5
+            }
+        }
+
+        MLT_New_friendships = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                
+            }
+
+            rule = {
+				can_create_factions = yes
+            }
+        }
+
+        MLT_New_friendships_1 = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+               democratic_acceptance = 75 
+            }
+
+            rule = {
+				can_create_factions = yes
+            }
+        }
+
+        MLT_New_friendships_2 = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+               communism_acceptance = 75 
+            }
+
+            rule = {
+				can_create_factions = yes
+            }
+        }
+
+        MLT_New_friendships_3 = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+               fascism_acceptance = 75 
+            }
+
+            rule = {
+				can_create_factions = yes
+            }
+        }
+
+        MLT_New_friendships_4 = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+               neutrality_acceptance = 75 
+            }
+
+            rule = {
+				can_create_factions = yes
+            }
+        }
+
+        MLT_British_navy_help = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            cancel = {
+                NOT = {
+                    is_in_faction_with = ENG
+                }
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                industrial_capacity_dockyard = 0.20
+                experience_gain_navy = 0.1
+                carrier_capacity_penalty_reduction = -0.25
+                naval_damage_factor = 0.15
+                research_speed_factor = 0.05
             }
         }
     }

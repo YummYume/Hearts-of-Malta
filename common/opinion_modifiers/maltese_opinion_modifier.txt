@@ -1,0 +1,18 @@
+opinion_modifiers = {
+	
+	alligned_british = {
+		value = 25
+	}
+
+	loyalty_british = {
+		value = 50
+	}
+
+	backstabber_british = {
+		value = -50
+	}
+
+	diplomatic_focus_mlt = {
+		value = 50
+	}
+}
