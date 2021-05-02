@@ -89,29 +89,6 @@ focus_tree = {
                     instant_build = yes
                 }
             }
-            if = {
-                limit = {
-                    check_variable = {
-                        var = factory_eng_loyalty
-                        value = 0
-                        compare = greater_than
-                    }
-                }
-                116 = {
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = arms_factory
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                }
-            }
         }
     }
 
@@ -139,22 +116,6 @@ focus_tree = {
                     type = infrastructure
                     level = 2
                     instant_build = yes
-                }
-            }
-            if = {
-                limit = {
-                    check_variable = {
-                        var = factory_eng_loyalty
-                        value = 0
-                        compare = greater_than
-                    }
-                }
-                116 = {
-                    add_building_construction = {
-                        type = infrastructure
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
                 }
             }
         }
@@ -187,23 +148,6 @@ focus_tree = {
                     instant_build = yes
                 }
             }
-            if = {
-                limit = {
-                    check_variable = {
-                        var = factory_eng_loyalty
-                        value = 0
-                        compare = greater_than
-                    }
-                }
-                116 = {
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = dockyard
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                }
-            }
         }
     }
 
@@ -227,29 +171,6 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             add_ideas = MLT_Eradicate_unemployment
-            if = {
-                limit = {
-                    check_variable = {
-                        var = factory_eng_loyalty
-                        value = 0
-                        compare = greater_than
-                    }
-                }
-                116 = {
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = arms_factory
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                }
-            }
         }
     }
 
@@ -273,29 +194,6 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
             country_event = malta.3
-            if = {
-                limit = {
-                    check_variable = {
-                        var = factory_eng_loyalty
-                        value = 0
-                        compare = greater_than
-                    }
-                }
-                116 = {
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = arms_factory
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                }
-            }
         }
     }
 
@@ -324,29 +222,6 @@ focus_tree = {
                 producer = MLT
             }
             add_ideas = MLT_Fishing_industry
-            if = {
-                limit = {
-                    check_variable = {
-                        var = factory_eng_loyalty
-                        value = 0
-                        compare = greater_than
-                    }
-                }
-                116 = {
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                    add_extra_state_shared_building_slots = factory_eng_loyalty
-                    add_building_construction = {
-                        type = arms_factory
-                        level = factory_eng_loyalty
-                        instant_build = yes
-                    }
-                }
-            }
         }
     }
 
@@ -760,6 +635,7 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            has_completed_focus = MLT_colonial_question
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
@@ -949,7 +825,7 @@ focus_tree = {
         x = 21
         y = 8
         prerequisite = { focus = MLT_colonial_question }
-	mutually_exclusive = { focus = MLT_loayal_malta }
+	    mutually_exclusive = { focus = MLT_loayal_malta }
         icon = GFX_focus_eng_move_to_secure_the_dominions
         cost = 5
         ai_will_do = {
@@ -990,6 +866,9 @@ focus_tree = {
         }
         available = {
             is_in_faction_with = ENG
+            ENG = {
+                has_government = ROOT
+            }
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
@@ -1011,6 +890,8 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
+            }
+            MLT = {
                 add_tech_bonus = {
                     name = MLT_british_ties_tech
                     bonus = 1
@@ -1114,7 +995,7 @@ focus_tree = {
         x = 29
         y = 8
         prerequisite = { focus = MLT_colonial_question }
-	mutually_exclusive = { focus = MLT_free_malta }
+	    mutually_exclusive = { focus = MLT_free_malta }
         icon = GFX_
         cost = 5
         ai_will_do = {
@@ -1128,7 +1009,10 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
-            add_to_variable = { factory_eng_loyalty = 1 }
+            swap_ideas = {
+                remove_idea = MLT_Loyalty_to_britain
+                add_idea = MLT_Loyalty_to_britain_2
+            }
         }
     }
 
@@ -1151,7 +1035,13 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
-            add_to_variable = { factory_eng_loyalty = 1 }
+            swap_ideas = {
+                remove_idea = MLT_Loyalty_to_britain_2
+                add_idea = MLT_Loyalty_to_britain_3
+            }
+            ENG = {
+                add_ideas = MLT_Secrets_of_tower
+            }
         }
     }
 
@@ -1174,7 +1064,16 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
-            add_to_variable = { factory_eng_loyalty = 1 }
+            swap_ideas = {
+                remove_idea = MLT_Loyalty_to_britain_3
+                add_idea = MLT_Loyalty_to_britain_4
+            }
+            ENG = {
+                swap_ideas = {
+                    remove_idea = MLT_Secrets_of_tower
+                    add_idea = MLT_Secrets_of_tower_2
+                }
+            }
         }
     }
 

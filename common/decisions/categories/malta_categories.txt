@@ -37,7 +37,7 @@ MLT_proclaim_greater_malta_cat_decisions = {
 
     }
 
-    priority = 50
+    priority = 90
 
     visible = {
 		AND = {
@@ -64,7 +64,7 @@ MLT_expand_faction_decisions = {
 
     }
 
-    priority = 50
+    priority = 90
 
     visible = {
 		AND = {

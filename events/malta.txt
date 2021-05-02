@@ -1826,7 +1826,6 @@ country_event = {
         }
         MLT = {
             add_ideas = MLT_Loyalty_to_britain
-            add_to_variable = { factory_eng_loyalty = 1 }
         }
         add_opinion_modifier = {
 	        target = ENG
@@ -1836,6 +1835,11 @@ country_event = {
             add_opinion_modifier = {
                 target = MLT
                 modifier = loyalty_british
+            }
+            add_ai_strategy = {
+                type = alliance
+                id = MLT
+                value = 300
             }
         }
     }
