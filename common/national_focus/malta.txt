@@ -718,13 +718,6 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.9
-            116 = {
-                set_state_category = tower
-                add_victory_points = {
-                    province = 12003
-                    value = 25
-                }
-            }
         }
     }
 

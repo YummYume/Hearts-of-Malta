@@ -176,7 +176,7 @@ country_event = {
     }
 }
 
-# Completion of the First Floor
+# Can build first floor
 country_event = {
     id = malta.9
     title = malta.9.t
@@ -185,19 +185,17 @@ country_event = {
 
     is_triggered_only = yes
 
-    # Finally, the First Floor is done
+    # Yay
     option = {
         name = malta.9.a
         ai_chance = {
             factor = 100
         }
-        hidden_effect = {
-            add_dynamic_modifier = { modifier = tower_of_malta_modifier }
-            add_ideas = MLT_The_tower_malta
-        }
-        custom_effect_tooltip = tower_modifiers_tooltip_idea
         set_variable = { max_tower_floor = 1 }
         add_to_variable = { gold_currency = 10 }
+        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        custom_effect_tooltip = MLT_max_floor_1
+        add_ideas = MLT_Tower_debts_1
     }
 }
 
@@ -218,6 +216,12 @@ country_event = {
         }
         set_variable = { max_tower_floor = 2 }
         add_to_variable = { gold_currency = 10 }
+        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        custom_effect_tooltip = MLT_max_floor_2
+        swap_ideas = {
+            remove_idea = MLT_Tower_debts_1
+            add_idea = MLT_Tower_debts_2
+        }
     }
 }
 
@@ -238,6 +242,12 @@ country_event = {
         }
         set_variable = { max_tower_floor = 3 }
         add_to_variable = { gold_currency = 10 }
+        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        custom_effect_tooltip = MLT_max_floor_3
+        swap_ideas = {
+            remove_idea = MLT_Tower_debts_2
+            add_idea = MLT_Tower_debts_3
+        }
     }
 }
 
@@ -257,6 +267,7 @@ country_event = {
             factor = 100
         }
         set_country_flag = MLT_can_purchase_in_tower
+        custom_effect_tooltip = MLT_can_purchase_in_tower_tt
     }
 }
 
@@ -277,6 +288,12 @@ country_event = {
         }
         set_variable = { max_tower_floor = 10 }
         add_to_variable = { gold_currency = 70 }
+        custom_effect_tooltip = MLT_add_bitcoin_to_reserve_70
+        custom_effect_tooltip = MLT_max_floor_10
+        swap_ideas = {
+            remove_idea = MLT_Tower_debts_3
+            add_idea = MLT_Tower_debts_4
+        }
     }
 }
 
@@ -1935,5 +1952,68 @@ country_event = {
                 value = 50
             }
         }
+    }
+}
+
+#The First Floor!
+country_event = {
+    id = malta.43
+    title = malta.43.t
+    desc = malta.43.d
+    picture = GFX_report_event_communist_leader
+
+    is_triggered_only = yes
+
+    #Yay!
+    option = {
+        name = malta.43.a
+        ai_chance = {
+            factor = 50
+        }
+        hidden_effect = {
+            add_dynamic_modifier = { modifier = tower_of_malta_modifier }
+            add_ideas = MLT_The_tower_malta
+        }
+        custom_effect_tooltip = tower_modifiers_tooltip_idea
+        116 = {
+            set_state_category = tower
+            add_victory_points = {
+                province = 12003
+                value = 25
+            }
+        }
+    }
+}
+
+#Food Price Increases
+country_event = {
+    id = malta.44
+    title = malta.44.t
+    desc = malta.44.d
+    picture = GFX_report_event_communist_leader
+
+    trigger = {
+        tag = MLT
+        has_full_control_of_state = 116
+        check_variable = {
+            var = current_population_tower_m
+            value = 1
+            compare = greater_than_or_equals
+        }
+    }
+
+    fire_only_once = yes
+
+    immediate = {
+        set_country_flag = tower_floor_price_increased
+    }
+
+    #Oh...
+    option = {
+        name = malta.44.a
+        ai_chance = {
+            factor = 50
+        }
+        custom_effect_tooltip = MLT_tower_floor_price_increased_tt
     }
 }

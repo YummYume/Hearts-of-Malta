@@ -108,6 +108,200 @@ MLT_tower_of_malta = {
             add_to_variable = { bitcoin_currency = 10 }
         }
 	}
+
+	MLT_pay_off_debts_1 = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			has_idea = MLT_Tower_debts_4
+			has_country_flag = MLT_can_purchase_in_tower
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = gold_currency
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = MLT_at_least_10_gold
+
+		days_remove = 7
+
+		fire_only_once = yes
+
+		available = {
+			has_idea = MLT_Tower_debts_4
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = gold_currency
+				value = 10
+			}
+		}
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = MLT_Tower_debts_4
+				add_idea = MLT_Tower_debts_3
+			}
+		}
+	}
+
+	MLT_pay_off_debts_2 = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			has_idea = MLT_Tower_debts_3
+			has_country_flag = MLT_can_purchase_in_tower
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = food_currency
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = MLT_at_least_10_food
+
+		days_remove = 7
+
+		fire_only_once = yes
+
+		available = {
+			has_idea = MLT_Tower_debts_3
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = food_currency
+				value = 10
+			}
+		}
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = MLT_Tower_debts_3
+				add_idea = MLT_Tower_debts_2
+			}
+		}
+	}
+
+	MLT_pay_off_debts_3 = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			has_idea = MLT_Tower_debts_2
+			has_country_flag = MLT_can_purchase_in_tower
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = jewelry_currency
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = MLT_at_least_10_jewelry
+
+		days_remove = 7
+
+		fire_only_once = yes
+
+		available = {
+			has_idea = MLT_Tower_debts_2
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = jewelry_currency
+				value = 10
+			}
+		}
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = MLT_Tower_debts_2
+				add_idea = MLT_Tower_debts_1
+			}
+		}
+	}
+
+	MLT_pay_off_debts_4 = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			has_idea = MLT_Tower_debts_1
+			has_country_flag = MLT_can_purchase_in_tower
+		}
+
+		custom_cost_trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = MLT_at_least_20_diamond
+
+		days_remove = 7
+
+		fire_only_once = yes
+
+		available = {
+			has_idea = MLT_Tower_debts_1
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			subtract_from_variable = {
+				var = diamond_currency
+				value = 20
+			}
+		}
+
+		remove_effect = {
+			remove_ideas = MLT_Tower_debts_1
+			add_stability = 0.05
+		}
+	}
 }
 
 MLT_proclaim_greater_malta_cat_decisions = {

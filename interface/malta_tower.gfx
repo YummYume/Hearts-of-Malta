@@ -180,14 +180,20 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_trigger_unset"
+        name = "GFX_trigger_unset_texticon"
         texturefile = "gfx/texticons/GFX_trigger_unset_texticon.dds"
         legacy_lazy_load = no
     }
 
     spriteType = {
-        name = "GFX_in_progress"
+        name = "GFX_in_progress_texticon"
         texturefile = "gfx/texticons/GFX_in_progress_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_infinity_texticon"
+        texturefile = "gfx/texticons/GFX_infinity_texticon.dds"
         legacy_lazy_load = no
     }
 }
