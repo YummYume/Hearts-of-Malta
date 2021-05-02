@@ -30,6 +30,17 @@ scripted_gui = {
                 set_max_population_k_m_b = yes
                 increase_tower_modifier = yes
                 increase_tower_puppet_modifier = yes
+
+                if = {
+                    limit = {
+                        check_variable = {
+                            var = current_tower_floor
+                            value = 1
+                            compare = equals
+                        }
+                    }
+                    country_event = malta.43
+                }
             }
 
             mlt_tower_window_civilian_factory_purchase_click = {

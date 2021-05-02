@@ -1100,35 +1100,12 @@ focus_tree = {
         }
     }
 
-    # Attract Investors in the Tower
-    focus = {
-        id = MLT_attract_investors_tower
-        x = 15
-        y = 9
-        prerequisite = { focus = MLT_third_floor }
-        icon = GFX_
-        cost = 5
-        ai_will_do = {
-            factor = 2
-        }
-        bypass = {
-
-        }
-        available = {
-            has_full_control_of_state = 116
-        }
-        search_filters = { FOCUS_FILTER_TOWER_MALTA }
-        completion_reward = {
-            country_event = malta.12
-        }
-    }
-
     # The Tenth Floor
     focus = {
         id = MLT_tenth_floor
         x = 15
         y = 10
-        prerequisite = { focus = MLT_attract_investors_tower }
+        prerequisite = { focus = MLT_third_floor }
         icon = GFX_
         cost = 7
         ai_will_do = {
@@ -1153,12 +1130,35 @@ focus_tree = {
         }
     }
 
+    # Attract Investors in the Tower
+    focus = {
+        id = MLT_attract_investors_tower
+        x = 15
+        y = 9
+        prerequisite = { focus = MLT_tenth_floor }
+        icon = GFX_
+        cost = 5
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+            has_full_control_of_state = 116
+        }
+        search_filters = { FOCUS_FILTER_TOWER_MALTA }
+        completion_reward = {
+            country_event = malta.12
+        }
+    }
+
     # Send Someone On a Journey
     focus = {
         id = MLT_send_someone_journey
         x = 15
         y = 11
-        prerequisite = { focus = MLT_tenth_floor }
+        prerequisite = { focus = MLT_attract_investors_tower }
         icon = GFX_
         cost = 5
         ai_will_do = {

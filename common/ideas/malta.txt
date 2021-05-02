@@ -830,11 +830,7 @@ ideas = {
             }
         }
 
-<<<<<<< HEAD
         MLT_Tower_debts_1 = {
-=======
-        MLT_Secrets_of_tower = {
->>>>>>> b6d0d7a9f9055592d799bc5fc8b4f2443188bb7d
 
             removal_cost = -1
 
@@ -849,7 +845,6 @@ ideas = {
             picture = no_picture
 
             modifier = {
-<<<<<<< HEAD
                 industrial_capacity_dockyard = -0.05
                 industrial_capacity_factory = -0.05
                 consumer_goods_factor = 0.05
@@ -857,16 +852,6 @@ ideas = {
         }
 
         MLT_Tower_debts_2 = {
-=======
-                consumer_goods_factor = -0.05
-                industrial_capacity_factory = 0.1
-                industrial_capacity_dockyard = 0.20
-                weekly_manpower = 100
-            }
-        }
-
-        MLT_Secrets_of_tower_2 = {
->>>>>>> b6d0d7a9f9055592d799bc5fc8b4f2443188bb7d
 
             removal_cost = -1
 
@@ -881,7 +866,6 @@ ideas = {
             picture = no_picture
 
             modifier = {
-<<<<<<< HEAD
                 industrial_capacity_dockyard = -0.10
                 industrial_capacity_factory = -0.10
                 consumer_goods_factor = 0.10
@@ -927,7 +911,46 @@ ideas = {
                 industrial_capacity_dockyard = -0.30
                 industrial_capacity_factory = -0.30
                 consumer_goods_factor = 0.15
-=======
+            }
+        }
+
+        MLT_Secrets_of_tower = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.20
+                weekly_manpower = 100
+            }
+        }
+
+        MLT_Secrets_of_tower_2 = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
                 consumer_goods_factor = -0.05
                 industrial_capacity_factory = 0.15
                 industrial_capacity_dockyard = 0.25
@@ -935,7 +958,6 @@ ideas = {
                 minimum_training_level = -0.1
                 max_command_power = 25
                 land_reinforce_rate = 0.1
->>>>>>> b6d0d7a9f9055592d799bc5fc8b4f2443188bb7d
             }
         }
     }

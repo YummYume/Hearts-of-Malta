@@ -193,7 +193,7 @@ country_event = {
         }
         set_variable = { max_tower_floor = 1 }
         add_to_variable = { gold_currency = 10 }
-        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        custom_effect_tooltip = MLT_add_gold_to_reserve
         custom_effect_tooltip = MLT_max_floor_1
         add_ideas = MLT_Tower_debts_1
     }
@@ -216,7 +216,7 @@ country_event = {
         }
         set_variable = { max_tower_floor = 2 }
         add_to_variable = { gold_currency = 10 }
-        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        custom_effect_tooltip = MLT_add_gold_to_reserve
         custom_effect_tooltip = MLT_max_floor_2
         swap_ideas = {
             remove_idea = MLT_Tower_debts_1
@@ -242,7 +242,7 @@ country_event = {
         }
         set_variable = { max_tower_floor = 3 }
         add_to_variable = { gold_currency = 10 }
-        custom_effect_tooltip = MLT_add_bitcoin_to_reserve
+        custom_effect_tooltip = MLT_add_gold_to_reserve
         custom_effect_tooltip = MLT_max_floor_3
         swap_ideas = {
             remove_idea = MLT_Tower_debts_2
@@ -288,7 +288,7 @@ country_event = {
         }
         set_variable = { max_tower_floor = 10 }
         add_to_variable = { gold_currency = 70 }
-        custom_effect_tooltip = MLT_add_bitcoin_to_reserve_70
+        custom_effect_tooltip = MLT_add_gold_to_reserve_70
         custom_effect_tooltip = MLT_max_floor_10
         swap_ideas = {
             remove_idea = MLT_Tower_debts_3
