@@ -124,6 +124,7 @@
  MLT_in_the_air_desc:0 ""
  MLT_foreign_politics:0 "Foreign Politics"
  MLT_foreign_politics_desc:0 "With the Fiftieth Floor built for containing foreign embassies, we can now begin opening formal diplomatic channels with other foreign countries, such as [ITA.GetNameDef], [FRA.GetNameDef], and [GER.GetNameDef]."
+ MLT_stay_loyal_towards_britain:0 "Has §Ystayed loyal§! towards §YBritain§!"
  MLT_approach_italy:0 "Approach [ITA.GetNameDef]"
  MLT_approach_italy_desc:0 "Despite [ITA.GetNameDefCap] and their claim on our island, they are the closest country to us, making them the most pragmatic country to ally. With enough negotiations, maybe we could persuade them to into an alliance. However, we must be aware that [ITA.GetNameDef] would be a dubious ally, as they can always switch sides like the First World War."
  MLT_approach_france:0 "Approach [FRA.GetNameDef]"
@@ -353,6 +354,9 @@
  malta.44.d:0 ""
  malta.44.a:0 "At least we're numerous now."
  MLT_tower_floor_price_increased_tt:0 "§OThe Tower§! : §RPopulation Price increases to 15§! £tower_food_texticon §RFood§!"
+ malta.45.t:0 "Gerald Strickland Returns from his journey !"
+ malta.45.d:0 ""
+ malta.45.a:0 "Welcome Back !"
 
  #Ideas
  MLT_Independence_movements:0 "Independence Movements"
@@ -556,6 +560,39 @@
 
  #Traits
  sixth_count_della_catena:0 "Sixth Count Della Catena"
+ MLT_nationalist:0 "Nationalist"
+ MLT_doctor_degree:0 "Doctor's Degree"
+ MLT_motivational_figure_for_the_youth:0 "Motivational Figure for the Youth"
+ drug_baron:0 "Pirate Baron"
+
+ #Advisors
+ MLT_Gerald_strickland:0 "Gerald Strickland"
+ MLT_someone_returned_from_journey:0 "§YGerald Strickland§! §Greturned§! from his §Yjourney§!"
+ MLT_Tommy_navarro:0 "Tommy Navarro"
+ MLT_Kayden_fantino:0 "Kayden Fantino"
+ MLT_Gerardu_tabone:0 "Gerardu Tabone"
+ MLT_Gabrijel_faure:0 "Gabriejel Faure"
+ MLT_Alfred_preziosi:0 "Alfred Preziosi"
+ MLT_Isaac_dimech:0 "Isaac Dimech"
+ MLT_Gori_schembri:0 "Gori Schembri"
+ MLT_Aiden_crescimano:0 "Aiden Crescimano"
+ MLT_Marjanu_rioli:0 "Marjanu Rioli"
+ MLT_Nicholas_turkett:0 "Nicholas Turkett"
+ MLT_Jean_darmenia:0 "Jean Darmenia"
+ MLT_Nathan_bosco:0 "Nathan Bosco"
+ MLT_Saverju_bonell:0 "Saverju Bonell"
+ MLT_Redent_Pulo:0 "Redent Pulo"
+ MLT_Lewis_casha:0 "Lewis Casha"
+ MLT_Nicolai_degabriele:0 "Nicolai De Gabriele"
+ MLT_Antnin_martin:0 "Antnin Martin"
+ MLT_Julien_pellerano:0 "Julien Pellerano"
+ MLT_Bert_giardino:0 "Bert Giardino"
+ MLT_Rikkardu_lisano:0 "Rikkardu Lisano"
+ MLT_Leonardo_facciol:0 "Leonardo Facciol"
+ MLT_Indrija_lombardo:0 "Indrija Lombardo"
+ MLT_Matthias_robert:0 "Matthias Robert"
+ MLT_Jamie_portughes:0 "Jamie Portughes"
+ MLT_Kai_degiovanni:0 "Kai Degiovanni"
 
  #Research Bonus
  MAL_counteroffensive_military_tact:0 "Counter-offensive Tactics"

@@ -4,4 +4,89 @@ spriteTypes = {
 		name = "GFX_focus_malta_awakens"
 		texturefile = "gfx/interfaces/goals/Malta_Awakens.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_Constitutional_Party"
+		texturefile = "gfx/interfaces/goals/Constitutional_Party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Eradicate_Unemployment"
+		texturefile = "gfx/interfaces/goals/Eradicate_Unemployment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Fishing_Industry"
+		texturefile = "gfx/interfaces/goals/Fishing_Industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Independents_Party"
+		texturefile = "gfx/interfaces/goals/Independents_Party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Maltese_Railways"
+		texturefile = "gfx/interfaces/goals/Maltese_Railways.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Maltese_Shipbuilding"
+		texturefile = "gfx/interfaces/goals/Maltese_Shipbuilding.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Nationalist_Party"
+		texturefile = "gfx/interfaces/goals/Nationalist_Party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Political_Turmoil"
+		texturefile = "gfx/interfaces/goals/Political_Turmoil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Speech_for_the_Workers"
+		texturefile = "gfx/interfaces/goals/Speech_for_the_Workers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_1936_Elections"
+		texturefile = "gfx/interfaces/goals/The_1936_Elections.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_British_Pounds"
+		texturefile = "gfx/interfaces/goals/The_British_Pounds.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_Heart_of_the_Mediterranian_Sea"
+		texturefile = "gfx/interfaces/goals/The_Heart_of_the_Mediterranian_Sea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_Industry_in_Valletta"
+		texturefile = "gfx/interfaces/goals/The_Industry_in_Valletta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_Labour_Party"
+		texturefile = "gfx/interfaces/goals/The_Labour_Party.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_Maltese_Language_Question"
+		texturefile = "gfx/interfaces/goals/The_Maltese_Language_Question.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_The_Maltese_Lira"
+		texturefile = "gfx/interfaces/goals/The_Maltese_Lira.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Under_the_Maltese_Flag"
+		texturefile = "gfx/interfaces/goals/Under_the_Maltese_Flag.dds"
+	}
 }

@@ -40,7 +40,7 @@ focus_tree = {
         x = 6
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
-        icon = GFX_
+        icon = GFX_focus_The_Heart_of_the_Mediterranian_Sea
         cost = 5
         ai_will_do = {
             factor = 1
@@ -63,7 +63,7 @@ focus_tree = {
         x = 3
         y = 3
         prerequisite = { focus = MLT_heart_mediterraenean_sea }
-        icon = GFX_
+        icon = GFX_focus_The_Industry_in_Valletta
         cost = 5
         ai_will_do = {
             factor = 1
@@ -98,7 +98,7 @@ focus_tree = {
         x = 6
         y = 3
         prerequisite = { focus = MLT_heart_mediterraenean_sea }
-        icon = GFX_
+        icon = GFX_focus_Maltese_Railways
         cost = 5
         ai_will_do = {
             factor = 1
@@ -127,7 +127,7 @@ focus_tree = {
         x = 9
         y = 3
         prerequisite = { focus = MLT_heart_mediterraenean_sea }
-        icon = GFX_
+        icon = GFX_focus_Maltese_Shipbuilding
         cost = 5
         ai_will_do = {
             factor = 1
@@ -157,7 +157,7 @@ focus_tree = {
         x = 3
         y = 4
         prerequisite = { focus = MLT_industry_in_valleta }
-        icon = GFX_
+        icon = GFX_focus_Eradicate_Unemployment
         cost = 5
         ai_will_do = {
             factor = 1
@@ -180,7 +180,7 @@ focus_tree = {
         x = 6
         y = 4
         prerequisite = { focus = MLT_maltese_railways }
-        icon = GFX_
+        icon = GFX_focus_Speech_for_the_Workers
         cost = 5
         ai_will_do = {
             factor = 1
@@ -203,7 +203,7 @@ focus_tree = {
         x = 9
         y = 4
         prerequisite = { focus = MLT_maltese_shipbuilding }
-        icon = GFX_
+        icon = GFX_focus_Fishing_Industry
         cost = 5
         ai_will_do = {
             factor = 1
@@ -233,7 +233,7 @@ focus_tree = {
         prerequisite = { focus = MLT_eradicate_unemployment }
         prerequisite = { focus = MLT_speech_workers }
         prerequisite = { focus = MLT_fishing_industry }
-        icon = GFX_
+        icon = GFX_focus_Under_the_Maltese_Flag
         cost = 5
         ai_will_do = {
             factor = 1
@@ -256,7 +256,7 @@ focus_tree = {
         x = 25
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
-        icon = GFX_
+        icon = GFX_focus_Political_Turmoil
         cost = 2
         ai_will_do = {
             factor = 20
@@ -279,7 +279,7 @@ focus_tree = {
         x = 25
         y = 3
         prerequisite = { focus = MLT_political_turmoil }
-        icon = GFX_
+        icon = GFX_focus_The_Maltese_Language_Question
         cost = 5
         ai_will_do = {
             factor = 2
@@ -302,7 +302,7 @@ focus_tree = {
         x = 25
         y = 4
         prerequisite = { focus = MLT_maltese_language_question }
-        icon = GFX_
+        icon = GFX_focus_The_1936_Elections
         cost = 5
         ai_will_do = {
             factor = 2
@@ -325,7 +325,7 @@ focus_tree = {
         x = 20
         y = 5
         prerequisite = { focus = MLT_maltese_election }
-        icon = GFX_
+        icon = GFX_focus_Constitutional_Party
         cost = 5
         ai_will_do = {
             factor = 2
@@ -348,7 +348,7 @@ focus_tree = {
         x = 23
         y = 5
         prerequisite = { focus = MLT_maltese_election }
-        icon = GFX_
+        icon = GFX_focus_The_Labour_Party
         cost = 5
         ai_will_do = {
             factor = 2
@@ -371,7 +371,7 @@ focus_tree = {
         x = 27
         y = 5
         prerequisite = { focus = MLT_maltese_election }
-        icon = GFX_
+        icon = GFX_focus_Nationalist_Party
         cost = 5
         ai_will_do = {
             factor = 2
@@ -394,7 +394,7 @@ focus_tree = {
         x = 30
         y = 5
         prerequisite = { focus = MLT_maltese_election }
-        icon = GFX_
+        icon = GFX_focus_Independents_Party
         cost = 5
         ai_will_do = {
             factor = 2
@@ -417,7 +417,7 @@ focus_tree = {
         x = 23
         y = 6
         prerequisite = { focus = MLT_constitutional_party focus = MLT_labour_party focus = MLT_nationalist_party }
-        icon = GFX_
+        icon = GFX_focus_The_British_Pounds
         cost = 5
         ai_will_do = {
             factor = 2
@@ -440,7 +440,7 @@ focus_tree = {
         x = 27
         y = 6
         prerequisite = { focus = MLT_labour_party focus = MLT_nationalist_party focus = MLT_independent_party }
-        icon = GFX_
+        icon = GFX_focus_The_Maltese_Lira
         cost = 5
         ai_will_do = {
             factor = 2
@@ -918,6 +918,9 @@ focus_tree = {
         }
         available = {
             is_in_faction_with = ENG
+            ENG = {
+                has_government = ROOT
+            }
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
@@ -1072,6 +1075,24 @@ focus_tree = {
                 swap_ideas = {
                     remove_idea = MLT_Secrets_of_tower
                     add_idea = MLT_Secrets_of_tower_2
+                }
+            }
+            116 = {
+                add_extra_state_shared_building_slots = 9
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
                 }
             }
         }
@@ -1709,6 +1730,10 @@ focus_tree = {
         }
         available = {
             is_subject = no
+            has_completed_focus = MLT_colonial_question
+            NOT = {
+                has_country_flag = MLT_stay_loyal_towards_britain
+            }
         }
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {

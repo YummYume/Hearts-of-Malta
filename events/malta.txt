@@ -313,7 +313,9 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        hidden_effect = {
+            country_event = { id = malta.45  days = 270 }
+        }
     }
 }
 
@@ -1827,6 +1829,7 @@ country_event = {
         }
         MLT = {
             add_ideas = MLT_Loyalty_to_britain
+            set_country_flag = MLT_stay_loyal_towards_britain
         }
         add_opinion_modifier = {
 	        target = ENG
@@ -1965,7 +1968,7 @@ country_event = {
     id = malta.43
     title = malta.43.t
     desc = malta.43.d
-    picture = GFX_report_event_communist_leader
+    picture = GFX_report_event_communists_cheer
 
     is_triggered_only = yes
 
@@ -1995,7 +1998,7 @@ country_event = {
     id = malta.44
     title = malta.44.t
     desc = malta.44.d
-    picture = GFX_report_event_communist_leader
+    picture = GFX_report_event_bul_muraviev_protest
 
     trigger = {
         tag = MLT
@@ -2020,5 +2023,24 @@ country_event = {
             factor = 50
         }
         custom_effect_tooltip = MLT_tower_floor_price_increased_tt
+    }
+}
+
+# Someone Returns from Journey
+country_event = {
+    id = malta.45
+    title = malta.45.t
+    desc = malta.45.d
+    picture = GFX_report_event_bul_troops_macedonia
+
+    is_triggered_only = yes
+
+    # We Need that Money
+    option = {
+        name = malta.45.a
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = MLT_someone_returned_from_journey
     }
 }
