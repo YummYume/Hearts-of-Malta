@@ -304,6 +304,239 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetFloorBuyStatus
+	has_full_control_of_state = 116
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = max_tower_floor
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_BUY_FLOOR_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = gold_currency
+				value = price_tower_floor
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_FLOOR_NOT_ENOUGH_GOLD
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetCivilianFactoryBuyStatus
+	has_full_control_of_state = 116
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					var = current_building_tower
+					value = max_building_tower
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = current_civilian_factory_tower
+					value = max_civilian_factory_tower
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = MLT_BUY_CIVILIAN_FACTORY_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = jewelry_currency
+				value = price_tower_civilian_factory
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_CIVILIAN_FACTORY_NOT_ENOUGH_JEWELRY
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetMilitaryFactoryBuyStatus
+	has_full_control_of_state = 116
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					var = current_building_tower
+					value = max_building_tower
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = current_military_factory_tower
+					value = max_military_factory_tower
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = MLT_BUY_MILITARY_FACTORY_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = jewelry_currency
+				value = price_tower_military_factory
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_MILITARY_FACTORY_NOT_ENOUGH_JEWELRY
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetDockyardBuyStatus
+	has_full_control_of_state = 116
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					var = current_building_tower
+					value = max_building_tower
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					var = current_dockyard_tower
+					value = max_dockyard_tower
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = MLT_BUY_DOCKYARD_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = jewelry_currency
+				value = price_tower_dockyard
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_DOCKYARD_NOT_ENOUGH_JEWELRY
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetPopulationBuyStatus
+	has_full_control_of_state = 116
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_population_tower_m
+				value = max_population_tower_m
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_BUY_POPULATION_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = food_currency
+				value = price_tower_population
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_POPULATION_NOT_ENOUGH_FOOD
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
 	name = GetCoastalRaidFocusStatus
 	text = {
 		trigger = {
