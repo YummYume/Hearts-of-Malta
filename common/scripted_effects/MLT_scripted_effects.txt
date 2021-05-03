@@ -247,26 +247,26 @@ increase_tower_modifier = {
         max = 100000
     }
 
-    add_to_variable = { refitting_speed_tower_malta = 1 }
+    add_to_variable = { refitting_speed_tower_malta = 0.1 }
     clamp_variable = {
         var = refitting_speed_tower_malta
         min = 0
-        max = 1000
+        max = 10
     }
 
-    add_to_variable = { drift_defence_factor_tower_malta = 1 }
+    add_to_variable = { drift_defence_factor_tower_malta = 0.1 }
     clamp_variable = {
         var = drift_defence_factor_tower_malta
         min = 0
-        max = 1000
+        max = 10
     }
 
 
-    add_to_variable = { trade_opinion_factor_tower_malta = 1 }
+    add_to_variable = { trade_opinion_factor_tower_malta = 0.1 }
     clamp_variable = {
         var = trade_opinion_factor_tower_malta
         min = 0
-        max = 1000
+        max = 10
     }
 }
 
@@ -282,14 +282,14 @@ increase_tower_puppet_modifier = {
     clamp_variable = {
         var = share_refitting_speed_tower_malta
         min = 0
-        max = 500
+        max = 5
     }
 
     add_to_variable = { share_drift_defence_factor_tower_malta = 0.5 }
     clamp_variable = {
         var = share_drift_defence_factor_tower_malta
         min = 0
-        max = 500
+        max = 5
     }
 
 
@@ -297,6 +297,6 @@ increase_tower_puppet_modifier = {
     clamp_variable = {
         var = share_trade_opinion_factor_tower_malta
         min = 0
-        max = 500
+        max = 5
     }
 }

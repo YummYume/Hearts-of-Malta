@@ -1,0 +1,8 @@
+state_categories={
+	tower = {
+		local_building_slots = 20
+	
+		color = { 150 200 200 }
+
+	}
+}
