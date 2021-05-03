@@ -191,6 +191,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        custom_effect_tooltip = MLT_unlock_tower_with_decisions
         set_variable = { max_tower_floor = 1 }
         add_to_variable = { gold_currency = 10 }
         custom_effect_tooltip = MLT_add_gold_to_reserve

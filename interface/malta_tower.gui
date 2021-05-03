@@ -559,7 +559,7 @@ guiTypes = {
                         spriteType = "GFX_tower_buy_button"
                         buttonText = "Buy"
                         buttonFont = cg_18b
-                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        pdx_tooltip = LOC_mlt_tower_window_civilian_factory_purchase
                         clicksound = MLT_construction_buttons
                     }
 
@@ -645,7 +645,7 @@ guiTypes = {
                         spriteType = "GFX_tower_buy_button"
                         buttonText = "Buy"
                         buttonFont = cg_18b
-                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        pdx_tooltip = LOC_mlt_tower_window_military_factory_purchase
                         clicksound = MLT_construction_buttons
                     }
 
@@ -731,7 +731,7 @@ guiTypes = {
                         spriteType = "GFX_tower_buy_button"
                         buttonText = "Buy"
                         buttonFont = cg_18b
-                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        pdx_tooltip = LOC_mlt_tower_window_dockyard_purchase
                         clicksound = MLT_construction_buttons
                     }
 
@@ -817,7 +817,7 @@ guiTypes = {
                         spriteType = "GFX_tower_buy_button"
                         buttonText = "Buy"
                         buttonFont = cg_18b
-                        pdx_tooltip = LOC_mlt_tower_window_floor_purchase
+                        pdx_tooltip = LOC_mlt_tower_window_population_purchase
                         clicksound = MLT_population_button
                     }
                 }

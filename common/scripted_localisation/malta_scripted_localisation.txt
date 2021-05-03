@@ -305,7 +305,6 @@ defined_text = {
 
 defined_text = {
 	name = GetFloorBuyStatus
-	has_full_control_of_state = 116
 	text = {
 		trigger = {
 			NOT = {
@@ -341,7 +340,6 @@ defined_text = {
 
 defined_text = {
 	name = GetCivilianFactoryBuyStatus
-	has_full_control_of_state = 116
 	text = {
 		trigger = {
 			NOT = {
@@ -360,17 +358,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
-				check_variable = {
-					var = current_building_tower
-					value = max_building_tower
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = current_civilian_factory_tower
-					value = max_civilian_factory_tower
-					compare = greater_than_or_equals
-				}
+			check_variable = {
+				var = current_building_tower
+				value = max_building_tower
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_BUY_FACTORY_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_civilian_factory_tower
+				value = max_civilian_factory_tower
+				compare = greater_than_or_equals
 			}
 		}
 		localization_key = MLT_BUY_CIVILIAN_FACTORY_NOT_ENOUGH_SPACE
@@ -392,7 +393,6 @@ defined_text = {
 
 defined_text = {
 	name = GetMilitaryFactoryBuyStatus
-	has_full_control_of_state = 116
 	text = {
 		trigger = {
 			NOT = {
@@ -411,17 +411,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
-				check_variable = {
-					var = current_building_tower
-					value = max_building_tower
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = current_military_factory_tower
-					value = max_military_factory_tower
-					compare = greater_than_or_equals
-				}
+			check_variable = {
+				var = current_building_tower
+				value = max_building_tower
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_BUY_FACTORY_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_military_factory_tower
+				value = max_military_factory_tower
+				compare = greater_than_or_equals
 			}
 		}
 		localization_key = MLT_BUY_MILITARY_FACTORY_NOT_ENOUGH_SPACE
@@ -443,7 +446,6 @@ defined_text = {
 
 defined_text = {
 	name = GetDockyardBuyStatus
-	has_full_control_of_state = 116
 	text = {
 		trigger = {
 			NOT = {
@@ -462,17 +464,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
-				check_variable = {
-					var = current_building_tower
-					value = max_building_tower
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = current_dockyard_tower
-					value = max_dockyard_tower
-					compare = greater_than_or_equals
-				}
+			check_variable = {
+				var = current_building_tower
+				value = max_building_tower
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_BUY_FACTORY_NOT_ENOUGH_SPACE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_dockyard_tower
+				value = max_dockyard_tower
+				compare = greater_than_or_equals
 			}
 		}
 		localization_key = MLT_BUY_DOCKYARD_NOT_ENOUGH_SPACE
@@ -494,7 +499,6 @@ defined_text = {
 
 defined_text = {
 	name = GetPopulationBuyStatus
-	has_full_control_of_state = 116
 	text = {
 		trigger = {
 			NOT = {

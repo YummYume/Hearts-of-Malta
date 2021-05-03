@@ -244,7 +244,7 @@ increase_tower_modifier = {
     clamp_variable = {
         var = weekly_manpower_tower_malta
         min = 0
-        max = 100000
+        max = 50000
     }
 
     add_to_variable = { refitting_speed_tower_malta = 0.1 }
@@ -275,7 +275,7 @@ increase_tower_puppet_modifier = {
     clamp_variable = {
         var = share_weekly_manpower_tower_malta
         min = 0
-        max = 50000
+        max = 25000
     }
 
     add_to_variable = { share_refitting_speed_tower_malta = 0.5 }
