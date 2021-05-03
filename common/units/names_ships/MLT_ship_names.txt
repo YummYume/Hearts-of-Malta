@@ -1,0 +1,40 @@
+MLT_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { MLT }
+
+	can_use = {
+		
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "AFM "							
+	fallback_name = "Destroyer %s"					
+
+	unique = {											
+		"P01" "P02" "P03" "P04" "P05" "P06" "P021" "P022" "P023" "P024" "P051" "P052" "P061" "P062" "C21" "C25" "C26" "C27" "C28" "C29" "P29" "P30" "P31" "P32" "P33" "P34" "P35" "P36" "P37" "P38" "P39" "C20" "C68" "C71" "LC1"
+	}
+}
+
+### SUBMARINES ###
+MLT_SS_COMMUNISM= {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { MLT }
+
+	can_use = { 
+		
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "AFM "							
+	fallback_name = "Submarine %s"
+	
+	unique = {
+		"Convoy Raiders" "Miners" "Raiders" "S25" "S24" "S01" "S02" "S03" "S04" "S05" "S06" "S07" "S08" "S09" "S10" "S11" "S12" "S13" "S14" "S15" "S16" "S17" "S18" "S19" "S20" "S21" "S22" "S23" 
+	}
+}

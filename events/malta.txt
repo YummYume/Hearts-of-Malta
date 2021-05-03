@@ -295,7 +295,9 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        hidden_effect = {
+            country_event = { id = malta.45  days = 270 }
+        }
     }
 }
 
@@ -1807,6 +1809,7 @@ country_event = {
         }
         MLT = {
             add_ideas = MLT_Loyalty_to_britain
+            set_country_flag = MLT_stay_loyal_towards_britain
         }
         add_opinion_modifier = {
 	        target = ENG
@@ -1937,5 +1940,24 @@ country_event = {
                 value = 50
             }
         }
+    }
+}
+
+# Someone Returns from Journey
+country_event = {
+    id = malta.45
+    title = malta.45.t
+    desc = malta.45.d
+    picture = GFX_
+
+    is_triggered_only = yes
+
+    # We Need that Money
+    option = {
+        name = malta.45.a
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = MLT_someone_returned_from_journey
     }
 }
