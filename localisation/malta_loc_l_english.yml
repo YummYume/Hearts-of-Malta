@@ -353,6 +353,9 @@
  malta.44.d:0 ""
  malta.44.a:0 "At least we're numerous now."
  MLT_tower_floor_price_increased_tt:0 "§OThe Tower§! : §RPopulation Price increases to 15§! £tower_food_texticon §RFood§!"
+ malta.45.t:0 "Gerald Strickland Returns from his journey !"
+ malta.45.d:0 ""
+ malta.45.a:0 "Welcome Back !"
 
  #Ideas
  MLT_Independence_movements:0 "Independence Movements"
