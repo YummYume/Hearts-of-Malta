@@ -76,6 +76,16 @@ on_actions = {
 			tungsten_calculate_price = yes
 			steel_calculate_price = yes
 			chromium_calculate_price = yes
+
+			if = {
+				limit = {
+					has_idea = MLT_Jetpack_licences
+				}
+				add_to_variable = { gold_currency = 5 }
+				add_to_variable = { food_currency = 5 }
+				add_to_variable = { jewelry_currency = 5 }
+				add_to_variable = { diamond_currency = 5 }
+			}
 		}
 	}
 }

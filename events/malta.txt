@@ -172,7 +172,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_ideas = MLT_New_strategies
     }
 }
 
@@ -374,7 +374,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_ideas = MLT_Elevators_music
     }
 }
 
@@ -393,7 +393,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-
+        add_ideas = MLT_Jetpack_licences
     }
 }
 
@@ -406,6 +406,23 @@ country_event = {
 
     is_triggered_only = yes
 
+    immediate = {
+        set_variable = { price_tower_floor = 15 }
+        set_country_flag = tower_floor_price_increased
+        for_each_loop = {
+            array = MLT.resource_inflation
+            index = i
+            
+            set_variable = { MLT.resource_inflation^var:i = 1 }
+        }
+        oil_calculate_price = yes
+        aluminum_calculate_price = yes
+        rubber_calculate_price = yes
+        tungsten_calculate_price = yes
+        steel_calculate_price = yes
+        chromium_calculate_price = yes
+    }
+
     # How did we fucked up this badly ?
     option = {
         name = malta.19.a
@@ -413,8 +430,8 @@ country_event = {
             factor = 100
         }
         add_manpower = -500
-        set_variable = { price_tower_floor = 13 }
-        set_country_flag = tower_floor_price_increased
+        custom_effect_tooltip = MLT_tower_floor_price_increased_tt
+        custom_effect_tooltip = MLT_reset_inflation_tt
     }
 }
 
@@ -2013,7 +2030,8 @@ country_event = {
     fire_only_once = yes
 
     immediate = {
-        set_country_flag = tower_floor_price_increased
+        set_variable = { price_population_tower = 15 }
+        set_country_flag = tower_food_price_increased
     }
 
     #Oh...
@@ -2022,7 +2040,7 @@ country_event = {
         ai_chance = {
             factor = 50
         }
-        custom_effect_tooltip = MLT_tower_floor_price_increased_tt
+        custom_effect_tooltip = MLT_tower_population_price_increased_tt
     }
 }
 

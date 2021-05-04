@@ -1,5 +1,24 @@
 ideas = {
 	country = {
+        MLT_New_strategies = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = no_picture
+
+            modifier = {
+                political_power_gain = 0.15
+            }
+        }
+
         MLT_Independence_movements = {
 
             removal_cost = -1
@@ -959,7 +978,59 @@ ideas = {
                 max_command_power = 25
                 land_reinforce_rate = 0.1
             }
-        }  
+        }
+
+        MLT_Elevators_music = {
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            cancel = {
+                NOT = {
+                    has_full_control_of_state = 116
+                }
+            }
+
+            picture = no_picture
+
+            modifier = {
+                defensive_war_stability_factor = -0.05
+                offensive_war_stability_factor = 0.05
+                war_stability_factor = 0.15
+                war_support_factor = 0.15
+            }
+        }
+
+        MLT_Jetpack_licences = {
+
+            removal_cost = -1
+
+            allowed = {
+                always = yes
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            cancel = {
+                NOT = {
+                    has_full_control_of_state = 116
+                }
+            }
+
+            picture = no_picture
+
+            modifier = {
+                custom_modifier_tooltip = MLT_Jetpack_licences_tt
+            }
+        }
     }
 
     political_advisor = {
