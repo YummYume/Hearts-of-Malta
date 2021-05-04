@@ -13,6 +13,13 @@ MLT_tower_of_malta = {
     	
     }
 
+    on_map_area = {
+		name = MLT_tower_of_malta_states
+		zoom = 400
+
+		target_array = MLT.mlt_mediterranean_states
+	}
+
     priority = 100
 
     visible = {

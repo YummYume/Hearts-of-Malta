@@ -170,6 +170,69 @@ rubber_calculate_price = yes
 tungsten_calculate_price = yes
 steel_calculate_price = yes
 chromium_calculate_price = yes
+
+add_to_array = { MLT.mlt_mediterranean_states = 186 }
+add_to_array = { MLT.mlt_mediterranean_states = 47 }
+add_to_array = { MLT.mlt_mediterranean_states = 185 }
+add_to_array = { MLT.mlt_mediterranean_states = 731 }
+add_to_array = { MLT.mlt_mediterranean_states = 184 }
+add_to_array = { MLT.mlt_mediterranean_states = 187 }
+add_to_array = { MLT.mlt_mediterranean_states = 182 }
+add_to_array = { MLT.mlt_mediterranean_states = 341 }
+add_to_array = { MLT.mlt_mediterranean_states = 797 }
+add_to_array = { MLT.mlt_mediterranean_states = 347 }
+add_to_array = { MLT.mlt_mediterranean_states = 340 }
+add_to_array = { MLT.mlt_mediterranean_states = 339 }
+add_to_array = { MLT.mlt_mediterranean_states = 342 }
+add_to_array = { MLT.mlt_mediterranean_states = 164 }
+add_to_array = { MLT.mlt_mediterranean_states = 345 }
+add_to_array = { MLT.mlt_mediterranean_states = 344 }
+add_to_array = { MLT.mlt_mediterranean_states = 799 }
+add_to_array = { MLT.mlt_mediterranean_states = 677 }
+add_to_array = { MLT.mlt_mediterranean_states = 553 }
+add_to_array = { MLT.mlt_mediterranean_states = 454 }
+add_to_array = { MLT.mlt_mediterranean_states = 453 }
+add_to_array = { MLT.mlt_mediterranean_states = 446 }
+add_to_array = { MLT.mlt_mediterranean_states = 447 }
+add_to_array = { MLT.mlt_mediterranean_states = 452 }
+add_to_array = { MLT.mlt_mediterranean_states = 451 }
+add_to_array = { MLT.mlt_mediterranean_states = 450 }
+add_to_array = { MLT.mlt_mediterranean_states = 449 }
+add_to_array = { MLT.mlt_mediterranean_states = 448 }
+add_to_array = { MLT.mlt_mediterranean_states = 665 }
+add_to_array = { MLT.mlt_mediterranean_states = 458 }
+add_to_array = { MLT.mlt_mediterranean_states = 460 }
+add_to_array = { MLT.mlt_mediterranean_states = 459 }
+add_to_array = { MLT.mlt_mediterranean_states = 461 }
+add_to_array = { MLT.mlt_mediterranean_states = 290 }
+add_to_array = { MLT.mlt_mediterranean_states = 118 }
+add_to_array = { MLT.mlt_mediterranean_states = 173 }
+add_to_array = { MLT.mlt_mediterranean_states = 168 }
+add_to_array = { MLT.mlt_mediterranean_states = 167 }
+add_to_array = { MLT.mlt_mediterranean_states = 165 }
+add_to_array = { MLT.mlt_mediterranean_states = 31 }
+add_to_array = { MLT.mlt_mediterranean_states = 22 }
+add_to_array = { MLT.mlt_mediterranean_states = 21 }
+add_to_array = { MLT.mlt_mediterranean_states = 735 }
+add_to_array = { MLT.mlt_mediterranean_states = 158 }
+add_to_array = { MLT.mlt_mediterranean_states = 162 }
+add_to_array = { MLT.mlt_mediterranean_states = 2 }
+add_to_array = { MLT.mlt_mediterranean_states = 117 }
+add_to_array = { MLT.mlt_mediterranean_states = 156 }
+add_to_array = { MLT.mlt_mediterranean_states = 115 }
+add_to_array = { MLT.mlt_mediterranean_states = 157 }
+add_to_array = { MLT.mlt_mediterranean_states = 161 }
+add_to_array = { MLT.mlt_mediterranean_states = 160 }
+add_to_array = { MLT.mlt_mediterranean_states = 736 }
+add_to_array = { MLT.mlt_mediterranean_states = 103 }
+add_to_array = { MLT.mlt_mediterranean_states = 163 }
+add_to_array = { MLT.mlt_mediterranean_states = 105 }
+add_to_array = { MLT.mlt_mediterranean_states = 44 }
+add_to_array = { MLT.mlt_mediterranean_states = 805 }
+add_to_array = { MLT.mlt_mediterranean_states = 114 }
+add_to_array = { MLT.mlt_mediterranean_states = 1 }
+add_to_array = { MLT.mlt_mediterranean_states = 177 }
+add_to_array = { MLT.mlt_mediterranean_states = 183 }
 # End of tower stuff
 
 create_country_leader = {

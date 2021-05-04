@@ -104,8 +104,6 @@ MLT_tower_of_malta = {
 			is_debug = yes
 		}
 
-		cost = 10
-
 		complete_effect = {
             add_to_variable = { bitcoin_currency = 10 }
         }
