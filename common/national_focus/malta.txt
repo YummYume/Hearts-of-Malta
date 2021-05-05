@@ -593,6 +593,16 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
             country_event = malta.9
+            hidden_effect = {
+                116 = {
+                    add_province_modifier = { 
+                        static_modifiers = { tower_defense }
+                        province = {
+                            id = 12003
+                        }      
+                    }
+                }
+            }
         }
     }
 

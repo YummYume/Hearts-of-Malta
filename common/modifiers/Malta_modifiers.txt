@@ -1,0 +1,11 @@
+tower_defense = {
+	army_defence_factor = 0.25
+	dig_in_speed_factor = 0.1
+}
+
+maltese_resistance = {
+	resistance_growth = 0.35
+	resistance_damage_to_garrison = -0.5
+	state_resources_factor = -0.5
+	resistance_garrison_penetration_chance = 0.25
+}

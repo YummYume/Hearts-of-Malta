@@ -1,0 +1,90 @@
+on_actions = {
+
+	on_state_control_changed = { #Someone Takes Malta from MLT
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 116
+					}
+					FROM = {
+						TAG = MLT
+					}
+				}
+				ROOT = {
+					add_dynamic_modifier = { modifier = tower_of_malta_modifier }
+					set_variable = { weekly_manpower_tower_malta = FROM.weekly_manpower_tower_malta }
+					set_variable = { refitting_speed_tower_malta = FROM.refitting_speed_tower_malta }
+					set_variable = { drift_defence_factor_tower_malta = FROM.drift_defence_factor_tower_malta }
+					set_variable = { trade_opinion_factor_tower_malta = FROM.trade_opinion_factor_tower_malta }
+				}
+				FROM = {
+					remove_dynamic_modifier = { modifier = tower_of_malta_modifier }
+					clear_variable = weekly_manpower_tower_malta
+					clear_variable = refitting_speed_tower_malta
+					clear_variable = drift_defence_factor_tower_malta
+					clear_variable = trade_opinion_factor_tower_malta
+				}
+			}
+			116 = {
+				remove_province_modifier = { 
+					static_modifiers = { tower_defense }
+					province = {
+						id = 12003
+					}      
+				}
+				add_province_modifier = { 
+					static_modifiers = { maltese_resistance }
+					province = {
+						id = 12003
+					}      
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = { #Malta has been taken back by MLT or Allies
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							TAG = MLT
+						}
+					}
+					FROM.FROM = {
+						state = 116
+					}
+				}
+				MLT = {
+					add_dynamic_modifier = { modifier = tower_of_malta_modifier }
+					set_variable = { weekly_manpower_tower_malta = FROM.weekly_manpower_tower_malta }
+					set_variable = { refitting_speed_tower_malta = FROM.refitting_speed_tower_malta }
+					set_variable = { drift_defence_factor_tower_malta = FROM.drift_defence_factor_tower_malta }
+					set_variable = { trade_opinion_factor_tower_malta = FROM.trade_opinion_factor_tower_malta }
+				}
+				FROM = {
+					remove_dynamic_modifier = { modifier = tower_of_malta_modifier }
+					clear_variable = weekly_manpower_tower_malta
+					clear_variable = refitting_speed_tower_malta
+					clear_variable = drift_defence_factor_tower_malta
+					clear_variable = trade_opinion_factor_tower_malta
+				}
+			}
+			116 = {
+				remove_province_modifier = { 
+					static_modifiers = { maltese_resistance }
+					province = {
+						id = 12003
+					}      
+				}
+				add_province_modifier = { 
+					static_modifiers = { tower_defense }
+					province = {
+						id = 12003
+					}      
+				}
+			}
+		}
+	}	
+}

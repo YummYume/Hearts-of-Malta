@@ -357,12 +357,12 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  malta.44.d:0 ""
  malta.44.a:0 "At least we're numerous now."
  MLT_tower_population_price_increased_tt:0 "§OThe Tower§! : Population Price : §RIncreases to 15§! £tower_food_texticon §RFood§!."
- malta.45.t:0 "Gerald Strickland Returns from his journey !"
+ malta.45.t:0 "[MLT.GetLeader] Returns from his journey !"
  malta.45.d:0 ""
  malta.45.a:0 "Welcome Back !"
- malta.46.t:0 "Political Crisis"
- malta.46.d:0 ""
- malta.46.a:0 "Something Must be done to stop it !"
+ malta.47.t:0 "Political Crisis"
+ malta.47.d:0 ""
+ malta.47.a:0 "Something Must be done to stop it !"
 
 #News Events
  newsmalta.1.t:0 "Birth of a Giant"
@@ -718,6 +718,10 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  FOCUS_FILTER_TOWER_MALTA:0 "The Tower"
  FOCUS_FILTER_INDEPENDENCE_MALTA:0 "Independence"
  FOCUS_FILTER_MILITARY_MALTA:0 "Military"
+
+#State Modifiers
+ tower_defense:0 "Defence of the Tower"
+ maltese_resistance:0 "Maltese Resistance"
 
 #Scripted Localization
  MTL_WEEKLY_MANPOWER_TOWER_MALTA_LOC:0 "§WWeekly Manpower:§! §G+[?weekly_manpower_tower_malta]§!"
