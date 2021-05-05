@@ -182,6 +182,7 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  small_debuff_national_spirit_claims:0 "§YAny Country§! who is not a §YSubject§! or in our §YFaction§! and holding our §YClaims§! will receive a §RSmall Debuff§! against us."
  MLT_bright_future:0 "A Bright Future"
  MLT_bright_future_desc:0 "With the Tower development being ceaseless, and the dominant position of [MLT.GetNameDef] in the world, it seems a bright future lies ahead for our island. No Grisha, no Dankus, no TommyKay, no one can stop our inevitable growth from reaching the stars. Maybe it’s time to incorporate Mars now?"
+ has_formed_empire_MLT:0 "Has Formed a Nation"
 
 #Events
  malta.1.t:0 "Maltese Awakening"
@@ -359,6 +360,9 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  malta.45.t:0 "Gerald Strickland Returns from his journey !"
  malta.45.d:0 ""
  malta.45.a:0 "Welcome Back !"
+ malta.46.t:0 "Political Crisis"
+ malta.46.d:0 ""
+ malta.46.a:0 "Something Must be done to stop it !"
 
 #News Events
  newsmalta.1.t:0 "Birth of a Giant"
@@ -495,6 +499,10 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  MLT_Jetpack_licences:0 "Jetpack Licences"
  MLT_Jetpack_licences_desc:0 "Following the failure of adding music in elevators, a new and better idea emerged : Jetpacks! Cars are now obsolete. Jetpacks can help travel faster in the tower, while also help during missions.\nEveryone, driving licences are no more! Grab your Jetpack licence now!"
  MLT_Jetpack_licences_tt:0 "Weekly Gold Gain : §G+5§!\nWeekly Food Gain : §G+5§!\nWeekly Jewelries Gain : §G+5§!\nWeekly Diamonds Gain : §G+5§!"
+ remove_it_complete_focus_election:0 "To remove this §Ynational spirit§!, you must §Ycomplete the focus§!: \"§YThe 1936 Election§!\" "
+ MLT_Political_crisis:0 "Political Crisis"
+ MLT_Political_crisis_desc:0 ""
+
 
 #Decisions
  MLT_tower_of_malta:0 "The Tower of Malta"
@@ -617,6 +625,8 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  MLT_proclaim_the_red_lion_alliance:0 "Proclaim the Alliance of the Red Lion"
  MLT_proclaim_the_red_lion_alliance_desc:0 ""
  MLT_proclaim_the_football_league:0 "Proclaim the Football League"
+ MLT_proclaim_leader_tower:0 "Proclaim the True Leader"
+ MLT_proclaim_leader_tower_desc:0 ""
 
 #Traits
  sixth_count_della_catena:0 "Sixth Count Della Catena"

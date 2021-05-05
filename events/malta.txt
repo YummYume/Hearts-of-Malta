@@ -2059,12 +2059,38 @@ country_event = {
 
     is_triggered_only = yes
 
-    # We Need that Money
+    #Welcome back
     option = {
         name = malta.45.a
         ai_chance = {
             factor = 100
         }
         set_country_flag = MLT_someone_returned_from_journey
+    }
+}
+
+#Political Crisis
+country_event = {
+    id = malta.46
+    title = malta.46.t
+    desc = malta.46.d
+    picture = GFX_report_event_generic_riot
+
+    trigger = {
+        date > 1937.1.1
+        NOT = {
+            has_completed_focus = MLT_maltese_election
+        }
+    }
+
+    fire_only_once = yes
+
+    #Something must be
+    option = {
+        name = malta.46.a
+        ai_chance = {
+            factor = 100
+        }
+        add_ideas = MLT_Political_crisis
     }
 }

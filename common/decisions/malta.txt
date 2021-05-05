@@ -302,6 +302,75 @@ MLT_tower_of_malta = {
 			add_stability = 0.05
 		}
 	}
+
+	MLT_proclaim_leader_tower = {
+		
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+			has_completed_focus = MLT_bright_future
+		}
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = MLT_bright_future
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			create_country_leader = {
+				name = "The Tower"
+				desc = "POLITICS_THE_TOWER_DESC"
+				picture = "gfx/leaders/MLT/Portrait_gerald_strickland.dds"
+				expire = "1965.1.1"
+				ideology = conservatism 
+				traits = {
+					
+				}
+			}
+			
+			create_country_leader = {
+				name = "The Tower"
+				desc = "POLITICS_THE_TOWER_DESC"
+				picture = "gfx/leaders/MLT/Portrait_george_borg_olivier.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					
+				}
+			}
+			
+			create_country_leader = {
+				name = "The Tower"
+				desc = "POLITICS_THE_TOWER_DESC"
+				picture = "gfx/leaders/MLT/Portrait_paul_boffa.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					
+				}
+			}
+			
+			create_country_leader = {
+				name = "The Tower"
+				desc = "POLITICS_THE_TOWER_DESC"
+				picture = "gfx/leaders/MLT/Portrait_Jorgi_Preca.dds"
+				expire = "1965.1.1"
+				ideology = oligarchism
+				traits = {
+					
+				}
+			}
+		}
+	}
 }
 
 MLT_proclaim_greater_malta_cat_decisions = {
@@ -1022,6 +1091,7 @@ MLT_proclaim_greater_malta_cat_decisions = {
 		complete_effect = {
             set_cosmetic_tag = MEDE
 			add_ideas = MLT_The_great_crusade
+			set_country_flag = has_formed_empire_MLT
         }
 	}
 
@@ -1567,6 +1637,7 @@ MLT_proclaim_greater_malta_cat_decisions = {
 		complete_effect = {
             set_cosmetic_tag = CCNM
 			add_ideas = MLT_The_great_crusade
+			set_country_flag = has_formed_empire_MLT
         }
 	}
 }
