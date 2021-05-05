@@ -99,8 +99,11 @@ set_variable = { price_tower_floor = 10 } # 10 Gold (increases during gameplay)
 set_variable = { current_building_tower = 0 } # Civilian + military + dockyards
 set_variable = { max_building_tower = current_tower_floor } # = current_tower_floor
 set_variable = { current_civilian_factory_tower = 0 }
+set_variable = { current_civilian_factory_tower_minus = 0 }
 set_variable = { current_military_factory_tower = 0 }
+set_variable = { current_military_factory_tower_minus = 0 }
 set_variable = { current_dockyard_tower = 0 }
+set_variable = { current_dockyard_tower_minus = 0 }
 set_variable = { max_civilian_factory_tower = 0 } # 50% of total factories
 set_variable = { max_military_factory_tower = 0 } # 45% of total factories
 set_variable = { max_dockyard_tower = 0 } # 30% of total factories

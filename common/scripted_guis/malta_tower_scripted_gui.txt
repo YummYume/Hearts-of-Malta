@@ -42,6 +42,14 @@ scripted_gui = {
                     }
                     country_event = malta.43
                     hidden_effect = {
+                        116 = {
+                            add_province_modifier = { 
+                                static_modifiers = { tower_defense }
+                                province = {
+                                    id = 12003
+                                }      
+                            }
+                        }
                         news_event = { id = newsmalta.1 days = 2 }
                     }
                 }
@@ -63,6 +71,7 @@ scripted_gui = {
             mlt_tower_window_civilian_factory_purchase_click = {
                 subtract_from_variable = { jewelry_currency = price_civilian_factory_tower }
                 add_to_variable = { current_civilian_factory_tower = 1 }
+                set_variable = { current_civilian_factory_tower_minus = -1 }
                 add_to_variable = { current_building_tower = 1 }
                 add_offsite_building = {
                     type = industrial_complex
@@ -73,6 +82,7 @@ scripted_gui = {
             mlt_tower_window_military_factory_purchase_click = {
                 subtract_from_variable = { jewelry_currency = price_military_factory_tower }
                 add_to_variable = { current_military_factory_tower = 1 }
+                set_variable = { current_military_factory_tower_minus = -1 }
                 add_to_variable = { current_building_tower = 1 }
                 add_offsite_building = {
                     type = arms_factory
@@ -83,6 +93,7 @@ scripted_gui = {
             mlt_tower_window_dockyard_purchase_click = {
                 subtract_from_variable = { jewelry_currency = price_dockyard_tower }
                 add_to_variable = { current_dockyard_tower = 1 }
+                set_variable = { current_dockyard_tower_minus = -1 }
                 add_to_variable = { current_building_tower = 1 }
                 add_offsite_building = {
                     type = dockyard

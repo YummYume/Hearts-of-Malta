@@ -802,7 +802,7 @@
  LOC_mlt_tower_window_info_title:0 "§gTower Control Center§!"
  LOC_mlt_tower_window_current_floor:0 "§WHeadquarters :§! [MLT.GetCurrentTowerAdjective]"
  LOC_mlt_tower_window_current_floor_tt:0 "§YHeadquarters§!"
- LOC_mlt_tower_window_current_floor_tt_desc:0 "The §YHeadquarters§! are always located in the highest §YFloor§! of the §YTower§!.\n\nCurrent §GBonuses§! :\n§WWeekly Manpower:§! §G+[?weekly_manpower_tower_malta]§!\n§WRefitting Speed:§! §G+§![?refitting_speed_tower_malta|%G2]\n§WIdeology drift defense:§! §G+§![?drift_defence_factor_tower_malta|%G2]\n§WTrade deal opinion factor:§! §Y+§![?trade_opinion_factor_tower_malta|%Y2]"
+ LOC_mlt_tower_window_current_floor_tt_desc:0 "The §YHeadquarters§! are always located in the highest §YFloor§! of the §YTower§!.\n\nCurrent §GBonuses§! :\n§WWeekly Manpower:§! §G+[?weekly_manpower_tower_malta]§!\n§WRefitting Speed:§! §G+§![?refitting_speed_tower_malta|%G2]\n§WIdeology drift defense:§! §G+§![?drift_defence_factor_tower_malta|%G2]\n§WTrade deal opinion factor:§! §Y+§![?trade_opinion_factor_tower_malta|%Y2]\n\nMaximum §GBonuses§! :\n§WWeekly Manpower:§! §G+50000§!\n§WRefitting Speed:§! §G+1000.00%§!\n§WIdeology drift defense:§! §G+1000.00%§!\n§WTrade deal opinion factor:§! §Y+1000§!"
  LOC_mlt_tower_window_max_floor:0 "[MLT.GetMaxFloorStatus]"
  LOC_mlt_tower_window_max_floor_tt:0 "§YMaximum Floors§!"
  LOC_mlt_tower_window_max_floor_tt_desc:0 "Maximum number of §YFloors§! the §YTower§! can have."

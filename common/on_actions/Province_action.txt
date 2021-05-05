@@ -1,16 +1,18 @@
 on_actions = {
 
-	on_state_control_changed = { #Someone Takes Malta from MLT
+	# Malta changes control
+	on_state_control_changed = {
 		effect = {
 			if = {
 				limit = {
 					FROM.FROM = {
 						state = 116
 					}
-					FROM = {
-						TAG = MLT
+					MLT = {
+						has_country_flag = MLT_tower_built
 					}
 				}
+
 				ROOT = {
 					add_ideas = MLT_The_tower_malta
 					add_dynamic_modifier = { modifier = tower_of_malta_modifier }
@@ -18,77 +20,113 @@ on_actions = {
 					set_variable = { refitting_speed_tower_malta = FROM.refitting_speed_tower_malta }
 					set_variable = { drift_defence_factor_tower_malta = FROM.drift_defence_factor_tower_malta }
 					set_variable = { trade_opinion_factor_tower_malta = FROM.trade_opinion_factor_tower_malta }
+
+					if = {
+						limit = {
+							ROOT = {
+								NOT = {
+									tag = MLT
+								}
+							}
+						}
+						set_variable = { current_civilian_factory_tower = MLT.current_civilian_factory_tower }
+						divide_variable = { current_civilian_factory_tower = 2 }
+						round_variable = current_civilian_factory_tower
+						set_variable = { current_military_factory_tower = MLT.current_military_factory_tower }
+						divide_variable = { current_military_factory_tower = 2 }
+						round_variable = current_military_factory_tower
+						set_variable = { current_dockyard_tower = MLT.current_dockyard_tower }
+						divide_variable = { current_dockyard_tower = 2 }
+						round_variable = current_dockyard_tower
+					}
+					
+					add_offsite_building = {
+						type = industrial_complex
+						level = ROOT.current_civilian_factory_tower
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = ROOT.current_military_factory_tower
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = ROOT.current_dockyard_tower
+					}
 				}
+
 				FROM = {
 					remove_ideas = MLT_The_tower_malta
 					remove_dynamic_modifier = { modifier = tower_of_malta_modifier }
-					clear_variable = weekly_manpower_tower_malta
-					clear_variable = refitting_speed_tower_malta
-					clear_variable = drift_defence_factor_tower_malta
-					clear_variable = trade_opinion_factor_tower_malta
+
+					if = {
+						limit = {
+							FROM = {
+								NOT = {
+									tag = MLT
+								}
+							}
+						}
+						set_variable = { current_civilian_factory_tower_minus = MLT.current_civilian_factory_tower_minus }
+						divide_variable = { current_civilian_factory_tower_minus = 2 }
+						round_variable = current_civilian_factory_tower_minus
+						set_variable = { current_military_factory_tower_minus = MLT.current_military_factory_tower_minus }
+						divide_variable = { current_military_factory_tower_minus = 2 }
+						round_variable = current_military_factory_tower_minus
+						set_variable = { current_dockyard_tower_minus = MLT.current_dockyard_tower_minus }
+						divide_variable = { current_dockyard_tower_minus = 2 }
+						round_variable = current_dockyard_tower_minus
+					}
+					
+					add_offsite_building = {
+						type = industrial_complex
+						level = FROM.current_civilian_factory_tower_minus
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = FROM.current_military_factory_tower_minus
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = FROM.current_dockyard_tower_minus
+					}
 				}
-			}
-			116 = {
-				remove_province_modifier = { 
-					static_modifiers = { tower_defense }
-					province = {
-						id = 12003
-					}      
+
+				if = {
+					limit = {
+						ROOT = {
+							tag = MLT
+						}
+					}
+					remove_province_modifier = {
+						static_modifiers = { maltese_resistance }
+						province = {
+							id = 12003
+						}      
+					}
+					add_province_modifier = { 
+						static_modifiers = { tower_defense }
+						province = {
+							id = 12003
+						}      
+					}
 				}
-				add_province_modifier = { 
-					static_modifiers = { maltese_resistance }
-					province = {
-						id = 12003
-					}      
+				else = {
+					116 = {
+						remove_province_modifier = { 
+							static_modifiers = { tower_defense }
+							province = {
+								id = 12003
+							}      
+						}
+						add_province_modifier = { 
+							static_modifiers = { maltese_resistance }
+							province = {
+								id = 12003
+							}      
+						}
+					}
 				}
 			}
 		}
 	}
-
-	on_state_control_changed = { #Malta has been taken back by MLT or Allies
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						NOT = {
-							TAG = MLT
-						}
-					}
-					FROM.FROM = {
-						state = 116
-					}
-				}
-				MLT = {
-					add_ideas = MLT_The_tower_malta
-					add_dynamic_modifier = { modifier = tower_of_malta_modifier }
-					set_variable = { weekly_manpower_tower_malta = FROM.weekly_manpower_tower_malta }
-					set_variable = { refitting_speed_tower_malta = FROM.refitting_speed_tower_malta }
-					set_variable = { drift_defence_factor_tower_malta = FROM.drift_defence_factor_tower_malta }
-					set_variable = { trade_opinion_factor_tower_malta = FROM.trade_opinion_factor_tower_malta }
-				}
-				FROM = {
-					remove_ideas = MLT_The_tower_malta
-					remove_dynamic_modifier = { modifier = tower_of_malta_modifier }
-					clear_variable = weekly_manpower_tower_malta
-					clear_variable = refitting_speed_tower_malta
-					clear_variable = drift_defence_factor_tower_malta
-					clear_variable = trade_opinion_factor_tower_malta
-				}
-			}
-			116 = {
-				remove_province_modifier = { 
-					static_modifiers = { maltese_resistance }
-					province = {
-						id = 12003
-					}      
-				}
-				add_province_modifier = { 
-					static_modifiers = { tower_defense }
-					province = {
-						id = 12003
-					}      
-				}
-			}
-		}
-	}	
 }
