@@ -359,6 +359,9 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  malta.45.t:0 "Gerald Strickland Returns from his journey !"
  malta.45.d:0 ""
  malta.45.a:0 "Welcome Back !"
+ malta.46.t:0 "Research Slot Found"
+ malta.46.d:0 "During the last mission, one of the brave members found a weird shiny thing deep in the ocean. The shiny thing was sent to a laboratory, which analyzed it, and revealed its true nature : a research slot.\nNot anyone in the government had a clue to what a research slot was. The scientist then explained that they were not the ones doing the research, but the research slot themselves. They are much more efficient and do not require food nor money to keep researching. Glad to hear that, the government congratulated the find and encouraged research slots to never stop researching. They also fired all the scientists, stating that \"not doing anything while looking cool and mysterious\" was not a job. They'll probably find better works in the tower anyways."
+ malta.46.a:0 "Good find!"
 
 #News Events
  newsmalta.1.t:0 "Birth of a Giant"

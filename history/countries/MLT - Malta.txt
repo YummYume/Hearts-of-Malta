@@ -124,6 +124,7 @@ set_variable = { fishing_bitcoin = 0 }
 set_variable = { privateering_bitcoin = 0 }
 set_variable = { max_currency = 10000 } # Not used (may use later)
 set_variable = { mission_naval_efficiency = 0.5 } #50% - 200%
+set_variable = { research_slot_tries = 0 }
 # All resource variables are contained in arrays for facility (from 0 to 5, 0 being oil and 5 being chromium)
 resize_array = {
 	array = MLT.base_resource_price

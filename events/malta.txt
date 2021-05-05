@@ -713,6 +713,37 @@ country_event = {
             }
         }
         clr_country_flag = MLT_ongoing_coastal_raid_mission_event
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 
     # Result + Re-open GUI
@@ -763,6 +794,37 @@ country_event = {
         clr_country_flag = MLT_ongoing_coastal_raid_mission_event
         set_country_flag = mlt_custom_gui_tower_opened
         custom_effect_tooltip = MLT_open_custom_GUI
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 
     # Result + Re-launch mission
@@ -862,6 +924,37 @@ country_event = {
         else = {
             custom_effect_tooltip = MLT_cannot_relaunch_coastal_raid_mission
         }
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 }
 
@@ -955,6 +1048,37 @@ country_event = {
             }
         }
         clr_country_flag = MLT_ongoing_fishing_mission_event
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 
     # Result + Re-open GUI
@@ -1005,6 +1129,37 @@ country_event = {
         clr_country_flag = MLT_ongoing_fishing_mission_event
         set_country_flag = mlt_custom_gui_tower_opened
         custom_effect_tooltip = MLT_open_custom_GUI
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 
     # Result + Re-launch mission
@@ -1103,6 +1258,37 @@ country_event = {
         else = {
             custom_effect_tooltip = MLT_cannot_relaunch_fishing_mission
         }
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 }
 
@@ -1196,6 +1382,37 @@ country_event = {
             }
         }
         clr_country_flag = MLT_ongoing_privateering_mission_event
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 
     # Result + Re-open GUI
@@ -1246,6 +1463,37 @@ country_event = {
         clr_country_flag = MLT_ongoing_privateering_mission_event
         custom_effect_tooltip = MLT_open_custom_GUI
         set_country_flag = mlt_custom_gui_tower_opened
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
+        }
     }
 
     # Result + Re-launch mission
@@ -1343,6 +1591,37 @@ country_event = {
         }
         else = {
             custom_effect_tooltip = MLT_cannot_relaunch_privateering_mission
+        }
+
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = MLT_research_slot_found
+                }
+            }
+            set_variable = { randomized_factor_research_slot = 0 }
+            randomize_temp_variable = {
+                var = randomized_factor_research_slot
+                distribution = uniform
+                min = 1
+                max = 50
+            }
+            round_variable = randomized_factor_research_slot
+
+            if = {
+                limit = {
+                    check_variable = {
+                        var = research_slot_tries
+                        value = randomized_factor_research_slot
+                        compare = greater_than_or_equals
+                    }
+                }
+                set_country_flag = MLT_research_slot_found
+                country_event = { id = malta.46 days = 2 }
+            }
+            else = {
+                add_to_variable = { research_slot_tries = 1 }
+            }
         }
     }
 }
@@ -2060,5 +2339,24 @@ country_event = {
             factor = 100
         }
         set_country_flag = MLT_someone_returned_from_journey
+    }
+}
+
+# Research Slot Found!
+country_event = {
+    id = malta.46
+    title = malta.46.t
+    desc = malta.46.d
+    picture = GFX_report_event_bul_troops_macedonia
+
+    is_triggered_only = yes
+
+    # Cool
+    option = {
+        name = malta.46.a
+        ai_chance = {
+            factor = 100
+        }
+        add_research_slot = 1
     }
 }

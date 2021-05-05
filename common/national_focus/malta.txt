@@ -612,6 +612,14 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            custom_trigger_tooltip = {
+                tooltip = MLT_second_floor_trigger_tt
+                check_variable = {
+                    var = current_tower_floor
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
         }
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
@@ -1114,6 +1122,14 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            custom_trigger_tooltip = {
+                tooltip = MLT_third_floor_trigger_tt
+                check_variable = {
+                    var = current_tower_floor
+                    value = 2
+                    compare = greater_than_or_equals
+                }
+            }
         }
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
@@ -1137,6 +1153,14 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            custom_trigger_tooltip = {
+                tooltip = MLT_tenth_floor_trigger_tt
+                check_variable = {
+                    var = current_tower_floor
+                    value = 3
+                    compare = greater_than_or_equals
+                }
+            }
         }
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
@@ -1167,6 +1191,14 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            custom_trigger_tooltip = {
+                tooltip = MLT_attract_investors_tower_trigger_tt
+                check_variable = {
+                    var = current_tower_floor
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
         }
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
