@@ -1196,7 +1196,7 @@ focus_tree = {
     focus = {
         id = MLT_tenth_floor
         x = 15
-        y = 10
+        y = 9
         prerequisite = { focus = MLT_third_floor }
         icon = GFX_
         cost = 7
@@ -1234,7 +1234,7 @@ focus_tree = {
     focus = {
         id = MLT_attract_investors_tower
         x = 15
-        y = 9
+        y = 10
         prerequisite = { focus = MLT_tenth_floor }
         icon = GFX_
         cost = 5
