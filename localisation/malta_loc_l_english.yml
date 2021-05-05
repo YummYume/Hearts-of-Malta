@@ -364,7 +364,7 @@
  malta.44.d:0 ""
  malta.44.a:0 "At least we're numerous now."
  MLT_tower_population_price_increased_tt:0 "§OThe Tower§! : Population Price : §RIncreases to 15§! £tower_food_texticon §RFood§!."
- malta.45.t:0 "Gerald Strickland Returns from his journey !"
+ malta.45.t:0 "[MLT.GetLeader] Returns from his journey !"
  malta.45.d:0 ""
  malta.45.a:0 "Welcome Back!"
  malta.46.t:0 "Research Slot Found"
@@ -636,6 +636,7 @@
  MLT_proclaim_the_red_lion_alliance:0 "Proclaim the Alliance of the Red Lion"
  MLT_proclaim_the_red_lion_alliance_desc:0 ""
  MLT_proclaim_the_football_league:0 "Proclaim the Football League"
+ MLT_proclaim_the_football_league_desc:0 ""
  MLT_proclaim_leader_tower:0 "Proclaim the True Leader"
  MLT_proclaim_leader_tower_desc:0 ""
 
@@ -733,6 +734,10 @@
  FOCUS_FILTER_TOWER_MALTA:0 "The Tower"
  FOCUS_FILTER_INDEPENDENCE_MALTA:0 "Independence"
  FOCUS_FILTER_MILITARY_MALTA:0 "Military"
+
+#State Modifiers
+ tower_defense:0 "Defence of the Tower"
+ maltese_resistance:0 "Maltese Resistance"
 
 #Scripted Localization
  MLT_MAX_FLOOR_DISPLAY:0 "§WMaximum floors :§! §Y[?max_tower_floor]§!"

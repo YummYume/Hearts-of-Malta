@@ -2368,9 +2368,9 @@ country_event = {
 
 #Political Crisis
 country_event = {
-    id = malta.46
-    title = malta.46.t
-    desc = malta.46.d
+    id = malta.47
+    title = malta.47.t
+    desc = malta.47.d
     picture = GFX_report_event_generic_riot
 
     trigger = {
@@ -2384,7 +2384,7 @@ country_event = {
 
     #Something must be done
     option = {
-        name = malta.46.a
+        name = malta.47.a
         ai_chance = {
             factor = 100
         }
