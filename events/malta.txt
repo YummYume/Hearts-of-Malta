@@ -197,6 +197,9 @@ country_event = {
         custom_effect_tooltip = MLT_add_gold_to_reserve
         custom_effect_tooltip = MLT_max_floor_1
         add_ideas = MLT_Tower_debts_1
+        hidden_effect = {
+            news_event = { id = newsmalta.1 days = 1 }
+        }
     }
 }
 
@@ -432,6 +435,9 @@ country_event = {
         add_manpower = -500
         custom_effect_tooltip = MLT_tower_floor_price_increased_tt
         custom_effect_tooltip = MLT_reset_inflation_tt
+        hidden_effect = {
+            news_event = { id = newsmalta.2 days = 1 }
+        }
     }
 }
 
@@ -1920,7 +1926,7 @@ country_event = {
     #We have to send it again
     immediate = {
         MLT = {
-            country_event = { id = malta.33 days = 1 }
+            country_event = { id = malta.37 days = 1 }
         }
     }
 }
@@ -1942,7 +1948,7 @@ country_event = {
         }
         hidden_effect = {
             FROM = {
-                country_event = { id = malta.34 days = 7 }
+                country_event = { id = malta.38 days = 7 }
             }
         }
     }

@@ -613,6 +613,13 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  is_inviting_nation:0 "§YIs Inviting a Nation§!"
  MLT_invite_communist_countries:0 "Invite [FROM.GetNameDef] to the [MLT.GetFactionName]"
  MLT_invite_communist_countries_desc:0 ""
+ MLT_rename_faction_decisions:0 "Rename Faction"
+ MLT_rename_faction_decisions_desc:0 ""
+ MLT_proclaim_the_dragon_alliance:0 "Proclaim tha Alliance of the Dragon"
+ MLT_proclaim_the_dragon_alliance_desc:0 ""
+ MLT_proclaim_the_red_lion_alliance:0 "Proclaim the Alliance of the Red Lion"
+ MLT_proclaim_the_red_lion_alliance_desc:0 ""
+ MLT_proclaim_the_football_league:0 "Proclaim the Football League"
 
 #Traits
  sixth_count_della_catena:0 "Sixth Count Della Catena"
@@ -623,6 +630,9 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
 
 #Advisors
  MLT_Gerald_strickland:0 "Gerald Strickland"
+ MLT_Paul_boffa:0 "Paul Boffa"
+ MLT_George_borg:0 "George Borg Olivier"
+ MLT_Jorgi_preca:0 "Jorgi Preca"
  MLT_someone_returned_from_journey:0 "§YGerald Strickland§! §GReturned§! from his §YJourney§!"
  MLT_Tommy_navarro:0 "Tommy Navarro"
  MLT_Kayden_fantino:0 "Kayden Fantino"
@@ -664,6 +674,9 @@ MLT_stay_loyal_towards_britain:0 "§YLoyalty§! to §YBritain§!"
  MLT_maltese_communist_faction:0 "Mediterranean Union"
  MLT_mediteranean_accord:0 "Mediterranean Accord"
  MLT_mediterranean_sphere:0 "Maltese Sphere"
+ MLT_dragon_alliance_faction:0 "Alliance of the Dragon"
+ MLT_red_lion_faction:0 "Union of the Red Lion"
+ MLT_football_faction:0 "The Football League"
 
 #Opinion
  alligned_british:0 "Alligned to the British"

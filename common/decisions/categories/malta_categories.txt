@@ -83,3 +83,25 @@ MLT_expand_faction_decisions = {
         }
     }
 }
+
+MLT_rename_faction_decisions = {
+
+	icon = GFX_decision_category_generic_foreign_policy
+
+    picture = GFX_decision_cat_picture_government_in_exile
+
+    allowed = {
+     	original_tag = MLT
+    }
+
+    available = {
+
+    }
+
+    priority = 80
+
+    visible = {
+		has_completed_focus = MLT_seek_more_useful_allies
+        is_faction_leader = yes
+    }
+}
