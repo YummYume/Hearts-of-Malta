@@ -329,7 +329,7 @@ focus_tree = {
                             has_completed_focus = MLT_maltese_election
                         }
                     }
-                    add_stability = -0.15
+                    add_stability = -0.10
                     custom_effect_tooltip = MLT_maltese_election_after_37
                 }
             }
@@ -833,7 +833,11 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-
+            MLT = {
+                NOT = {
+                    is_subject_of = ENG
+                }
+            }
         }
         available = {
             has_full_control_of_state = 116
@@ -857,7 +861,11 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-
+            MLT = {
+                NOT = {
+                    is_subject_of = ENG
+                }
+            }
         }
         available = {
             MLT = {
@@ -980,7 +988,16 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
-            leave_faction = yes
+            if = {
+                limit = {
+                    MLT = {
+                        is_in_faction_with = ENG
+                    }
+                }
+                ENG = {
+                    remove_from_faction = MLT
+                }
+            }
             add_political_power = 150
             add_war_support = 0.2
             ENG = {
@@ -1040,6 +1057,10 @@ focus_tree = {
         }
         available = {
             has_idea = MLT_Loyalty_to_britain
+            OR = {
+                is_subject_of = ENG
+                is_in_faction_with = ENG
+            }
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
@@ -1278,6 +1299,9 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            NOT = {
+                has_idea = MLT_Political_crisis
+            }
         }
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
@@ -1401,9 +1425,6 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = MLT_fiftieth_floor_tt
             set_variable = { max_tower_floor = 50 }
-            hidden_effect = {
-                news_event = { id = newsmalta.3 days = 2 }
-            }
         }
     }
 
@@ -2653,6 +2674,25 @@ focus_tree = {
             has_full_control_of_state = 116
             NOT = {
                 has_capitulated = yes
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_government = fascism
+                        has_government = neutrality 
+                    }
+                }
+                has_country_flag = has_formed_empire_MLT
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_government = democratic
+                        has_government = communism
+                    }
+                }
+                is_major = yes
+                is_faction_leader = yes
             }
         }
         search_filters = { FOCUS_FILTER_ANNEXATION }

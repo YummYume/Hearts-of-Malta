@@ -291,6 +291,23 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetMaxFloorStatus
+	text = {
+		trigger = {
+			check_variable = {
+				var = max_tower_floor
+				value = 100000
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_INFINITE_DISPLAY
+	}
+	text = {
+		localization_key = MLT_MAX_FLOOR_DISPLAY
+	}
+}
+
+defined_text = {
 	name = GetPopulationPriceStatus
 	text = {
 		trigger = {
@@ -534,6 +551,204 @@ defined_text = {
 			}
 		}
 		localization_key = MLT_BUY_POPULATION_NOT_ENOUGH_FOOD
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetOilBuyStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = MLT.resource_price^0
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetAluminumBuyStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = MLT.resource_price^1
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetRubberBuyStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = MLT.resource_price^2
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetTungstenBuyStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = MLT.resource_price^3
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetSteelBuyStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = MLT.resource_price^4
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
+	}
+	text = {
+		localization_key = MLT_BUY_NOT
+	}
+}
+
+defined_text = {
+	name = GetChromiumBuyStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_full_control_of_state = 116
+			}
+		}
+		localization_key = MLT_BUY_DOES_NOT_CONTROL
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = MLT_can_purchase_in_tower
+			}
+		}
+		localization_key = MLT_BUY_CANNOT_PURCHASE
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = diamond_currency
+				value = MLT.resource_price^5
+				compare = less_than
+			}
+		}
+		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
 		localization_key = MLT_BUY_NOT

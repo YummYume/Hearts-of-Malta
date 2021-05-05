@@ -6,11 +6,12 @@ scripted_gui = {
         visible = {
             original_tag = MLT
             has_country_flag = mlt_custom_gui_tower_opened
+            has_country_flag = MLT_tower_built
             has_full_control_of_state = 116
         }
 
         properties = {
-            #
+            # Empty
         }
 
         effects = {
@@ -40,6 +41,22 @@ scripted_gui = {
                         }
                     }
                     country_event = malta.43
+                    hidden_effect = {
+                        news_event = { id = newsmalta.1 days = 2 }
+                    }
+                }
+
+                if = {
+                    limit = {
+                        check_variable = {
+                            var = current_tower_floor
+                            value = 50
+                            compare = equals
+                        }
+                    }
+                    hidden_effect = {
+                        news_event = { id = newsmalta.3 days = 2 }
+                    }
                 }
             }
 
