@@ -1128,7 +1128,7 @@ ideas = {
 					limit = {
 						tag = MLT
 					}
-					has_government = fascism
+					has_government = communism
 				}
 			}
 
@@ -1137,7 +1137,7 @@ ideas = {
 					limit = {
 						tag = MLT
 					}
-					has_government = fascism
+					has_government = communism
 				}
 			}
 			
@@ -1194,7 +1194,7 @@ ideas = {
 					limit = {
 						tag = MLT
 					}
-					has_government = fascism
+					has_government = democratic
 				}
 			}
 
@@ -1203,7 +1203,7 @@ ideas = {
 					limit = {
 						tag = MLT
 					}
-					has_government = fascism
+					has_government = democratic
 				}
 			}
 
