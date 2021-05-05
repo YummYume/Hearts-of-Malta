@@ -29,6 +29,7 @@ MLT_tower_of_malta = {
             compare = greater_than_or_equals
         }
         has_full_control_of_state = 116
+        has_country_flag = MLT_tower_built
     }
 }
 

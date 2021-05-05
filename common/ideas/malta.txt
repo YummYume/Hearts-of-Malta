@@ -1052,7 +1052,6 @@ ideas = {
             }	
             
             traits = { drug_baron }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1076,7 +1075,6 @@ ideas = {
             }	
             
             traits = { drug_baron }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1100,7 +1098,6 @@ ideas = {
             }	
             
             traits = { drug_baron }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1124,7 +1121,6 @@ ideas = {
             }	
             
             traits = { drug_baron }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1144,7 +1140,6 @@ ideas = {
             }	
             
             traits = { prince_of_terror }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1164,7 +1159,6 @@ ideas = {
             }	
             
             traits = { silent_workhorse }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1180,11 +1174,12 @@ ideas = {
             }
             
             available = {
-                
+                NOT = {
+                    has_idea = MLT_Luke_serge
+                }
             }	
             
             traits = { propaganda_expert }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1204,7 +1199,6 @@ ideas = {
             }	
             
             traits = { captain_of_industry }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1224,7 +1218,6 @@ ideas = {
             }	
             
             traits = { war_industrialist }
-    
             
             ai_will_do = {
                 factor = 10
@@ -1245,7 +1238,61 @@ ideas = {
             
             traits = { fortification_engineer }
     
+            ai_will_do = {
+                factor = 10
+            }
+        }
+
+        MLT_Xand_leonardis = {
+
+            picture = generic_political_advisor_arab_1
+
+            allowed = {
+                original_tag = "MLT"
+            }
+
+            cost = 200
             
+            available = {
+                has_full_control_of_state = 116
+                has_country_flag = MLT_tower_built
+                NOT = {
+                    has_idea = MLT_Luke_serge
+                }
+            }
+
+            cancel_if_invalid = yes
+            
+            traits = { tower_investor }
+    
+            ai_will_do = {
+                factor = 10
+            }
+        }
+
+        MLT_Luke_serge = {
+
+            picture = generic_political_advisor_arab_1
+
+            allowed = {
+                original_tag = "MLT"
+            }
+
+            cost = 400
+            
+            available = {
+                has_full_control_of_state = 116
+                has_country_flag = MLT_tower_built
+                NOT = {
+                    has_idea = MLT_Xand_leonardis
+                    has_idea = MLT_Gerardu_tabone
+                }
+            }
+
+            cancel_if_invalid = yes
+            
+            traits = { tower_specialist }
+    
             ai_will_do = {
                 factor = 10
             }

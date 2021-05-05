@@ -316,6 +316,23 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.32
+            if = {
+                limit = {
+                    date < 1937.01.01
+                }
+                custom_effect_tooltip = MLT_maltese_election_before_37
+            }
+            else = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_completed_focus = MLT_maltese_election
+                        }
+                    }
+                    add_stability = -0.15
+                    custom_effect_tooltip = MLT_maltese_election_after_37
+                }
+            }
         }
     }
 
@@ -942,7 +959,7 @@ focus_tree = {
     # Seek New Friendships
     focus = {
         id = MLT_seek_new_friendships
-        x = 24
+        x = 23
         y = 9
         prerequisite = { focus = MLT_free_malta }
 	    mutually_exclusive = { focus = MLT_keep_british_ties }
@@ -983,7 +1000,7 @@ focus_tree = {
     # Picking a Side
     focus = {
         id = MLT_picking_a_side
-        x = 24
+        x = 23
         y = 10
         prerequisite = { focus = MLT_seek_new_friendships }
         icon = GFX_

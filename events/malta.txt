@@ -191,6 +191,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        set_country_flag = MLT_tower_built
         custom_effect_tooltip = MLT_unlock_tower_with_decisions
         set_variable = { max_tower_floor = 1 }
         add_to_variable = { gold_currency = 10 }
@@ -337,11 +338,11 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        set_country_flag = MLT_can_purchase_in_tower
+        add_political_power = 100
     }
 }
 
-# Maltese Water thus it's legale
+# Maltese Water thus it's legal
 country_event = {
     id = malta.16
     title = malta.16.t
@@ -359,6 +360,7 @@ country_event = {
         add_to_variable = { gold_currency = 30 }
         add_to_variable = { food_currency = 30 }
         add_to_variable = { jewelry_currency = 30 }
+        custom_effect_tooltip = MLT_add_resources_to_reserve_30
     }
 }
 

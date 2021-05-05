@@ -57,4 +57,26 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	tower_investor = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.03
+		custom_modifier_tooltip = tower_investor_tt
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tower_specialist = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.06
+		custom_modifier_tooltip = tower_specialist_tt
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

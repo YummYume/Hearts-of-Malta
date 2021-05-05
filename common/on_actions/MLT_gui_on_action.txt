@@ -86,6 +86,26 @@ on_actions = {
 				add_to_variable = { jewelry_currency = 5 }
 				add_to_variable = { diamond_currency = 5 }
 			}
+
+			if = {
+				limit = {
+					has_idea = MLT_Xand_leonardis
+				}
+				add_to_variable = { gold_currency = 1 }
+				add_to_variable = { food_currency = 1 }
+				add_to_variable = { jewelry_currency = 1 }
+				add_to_variable = { diamond_currency = 1 }
+			}
+
+			if = {
+				limit = {
+					has_idea = MLT_Luke_serge
+				}
+				add_to_variable = { gold_currency = 2 }
+				add_to_variable = { food_currency = 2 }
+				add_to_variable = { jewelry_currency = 2 }
+				add_to_variable = { diamond_currency = 2 }
+			}
 		}
 	}
 }
