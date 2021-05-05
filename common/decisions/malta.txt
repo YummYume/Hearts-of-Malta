@@ -1703,3 +1703,102 @@ MLT_expand_faction_decisions = {
         }
 	}
 }
+
+MLT_rename_faction_decisions = {
+
+	MLT_proclaim_the_dragon_alliance = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		available = {
+			BHU = {
+				is_in_faction_with = MLT
+			}
+			MLT = {
+				is_faction_leader = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			set_faction_name = MLT_dragon_alliance_faction
+        }
+	}
+
+	MLT_proclaim_the_red_lion_alliance = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		available = {
+			LUX = {
+				is_in_faction_with = MLT
+			}
+			MLT = {
+				is_faction_leader = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			set_faction_name = MLT_red_lion_faction
+        }
+	}
+
+	MLT_proclaim_the_football_league = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+
+		}
+
+		fire_only_once = yes
+
+		available = {
+			ELS = {
+				is_in_faction_with = MLT
+			}
+			MLT = {
+				is_faction_leader = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			set_faction_name = MLT_football_faction
+        }
+	}
+}

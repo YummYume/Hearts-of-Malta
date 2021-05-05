@@ -1042,6 +1042,82 @@ ideas = {
             allowed = {
                 original_tag = "MLT"
             }
+
+            visible = {
+                has_government = democratic
+            }
+            
+            available = {
+                has_country_flag = MLT_someone_returned_from_journey
+            }	
+            
+            traits = { drug_baron }
+    
+            
+            ai_will_do = {
+                factor = 10
+            }
+        }
+
+        MLT_Paul_boffa = {
+
+            picture = generic_political_advisor_europe_4
+            
+            allowed = {
+                original_tag = "MLT"
+            }
+
+            visible = {
+                has_government = communism
+            }
+            
+            available = {
+                has_country_flag = MLT_someone_returned_from_journey
+            }	
+            
+            traits = { drug_baron }
+    
+            
+            ai_will_do = {
+                factor = 10
+            }
+        }
+
+        MLT_George_borg = {
+
+            picture = generic_army_europe_6
+            
+            allowed = {
+                original_tag = "MLT"
+            }
+
+            visible = {
+                has_government = fascism
+            }
+            
+            available = {
+                has_country_flag = MLT_someone_returned_from_journey
+            }	
+            
+            traits = { drug_baron }
+    
+            
+            ai_will_do = {
+                factor = 10
+            }
+        }
+
+        MLT_Jorgi_preca = {
+
+            picture = generic_navy_south_america_3
+            
+            allowed = {
+                original_tag = "MLT"
+            }
+
+            visible = {
+                has_government = neutrality
+            }
             
             available = {
                 has_country_flag = MLT_someone_returned_from_journey
