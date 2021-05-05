@@ -845,6 +845,7 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
         completion_reward = {
             country_event = { id = malta.41 }
+            remove_ideas = MLT_Independence_movements
         }
     }
 
