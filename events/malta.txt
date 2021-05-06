@@ -329,6 +329,10 @@ country_event = {
 
     is_triggered_only = yes
 
+    immediate = {
+        set_country_flag = MLT_plans_for_economy_started
+    }
+
     # We Need that Money
     option = {
         name = malta.15.a
@@ -336,6 +340,8 @@ country_event = {
             factor = 100
         }
         add_political_power = 100
+        show_ideas_tooltip = MLT_Xand_leonardis
+        show_ideas_tooltip = MLT_Luke_serge
     }
 }
 
@@ -409,7 +415,7 @@ country_event = {
     is_triggered_only = yes
 
     immediate = {
-        set_variable = { price_tower_floor = 15 }
+        set_variable = { price_tower_floor = 20 }
         set_country_flag = tower_floor_price_increased
         for_each_loop = {
             array = MLT.resource_inflation
@@ -695,7 +701,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -743,7 +749,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -774,7 +782,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -824,7 +832,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -850,7 +860,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -954,7 +964,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -1030,7 +1042,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -1078,7 +1090,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -1109,7 +1123,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -1159,7 +1173,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -1185,7 +1201,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -1288,7 +1304,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -1364,7 +1382,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -1412,7 +1430,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -1443,7 +1463,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -1493,7 +1513,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -1519,7 +1541,7 @@ country_event = {
                     compare = less_than
                 }
             }
-            add_to_variable = { mission_naval_efficiency = 0.03 }
+            add_to_variable = { mission_naval_efficiency = 0.02 }
             custom_effect_tooltip = MLT_gain_naval_efficiency
         }
         if = {
@@ -1622,7 +1644,9 @@ country_event = {
                     }
                 }
                 set_country_flag = MLT_research_slot_found
-                country_event = { id = malta.46 days = 2 }
+                hidden_effect = {
+                    country_event = { id = malta.46 days = 2 }
+                }
             }
             else = {
                 add_to_variable = { research_slot_tries = 1 }
@@ -2415,7 +2439,7 @@ country_event = {
     fire_only_once = yes
 
     immediate = {
-        set_variable = { price_population_tower = 15 }
+        set_variable = { price_population_tower = 20 }
         set_country_flag = tower_food_price_increased
     }
 

@@ -1283,6 +1283,7 @@ ideas = {
             available = {
                 has_full_control_of_state = 116
                 has_country_flag = MLT_tower_built
+                has_country_flag = MLT_plans_for_economy_started
                 NOT = {
                     has_idea = MLT_Luke_serge
                 }
@@ -1310,6 +1311,7 @@ ideas = {
             available = {
                 has_full_control_of_state = 116
                 has_country_flag = MLT_tower_built
+                has_country_flag = MLT_plans_for_economy_started
                 NOT = {
                     has_idea = MLT_Xand_leonardis
                     has_idea = MLT_Gerardu_tabone

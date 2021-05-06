@@ -1,22 +1,22 @@
 # Coastal Raids
 coastal_raids_calculate_loot = {
     set_variable = { current_min_jewelry_coastal_raid = temp_manpower_coastal_raid }
-    divide_variable = { current_min_jewelry_coastal_raid = 260 }
+    divide_variable = { current_min_jewelry_coastal_raid = 520 }
     multiply_variable = { current_min_jewelry_coastal_raid = mission_naval_efficiency }
     round_variable = current_min_jewelry_coastal_raid
 
     set_variable = { current_max_jewelry_coastal_raid = temp_manpower_coastal_raid }
-    divide_variable = { current_max_jewelry_coastal_raid = 240 }
+    divide_variable = { current_max_jewelry_coastal_raid = 480 }
     multiply_variable = { current_max_jewelry_coastal_raid = mission_naval_efficiency }
     round_variable = current_max_jewelry_coastal_raid
 
     set_variable = { current_min_diamond_coastal_raid = temp_manpower_coastal_raid }
-    divide_variable = { current_min_diamond_coastal_raid = 360 }
+    divide_variable = { current_min_diamond_coastal_raid = 620 }
     multiply_variable = { current_min_diamond_coastal_raid = mission_naval_efficiency }
     round_variable = current_min_diamond_coastal_raid
 
     set_variable = { current_max_diamond_coastal_raid = temp_manpower_coastal_raid }
-    divide_variable = { current_max_diamond_coastal_raid = 340 }
+    divide_variable = { current_max_diamond_coastal_raid = 580 }
     multiply_variable = { current_max_diamond_coastal_raid = mission_naval_efficiency }
     round_variable = current_max_diamond_coastal_raid
 }
@@ -54,22 +54,22 @@ coastal_raids_calculate_convoy = {
 # Fishing
 fishing_calculate_loot = {
     set_variable = { current_min_food_fishing = temp_manpower_fishing }
-    divide_variable = { current_min_food_fishing = 260 }
+    divide_variable = { current_min_food_fishing = 520 }
     multiply_variable = { current_min_food_fishing = mission_naval_efficiency }
     round_variable = current_min_food_fishing
 
     set_variable = { current_max_food_fishing = temp_manpower_fishing }
-    divide_variable = { current_max_food_fishing = 240 }
+    divide_variable = { current_max_food_fishing = 480 }
     multiply_variable = { current_max_food_fishing = mission_naval_efficiency }
     round_variable = current_max_food_fishing
 
     set_variable = { current_min_diamond_fishing = temp_manpower_fishing }
-    divide_variable = { current_min_diamond_fishing = 360 }
+    divide_variable = { current_min_diamond_fishing = 620 }
     multiply_variable = { current_min_diamond_fishing = mission_naval_efficiency }
     round_variable = current_min_diamond_fishing
 
     set_variable = { current_max_diamond_fishing = temp_manpower_fishing }
-    divide_variable = { current_max_diamond_fishing = 340 }
+    divide_variable = { current_max_diamond_fishing = 580 }
     multiply_variable = { current_max_diamond_fishing = mission_naval_efficiency }
     round_variable = current_max_diamond_fishing
 }
@@ -107,22 +107,22 @@ fishing_calculate_convoy = {
 # Privateering
 privateering_calculate_loot = {
     set_variable = { current_min_gold_privateering = temp_manpower_privateering }
-    divide_variable = { current_min_gold_privateering = 260 }
+    divide_variable = { current_min_gold_privateering = 520 }
     multiply_variable = { current_min_gold_privateering = mission_naval_efficiency }
     round_variable = current_min_gold_privateering
 
     set_variable = { current_max_gold_privateering = temp_manpower_privateering }
-    divide_variable = { current_max_gold_privateering = 240 }
+    divide_variable = { current_max_gold_privateering = 480 }
     multiply_variable = { current_max_gold_privateering = mission_naval_efficiency }
     round_variable = current_max_gold_privateering
 
     set_variable = { current_min_diamond_privateering = temp_manpower_privateering }
-    divide_variable = { current_min_diamond_privateering = 360 }
+    divide_variable = { current_min_diamond_privateering = 620 }
     multiply_variable = { current_min_diamond_privateering = mission_naval_efficiency }
     round_variable = current_min_diamond_privateering
 
     set_variable = { current_max_diamond_privateering = temp_manpower_privateering }
-    divide_variable = { current_max_diamond_privateering = 340 }
+    divide_variable = { current_max_diamond_privateering = 580 }
     multiply_variable = { current_max_diamond_privateering = mission_naval_efficiency }
     round_variable = current_max_diamond_privateering
 }
