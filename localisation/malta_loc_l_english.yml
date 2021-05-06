@@ -638,6 +638,8 @@
  MLT_proclaim_the_red_lion_alliance_desc:0 ""
  MLT_proclaim_the_football_league:0 "Proclaim the Football League"
  MLT_proclaim_the_football_league_desc:0 ""
+ MLT_proclaim_the_four_pillars_of_destiny:0 "Proclaim the Four Pillars of Destiny"
+ MLT_proclaim_the_four_pillars_of_destiny_desc:0 ""
  MLT_proclaim_leader_tower:0 "Proclaim the True Leader"
  MLT_proclaim_leader_tower_desc:0 ""
 
@@ -701,6 +703,7 @@
  MLT_dragon_alliance_faction:0 "Alliance of the Dragon"
  MLT_red_lion_faction:0 "Union of the Red Lion"
  MLT_football_faction:0 "The Football League"
+ MLT_four_pillars_destiny_faction:0 "Four Pillars of Destiny"
 
 #Opinion
  alligned_british:0 "Alligned to the British"
