@@ -871,7 +871,7 @@ focus_tree = {
         available = {
             MLT = {
                 has_autonomy_state = autonomy_dominion
-                compare_autonomy_progress_ratio > 0.8
+                compare_autonomy_progress_ratio > 0.75
             }
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }

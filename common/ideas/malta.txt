@@ -616,7 +616,7 @@ ideas = {
             picture = no_picture
 
             modifier = {
-				autonomy_gain = 0.75
+				autonomy_gain = 1
             }
         }
 
@@ -1062,6 +1062,49 @@ ideas = {
 
     political_advisor = {
 
+        generic_neutrality_demagogue = {
+
+			picture = generic_army_europe_6
+			
+			allowed = {
+                original_tag = "MLT"
+            }
+			
+			available = {
+				if = {
+					limit = {
+						tag = MLT
+					}
+					has_government = neutrality
+				}		
+			}
+
+			visible = {
+				if = {
+					limit = {
+						tag = MLT
+					}
+					has_government = neutrality
+				}
+			}
+			
+			traits = { staunch_monarchist }
+	
+			on_add = {
+				#country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
         MLT_Gerald_strickland = {
 
             picture = generic_political_advisor_europe_1
@@ -1278,9 +1321,10 @@ ideas = {
                 original_tag = "MLT"
             }
 
-            cost = 200
+            cost = 250
             
             available = {
+                has_completed_focus = MLT_attract_investors_tower
                 has_full_control_of_state = 116
                 has_country_flag = MLT_tower_built
                 NOT = {
@@ -1305,9 +1349,10 @@ ideas = {
                 original_tag = "MLT"
             }
 
-            cost = 400
+            cost = 500
             
             available = {
+                has_completed_focus = MLT_attract_investors_tower
                 has_full_control_of_state = 116
                 has_country_flag = MLT_tower_built
                 NOT = {

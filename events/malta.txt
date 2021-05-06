@@ -172,7 +172,10 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        add_ideas = MLT_New_strategies
+        add_timed_idea = {
+            idea = MLT_New_strategies
+            days = 360
+        }
     }
 }
 
@@ -2445,6 +2448,7 @@ country_event = {
             factor = 100
         }
         set_country_flag = MLT_someone_returned_from_journey
+        clr_country_flag = leader_malta_is_on_journey
     }
 }
 
@@ -2475,6 +2479,7 @@ country_event = {
     picture = GFX_report_event_generic_riot
 
     trigger = {
+        TAG = MLT
         date > 1937.1.1
         NOT = {
             has_completed_focus = MLT_maltese_election
@@ -2489,6 +2494,8 @@ country_event = {
         ai_chance = {
             factor = 100
         }
-        add_ideas = MLT_Political_crisis
+        MLT = {
+            add_ideas = MLT_Political_crisis
+        }
     }
 }
