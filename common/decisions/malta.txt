@@ -1789,8 +1789,6 @@ MLT_rename_faction_decisions = {
 
 		}
 
-		fire_only_once = yes
-
 		available = {
 			BHU = {
 				is_in_faction_with = MLT
@@ -1820,8 +1818,6 @@ MLT_rename_faction_decisions = {
 		visible = {
 
 		}
-
-		fire_only_once = yes
 
 		available = {
 			LUX = {
@@ -1853,8 +1849,6 @@ MLT_rename_faction_decisions = {
 
 		}
 
-		fire_only_once = yes
-
 		available = {
 			ELS = {
 				is_in_faction_with = MLT
@@ -1870,6 +1864,42 @@ MLT_rename_faction_decisions = {
 
 		complete_effect = {
 			set_faction_name = MLT_football_faction
+        }
+	}
+
+	MLT_proclaim_the_four_pillars_of_destiny = {
+
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = MLT
+		}
+		
+		visible = {
+
+		}
+
+		available = {
+			BHU = {
+				is_in_faction_with = MLT
+			}
+			LUX = {
+				is_in_faction_with = MLT
+			}
+			ELS = {
+				is_in_faction_with = MLT
+			}
+			MLT = {
+				is_faction_leader = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			set_faction_name = MLT_four_pillars_destiny_faction
         }
 	}
 }
