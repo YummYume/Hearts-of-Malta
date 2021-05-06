@@ -315,7 +315,7 @@ country_event = {
             factor = 100
         }
         hidden_effect = {
-            country_event = { id = malta.45  days = 270 }
+            country_event = { id = malta.45  days = 60 }
         }
     }
 }
@@ -2040,7 +2040,40 @@ country_event = {
                     compare = greater_than_or_equals
                 }
             }
-            # TODO
+            division_template = {
+                name = "Maltese light tanks"
+                priority = 1
+                regiments = {
+                    light_armor = { x = 0 y = 0 }
+                    light_armor = { x = 0 y = 1 }
+                    light_armor = { x = 0 y = 2 }
+                    light_armor = { x = 0 y = 3 }
+                    light_armor = { x = 1 y = 0 }
+                    light_armor = { x = 1 y = 1 }
+                    light_armor = { x = 1 y = 2 }
+                    light_armor = { x = 1 y = 3 }
+                    motorized = { x = 2 y = 0 }
+                    motorized = { x = 2 y = 1 }
+                    motorized = { x = 2 y = 2 }
+                    motorized = { x = 2 y = 3 }
+                    motorized = { x = 2 y = 4 }
+                    motorized = { x = 3 y = 0 }
+                    motorized = { x = 3 y = 1 }
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    artillery = { x = 0 y = 1 }
+                    mot_recon = { x = 0 y = 2 }
+                    maintenance_company = { x = 0 y = 3 }
+                    logistics_company = { x = 0 y = 4 }
+                }
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maltese light tanks\" division_template = \"Maltese light tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
+                    owner = MLT
+                }
+            }
         }
         else = {
             custom_effect_tooltip = MLT_not_enough_bitcoin_light_tank
@@ -2062,7 +2095,41 @@ country_event = {
                     compare = greater_than_or_equals
                 }
             }
-            # TODO
+            division_template = {
+                name = "Maltese medium tanks"
+                priority = 1
+                regiments = {
+                    medium_armor = { x = 0 y = 0 }
+                    medium_armor = { x = 0 y = 1 }
+                    medium_armor = { x = 0 y = 2 }
+                    medium_armor = { x = 0 y = 3 }
+                    medium_armor = { x = 1 y = 0 }
+                    medium_armor = { x = 1 y = 1 }
+                    medium_armor = { x = 1 y = 2 }
+                    medium_armor = { x = 1 y = 3 }
+                    motorized = { x = 2 y = 0 }
+                    motorized = { x = 2 y = 1 }
+                    motorized = { x = 2 y = 2 }
+                    motorized = { x = 2 y = 3 }
+                    motorized = { x = 2 y = 4 }
+                    motorized = { x = 3 y = 0 }
+                    motorized = { x = 3 y = 1 }
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    artillery = { x = 0 y = 1 }
+                    mot_recon = { x = 0 y = 2 }
+                    maintenance_company = { x = 0 y = 3 }
+                    logistics_company = { x = 0 y = 4 }
+                }
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maltese medium tanks\" division_template = \"Maltese medium tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
+                    owner = MLT
+                }
+            }
+            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_medium
         }
         else = {
             custom_effect_tooltip = MLT_not_enough_bitcoin_medium_tank
@@ -2084,7 +2151,41 @@ country_event = {
                     compare = greater_than_or_equals
                 }
             }
-            # TODO
+            division_template = {
+                name = "Maltese heavy tanks"
+                priority = 1
+                regiments = {
+                    heavy_armor = { x = 0 y = 0 }
+                    heavy_armor = { x = 0 y = 1 }
+                    heavy_armor = { x = 0 y = 2 }
+                    heavy_armor = { x = 0 y = 3 }
+                    heavy_armor = { x = 1 y = 0 }
+                    heavy_armor = { x = 1 y = 1 }
+                    heavy_armor = { x = 1 y = 2 }
+                    heavy_armor = { x = 1 y = 3 }
+                    motorized = { x = 2 y = 0 }
+                    motorized = { x = 2 y = 1 }
+                    motorized = { x = 2 y = 2 }
+                    motorized = { x = 2 y = 3 }
+                    motorized = { x = 2 y = 4 }
+                    motorized = { x = 3 y = 0 }
+                    motorized = { x = 3 y = 1 }
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    artillery = { x = 0 y = 1 }
+                    mot_recon = { x = 0 y = 2 }
+                    maintenance_company = { x = 0 y = 3 }
+                    logistics_company = { x = 0 y = 4 }
+                }
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maltese heavy tanks\" division_template = \"Maltese heavy tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
+                    owner = MLT
+                }
+            }
+            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_heavy
         }
         else = {
             custom_effect_tooltip = MLT_not_enough_bitcoin_heavy_tank
