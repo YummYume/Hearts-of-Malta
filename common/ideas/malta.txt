@@ -346,6 +346,12 @@ ideas = {
                 always = yes
             }
 
+            cancel = {
+                NOT = {
+                    is_in_faction_with = MLT
+                }
+            }
+
             picture = no_picture
 
             modifier = {
@@ -353,7 +359,7 @@ ideas = {
                 army_defence_factor = 0.1
                 army_org_Factor = 0.1
                 dig_in_speed_factor = 0.1 
-                recon_factor = 0.1
+                weekly_manpower = 5000
                 industrial_capacity_factory = 0.25
             }
         }
@@ -482,7 +488,7 @@ ideas = {
 
             modifier = {
                 offensive_war_stability_factor = 0.3
-                communism_acceptance = 50
+                dig_in_speed_factor = 0.1
                 enemy_justify_war_goal_time = 0.25
                 guarantee_cost = -0.5
                 political_power_factor = 0.1
@@ -548,10 +554,10 @@ ideas = {
 
             modifier = {
                 air_mission_efficiency = 0.1
-                air_range_factor = 0.25
-                air_weather_penalty = -0.15
+                out_of_supply_factor = -0.1
                 army_bonus_air_superiority_factor = 0.15
-                dig_in_speed_factor = 0.1
+                attrition = -0.05
+                generate_wargoal_tension = -0.5
             }
         }
 		
@@ -1324,7 +1330,6 @@ ideas = {
             cost = 250
             
             available = {
-                has_completed_focus = MLT_attract_investors_tower
                 has_full_control_of_state = 116
                 has_country_flag = MLT_tower_built
                 has_country_flag = MLT_plans_for_economy_started
@@ -1353,7 +1358,6 @@ ideas = {
             cost = 500
             
             available = {
-                has_completed_focus = MLT_attract_investors_tower
                 has_full_control_of_state = 116
                 has_country_flag = MLT_tower_built
                 has_country_flag = MLT_plans_for_economy_started
@@ -1699,7 +1703,7 @@ ideas = {
             cost = 250
             
             research_bonus = {
-                cat_mass_assault = 0.15
+                cat_grand_battle_plan = 0.15
             }
             
             traits = { grand_battle_plan_expert }

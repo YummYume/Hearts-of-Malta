@@ -1,3 +1,32 @@
 spriteTypes = {
 	
+	spriteType = {
+		name = "GFX_malta_st_elmo_bridge"
+		texturefile = "gfx/event_pictures/st_elmo_bridge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_malta_dingli_cliffs"
+		texturefile = "gfx/event_pictures/dingli_cliffs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_malta_azure_window"
+		texturefile = "gfx/event_pictures/azure_window.dds"
+	}
+
+	spriteType = {
+		name = "GFX_elevator_music"
+		texturefile = "gfx/event_pictures/elevator_music.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jetpack_tower"
+		texturefile = "gfx/event_pictures/jetpack_tower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leaning_tower"
+		texturefile = "gfx/event_pictures/leaning_tower.dds"
+	}
 }

@@ -650,7 +650,7 @@ focus_tree = {
         x = 6
         y = 7
         prerequisite = { focus = MLT_first_floor }
-        icon = GFX_
+        icon = GFX_focus_Mediterranean_bastion
         cost = 4
         ai_will_do = {
             factor = 2
@@ -944,7 +944,7 @@ focus_tree = {
         x = 19
         y = 10
         prerequisite = { focus = MLT_keep_british_ties }
-        icon = GFX_
+        icon = GFX_focus_old_friend_still_friends
         cost = 5
         ai_will_do = {
             factor = 2
@@ -2011,7 +2011,7 @@ focus_tree = {
         x = 22
         y = 19
         prerequisite = { focus = MLT_seek_more_useful_allies }
-        icon = GFX_
+        icon = GFX_focus_approach_luxembourg
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2053,7 +2053,7 @@ focus_tree = {
         x = 25
         y = 19
         prerequisite = { focus = MLT_seek_more_useful_allies }
-        icon = GFX_
+        icon = GFX_focus_approach_bhutan
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2095,7 +2095,7 @@ focus_tree = {
         x = 28
         y = 19
         prerequisite = { focus = MLT_seek_more_useful_allies }
-        icon = GFX_
+        icon = GFX_focus_approach_elsalvador
         cost = 4
         ai_will_do = {
             factor = 2

@@ -84,9 +84,34 @@ spriteTypes = {
 		name = "GFX_focus_The_Maltese_Lira"
 		texturefile = "gfx/interfaces/goals/The_Maltese_Lira.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_focus_Under_the_Maltese_Flag"
 		texturefile = "gfx/interfaces/goals/Under_the_Maltese_Flag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_old_friend_still_friends"
+		texturefile = "gfx/interfaces/goals/old_friend_still_friends.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Mediterranean_bastion"
+		texturefile = "gfx/interfaces/goals/Mediterranean_bastion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_approach_bhutan"
+		texturefile = "gfx/interfaces/goals/approach_bhutan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_approach_elsalvador"
+		texturefile = "gfx/interfaces/goals/approach_elsalvador.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_approach_luxembourg"
+		texturefile = "gfx/interfaces/goals/approach_luxembourg.dds"
 	}
 }

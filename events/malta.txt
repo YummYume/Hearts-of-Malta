@@ -105,7 +105,7 @@ country_event = {
     id = malta.5
     title = malta.5.t
     desc = malta.5.d
-    picture = GFX_
+    picture = GFX_malta_st_elmo_bridge
 
     is_triggered_only = yes
 
@@ -124,7 +124,7 @@ country_event = {
     id = malta.6
     title = malta.6.t
     desc = malta.6.d
-    picture = GFX_
+    picture = GFX_malta_azure_window
 
     is_triggered_only = yes
 
@@ -143,7 +143,7 @@ country_event = {
     id = malta.7
     title = malta.7.t
     desc = malta.7.d
-    picture = GFX_
+    picture = GFX_malta_dingli_cliffs
 
     is_triggered_only = yes
 
@@ -162,7 +162,7 @@ country_event = {
     id = malta.8
     title = malta.8.t
     desc = malta.8.d
-    picture = GFX_
+    picture = GFX_report_event_canada_treaty
 
     is_triggered_only = yes
 
@@ -174,7 +174,7 @@ country_event = {
         }
         add_timed_idea = {
             idea = MLT_New_strategies
-            days = 360
+            days = 720
         }
     }
 }
@@ -184,7 +184,7 @@ country_event = {
     id = malta.9
     title = malta.9.t
     desc = malta.9.d
-    picture = GFX_
+    picture = GFX_report_event_generic_factory
 
     is_triggered_only = yes
 
@@ -209,7 +209,7 @@ country_event = {
     id = malta.10
     title = malta.10.t
     desc = malta.10.d
-    picture = GFX_
+    picture = GFX_report_event_generic_lend_lease
 
     is_triggered_only = yes
 
@@ -235,7 +235,7 @@ country_event = {
     id = malta.11
     title = malta.11.t
     desc = malta.11.d
-    picture = GFX_
+    picture = GFX_report_event_generic_naval_treaty
 
     is_triggered_only = yes
 
@@ -261,7 +261,7 @@ country_event = {
     id = malta.12
     title = malta.12.t
     desc = malta.12.d
-    picture = GFX_
+    picture = GFX_report_event_generic_conference
 
     is_triggered_only = yes
 
@@ -281,7 +281,7 @@ country_event = {
     id = malta.13
     title = malta.13.t
     desc = malta.13.d
-    picture = GFX_
+    picture = GFX_report_event_gre_athens
 
     is_triggered_only = yes
 
@@ -307,7 +307,7 @@ country_event = {
     id = malta.14
     title = malta.14.t
     desc = malta.14.d
-    picture = GFX_
+    picture = GFX_report_event_merchant_ship_01
 
     is_triggered_only = yes
 
@@ -328,7 +328,7 @@ country_event = {
     id = malta.15
     title = malta.15.t
     desc = malta.15.d
-    picture = GFX_
+    picture = GFX_report_event_physics_lab_02
 
     is_triggered_only = yes
 
@@ -353,7 +353,7 @@ country_event = {
     id = malta.16
     title = malta.16.t
     desc = malta.16.d
-    picture = GFX_
+    picture = GFX_report_event_sailors_in_working_rig
 
     is_triggered_only = yes
 
@@ -375,7 +375,7 @@ country_event = {
     id = malta.17
     title = malta.17.t
     desc = malta.17.d
-    picture = GFX_
+    picture = GFX_elevator_music
 
     is_triggered_only = yes
 
@@ -394,7 +394,7 @@ country_event = {
     id = malta.18
     title = malta.18.t
     desc = malta.18.d
-    picture = GFX_
+    picture = GFX_jetpack_tower
 
     is_triggered_only = yes
 
@@ -413,7 +413,7 @@ country_event = {
     id = malta.19
     title = malta.19.t
     desc = malta.19.d
-    picture = GFX_
+    picture = GFX_leaning_tower
 
     is_triggered_only = yes
 
@@ -642,7 +642,7 @@ country_event = {
     id = malta.26
     title = malta.26.t
     desc = malta.26.d
-    picture = GFX_
+    picture = GFX_report_event_hol_polderen
 
     is_triggered_only = yes
 
@@ -983,7 +983,7 @@ country_event = {
     id = malta.27
     title = malta.27.t
     desc = malta.27.d
-    picture = GFX_
+    picture = GFX_report_event_oahu_withdraws
 
     is_triggered_only = yes
 
@@ -1323,7 +1323,7 @@ country_event = {
     id = malta.28
     title = malta.28.t
     desc = malta.28.d
-    picture = GFX_
+    picture = GFX_report_event_usa_destroyers
 
     is_triggered_only = yes
 
@@ -1993,7 +1993,13 @@ country_event = {
     option = {
         name = malta.38.a
         ai_chance = {
-            factor = 80
+            factor = 100
+            modifier = {
+                factor = 50
+                ROOT = {
+                    is_in_faction = yes
+                }
+            }
         }
         MLT = {
             country_event = { id = malta.34 days = 1 }
@@ -2005,7 +2011,13 @@ country_event = {
     option = {
         name = malta.38.b
         ai_chance = {
-            factor = 20
+            factor = 0
+            modifier = {
+                factor = 50
+                ROOT = {
+                    is_in_faction = yes
+                }
+            }
         }
         MLT = {
             country_event = { id = malta.35 days = 1 }
@@ -2018,7 +2030,7 @@ country_event = {
     id = malta.39
     title = malta.39.t
     desc = malta.39.d
-    picture = GFX_report_event_ast_transfer_singapore
+    picture = GFX_report_event_french_resistance_02
 
     trigger = {
         tag = MLT
@@ -2045,7 +2057,7 @@ country_event = {
     id = malta.40
     title = malta.40.t
     desc = malta.40.d
-    picture = GFX_report_event_ast_transfer_singapore
+    picture = GFX_report_event_france_tank_production
 
     is_triggered_only = yes
 
@@ -2065,6 +2077,9 @@ country_event = {
                     var = bitcoin_currency
                     value = 4
                     compare = greater_than_or_equals
+                }
+                NOT = {
+                    has_template = "Maltese light tanks"
                 }
             }
             division_template = {
@@ -2101,6 +2116,30 @@ country_event = {
                     owner = MLT
                 }
             }
+            add_to_variable = {
+                var = bitcoin_currency
+	            value = -4
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    var = bitcoin_currency
+                    value = 4
+                    compare = greater_than_or_equals
+                }
+                has_template = "Maltese light tanks"
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maltese light tanks\" division_template = \"Maltese light tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
+                    owner = MLT
+                }
+            }
+            subtract_from_variable = {
+                var = bitcoin_currency
+	            value = 4
+            }
         }
         else = {
             custom_effect_tooltip = MLT_not_enough_bitcoin_light_tank
@@ -2120,6 +2159,9 @@ country_event = {
                     var = bitcoin_currency
                     value = 7
                     compare = greater_than_or_equals
+                }
+                NOT = {
+                    has_template = "Maltese medium tanks"
                 }
             }
             division_template = {
@@ -2156,6 +2198,31 @@ country_event = {
                     owner = MLT
                 }
             }
+            subtract_from_variable = {
+                var = bitcoin_currency
+	            value = 7
+            }
+            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_medium
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    var = bitcoin_currency
+                    value = 7
+                    compare = greater_than_or_equals
+                }
+                has_template = "Maltese medium tanks"
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maltese medium tanks\" division_template = \"Maltese medium tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
+                    owner = MLT
+                }
+            }
+            subtract_from_variable = {
+                var = bitcoin_currency
+	            value = 7
+            }
             custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_medium
         }
         else = {
@@ -2176,6 +2243,9 @@ country_event = {
                     var = bitcoin_currency
                     value = 10
                     compare = greater_than_or_equals
+                }
+                NOT = {
+                    has_template = "Maltese heavy tanks"
                 }
             }
             division_template = {
@@ -2211,6 +2281,31 @@ country_event = {
                     division = "name = \"Maltese heavy tanks\" division_template = \"Maltese heavy tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
                     owner = MLT
                 }
+            }
+            subtract_from_variable = {
+                var = bitcoin_currency
+	            value = 10
+            }
+            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_heavy
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    var = bitcoin_currency
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+                has_template = "Maltese heavy tanks"
+            }
+            116 = {
+                create_unit = {
+                    division = "name = \"Maltese heavy tanks\" division_template = \"Maltese heavy tanks\" start_experience_factor = 0.3 start_equipment_factor = 0.65"
+                    owner = MLT
+                }
+            }
+            subtract_from_variable = {
+                var = bitcoin_currency
+	            value = 10
             }
             custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_heavy
         }
