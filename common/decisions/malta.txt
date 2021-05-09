@@ -326,47 +326,50 @@ MLT_tower_of_malta = {
 		}
 
 		complete_effect = {
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_tower_leader.dds"
-				expire = "1965.1.1"
-				ideology = conservatism 
-				traits = {
-					
+			custom_effect_tooltip = tower_takes_control_of_malta
+			hidden_effect = {
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = conservatism 
+					traits = {
+						MLT_tower_leader_trait
+					}
 				}
-			}
-			
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_tower_leader.dds"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					
+				
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						MLT_tower_leader_trait
+					}
 				}
-			}
-			
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_tower_leader.dds"
-				expire = "1965.1.1"
-				ideology = marxism
-				traits = {
-					
+				
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						MLT_tower_leader_trait
+					}
 				}
-			}
-			
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_tower_leader.dds"
-				expire = "1965.1.1"
-				ideology = oligarchism
-				traits = {
-					
+				
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = oligarchism
+					traits = {
+						MLT_tower_leader_trait
+					}
 				}
 			}
 		}

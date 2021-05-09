@@ -1127,7 +1127,7 @@ ideas = {
                 has_country_flag = MLT_someone_returned_from_journey
             }	
             
-            traits = { drug_baron }
+            traits = { MLT_drug_baron }
             
             ai_will_do = {
                 factor = 10
@@ -1150,7 +1150,7 @@ ideas = {
                 has_country_flag = MLT_someone_returned_from_journey
             }	
             
-            traits = { drug_baron }
+            traits = { MLT_drug_baron }
             
             ai_will_do = {
                 factor = 10
@@ -1173,7 +1173,7 @@ ideas = {
                 has_country_flag = MLT_someone_returned_from_journey
             }	
             
-            traits = { drug_baron }
+            traits = { MLT_drug_baron }
             
             ai_will_do = {
                 factor = 10
@@ -1196,7 +1196,7 @@ ideas = {
                 has_country_flag = MLT_someone_returned_from_journey
             }	
             
-            traits = { drug_baron }
+            traits = { MLT_drug_baron }
             
             ai_will_do = {
                 factor = 10
@@ -1340,7 +1340,7 @@ ideas = {
 
             cancel_if_invalid = yes
             
-            traits = { tower_investor }
+            traits = { MLT_tower_investor }
     
             ai_will_do = {
                 factor = 10
@@ -1369,7 +1369,7 @@ ideas = {
 
             cancel_if_invalid = yes
             
-            traits = { tower_specialist }
+            traits = { MLT_tower_specialist }
     
             ai_will_do = {
                 factor = 10

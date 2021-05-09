@@ -114,4 +114,19 @@ spriteTypes = {
 		name = "GFX_focus_approach_luxembourg"
 		texturefile = "gfx/interfaces/goals/approach_luxembourg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_adopt_new_strategy"
+		texturefile = "gfx/interfaces/goals/adopt_new_strategy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_picking_side"
+		texturefile = "gfx/interfaces/goals/picking_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_seek_new_friendship"
+		texturefile = "gfx/interfaces/goals/seek_new_friendship.dds"
+	}
 }

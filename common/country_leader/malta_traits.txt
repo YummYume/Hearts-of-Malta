@@ -1,6 +1,6 @@
 leader_traits = {
 
-	sixth_count_della_catena = {
+	MLT_sixth_count_della_catena = {
 		random = no
 		
 		stability_factor = 0.1
@@ -45,7 +45,33 @@ leader_traits = {
 		}
 	}
 
-	drug_baron = {
+	MLT_sent_by_the_gods = {
+		compliance_gain = 0.01
+	}
+
+	MLT_shiny_head = {
+		navy_visibility = 0.10
+		strategic_bomb_visibility = 0.10
+	}
+
+	MLT_tower_leader_trait = {
+		random = no
+		
+		nuclear_production_factor = 1
+		stability_weekly = 0.01
+		war_support_weekly = 0.01
+		surrender_limit = 0.1
+		ai_badass_factor = 10
+		offence = 0.05
+		defence = 0.05
+		base_fuel_gain_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MLT_drug_baron = {
 		random = no
 		sprite = 13
 		naval_speed_factor = 0.15
@@ -58,22 +84,22 @@ leader_traits = {
 		}
 	}
 
-	tower_investor = {
+	MLT_tower_investor = {
 		random = no
 		sprite = 13
 		research_speed_factor = 0.03
-		custom_modifier_tooltip = tower_investor_tt
+		custom_modifier_tooltip = MLT_tower_investor_tt
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	tower_specialist = {
+	MLT_tower_specialist = {
 		random = no
 		sprite = 13
 		research_speed_factor = 0.06
-		custom_modifier_tooltip = tower_specialist_tt
+		custom_modifier_tooltip = MLT_tower_specialist_tt
 
 		ai_will_do = {
 			factor = 1
