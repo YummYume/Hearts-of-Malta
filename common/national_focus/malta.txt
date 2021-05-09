@@ -573,7 +573,7 @@ focus_tree = {
         y = 5
         prerequisite = { focus = MLT_study_azure_window }
         prerequisite = { focus = MLT_study_dingli_cliffs }
-        icon = GFX_
+        icon = GFX_focus_adopt_new_strategy
         cost = 4
         ai_will_do = {
             factor = 2
@@ -972,7 +972,7 @@ focus_tree = {
         y = 9
         prerequisite = { focus = MLT_free_malta }
 	    mutually_exclusive = { focus = MLT_keep_british_ties }
-        icon = GFX_
+        icon = GFX_focus_seek_new_friendship
         cost = 4
         ai_will_do = {
             factor = 2
@@ -1021,7 +1021,7 @@ focus_tree = {
         x = 23
         y = 10
         prerequisite = { focus = MLT_seek_new_friendships }
-        icon = GFX_
+        icon = GFX_focus_picking_side
         cost = 5
         ai_will_do = {
             factor = 2

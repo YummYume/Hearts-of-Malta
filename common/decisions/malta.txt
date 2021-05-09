@@ -326,47 +326,50 @@ MLT_tower_of_malta = {
 		}
 
 		complete_effect = {
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_gerald_strickland.dds"
-				expire = "1965.1.1"
-				ideology = conservatism 
-				traits = {
-					
+			custom_effect_tooltip = tower_takes_control_of_malta
+			hidden_effect = {
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = conservatism 
+					traits = {
+						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+					}
 				}
-			}
-			
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_george_borg_olivier.dds"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					
+				
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+					}
 				}
-			}
-			
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_paul_boffa.dds"
-				expire = "1965.1.1"
-				ideology = marxism
-				traits = {
-					
+				
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+					}
 				}
-			}
-			
-			create_country_leader = {
-				name = "The Tower"
-				desc = "POLITICS_THE_TOWER_DESC"
-				picture = "gfx/leaders/MLT/Portrait_Jorgi_Preca.dds"
-				expire = "1965.1.1"
-				ideology = oligarchism
-				traits = {
-					
+				
+				create_country_leader = {
+					name = "The Tower"
+					desc = "POLITICS_THE_TOWER_DESC"
+					picture = "gfx/leaders/MLT/Portrait_the_tower.dds"
+					expire = "1965.1.1"
+					ideology = oligarchism
+					traits = {
+						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+					}
 				}
 			}
 		}

@@ -29,4 +29,9 @@ spriteTypes = {
 		name = "GFX_leaning_tower"
 		texturefile = "gfx/event_pictures/leaning_tower.dds"
 	}
+
+	spriteType = {
+		name = "GFX_tower_end_goal_newsevent"
+		texturefile = "gfx/event_pictures/tower_end_goal_newsevent.dds"
+	}
 }

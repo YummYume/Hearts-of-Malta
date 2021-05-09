@@ -563,6 +563,7 @@
  MLT_at_least_20_diamond_tooltip:0 "It costs §Y20§!£tower_diamond_texticon to select this."
  MLT_proclaim_greater_malta_cat_decisions:0 "Proclaim Greater Malta"
  MLT_proclaim_greater_malta_cat_decisions_desc:0 ""
+ tower_takes_control_of_malta:0 "§YThe Tower§! takes control of §YMalta§!"
  MLT_core_greece_shore_state:0 "Core [GRE.GetAdjective] Shores"
  MLT_core_greece_shore_state_desc:0 ""
  owns_greece_shore_states:0 "Owns or Controls : §Y[186.GetName]§!, §Y[47.GetName]§!, §Y[185.GetName]§!, §Y[731.GetName]§!, §Y[184.GetName]§!, §Y[187.GetName]§! and §Y[182.GetName]§!"
