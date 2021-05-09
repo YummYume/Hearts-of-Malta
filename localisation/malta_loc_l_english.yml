@@ -754,6 +754,9 @@
  tower_defense:0 "Defence of the Tower"
  maltese_resistance:0 "Maltese Resistance"
 
+#History
+ MLT_GATHERING_STORM_DESC:0 "Malta, a British colony in the heart of the Medditeranean sea, has a lot to offer. From a very small island to the biggest tower in the world, who knows what Malta can do? Gerald Strickland is making sure the island stays together... But for how long can he do it?\n\nThe future of Malta is now uncertain, with a lot of disorder hitting the poor island, but remember... Malta is strong, and Malta is proud!"
+
 #Scripted Localization
  MLT_MAX_FLOOR_DISPLAY:0 "§WMaximum floors :§! §Y[?max_tower_floor]§!"
  MLT_INFINITE_DISPLAY:0 "§WMaximum floors :§! £infinity_texticon"
