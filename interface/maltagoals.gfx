@@ -129,4 +129,79 @@ spriteTypes = {
 		name = "GFX_focus_seek_new_friendship"
 		texturefile = "gfx/interfaces/goals/seek_new_friendship.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_tower_first_floor"
+		texturefile = "gfx/interfaces/goals/tower_first_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_second_floor"
+		texturefile = "gfx/interfaces/goals/tower_second_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_third_floor"
+		texturefile = "gfx/interfaces/goals/tower_third_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_tenth_floor"
+		texturefile = "gfx/interfaces/goals/tower_tenth_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_fiftieth_floor"
+		texturefile = "gfx/interfaces/goals/tower_fiftieth_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_hundreth_floor"
+		texturefile = "gfx/interfaces/goals/tower_hundreth_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_thousandth_floor"
+		texturefile = "gfx/interfaces/goals/tower_thousandth_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_9999_floor"
+		texturefile = "gfx/interfaces/goals/tower_9999_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_neverending_floor"
+		texturefile = "gfx/interfaces/goals/tower_neverending_floor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_protector_defence"
+		texturefile = "gfx/interfaces/goals/tower_protector_defence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_tower_lean_malta"
+		texturefile = "gfx/interfaces/goals/tower_lean_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_share_tower_secrets"
+		texturefile = "gfx/interfaces/goals/share_tower_secrets.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_mutual_aid_malta"
+		texturefile = "gfx/interfaces/goals/mutual_aid_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_attract_investors"
+		texturefile = "gfx/interfaces/goals/attract_investors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_the_journey_malta"
+		texturefile = "gfx/interfaces/goals/the_journey_malta.dds"
+	}
 }

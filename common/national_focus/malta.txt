@@ -596,7 +596,7 @@ focus_tree = {
         x = 15
         y = 6
         prerequisite = { focus = MLT_adopt_new_strategy }
-        icon = GFX_
+        icon = GFX_focus_tower_first_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -619,7 +619,7 @@ focus_tree = {
         x = 15
         y = 7
         prerequisite = { focus = MLT_first_floor }
-        icon = GFX_
+        icon = GFX_focus_tower_second_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -1078,7 +1078,7 @@ focus_tree = {
         x = 29
         y = 9
         prerequisite = { focus = MLT_loayal_malta }
-        icon = GFX_
+        icon = GFX_focus_share_tower_secrets
         cost = 4
         ai_will_do = {
             factor = 2
@@ -1112,7 +1112,7 @@ focus_tree = {
         x = 29
         y = 10
         prerequisite = { focus = MLT_share_secrets_town }
-        icon = GFX_
+        icon = GFX_focus_mutual_aid_malta
         cost = 6
         ai_will_do = {
             factor = 2
@@ -1167,7 +1167,7 @@ focus_tree = {
         x = 15
         y = 8
         prerequisite = { focus = MLT_second_floor }
-        icon = GFX_
+        icon = GFX_focus_tower_third_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -1198,7 +1198,7 @@ focus_tree = {
         x = 15
         y = 9
         prerequisite = { focus = MLT_third_floor }
-        icon = GFX_
+        icon = GFX_focus_tower_tenth_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -1236,7 +1236,7 @@ focus_tree = {
         x = 15
         y = 10
         prerequisite = { focus = MLT_tenth_floor }
-        icon = GFX_
+        icon = GFX_focus_attract_investors
         cost = 7
         ai_will_do = {
             factor = 2
@@ -1267,7 +1267,7 @@ focus_tree = {
         x = 15
         y = 11
         prerequisite = { focus = MLT_attract_investors_tower }
-        icon = GFX_
+        icon = GFX_focus_the_journey_malta
         cost = 4
         ai_will_do = {
             factor = 2
@@ -1413,7 +1413,7 @@ focus_tree = {
         x = 15
         y = 15
         prerequisite = { focus = MLT_maltese_water_thus_legal }
-        icon = GFX_
+        icon = GFX_focus_tower_fiftieth_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -1655,7 +1655,7 @@ focus_tree = {
         x = 6
         y = 18
         prerequisite = { focus = MLT_maltese_elite_mountaineers focus = MLT_maltese_elite_paratroopers focus = MLT_maltese_elite_marines }
-        icon = GFX_
+        icon = GFX_focus_tower_protector_defence
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2183,7 +2183,7 @@ focus_tree = {
         x = 15
         y = 18
         prerequisite = { focus = MLT_invest_in_jetpacks }
-        icon = GFX_
+        icon = GFX_focus_tower_hundreth_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -2207,7 +2207,7 @@ focus_tree = {
         x = 15
         y = 19
         prerequisite = { focus = MLT_hundreth_floor }
-        icon = GFX_
+        icon = GFX_focus_tower_thousandth_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -2231,7 +2231,7 @@ focus_tree = {
         x = 15
         y = 20
         prerequisite = { focus = MLT_thousandth_floor }
-        icon = GFX_
+        icon = GFX_focus_tower_lean_malta
         cost = 5
         ai_will_do = {
             factor = 2
@@ -2254,7 +2254,7 @@ focus_tree = {
         x = 15
         y = 21
         prerequisite = { focus = MLT_leaning_tower }
-        icon = GFX_
+        icon = GFX_focus_tower_9999_floor
         cost = 6
         ai_will_do = {
             factor = 2
@@ -2278,7 +2278,7 @@ focus_tree = {
         x = 15
         y = 22
         prerequisite = { focus = MLT_nine_thousand_nine_hundred_ninety_ninth_floor }
-        icon = GFX_
+        icon = GFX_focus_tower_neverending_floor
         cost = 6
         ai_will_do = {
             factor = 2
