@@ -335,7 +335,7 @@ MLT_tower_of_malta = {
 					expire = "1965.1.1"
 					ideology = conservatism 
 					traits = {
-						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+						MLT_tower_leader_trait
 					}
 				}
 				
@@ -346,7 +346,7 @@ MLT_tower_of_malta = {
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
-						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+						MLT_tower_leader_trait
 					}
 				}
 				
@@ -357,7 +357,7 @@ MLT_tower_of_malta = {
 					expire = "1965.1.1"
 					ideology = marxism
 					traits = {
-						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+						MLT_tower_leader_trait
 					}
 				}
 				
@@ -368,7 +368,7 @@ MLT_tower_of_malta = {
 					expire = "1965.1.1"
 					ideology = oligarchism
 					traits = {
-						sixth_count_della_catena MLT_nationalist MLT_doctor_degree MLT_motivational_figure_for_the_youth
+						MLT_tower_leader_trait
 					}
 				}
 			}
