@@ -2350,7 +2350,7 @@ focus_tree = {
             else = {
                 create_faction = MLT_maltese_communist_faction
             }
-            custom_effect_tooltip = unlock_unique_puppet_type
+            custom_effect_tooltip = unlock_unique_puppet_type_tower_union
             hidden_effect = {
                 every_country = {
                     limit = {
@@ -2413,7 +2413,7 @@ focus_tree = {
             else = {
                 create_faction = MLT_maltese_league_of_nations_faction
             }
-            custom_effect_tooltip = unlock_unique_puppet_type
+            custom_effect_tooltip = unlock_unique_puppet_type_tower_republic
         }
     }
 

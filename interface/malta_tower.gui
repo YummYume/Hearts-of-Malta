@@ -239,7 +239,7 @@ guiTypes = {
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
-                            spriteType = "GFX_tower_help_icon"
+                            spriteType = "GFX_tower_jewelry_icon"
                             pdx_tooltip = LOC_mlt_tower_window_jewelry_icon
                             pdx_tooltip_delayed = LOC_mlt_tower_window_jewelry_icon_tt
                         }
@@ -247,13 +247,16 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_jewelry_count"
                             position = { x = 5 y = 8 }
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_jewelry_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_jewelry_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_jewelry_count_tt_desc
                         }
                     }
 
@@ -288,13 +291,16 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_food_count"
                             position = { x = 5 y = 8 }
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_food_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_food_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_food_count_tt_desc
                         }
                     }
 
@@ -329,13 +335,16 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_gold_count"
                             position = { x = 5 y = 8 }
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_gold_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_gold_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_gold_count_tt_desc
                         }
                     }
 
@@ -362,7 +371,7 @@ guiTypes = {
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
-                            spriteType = "GFX_tower_help_icon"
+                            spriteType = "GFX_tower_diamond_icon"
                             pdx_tooltip = LOC_mlt_tower_window_diamond_icon
                             pdx_tooltip_delayed = LOC_mlt_tower_window_diamond_icon_tt
                         }
@@ -370,13 +379,16 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_diamond_count"
                             position = { x = 5 y = 8 }
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_diamond_count
                             font = hoi4_typewriter22
                             format = centre
                             borderSize = {x = 0 y = 0}
-                            alwaystransparent = yes
+                            alwaystransparent = no
+                            pdx_tooltip = LOC_mlt_tower_window_diamond_count_tt
+                            pdx_tooltip_delayed = LOC_mlt_tower_window_diamond_count_tt_desc
                         }
                     }
                 }
@@ -420,7 +432,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_floor_count"
                             position = { x = 5 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_floor_count
@@ -454,7 +466,7 @@ guiTypes = {
                             name = "mlt_tower_window_floor_price"
                             position = { x = 0 y = 6 }
                             maxWidth = 75
-                            maxHeight = 35
+                            maxHeight = 30
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_floor_price
                             font = hoi4_typewriter22
@@ -506,7 +518,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_civilian_factory_count"
                             position = { x = 5 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_civilian_factory_count
@@ -540,7 +552,7 @@ guiTypes = {
                             name = "mlt_tower_window_civilian_factory_price"
                             position = { x = 0 y = 6 }
                             maxWidth = 75
-                            maxHeight = 35
+                            maxHeight = 30
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_civilian_factory_price
                             font = hoi4_typewriter22
@@ -592,7 +604,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_military_factory_count"
                             position = { x = 5 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_military_factory_count
@@ -626,7 +638,7 @@ guiTypes = {
                             name = "mlt_tower_window_military_factory_price"
                             position = { x = 0 y = 6 }
                             maxWidth = 75
-                            maxHeight = 35
+                            maxHeight = 30
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_military_factory_price
                             font = hoi4_typewriter22
@@ -678,7 +690,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_dockyard_count"
                             position = { x = 5 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_dockyard_count
@@ -712,7 +724,7 @@ guiTypes = {
                             name = "mlt_tower_window_dockyard_price"
                             position = { x = 0 y = 6 }
                             maxWidth = 75
-                            maxHeight = 35
+                            maxHeight = 30
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_dockyard_price
                             font = hoi4_typewriter22
@@ -764,7 +776,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_population_count"
                             position = { x = 5 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 120
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_population_count
@@ -798,7 +810,7 @@ guiTypes = {
                             name = "mlt_tower_window_population_price"
                             position = { x = 0 y = 6 }
                             maxWidth = 75
-                            maxHeight = 35
+                            maxHeight = 30
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_population_price
                             font = hoi4_typewriter22
@@ -861,7 +873,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_oil_count"
                             position = { x = 1 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_oil_count
@@ -931,7 +943,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_oil_price_display"
                             position = { x = 0 y = 3 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_oil_price_display
@@ -984,7 +996,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_aluminum_count"
                             position = { x = 1 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_aluminum_count
@@ -1054,7 +1066,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_aluminum_price_display"
                             position = { x = 0 y = 3 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_aluminum_price_display
@@ -1107,7 +1119,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_rubber_count"
                             position = { x = 1 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_rubber_count
@@ -1177,7 +1189,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_rubber_price_display"
                             position = { x = 0 y = 3 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_rubber_price_display
@@ -1230,7 +1242,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_tungsten_count"
                             position = { x = 1 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_tungsten_count
@@ -1300,7 +1312,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_tungsten_price_display"
                             position = { x = 0 y = 3 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_tungsten_price_display
@@ -1353,7 +1365,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_steel_count"
                             position = { x = 1 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_steel_count
@@ -1423,7 +1435,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_steel_price_display"
                             position = { x = 0 y = 3 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_steel_price_display
@@ -1476,7 +1488,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_chromium_count"
                             position = { x = 1 y = 8 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_chromium_count
@@ -1546,7 +1558,7 @@ guiTypes = {
                         instantTextBoxType = {
                             name = "mlt_tower_window_chromium_price_display"
                             position = { x = 0 y = 3 }
-                            maxHeight = 35
+                            maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
                             text = LOC_mlt_tower_window_chromium_price_display
