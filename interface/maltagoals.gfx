@@ -204,4 +204,34 @@ spriteTypes = {
 		name = "GFX_focus_the_journey_malta"
 		texturefile = "gfx/interfaces/goals/the_journey_malta.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_fix_economy_malta"
+		texturefile = "gfx/interfaces/goals/fix_economy_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_coastal_raids_malta"
+		texturefile = "gfx/interfaces/goals/coastal_raids_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_fishing_boats_malta"
+		texturefile = "gfx/interfaces/goals/fishing_boats_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_with_privateering_malta"
+		texturefile = "gfx/interfaces/goals/with_privateering_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_maltese_water_is_legal"
+		texturefile = "gfx/interfaces/goals/maltese_water_is_legal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_invest_elevator_music"
+		texturefile = "gfx/interfaces/goals/invest_elevator_music.dds"
+	}
 }

@@ -1291,7 +1291,7 @@ focus_tree = {
         x = 15
         y = 12
         prerequisite = { focus = MLT_send_someone_journey }
-        icon = GFX_
+        icon = GFX_focus_fix_economy_malta
         cost = 2
         ai_will_do = {
             factor = 2
@@ -1318,7 +1318,7 @@ focus_tree = {
         x = 12
         y = 13
         prerequisite = { focus = MLT_improve_economy_tower }
-        icon = GFX_
+        icon = GFX_focus_coastal_raids_malta
         cost = 3
         ai_will_do = {
             factor = 2
@@ -1341,7 +1341,7 @@ focus_tree = {
         x = 15
         y = 13
         prerequisite = { focus = MLT_improve_economy_tower }
-        icon = GFX_
+        icon = GFX_focus_fishing_boats_malta
         cost = 3
         ai_will_do = {
             factor = 2
@@ -1364,7 +1364,7 @@ focus_tree = {
         x = 18
         y = 13
         prerequisite = { focus = MLT_improve_economy_tower }
-        icon = GFX_
+        icon = GFX_focus_with_privateering_malta
         cost = 3
         ai_will_do = {
             factor = 2
@@ -1387,7 +1387,7 @@ focus_tree = {
         x = 15
         y = 14
         prerequisite = { focus = MLT_with_coastal_raids focus = MLT_with_fishing_boats focus = MLT_with_piratry }
-        icon = GFX_
+        icon = GFX_focus_maltese_water_is_legal
         cost = 5
         ai_will_do = {
             factor = 2
@@ -2137,7 +2137,7 @@ focus_tree = {
         x = 15
         y = 16
         prerequisite = { focus = MLT_fiftieth_floor }
-        icon = GFX_
+        icon = GFX_focus_invest_elevator_music
         cost = 3
         ai_will_do = {
             factor = 2

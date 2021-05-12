@@ -1,17 +1,17 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_Independence_movements"
+		name = "GFX_idea_Independence_movements"
 		texturefile = "gfx/interfaces/ideas/GFX_Independence_movements.dds"
 	}
 
     spriteType = {
-		name = "GFX_Maltese_pride"
+		name = "GFX_idea_Maltese_pride"
 		texturefile = "gfx/interfaces/ideas/GFX_Maltese_pride.dds"
 	}
 
     spriteType = {
-		name = "GFX_New_strategies"
+		name = "GFX_idea_New_strategies"
 		texturefile = "gfx/interfaces/ideas/GFX_New_strategies.dds"
 	}
 }
