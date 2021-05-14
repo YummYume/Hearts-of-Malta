@@ -234,4 +234,19 @@ spriteTypes = {
 		name = "GFX_focus_invest_elevator_music"
 		texturefile = "gfx/interfaces/goals/invest_elevator_music.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_jetpack_tower_malta"
+		texturefile = "gfx/interfaces/goals/jetpack_tower_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_maltese_pride_malta"
+		texturefile = "gfx/interfaces/goals/maltese_pride_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_loyal_towards_britain_malta"
+		texturefile = "gfx/interfaces/goals/loyal_towards_britain_malta.dds"
+	}
 }
