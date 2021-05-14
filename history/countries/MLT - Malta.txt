@@ -241,6 +241,14 @@ add_to_array = { MLT.mlt_mediterranean_states = 177 }
 add_to_array = { MLT.mlt_mediterranean_states = 183 }
 # End of tower stuff
 
+ENG = {
+	set_autonomy = {
+		target = MLT
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+}
+
 create_country_leader = {
 	name = "Gerald Strickland"
 	desc = "POLITICS_GERALD_STRICKLAND_DESC"
@@ -299,14 +307,6 @@ set_popularities = {
 	fascism = 30
 	communism = 10
 	neutrality = 3
-}
-
-ENG = {
-	set_autonomy = {
-		target = MLT
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
 }
 
 if = {

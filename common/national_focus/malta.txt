@@ -1048,7 +1048,7 @@ focus_tree = {
         y = 8
         prerequisite = { focus = MLT_colonial_question }
 	    mutually_exclusive = { focus = MLT_free_malta }
-        icon = GFX_
+        icon = GFX_focus_loyal_towards_britain_malta
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2160,7 +2160,7 @@ focus_tree = {
         x = 15
         y = 17
         prerequisite = { focus = MLT_invest_elevator_music }
-        icon = GFX_
+        icon = GFX_focus_jetpack_tower_malta
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2302,7 +2302,7 @@ focus_tree = {
         x = 15
         y = 23
         prerequisite = { focus = MLT_neverending_tower }
-        icon = GFX_
+        icon = GFX_focus_maltese_pride_malta
         cost = 8
         ai_will_do = {
             factor = 2
