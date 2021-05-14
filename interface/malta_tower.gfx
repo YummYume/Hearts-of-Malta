@@ -30,6 +30,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_tower_icon"
+        texturefile = "gfx/interfaces/scripted_gui/GFX_tower_icon.dds"
+    }
+
+    spriteType = {
         name = "GFX_tower_civilian_factory_icon"
         texturefile = "gfx/interfaces/scripted_gui/GFX_civilian_factory_icon.dds"
     }
@@ -194,6 +199,12 @@ spriteTypes = {
     spriteType = {
         name = "GFX_infinity_texticon"
         texturefile = "gfx/texticons/GFX_infinity_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_tower_texticon"
+        texturefile = "gfx/texticons/GFX_tower_texticon.dds"
         legacy_lazy_load = no
     }
 }
