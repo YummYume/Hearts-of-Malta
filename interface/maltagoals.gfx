@@ -249,4 +249,49 @@ spriteTypes = {
 		name = "GFX_focus_loyal_towards_britain_malta"
 		texturefile = "gfx/interfaces/goals/loyal_towards_britain_malta.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_maltese_strategy_beginning"
+		texturefile = "gfx/interfaces/goals/maltese_strategy_beginning.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_study_landmarks_malta"
+		texturefile = "gfx/interfaces/goals/study_landmarks_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_master_mediterranean_communism"
+		texturefile = "gfx/interfaces/goals/master_mediterranean_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_maltese_league_nation"
+		texturefile = "gfx/interfaces/goals/maltese_league_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_great_crusade_neutrality"
+		texturefile = "gfx/interfaces/goals/great_crusade_neutrality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_master_of_the_shores"
+		texturefile = "gfx/interfaces/goals/master_of_the_shores.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_protector_all_sea"
+		texturefile = "gfx/interfaces/goals/protector_all_sea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_greater_malta_empire"
+		texturefile = "gfx/interfaces/goals/greater_malta_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_bright_future_malta"
+		texturefile = "gfx/interfaces/goals/bright_future_malta.dds"
+	}
 }
