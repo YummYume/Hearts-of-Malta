@@ -53,7 +53,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = eradicate_unemployment
 
             modifier = {
                 monthly_population = 0.15
@@ -73,7 +73,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = fishing_industry
 
             modifier = {
                 max_fuel_factor = 0.5
@@ -141,7 +141,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = motivated_workers_malta
 
             modifier = {
                 industrial_capacity_factory = 0.25
@@ -161,7 +161,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = glorified_workers_malta
 
             modifier = {
                 production_speed_buildings_factor = 0.25
@@ -202,7 +202,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = the_tower_of_malta_idea
 
             modifier = {
                 custom_modifier_tooltip = Tower_of_malta_tt
@@ -231,7 +231,7 @@ ideas = {
                 }
             }
 
-            picture = no_picture
+            picture = chi_war_of_resistance3
 
             targeted_modifier = {
                 tag = MLT
@@ -252,7 +252,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = great_crusade_malta
 
             modifier = {
                 generate_wargoal_tension = -0.5
@@ -280,7 +280,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = trade_partners_malta
 
             modifier = {
                 trade_opinion_factor = 1
@@ -308,7 +308,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = the_tower_of_malta_idea_sharing
         }
 
         MLT_Bright_future_idea = {
@@ -323,7 +323,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = bright_future_idea
 
             modifier = {
                 army_attack_factor = 0.15
@@ -352,7 +352,7 @@ ideas = {
                 }
             }
 
-            picture = no_picture
+            picture = generic_intel_bonus
 
             modifier = {
                 army_attack_factor = 0.1
@@ -375,7 +375,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = maltese_language_official_idea
 
             modifier = {
                 stability_factor = 0.1
@@ -394,7 +394,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = FRA_scw_intervention_republicans_focus
 
             modifier = {
                 communism_drift = 0.05
@@ -424,7 +424,7 @@ ideas = {
                 }
             }
 
-            picture = no_picture
+            picture = eng_guided_by_britain
 
             modifier = {
                 autonomy_gain_global_factor = -0.3
@@ -442,7 +442,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = elite_english_support
 
             modifier = {
                 democratic_drift = 0.1
@@ -462,7 +462,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = harmonious_language_malta
 
             modifier = {
                 stability_factor = 0.05
@@ -484,7 +484,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = generic_democratic_drift_bonus
 
             modifier = {
                 offensive_war_stability_factor = 0.3
@@ -507,7 +507,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = trotskyite_plot_purged
 
             modifier = {
                 encryption_factor = 0.1
@@ -530,7 +530,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = generic_fascism_drift_bonus
 
             modifier = {
                 army_attack_factor = 0.05
@@ -550,7 +550,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = independent_party_malta
 
             modifier = {
                 air_mission_efficiency = 0.1

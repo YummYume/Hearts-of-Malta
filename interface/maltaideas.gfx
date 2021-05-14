@@ -14,4 +14,69 @@ spriteTypes = {
 		name = "GFX_idea_New_strategies"
 		texturefile = "gfx/interfaces/ideas/GFX_New_strategies.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_eradicate_unemployment"
+		texturefile = "gfx/interfaces/ideas/GFX_eradicate_unemployment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fishing_industry"
+		texturefile = "gfx/interfaces/ideas/fishing_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_bright_future_idea"
+		texturefile = "gfx/interfaces/ideas/bright_future_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_motivated_workers_malta"
+		texturefile = "gfx/interfaces/ideas/motivated_workers_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_glorified_workers_malta"
+		texturefile = "gfx/interfaces/ideas/glorified_workers_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_the_tower_of_malta_idea"
+		texturefile = "gfx/interfaces/ideas/the_tower_of_malta_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_great_crusade_malta"
+		texturefile = "gfx/interfaces/ideas/great_crusade_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_trade_partners_malta"
+		texturefile = "gfx/interfaces/ideas/trade_partners_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_the_tower_of_malta_idea_sharing"
+		texturefile = "gfx/interfaces/ideas/the_tower_of_malta_idea_sharing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_elite_english_support"
+		texturefile = "gfx/interfaces/ideas/elite_english_support.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_harmonious_language_malta"
+		texturefile = "gfx/interfaces/ideas/harmonious_language_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_maltese_language_official_idea"
+		texturefile = "gfx/interfaces/ideas/maltese_language_official_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_independent_party_malta"
+		texturefile = "gfx/interfaces/ideas/independent_party_malta.dds"
+	}
 }

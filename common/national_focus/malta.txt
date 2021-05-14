@@ -480,7 +480,7 @@ focus_tree = {
         x = 15
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
-        icon = GFX_
+        icon = GFX_focus_maltese_strategy_beginning
         cost = 2
         ai_will_do = {
             factor = 2
@@ -503,7 +503,7 @@ focus_tree = {
         x = 15
         y = 3
         prerequisite = { focus = MLT_maltese_strategy }
-        icon = GFX_
+        icon = GFX_focus_study_landmarks_malta
         cost = 3
         ai_will_do = {
             factor = 2
@@ -526,7 +526,7 @@ focus_tree = {
         x = 13
         y = 4
         prerequisite = { focus = MLT_study_stelmo_bridge }
-        icon = GFX_
+        icon = GFX_focus_study_landmarks_malta
         cost = 3
         ai_will_do = {
             factor = 2
@@ -549,7 +549,7 @@ focus_tree = {
         x = 17
         y = 4
         prerequisite = { focus = MLT_study_stelmo_bridge }
-        icon = GFX_
+        icon = GFX_focus_study_landmarks_malta
         cost = 3
         ai_will_do = {
             factor = 2
@@ -2325,7 +2325,7 @@ focus_tree = {
         x = 9
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
-        icon = GFX_
+        icon = GFX_focus_master_mediterranean_communism
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2388,7 +2388,7 @@ focus_tree = {
         x = 13
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
-        icon = GFX_
+        icon = GFX_focus_maltese_league_nation
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2404,6 +2404,23 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
+            every_country = {
+                limit = {
+                    is_subject_of = MLT
+                    NOT = {
+                        has_autonomy_state = autonomy_tower_republic
+                    }
+                }
+                hidden_effect = {
+                    MLT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomy_state = autonomy_tower_republic
+                        }
+                    }
+                }
+                add_ideas = MLT_Trade_partners
+            }
             if = {
                 limit = {
                     is_faction_leader = yes
@@ -2423,7 +2440,7 @@ focus_tree = {
         x = 17
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
-        icon = GFX_
+        icon = GFX_focus_great_crusade_neutrality
         cost = 4
          ai_will_do = {
             factor = 2
@@ -2504,7 +2521,7 @@ focus_tree = {
         x = 21
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
-        icon = GFX_
+        icon = GFX_focus_master_of_the_shores
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2594,7 +2611,7 @@ focus_tree = {
         x = 11
         y = 25
         prerequisite = { focus = MLT_master_of_mediterranean_sea focus = MLT_maltese_league_of_nations }
-        icon = GFX_
+        icon = GFX_focus_protector_all_sea
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2620,7 +2637,7 @@ focus_tree = {
         x = 19
         y = 25
         prerequisite = { focus = MLT_the_great_crusade focus = MLT_master_of_shores }
-        icon = GFX_
+        icon = GFX_focus_greater_malta_empire
         cost = 4
         ai_will_do = {
             factor = 2
@@ -2665,7 +2682,7 @@ focus_tree = {
         x = 15
         y = 26
         prerequisite = { focus = MLT_protectors_of_all_seas focus = MLT_greater_malta }
-        icon = GFX_
+        icon = GFX_focus_bright_future_malta
         cost = 10
         ai_will_do = {
             factor = 2
