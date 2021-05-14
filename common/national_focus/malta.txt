@@ -2404,6 +2404,23 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
+            every_country = {
+                limit = {
+                    is_subject_of = MLT
+                    NOT = {
+                        has_autonomy_state = autonomy_tower_republic
+                    }
+                }
+                hidden_effect = {
+                    MLT = {
+                        set_autonomy = {
+                            target = PREV
+                            autonomy_state = autonomy_tower_republic
+                        }
+                    }
+                }
+                add_ideas = MLT_Trade_partners
+            }
             if = {
                 limit = {
                     is_faction_leader = yes

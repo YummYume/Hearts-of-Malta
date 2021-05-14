@@ -26,4 +26,59 @@ on_actions = {
 			}
 		}
 	}
+
+	on_release_as_puppet = { #release a nation as communist malta
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = MLT
+						has_completed_focus = MLT_master_of_mediterranean_sea
+						has_government = communism
+					}
+				}
+				ROOT = {
+					FROM = {
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_tower_union
+						}
+					}
+					add_ideas = MLT_Share_tower
+					add_dynamic_modifier = { modifier = share_tower_of_malta_modifier }
+                    set_variable = { share_weekly_manpower_tower_malta = MLT.weekly_manpower_tower_malta }
+                    multiply_variable = { share_weekly_manpower_tower_malta = 0.50 }
+                    set_variable = { share_refitting_speed_tower_malta = MLT.refitting_speed_tower_malta }
+                    multiply_variable = { share_refitting_speed_tower_malta = 0.50 }
+                    set_variable = { share_drift_defence_factor_tower_malta = MLT.drift_defence_factor_tower_malta }
+                    multiply_variable = { share_drift_defence_factor_tower_malta = 0.50 }
+                    set_variable = { share_trade_opinion_factor_tower_malta = MLT.trade_opinion_factor_tower_malta }
+                    multiply_variable = { share_trade_opinion_factor_tower_malta = 0.50 }
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = { #release a nation as democratic malta
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = MLT
+						has_completed_focus = MLT_maltese_league_of_nations
+						has_government = democratic
+					}
+				}
+				ROOT = {
+					FROM = {
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_tower_republic
+						}
+					}
+					add_ideas = MLT_Trade_partners
+				}
+			}
+		}
+	}
 }
