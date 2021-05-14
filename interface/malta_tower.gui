@@ -426,7 +426,7 @@ guiTypes = {
                             orientation = "UPPER_LEFT"
                             alwaystransparent = no
                             centerposition = yes
-                            spriteType = "GFX_tower_help_icon"
+                            spriteType = "GFX_tower_icon"
                         }
 
                         instantTextBoxType = {
