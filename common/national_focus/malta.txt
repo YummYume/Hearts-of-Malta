@@ -257,7 +257,7 @@ focus_tree = {
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
         icon = GFX_focus_Political_Turmoil
-        cost = 2
+        cost = 3
         ai_will_do = {
             factor = 20
         }
@@ -343,7 +343,7 @@ focus_tree = {
         y = 5
         prerequisite = { focus = MLT_maltese_election }
         icon = GFX_focus_Constitutional_Party
-        cost = 3
+        cost = 4
         ai_will_do = {
             factor = 2
         }
@@ -366,7 +366,7 @@ focus_tree = {
         y = 5
         prerequisite = { focus = MLT_maltese_election }
         icon = GFX_focus_The_Labour_Party
-        cost = 3
+        cost = 4
         ai_will_do = {
             factor = 2
         }
@@ -389,7 +389,7 @@ focus_tree = {
         y = 5
         prerequisite = { focus = MLT_maltese_election }
         icon = GFX_focus_Nationalist_Party
-        cost = 3
+        cost = 4
         ai_will_do = {
             factor = 2
         }
@@ -412,7 +412,7 @@ focus_tree = {
         y = 5
         prerequisite = { focus = MLT_maltese_election }
         icon = GFX_focus_Independents_Party
-        cost = 3
+        cost = 4
         ai_will_do = {
             factor = 2
         }
@@ -434,8 +434,9 @@ focus_tree = {
         x = 23
         y = 6
         prerequisite = { focus = MLT_constitutional_party focus = MLT_labour_party focus = MLT_nationalist_party }
+        mutually_exclusive = { focus = MLT_maltese_lira }
         icon = GFX_focus_The_British_Pounds
-        cost = 6
+        cost = 8
         ai_will_do = {
             factor = 2
         }
@@ -457,8 +458,9 @@ focus_tree = {
         x = 27
         y = 6
         prerequisite = { focus = MLT_labour_party focus = MLT_nationalist_party focus = MLT_independent_party }
+        mutually_exclusive = { focus = MLT_british_pounds }
         icon = GFX_focus_The_Maltese_Lira
-        cost = 6
+        cost = 8
         ai_will_do = {
             factor = 2
         }
@@ -481,7 +483,7 @@ focus_tree = {
         y = 2
         prerequisite = { focus = MLT_malta_awakens }
         icon = GFX_focus_maltese_strategy_beginning
-        cost = 2
+        cost = 3
         ai_will_do = {
             factor = 2
         }
@@ -574,7 +576,7 @@ focus_tree = {
         prerequisite = { focus = MLT_study_azure_window }
         prerequisite = { focus = MLT_study_dingli_cliffs }
         icon = GFX_focus_adopt_new_strategy
-        cost = 4
+        cost = 5
         ai_will_do = {
             factor = 2
         }
