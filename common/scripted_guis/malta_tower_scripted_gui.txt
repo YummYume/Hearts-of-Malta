@@ -123,7 +123,7 @@ scripted_gui = {
                     state = 116
                 }
 
-                add_to_variable = { MLT.resource_inflation^0 = 0.15 }
+                add_to_variable = { MLT.resource_inflation^0 = 0.25 }
                 clamp_variable = {
                     var = MLT.resource_inflation^0
                     min = 1
@@ -142,7 +142,7 @@ scripted_gui = {
                     state = 116
                 }
 
-                add_to_variable = { MLT.resource_inflation^1 = 0.15 }
+                add_to_variable = { MLT.resource_inflation^1 = 0.25 }
                 clamp_variable = {
                     var = MLT.resource_inflation^1
                     min = 1
@@ -161,7 +161,7 @@ scripted_gui = {
                     state = 116
                 }
 
-                add_to_variable = { MLT.resource_inflation^2 = 0.15 }
+                add_to_variable = { MLT.resource_inflation^2 = 0.25 }
                 clamp_variable = {
                     var = MLT.resource_inflation^2
                     min = 1
@@ -180,7 +180,7 @@ scripted_gui = {
                     state = 116
                 }
 
-                add_to_variable = { MLT.resource_inflation^3 = 0.15 }
+                add_to_variable = { MLT.resource_inflation^3 = 0.25 }
                 clamp_variable = {
                     var = MLT.resource_inflation^3
                     min = 1
@@ -199,7 +199,7 @@ scripted_gui = {
                     state = 116
                 }
 
-                add_to_variable = { MLT.resource_inflation^4 = 0.15 }
+                add_to_variable = { MLT.resource_inflation^4 = 0.25 }
                 clamp_variable = {
                     var = MLT.resource_inflation^4
                     min = 1
@@ -218,7 +218,7 @@ scripted_gui = {
                     state = 116
                 }
 
-                add_to_variable = { MLT.resource_inflation^5 = 0.15 }
+                add_to_variable = { MLT.resource_inflation^5 = 0.25 }
                 clamp_variable = {
                     var = MLT.resource_inflation^5
                     min = 1
