@@ -889,6 +889,7 @@ country_event = {
 
         if = {
             limit = {
+                has_full_control_of_state = 116
                 check_variable = {
                     var = temp_manpower_coastal_raid
                     value = 100000
@@ -1230,6 +1231,7 @@ country_event = {
 
         if = {
             limit = {
+                has_full_control_of_state = 116
                 check_variable = {
                     var = temp_manpower_fishing
                     value = 100000
@@ -1570,6 +1572,7 @@ country_event = {
 
         if = {
             limit = {
+                has_full_control_of_state = 116
                 check_variable = {
                     var = temp_manpower_privateering
                     value = 100000
