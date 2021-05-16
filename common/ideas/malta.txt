@@ -81,7 +81,7 @@ ideas = {
 
             equipment_bonus = {
                 convoy = {
-					build_cost_ic = -0.5
+					build_cost_ic = -0.3
                     instant = yes
 				}
             }
@@ -484,7 +484,7 @@ ideas = {
                 always = yes
             }
 
-            picture = generic_democratic_drift_bonus
+            picture = constitutional_party_malta
 
             modifier = {
                 offensive_war_stability_factor = 0.3
@@ -507,7 +507,7 @@ ideas = {
                 always = yes
             }
 
-            picture = trotskyite_plot_purged
+            picture = labour_party_malta
 
             modifier = {
                 encryption_factor = 0.1
@@ -530,7 +530,7 @@ ideas = {
                 always = yes
             }
 
-            picture = generic_fascism_drift_bonus
+            picture = nationalist_party_malta
 
             modifier = {
                 army_attack_factor = 0.05
@@ -573,7 +573,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = british_pounds_malta
 
             modifier = {
 				consumer_goods_factor = -0.05
@@ -596,7 +596,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = maltese_lire_malta
 
             modifier = {
 				consumer_goods_factor = 0.05
@@ -619,7 +619,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = towards_freedom_malta
 
             modifier = {
 				autonomy_gain = 1
@@ -638,7 +638,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = loyalty_towards_britain_malta
 
             modifier = {
 				autonomy_gain = -0.5
@@ -657,7 +657,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = loyalty_towards_britain_malta
 
             modifier = {
 				autonomy_gain = -0.25
@@ -678,7 +678,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = loyalty_towards_britain_malta
 
             modifier = {
 				autonomy_gain = -0.1
@@ -701,7 +701,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = loyalty_towards_britain_malta
 
             modifier = {
 				autonomy_gain = 0.3
@@ -726,7 +726,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = new_friendships_malta
 
             modifier = {
                 
@@ -749,7 +749,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = new_friendships_malta
 
             modifier = {
                democratic_acceptance = 75 
@@ -772,7 +772,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = new_friendships_malta
 
             modifier = {
                communism_acceptance = 75 
@@ -795,7 +795,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = new_friendships_malta
 
             modifier = {
                fascism_acceptance = 75 
@@ -818,7 +818,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = new_friendships_malta
 
             modifier = {
                neutrality_acceptance = 75 
@@ -847,7 +847,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = naval_cooperation_with_britains_malta
 
             modifier = {
                 industrial_capacity_dockyard = 0.20
@@ -870,7 +870,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = tower_debts_malta
 
             modifier = {
                 industrial_capacity_dockyard = -0.05
@@ -891,7 +891,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = tower_debts_malta
 
             modifier = {
                 industrial_capacity_dockyard = -0.10
@@ -912,7 +912,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = tower_debts_malta
 
             modifier = {
                 industrial_capacity_dockyard = -0.20
@@ -933,7 +933,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = tower_debts_malta
 
             modifier = {
                 industrial_capacity_dockyard = -0.30
@@ -954,7 +954,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = secret_plan_tower
 
             modifier = {
                 consumer_goods_factor = -0.05
@@ -976,7 +976,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = secret_plan_tower
 
             modifier = {
                 consumer_goods_factor = -0.05
@@ -1006,7 +1006,7 @@ ideas = {
                 }
             }
 
-            picture = no_picture
+            picture = tfv_can_conscription_crisis
 
             modifier = {
                 defensive_war_stability_factor = -0.05
@@ -1034,7 +1034,7 @@ ideas = {
                 }
             }
 
-            picture = no_picture
+            picture = hol_the_foundations_of_defense
 
             modifier = {
                 custom_modifier_tooltip = MLT_Jetpack_licences_tt
@@ -1057,7 +1057,7 @@ ideas = {
                 always = yes
             }
 
-            picture = no_picture
+            picture = generic_disjointed_gov
 
             modifier = {
                 stability_factor = -0.15

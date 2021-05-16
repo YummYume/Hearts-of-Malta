@@ -31,6 +31,11 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.1
+            hidden_effect = {
+                ENG = {
+                    country_event = { id = malta.48 days = 1 }
+                }
+            }
         }
     }
 
@@ -872,8 +877,10 @@ focus_tree = {
         }
         available = {
             MLT = {
-                has_autonomy_state = autonomy_dominion
-                compare_autonomy_progress_ratio > 0.75
+                compare_autonomy_progress_ratio > 0.70
+            }
+            NOT = {
+                has_idea = MLT_Loyalty_to_britain
             }
         }
         search_filters = { FOCUS_FILTER_INDEPENDENCE_MALTA }
@@ -1850,14 +1857,22 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-            has_government = communism
-            NOT = {
-                ITA = {
-                    OR = {
-                        has_government = fascism
-                        has_government = neutrality
+            OR = {
+                NOT = {
+                    ITA = {
+                        OR = {
+                            has_government = fascism
+                            has_government = neutrality
+                        }
+                    }
+                    MLT = {
+                        OR = {
+                            has_government = fascism
+                            has_government = neutrality
+                        }
                     }
                 }
+                is_in_faction_with = ITA
             }
         }
         available = {
@@ -1902,11 +1917,16 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-            has_government = communism
-            NOT = {
-                FRA = {
-                    has_government = democratic
+            OR = {
+                NOT = {
+                    FRA = {
+                        has_government = democratic
+                    }
+                    MLT = {
+                        has_government = democratic
+                    }
                 }
+                is_in_faction_with = FRA
             }
         }
         available = {
@@ -1945,11 +1965,16 @@ focus_tree = {
             factor = 2
         }
         bypass = {
-            has_government = communism
-            NOT = {
-                GER = {
-                    has_government = fascism
+            OR = {
+                NOT = {
+                    GER = {
+                        has_government = fascism
+                    }
+                    MLT = {
+                        has_government = fascism
+                    }
                 }
+                is_in_faction_with = GER
             }
         }
         available = {

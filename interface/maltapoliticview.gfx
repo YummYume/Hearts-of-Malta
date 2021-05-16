@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_autonomy_tower_union_icon"
+		texturefile = "gfx/interfaces/autonomy/autonomy_tower_union_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_tower_republic_icon"
+		texturefile = "gfx/interfaces/autonomy/autonomy_tower_republic_icon.dds"
+	}
+	
+}

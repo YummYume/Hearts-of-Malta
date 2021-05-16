@@ -16,11 +16,6 @@ country_event = {
             factor = 100
         }
         add_political_power = 100
-        hidden_effect = {
-            ENG = {
-                unlock_national_focus = uk_malta_focus
-            }
-        }
     }
 }
 
@@ -2164,6 +2159,9 @@ country_event = {
                     has_template = "Maltese medium tanks"
                 }
             }
+            set_technology = {
+                basic_medium_tank = 1
+            }
             division_template = {
                 name = "Maltese medium tanks"
                 priority = 1
@@ -2202,7 +2200,6 @@ country_event = {
                 var = bitcoin_currency
 	            value = 7
             }
-            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_medium
         }
         else_if = {
             limit = {
@@ -2223,7 +2220,6 @@ country_event = {
                 var = bitcoin_currency
 	            value = 7
             }
-            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_medium
         }
         else = {
             custom_effect_tooltip = MLT_not_enough_bitcoin_medium_tank
@@ -2247,6 +2243,9 @@ country_event = {
                 NOT = {
                     has_template = "Maltese heavy tanks"
                 }
+            }
+            set_technology = {
+                basic_heavy_tank = 1
             }
             division_template = {
                 name = "Maltese heavy tanks"
@@ -2286,7 +2285,6 @@ country_event = {
                 var = bitcoin_currency
 	            value = 10
             }
-            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_heavy
         }
         else_if = {
             limit = {
@@ -2307,7 +2305,6 @@ country_event = {
                 var = bitcoin_currency
 	            value = 10
             }
-            custom_effect_tooltip = before_choosing_make_sure_you_research_tanks_heavy
         }
         else = {
             custom_effect_tooltip = MLT_not_enough_bitcoin_heavy_tank
@@ -2615,6 +2612,57 @@ country_event = {
         }
         MLT = {
             add_ideas = MLT_Political_crisis
+        }
+    }
+}
+
+#Bypass a focus
+country_event = {
+    id = malta.48
+    title = malta.48.t
+    desc = malta.48.d
+    picture = GFX_report_event_bul_officers_burgas
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    #bypass the focus
+    option = {
+        name = malta.48.a
+        ai_chance = {
+            factor = 100
+        }
+        ENG = {
+            unlock_national_focus = uk_malta_focus
+        }
+    }
+
+    #No Bypass
+    option = {
+        name = malta.48.b
+        ai_chance = {
+            factor = 100
+        }
+    }
+}
+
+#Where do all the facotries comes from ?
+country_event = {
+    id = malta.49
+    title = malta.49.t
+    desc = malta.49.d
+    picture = GFX_report_event_chamberlain
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    #Got it
+    option = {
+        name = malta.49.a
+        ai_chance = {
+            factor = 100
         }
     }
 }

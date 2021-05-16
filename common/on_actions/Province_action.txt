@@ -29,6 +29,7 @@ on_actions = {
 								}
 							}
 						}
+						country_event = { id = malta.49 days = 1 }
 						set_variable = { current_civilian_factory_tower = MLT.current_civilian_factory_tower }
 						divide_variable = { current_civilian_factory_tower = 2 }
 						round_variable = current_civilian_factory_tower

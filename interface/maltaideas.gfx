@@ -79,4 +79,59 @@ spriteTypes = {
 		name = "GFX_idea_independent_party_malta"
 		texturefile = "gfx/interfaces/ideas/independent_party_malta.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_british_pounds_malta"
+		texturefile = "gfx/interfaces/ideas/british_pounds_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_maltese_lire_malta"
+		texturefile = "gfx/interfaces/ideas/maltese_lire_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_towards_freedom_malta"
+		texturefile = "gfx/interfaces/ideas/towards_freedom_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_loyalty_towards_britain_malta"
+		texturefile = "gfx/interfaces/ideas/loyalty_towards_britain_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_new_friendships_malta"
+		texturefile = "gfx/interfaces/ideas/new_friendships_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_naval_cooperation_with_britains_malta"
+		texturefile = "gfx/interfaces/ideas/naval_cooperation_with_britains_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_tower_debts_malta"
+		texturefile = "gfx/interfaces/ideas/tower_debts_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_secret_plan_tower"
+		texturefile = "gfx/interfaces/ideas/secret_plan_tower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nationalist_party_malta"
+		texturefile = "gfx/interfaces/ideas/nationalist_party_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_labour_party_malta"
+		texturefile = "gfx/interfaces/ideas/labour_party_malta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_constitutional_party_malta"
+		texturefile = "gfx/interfaces/ideas/constitutional_party_malta.dds"
+	}
 }

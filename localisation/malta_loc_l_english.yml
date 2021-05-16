@@ -379,6 +379,13 @@
  malta.47.t:0 "Political Crisis"
  malta.47.d:0 ""
  malta.47.a:0 "Elections must be held!"
+ malta.48.t:0 "Bypass a Focus"
+ malta.48.d:0 "Because Malta is an independent country in this mod, you won't be able to complete a specific focus as the English, this event allow you to bypass it or not if you plan to conquer malta."
+ malta.48.a:0 "Bypass the focus"
+ malta.48.b:0 "Do not bypass the focus"
+ malta.49.t:0 "Apparition of new Factories"
+ malta.49.d:0 "You've probably realized that you've recently gained a lot of factories randomly, the reason for that is because you've managed to capture malta."
+ malta.49.a:0 "Got it"
 
 #News Events
  newsmalta.1.t:0 "Birth of a Giant"
