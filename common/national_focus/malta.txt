@@ -31,11 +31,6 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
             country_event = malta.1
-            hidden_effect = {
-                ENG = {
-                    country_event = { id = malta.48 days = 1 }
-                }
-            }
         }
     }
 
@@ -109,7 +104,9 @@ focus_tree = {
             factor = 1
         }
         bypass = {
-
+            116 = {
+                infrastructure > 9
+            }
         }
         available = {
             has_full_control_of_state = 116
@@ -694,6 +691,7 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            air_experience = 25
             116 = {
                 add_building_construction = {
                     type = bunker
@@ -724,6 +722,7 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            air_experience = 25
             116 = {
                 add_building_construction = {
                     type = anti_air_building
@@ -753,6 +752,7 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            navy_experience = 25
             116 = {
                 add_building_construction  = {
                     type = coastal_bunker
@@ -783,6 +783,7 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            navy_experience = 25
             116 = {
                 add_building_construction = {
                     type = coastal_bunker
@@ -807,7 +808,7 @@ focus_tree = {
         y = 10
         prerequisite = { focus = MLT_air_denial focus = MLT_where_none_shall_land }
         icon = GFX_focus_generic_provoke_border_clashes
-        cost = 5
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -819,6 +820,7 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            army_experience = 50
             add_tech_bonus = {
 				name = MAL_counteroffensive_military_tact
 				bonus = 1
@@ -1432,6 +1434,7 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            has_completed_focus = MLT_colonial_question
         }
         search_filters = { FOCUS_FILTER_TOWER_MALTA }
         completion_reward = {
@@ -1705,7 +1708,7 @@ focus_tree = {
         y = 19
         prerequisite = { focus = MLT_protectors_of_the_towers }
         icon = GFX_goal_generic_allies_build_infantry
-        cost = 5
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -1713,10 +1716,11 @@ focus_tree = {
 
         }
         available = {
-
+            has_full_control_of_state = 116
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            army_experience = 25
             add_tech_bonus = {
 				name = MLT_on_the_shores_tech
 				bonus = 1
@@ -1745,7 +1749,7 @@ focus_tree = {
         y = 19
         prerequisite = { focus = MLT_protectors_of_the_towers }
         icon = GFX_goal_generic_navy_battleship
-        cost = 5
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -1753,10 +1757,11 @@ focus_tree = {
 
         }
         available = {
-
+            has_full_control_of_state = 116
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            navy_experience = 25
             add_tech_bonus = {
 				name = MLT_on_the_water_tech
 				bonus = 1
@@ -1785,7 +1790,7 @@ focus_tree = {
         y = 19
         prerequisite = { focus = MLT_protectors_of_the_towers }
         icon = GFX_goal_generic_air_fighter
-        cost = 5
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -1793,10 +1798,11 @@ focus_tree = {
 
         }
         available = {
-
+            has_full_control_of_state = 116
         }
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
+            air_experience = 25
             add_tech_bonus = {
 				name = MLT_in_the_air_tech
 				bonus = 1
@@ -2024,10 +2030,10 @@ focus_tree = {
                 limit = {
                     is_faction_leader = yes
                 }
-                set_faction_name = MLT_mediteranean_accord
+                set_faction_name = MLT_mediterranean_accord
             }
             else = {
-                create_faction = MLT_mediteranean_accord
+                create_faction = MLT_mediterranean_accord
             }
         }
     }
@@ -2353,7 +2359,7 @@ focus_tree = {
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
         icon = GFX_focus_master_mediterranean_communism
-        cost = 4
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -2416,7 +2422,7 @@ focus_tree = {
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
         icon = GFX_focus_maltese_league_nation
-        cost = 4
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -2468,7 +2474,7 @@ focus_tree = {
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
         icon = GFX_focus_great_crusade_neutrality
-        cost = 4
+        cost = 6
          ai_will_do = {
             factor = 2
         }
@@ -2549,7 +2555,7 @@ focus_tree = {
         y = 24
         prerequisite = { focus = MLT_maltese_pride }
         icon = GFX_focus_master_of_the_shores
-        cost = 4
+        cost = 6
         ai_will_do = {
             factor = 2
         }
@@ -2639,7 +2645,7 @@ focus_tree = {
         y = 25
         prerequisite = { focus = MLT_master_of_mediterranean_sea focus = MLT_maltese_league_of_nations }
         icon = GFX_focus_protector_all_sea
-        cost = 4
+        cost = 8
         ai_will_do = {
             factor = 2
         }
@@ -2665,7 +2671,7 @@ focus_tree = {
         y = 25
         prerequisite = { focus = MLT_the_great_crusade focus = MLT_master_of_shores }
         icon = GFX_focus_greater_malta_empire
-        cost = 4
+        cost = 8
         ai_will_do = {
             factor = 2
         }
@@ -2719,6 +2725,7 @@ focus_tree = {
         }
         available = {
             has_full_control_of_state = 116
+            is_major = yes
             NOT = {
                 has_capitulated = yes
             }
@@ -2738,8 +2745,19 @@ focus_tree = {
                         has_government = communism
                     }
                 }
-                is_major = yes
                 is_faction_leader = yes
+                num_faction_members > 9
+                custom_trigger_tooltip = {
+                    tooltip = MLT_bright_future_tt
+                    any_of_scopes = {
+                        array = ROOT.faction_members
+                        
+                        is_major = yes
+                        NOT = {
+                            original_tag = MLT
+                        }
+                    }
+                }
             }
         }
         search_filters = { FOCUS_FILTER_ANNEXATION }

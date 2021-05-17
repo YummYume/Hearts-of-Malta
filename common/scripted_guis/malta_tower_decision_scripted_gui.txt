@@ -1,0 +1,32 @@
+scripted_gui = {
+
+	mlt_tower_decision_scripted_gui = {
+		context_type = decision_category
+		window_name = "mlt_tower_decision"
+
+        visible = {
+            check_variable = {
+                var = max_tower_floor
+                value = 1
+                compare = greater_than_or_equals
+            }
+            has_full_control_of_state = 116
+            has_country_flag = MLT_tower_built
+        }
+
+        effects = {
+            mlt_tower_decision_access_button_click = {
+                set_country_flag = mlt_custom_gui_tower_opened
+            }
+        }
+
+        triggers = {
+            mlt_tower_decision_access_button_click_enabled = {
+                has_full_control_of_state = 116
+                NOT = {
+                    has_country_flag = mlt_custom_gui_tower_opened
+                }
+            }
+        }
+	}
+}

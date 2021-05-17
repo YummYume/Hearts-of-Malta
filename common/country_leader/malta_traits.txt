@@ -54,6 +54,16 @@ leader_traits = {
 		strategic_bomb_visibility = 0.10
 	}
 
+	MLT_on_a_journey = {
+		random = no
+		
+		political_power_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	MLT_tower_leader_trait = {
 		random = no
 		

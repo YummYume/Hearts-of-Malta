@@ -312,6 +312,7 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        add_country_leader_trait = MLT_on_a_journey
         hidden_effect = {
             country_event = { id = malta.45  days = 60 }
         }
@@ -2566,6 +2567,15 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        remove_country_leader_trait = MLT_on_a_journey
+        add_to_variable = { jewelry_currency = 10 }
+        add_to_variable = { food_currency = 10 }
+        add_to_variable = { gold_currency = 10 }
+        add_to_variable = { diamond_currency = 30 }
+        custom_effect_tooltip = MLT_add_jewelry_to_reserve
+        custom_effect_tooltip = MLT_add_food_to_reserve
+        custom_effect_tooltip = MLT_add_gold_to_reserve
+        custom_effect_tooltip = MLT_add_diamond_to_reserve_30
         set_country_flag = MLT_someone_returned_from_journey
         clr_country_flag = leader_malta_is_on_journey
     }
@@ -2619,14 +2629,21 @@ country_event = {
     }
 }
 
-#Bypass a focus
+# Bypass a focus
 country_event = {
     id = malta.48
     title = malta.48.t
     desc = malta.48.d
     picture = GFX_report_event_bul_officers_burgas
 
-    is_triggered_only = yes
+    trigger = {
+        tag = ENG
+        has_completed_focus = uk_mediterranean_focus
+        NOT = {
+            has_full_control_of_state = 116
+            has_completed_focus = uk_malta_focus
+        }
+    }
 
     fire_only_once = yes
 
@@ -2645,12 +2662,12 @@ country_event = {
     option = {
         name = malta.48.b
         ai_chance = {
-            factor = 100
+            factor = 0
         }
     }
 }
 
-#Where do all the facotries comes from ?
+# Where do all the factories come from ?
 country_event = {
     id = malta.49
     title = malta.49.t
@@ -2658,8 +2675,6 @@ country_event = {
     picture = GFX_report_event_chamberlain
 
     is_triggered_only = yes
-
-    fire_only_once = yes
 
     #Got it
     option = {

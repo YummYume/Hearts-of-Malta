@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tower_decision_button"
+		texturefile = "gfx/interfaces/scripted_gui/GFX_tower_decision_button.dds"
+	}
+}

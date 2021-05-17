@@ -1,5 +1,5 @@
 scripted_gui = {
-    sov_national_obligation_scripted_gui = {
+    mlt_tower_scripted_gui = {
         window_name = "mlt_tower_window"
         context_type = player_context
 
@@ -24,6 +24,9 @@ scripted_gui = {
                 add_to_variable = { current_tower_floor = 1 }
                 set_variable = { max_building_tower = current_tower_floor }
                 add_to_variable = { max_population_tower_m = 0.100 }
+                add_to_variable = { current_tower_height_meters = 30 }
+                set_variable = { current_tower_height_feets = current_tower_height_meters }
+                multiply_variable = { current_tower_height_feets = 3.281 }
 
                 civilian_factory_calculate_percentage = yes
                 military_factory_calculate_percentage = yes

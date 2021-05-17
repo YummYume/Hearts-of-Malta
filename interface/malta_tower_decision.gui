@@ -1,0 +1,200 @@
+guiTypes = {
+    containerWindowType = {
+        name = "mlt_tower_decision"
+		position = { x = 0 y = 0 }
+		size = { width = 420 height = 150 }
+        orientation = center
+        origo = center
+        click_to_front = no
+        clipping = no
+
+        containerWindowType = {
+            name = "mlt_tower_decision_access"
+		    position = { x = 0 y = 25 }
+		    size = { width = 450 height = 150 }
+            orientation = center
+            origo = center
+            click_to_front = no
+            clipping = no
+
+            buttonType = {
+                name = "mlt_tower_decision_access_button"
+                position = { x = 20 y = -20 }
+                orientation = "UPPER_LEFT"
+                spriteType = "GFX_tower_decision_button"
+                buttonText = ""
+                buttonFont = cg_18b
+                alwaystransparent = no
+                clicksound = menu_close_window
+                pdx_tooltip = LOC_mlt_tower_decision_access_button_tt
+                pdx_tooltip_delayed = LOC_mlt_tower_decision_access_button_tt_desc
+            }
+
+            instantTextBoxType = {
+                name = "mlt_tower_decision_access_text"
+                position = { x = 20 y = -38 }
+                orientation = lower_left
+                text = LOC_mlt_tower_decision_access_text
+                font = "hoi_20bs"
+                format = center
+                alwaystransparent = no
+                fixedsize = yes
+                borderSize = {x = 0 y = -10}
+                maxWidth = 100
+                maxHeight = 20
+            }
+
+            containerWindowType = {
+                name = "mlt_tower_decision_info"
+                position = { x = 60 y = 25 }
+                size = { width = 300 height = 150 }
+                orientation = center
+                origo = center
+                click_to_front = no
+                clipping = no
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_jewelry"
+                    position = { x = 0 y = -45 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_jewelry
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 180
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_food"
+                    position = { x = 0 y = -15 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_food
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 180
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_gold"
+                    position = { x = 0 y = 15 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_gold
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 180
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_diamond"
+                    position = { x = 0 y = 45 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_diamond
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 180
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_bitcoin"
+                    position = { x = 0 y = 75 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_bitcoin
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 180
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_current_floor_height"
+                    position = { x = 180 y = -45 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_current_floor_height
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 200
+                    maxHeight = 20
+                    pdx_tooltip = LOC_mlt_tower_decision_info_current_floor_height_tt
+                    pdx_tooltip_delayed = LOC_mlt_tower_decision_info_current_floor_height_tt_desc
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_current_floor"
+                    position = { x = 180 y = -15 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_current_floor
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 200
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_factories"
+                    position = { x = 180 y = 15 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_factories
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 200
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_population"
+                    position = { x = 180 y = 45 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_population
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 200
+                    maxHeight = 20
+                }
+
+                instantTextBoxType = {
+                    name = "mlt_tower_decision_info_naval_efficiency"
+                    position = { x = 180 y = 75 }
+                    orientation = upper_left
+                    text = LOC_mlt_tower_decision_info_naval_efficiency
+                    font = "hoi_20bs"
+                    format = left
+                    alwaystransparent = no
+                    fixedsize = yes
+                    borderSize = {x = 0 y = 0}
+                    maxWidth = 200
+                    maxHeight = 20
+                }
+            }
+        }
+    }
+}

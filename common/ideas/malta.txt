@@ -81,7 +81,7 @@ ideas = {
 
             equipment_bonus = {
                 convoy = {
-					build_cost_ic = -0.3
+					build_cost_ic = -0.25
                     instant = yes
 				}
             }

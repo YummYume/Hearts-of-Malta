@@ -207,4 +207,16 @@ spriteTypes = {
         texturefile = "gfx/texticons/GFX_tower_texticon.dds"
         legacy_lazy_load = no
     }
+
+    spriteType = {
+        name = "GFX_autonomy_tower_republic_texticon"
+        texturefile = "gfx/texticons/GFX_autonomy_tower_republic_texticon.dds"
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_autonomy_tower_union_texticon"
+        texturefile = "gfx/texticons/GFX_autonomy_tower_union_texticon.dds"
+        legacy_lazy_load = no
+    }
 }

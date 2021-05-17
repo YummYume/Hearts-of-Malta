@@ -97,6 +97,8 @@ set_variable = { trade_opinion_factor_tower_malta = 0 }
 # A few numbers (such as the increase in naval efficiency for each mission) are not stored here because they will most likely never change
 set_variable = { current_tower_floor = 0 }
 set_variable = { max_tower_floor = 0 }
+set_variable = { current_tower_height_meters = 0 } # 30 per floor
+set_variable = { current_tower_height_feets = 0 } # current_tower_height_meters * 3,281
 set_variable = { price_tower_floor = 10 } # 10 Gold (increases during gameplay)
 set_variable = { current_building_tower = 0 } # Civilian + military + dockyards
 set_variable = { max_building_tower = current_tower_floor } # = current_tower_floor

@@ -111,7 +111,7 @@ MLT_tower_of_malta = {
 
 	MLT_pay_off_debts_1 = {
 
-		icon = GFX_decision_generic_decision
+		icon = GFX_decision_gre_paying_ifc_debt
 
 		allowed = {
 			original_tag = MLT
@@ -160,7 +160,7 @@ MLT_tower_of_malta = {
 
 	MLT_pay_off_debts_2 = {
 
-		icon = GFX_decision_generic_decision
+		icon = GFX_decision_gre_paying_ifc_debt
 
 		allowed = {
 			original_tag = MLT
@@ -209,7 +209,7 @@ MLT_tower_of_malta = {
 
 	MLT_pay_off_debts_3 = {
 
-		icon = GFX_decision_generic_decision
+		icon = GFX_decision_gre_paying_ifc_debt
 
 		allowed = {
 			original_tag = MLT
@@ -258,7 +258,7 @@ MLT_tower_of_malta = {
 
 	MLT_pay_off_debts_4 = {
 
-		icon = GFX_decision_generic_decision
+		icon = GFX_decision_gre_paying_ifc_debt
 
 		allowed = {
 			original_tag = MLT
@@ -305,7 +305,7 @@ MLT_tower_of_malta = {
 
 	MLT_proclaim_leader_tower = {
 		
-		icon = GFX_decision_generic_decision
+		icon = GFX_decision_hol_radio_oranje
 
 		allowed = {
 			original_tag = MLT

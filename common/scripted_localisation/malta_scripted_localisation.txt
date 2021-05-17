@@ -1024,3 +1024,80 @@ defined_text = {
 		localization_key = MLT_TRIGGER_NO
 	}
 }
+
+defined_text = {
+	name = GetTowerOfMaltaHeight
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 0
+				compare = greater_than
+			}
+			check_variable = {
+				var = current_tower_floor
+				value = 10
+				compare = less_than
+			}
+		}
+		localization_key = MLT_TOWER_HEIGHT_RIDICULOUS
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 10
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = current_tower_floor
+				value = 50
+				compare = less_than
+			}
+		}
+		localization_key = MLT_TOWER_HEIGHT_SMALL
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 50
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = current_tower_floor
+				value = 100
+				compare = less_than
+			}
+		}
+		localization_key = MLT_TOWER_HEIGHT_HIGH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 100
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = current_tower_floor
+				value = 500
+				compare = less_than
+			}
+		}
+		localization_key = MLT_TOWER_HEIGHT_GODLY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = current_tower_floor
+				value = 500
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = MLT_TOWER_HEIGHT_ABOVE_SKIES
+	}
+	text = {
+		localization_key = MLT_TOWER_HEIGHT_NON_EXISTANT
+	}
+}

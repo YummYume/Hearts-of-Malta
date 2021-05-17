@@ -5,6 +5,8 @@ MLT_tower_of_malta = {
 
 	picture = GFX_tower_decision_malta
 
+    scripted_gui = mlt_tower_decision_scripted_gui
+
     allowed = {
      	original_tag = MLT
     }
