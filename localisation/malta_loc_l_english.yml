@@ -393,6 +393,7 @@
  malta.49.t:0 "The Capture of [116.GetName]"
  malta.49.d:0 "Our capture of [116.GetName] also meant the capture of its Tower. We will benefit from the Tower bonuses and half of its resources and factories as long as we hold the state."
  malta.49.a:0 "Our tower now."
+ show_factories_gained_from_tower:0 "§YCivilian Factories§! gained from §YThe Tower§! : §G[?ROOT.current_civilian_factory_tower]§!\n§YMilitary Factories§! gained from §YThe Tower§! : §G[?ROOT.current_military_factory_tower]§!\n§YDockyards§! gained from §YThe Tower§! : §G[?ROOT.current_dockyard_tower]§!\n§RYou will lose all factories, bonuses, and resources from the Tower if you lose control of Malta.§!\n§RThe people of Malta will not be happy about foreign invasions and will defend the Tower harshly.§!"
 
 #News Events
  newsmalta.1.t:0 "Birth of a Giant"

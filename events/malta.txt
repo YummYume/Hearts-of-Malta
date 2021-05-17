@@ -2682,5 +2682,6 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+        custom_effect_tooltip = show_factories_gained_from_tower
     }
 }
