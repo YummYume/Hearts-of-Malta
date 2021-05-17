@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_INDEPENDENCE_MALTA"
+		textureFile = "gfx/interfaces/focusview/filter/filter_malta_independence.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_MILITARY_MALTA"
+		textureFile = "gfx/interfaces/focusview/filter/filter_malta_military.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_TOWER_MALTA"
+		textureFile = "gfx/interfaces/focusview/filter/filter_tower_of_malta.dds"
+	}
+}
