@@ -59,7 +59,10 @@ if = {
 set_convoys = 25
 
 1939.1.1 = {
-	#TODO
+	
+	create_intelligence_agency = yes
+
+	add_political_power = 500
 	
 	set_technology = {
 
@@ -82,6 +85,97 @@ set_convoys = 25
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+	add_ideas = {
+		MLT_English_language_official
+		MLT_Constitutional_party_ideas
+		MLT_british_pounds_ideas
+		MLT_Tower_debts_3
+		MLT_Gerald_strickland
+		MLT_The_tower_malta
+	}
+
+	add_dynamic_modifier = { modifier = tower_of_malta_modifier }
+
+	#Focus
+	unlock_national_focus = MLT_malta_awakens
+	unlock_national_focus = MLT_heart_mediterraenean_sea
+	unlock_national_focus = MLT_industry_in_valleta
+	unlock_national_focus = MLT_maltese_shipbuilding
+	unlock_national_focus = MLT_political_turmoil
+	unlock_national_focus = MLT_maltese_language_question
+	unlock_national_focus = MLT_maltese_election
+	unlock_national_focus = MLT_constitutional_party
+	unlock_national_focus = MLT_british_pounds
+	unlock_national_focus = MLT_maltese_strategy
+	unlock_national_focus = MLT_study_stelmo_bridge
+	unlock_national_focus = MLT_study_azure_window
+	unlock_national_focus = MLT_study_dingli_cliffs
+	unlock_national_focus = MLT_adopt_new_strategy
+	unlock_national_focus = MLT_first_floor
+	unlock_national_focus = MLT_second_floor
+	unlock_national_focus = MLT_third_floor
+	unlock_national_focus = MLT_tenth_floor
+	unlock_national_focus = MLT_attract_investors_tower
+	unlock_national_focus = MLT_send_someone_journey
+	unlock_national_focus = MLT_improve_economy_tower
+	unlock_national_focus = MLT_with_coastal_raids
+	unlock_national_focus = MLT_with_fishing_boats
+	unlock_national_focus = MLT_with_piratry
+	unlock_national_focus = MLT_maltese_water_thus_legal
+	unlock_national_focus = MLT_fiftieth_floor
+
+	#Building
+	116 = {
+		add_extra_state_shared_building_slots = 4
+		add_building_construction = {
+			type = dockyard
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+		}
+	}
+
+	#Variables
+	set_variable = {
+		var = current_tower_floor
+		value = 25
+	}
+	add_to_variable = { jewelry_currency = 150 }
+    add_to_variable = { food_currency = 150 }
+    add_to_variable = { gold_currency = 10 }
+    add_to_variable = { diamond_currency = 150 }
+	set_variable = {
+		var = weekly_manpower_tower_malta
+		value = 2500
+	}
+	set_variable = {
+		var = refitting_speed_tower_malta
+		value = 0.25
+	}
+	set_variable = {
+		var = drift_defence_factor_tower_malta
+		value = 0.25
+	}
+	set_variable = {
+		var = trade_opinion_factor_tower_malta
+		value = 0.25
+	}
+	set_variable = {
+		var = max_tower_floor
+		value = 50
+	}
+
+	#Flag 
+	set_country_flag = MLT_can_purchase_in_tower
+	set_country_flag = MLT_someone_returned_from_journey
+	set_country_flag = MLT_tower_built
 }
 
 add_ideas = MLT_Independence_movements

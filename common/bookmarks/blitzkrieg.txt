@@ -82,6 +82,7 @@ bookmarks = {
 			}			
 		}
 		JAP = {
+			minor = yes
 			history = JAP_BLITZKRIEG_DESC
 			ideology = fascism
 			ideas={
@@ -109,6 +110,20 @@ bookmarks = {
 				SOV_claims_on_baltic
 				SOV_war_with_uk
 			}
+		}
+		"MLT"={
+			history = "MLT_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				MLT_English_language_official
+				MLT_Constitutional_party_ideas
+				MLT_The_tower_malta
+			}
+			focuses = {
+				MLT_malta_awakens
+				MLT_invest_in_jetpacks
+				MLT_maltese_pride
+			}	
 		}
 
 		"---"={
