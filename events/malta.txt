@@ -456,7 +456,7 @@ country_event = {
 
     #We're in Troubles
     option = {
-        name = malta.33.a
+        name = malta.20.a
         ai_chance = {
             factor = 100
         }
