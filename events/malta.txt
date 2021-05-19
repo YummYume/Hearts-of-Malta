@@ -339,7 +339,9 @@ country_event = {
             factor = 100
         }
         add_political_power = 100
+        custom_effect_tooltip = available_political_advisor
         show_ideas_tooltip = MLT_Xand_leonardis
+        custom_effect_tooltip = available_political_advisor
         show_ideas_tooltip = MLT_Luke_serge
     }
 }
