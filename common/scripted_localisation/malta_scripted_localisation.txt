@@ -344,14 +344,14 @@ defined_text = {
 		trigger = {
 			check_variable = {
 				var = gold_currency
-				value = price_tower_floor
+				value = price_floor_tower
 				compare = less_than
 			}
 		}
 		localization_key = MLT_BUY_FLOOR_NOT_ENOUGH_GOLD
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_FLOOR_CAN
 	}
 }
 
@@ -397,14 +397,14 @@ defined_text = {
 		trigger = {
 			check_variable = {
 				var = jewelry_currency
-				value = price_tower_civilian_factory
+				value = price_civilian_factory_tower
 				compare = less_than
 			}
 		}
 		localization_key = MLT_BUY_CIVILIAN_FACTORY_NOT_ENOUGH_JEWELRY
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_CIVILIAN_FACTORY_CAN
 	}
 }
 
@@ -450,14 +450,14 @@ defined_text = {
 		trigger = {
 			check_variable = {
 				var = jewelry_currency
-				value = price_tower_military_factory
+				value = price_military_factory_tower
 				compare = less_than
 			}
 		}
 		localization_key = MLT_BUY_MILITARY_FACTORY_NOT_ENOUGH_JEWELRY
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_MILITARY_FACTORY_CAN
 	}
 }
 
@@ -503,14 +503,14 @@ defined_text = {
 		trigger = {
 			check_variable = {
 				var = jewelry_currency
-				value = price_tower_dockyard
+				value = price_dockyard_tower
 				compare = less_than
 			}
 		}
 		localization_key = MLT_BUY_DOCKYARD_NOT_ENOUGH_JEWELRY
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_DOCKYARD_CAN
 	}
 }
 
@@ -546,14 +546,14 @@ defined_text = {
 		trigger = {
 			check_variable = {
 				var = food_currency
-				value = price_tower_population
+				value = price_population_tower
 				compare = less_than
 			}
 		}
 		localization_key = MLT_BUY_POPULATION_NOT_ENOUGH_FOOD
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_POPULATION_CAN
 	}
 }
 
@@ -586,7 +586,7 @@ defined_text = {
 		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_RESOURCE_CAN
 	}
 }
 
@@ -619,7 +619,7 @@ defined_text = {
 		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_RESOURCE_CAN
 	}
 }
 
@@ -652,7 +652,7 @@ defined_text = {
 		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_RESOURCE_CAN
 	}
 }
 
@@ -685,7 +685,7 @@ defined_text = {
 		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_RESOURCE_CAN
 	}
 }
 
@@ -718,7 +718,7 @@ defined_text = {
 		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_RESOURCE_CAN
 	}
 }
 
@@ -751,7 +751,7 @@ defined_text = {
 		localization_key = MLT_BUY_RESOURCE_NOT_ENOUGH_DIAMOND
 	}
 	text = {
-		localization_key = MLT_BUY_NOT
+		localization_key = MLT_BUY_RESOURCE_CAN
 	}
 }
 

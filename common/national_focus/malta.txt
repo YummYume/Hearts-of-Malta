@@ -1,6 +1,6 @@
 focus_tree = {
     id = malta_focus
-    continuous_focus_position = { x = 250 y = 1550 }
+    continuous_focus_position = { x = 300 y = 1650 }
 
     country = {
         factor = 0
@@ -267,7 +267,7 @@ focus_tree = {
 
         }
         available = {
-
+            
         }
         search_filters = { FOCUS_FILTER_POLITICAL }
         completion_reward = {
@@ -827,6 +827,47 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+        }
+    }
+
+    # Counteroffensive Tactics
+    focus = {
+        id = MLT_the_janitor
+        x = 6
+        y = 11
+        prerequisite = { focus = MLT_counteroffensive_tactics }
+        icon = GFX_focus_generic_provoke_border_clashes
+        cost = 8
+        ai_will_do = {
+            factor = 2
+        }
+        bypass = {
+
+        }
+        available = {
+            has_full_control_of_state = 116
+            custom_trigger_tooltip = {
+                tooltip = MLT_second_floor_trigger_tt
+                check_variable = {
+                    var = current_tower_floor
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        search_filters = { FOCUS_FILTER_MILITARY_MALTA }
+        completion_reward = {
+            add_political_power = -100
+            create_field_marshal = {
+                name = "The Janitor"
+                picture = "gfx/leaders/MLT/Portrait_janitor_tower.dds"
+                traits = { MLT_janitor naval_invader urban_assault_specialist hill_fighter organizer trait_engineer skilled_staffer }
+                skill = 5
+                attack_skill = 2
+                defense_skill = 3
+                planning_skill = 4
+                logistics_skill = 5
+            }
         }
     }
 

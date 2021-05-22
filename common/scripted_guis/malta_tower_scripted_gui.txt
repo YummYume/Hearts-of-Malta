@@ -71,6 +71,192 @@ scripted_gui = {
                 }
             }
 
+            mlt_tower_window_floor_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = gold_currency
+                            value = price_tower_floor
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_tower_floor
+                            value = max_tower_floor
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = gold_currency
+                                    value = price_tower_floor
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_tower_floor
+                                    value = max_tower_floor
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = purchase_count
+                                    value = 5
+                                    compare = greater_than
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { gold_currency = price_tower_floor }
+                    add_to_variable = { current_tower_floor = 1 }
+                    set_variable = { max_building_tower = current_tower_floor }
+                    add_to_variable = { max_population_tower_m = 0.100 }
+                    add_to_variable = { current_tower_height_meters = 30 }
+                    set_variable = { current_tower_height_feets = current_tower_height_meters }
+                    multiply_variable = { current_tower_height_feets = 3.281 }
+
+                    civilian_factory_calculate_percentage = yes
+                    military_factory_calculate_percentage = yes
+                    dockyard_calculate_percentage = yes
+                    set_max_population_k_m_b = yes
+                    increase_tower_modifier = yes
+                    increase_tower_puppet_modifier = yes
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = current_tower_floor
+                                value = 1
+                                compare = equals
+                            }
+                        }
+                        country_event = malta.43
+                        hidden_effect = {
+                            116 = {
+                                add_province_modifier = { 
+                                    static_modifiers = { tower_defense }
+                                    province = {
+                                        id = 12003
+                                    }      
+                                }
+                            }
+                            news_event = { id = newsmalta.1 days = 2 }
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = current_tower_floor
+                                value = 50
+                                compare = equals
+                            }
+                        }
+                        hidden_effect = {
+                            news_event = { id = newsmalta.3 days = 2 }
+                        }
+                    }
+
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_floor_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = gold_currency
+                            value = price_tower_floor
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_tower_floor
+                            value = max_tower_floor
+                            compare = less_than
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = gold_currency
+                                    value = price_tower_floor
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_tower_floor
+                                    value = max_tower_floor
+                                    compare = greater_than_or_equals
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { gold_currency = price_tower_floor }
+                    add_to_variable = { current_tower_floor = 1 }
+                    set_variable = { max_building_tower = current_tower_floor }
+                    add_to_variable = { max_population_tower_m = 0.100 }
+                    add_to_variable = { current_tower_height_meters = 30 }
+                    set_variable = { current_tower_height_feets = current_tower_height_meters }
+                    multiply_variable = { current_tower_height_feets = 3.281 }
+
+                    civilian_factory_calculate_percentage = yes
+                    military_factory_calculate_percentage = yes
+                    dockyard_calculate_percentage = yes
+                    set_max_population_k_m_b = yes
+                    increase_tower_modifier = yes
+                    increase_tower_puppet_modifier = yes
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = current_tower_floor
+                                value = 1
+                                compare = equals
+                            }
+                        }
+                        country_event = malta.43
+                        hidden_effect = {
+                            116 = {
+                                add_province_modifier = { 
+                                    static_modifiers = { tower_defense }
+                                    province = {
+                                        id = 12003
+                                    }      
+                                }
+                            }
+                            news_event = { id = newsmalta.1 days = 2 }
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = current_tower_floor
+                                value = 50
+                                compare = equals
+                            }
+                        }
+                        hidden_effect = {
+                            news_event = { id = newsmalta.3 days = 2 }
+                        }
+                    }
+                }
+            }
+
             mlt_tower_window_civilian_factory_purchase_click = {
                 subtract_from_variable = { jewelry_currency = price_civilian_factory_tower }
                 add_to_variable = { current_civilian_factory_tower = 1 }
@@ -79,6 +265,129 @@ scripted_gui = {
                 add_offsite_building = {
                     type = industrial_complex
                     level = 1
+                }
+            }
+
+            mlt_tower_window_civilian_factory_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_civilian_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_civilian_factory_tower
+                            value = max_civilian_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = jewelry_currency
+                                    value = price_civilian_factory_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_civilian_factory_tower
+                                    value = max_civilian_factory_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = current_building_tower
+                                    value = max_building_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = purchase_count
+                                    value = 5
+                                    compare = greater_than
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { jewelry_currency = price_civilian_factory_tower }
+                    add_to_variable = { current_civilian_factory_tower = 1 }
+                    set_variable = { current_civilian_factory_tower_minus = -1 }
+                    add_to_variable = { current_building_tower = 1 }
+                    add_offsite_building = {
+                        type = industrial_complex
+                        level = 1
+                    }
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_civilian_factory_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_civilian_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_civilian_factory_tower
+                            value = max_civilian_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = jewelry_currency
+                                    value = price_civilian_factory_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_civilian_factory_tower
+                                    value = max_civilian_factory_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = current_building_tower
+                                    value = max_building_tower
+                                    compare = greater_than_or_equals
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { jewelry_currency = price_civilian_factory_tower }
+                    add_to_variable = { current_civilian_factory_tower = 1 }
+                    set_variable = { current_civilian_factory_tower_minus = -1 }
+                    add_to_variable = { current_building_tower = 1 }
+                    add_offsite_building = {
+                        type = industrial_complex
+                        level = 1
+                    }
                 }
             }
 
@@ -93,6 +402,129 @@ scripted_gui = {
                 }
             }
 
+            mlt_tower_window_military_factory_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_military_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_military_factory_tower
+                            value = max_military_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = jewelry_currency
+                                    value = price_military_factory_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_military_factory_tower
+                                    value = max_military_factory_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = current_building_tower
+                                    value = max_building_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = purchase_count
+                                    value = 5
+                                    compare = greater_than
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { jewelry_currency = price_military_factory_tower }
+                    add_to_variable = { current_military_factory_tower = 1 }
+                    set_variable = { current_military_factory_tower_minus = -1 }
+                    add_to_variable = { current_building_tower = 1 }
+                    add_offsite_building = {
+                        type = arms_factory
+                        level = 1
+                    }
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_military_factory_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_military_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_military_factory_tower
+                            value = max_military_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = jewelry_currency
+                                    value = price_military_factory_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_military_factory_tower
+                                    value = max_military_factory_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = current_building_tower
+                                    value = max_building_tower
+                                    compare = greater_than_or_equals
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { jewelry_currency = price_military_factory_tower }
+                    add_to_variable = { current_military_factory_tower = 1 }
+                    set_variable = { current_military_factory_tower_minus = -1 }
+                    add_to_variable = { current_building_tower = 1 }
+                    add_offsite_building = {
+                        type = arms_factory
+                        level = 1
+                    }
+                }
+            }
+
             mlt_tower_window_dockyard_purchase_click = {
                 subtract_from_variable = { jewelry_currency = price_dockyard_tower }
                 add_to_variable = { current_dockyard_tower = 1 }
@@ -104,6 +536,129 @@ scripted_gui = {
                 }
             }
 
+            mlt_tower_window_dockyard_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_dockyard_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_dockyard_tower
+                            value = max_dockyard_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = jewelry_currency
+                                    value = price_dockyard_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_dockyard_tower
+                                    value = max_dockyard_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = current_building_tower
+                                    value = max_building_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = purchase_count
+                                    value = 5
+                                    compare = greater_than
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { jewelry_currency = price_dockyard_tower }
+                    add_to_variable = { current_dockyard_tower = 1 }
+                    set_variable = { current_dockyard_tower_minus = -1 }
+                    add_to_variable = { current_building_tower = 1 }
+                    add_offsite_building = {
+                        type = dockyard
+                        level = 1
+                    }
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_dockyard_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_dockyard_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_dockyard_tower
+                            value = max_dockyard_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = jewelry_currency
+                                    value = price_dockyard_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_dockyard_tower
+                                    value = max_dockyard_tower
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = current_building_tower
+                                    value = max_building_tower
+                                    compare = greater_than_or_equals
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { jewelry_currency = price_dockyard_tower }
+                    add_to_variable = { current_dockyard_tower = 1 }
+                    set_variable = { current_dockyard_tower_minus = -1 }
+                    add_to_variable = { current_building_tower = 1 }
+                    add_offsite_building = {
+                        type = dockyard
+                        level = 1
+                    }
+                }
+            }
+
             mlt_tower_window_population_purchase_click = {
                 subtract_from_variable = { food_currency = price_population_tower }
                 add_to_variable = { current_population_tower_m = 0.025 }
@@ -112,6 +667,107 @@ scripted_gui = {
                 }
 
                 set_population_k_m_b = yes
+            }
+
+            mlt_tower_window_population_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = food_currency
+                            value = price_population_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_population_tower_m
+                            value = max_population_tower_m
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 4
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = food_currency
+                                    value = price_population_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_population_tower_m
+                                    value = max_population_tower_m
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = purchase_count
+                                    value = 4
+                                    compare = greater_than
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { food_currency = price_population_tower }
+                    add_to_variable = { current_population_tower_m = 0.025 }
+                    116 = {
+                        add_manpower = 25000
+                    }
+
+                    set_population_k_m_b = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_population_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = food_currency
+                            value = price_population_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_population_tower_m
+                            value = max_population_tower_m
+                            compare = less_than
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            OR = {
+                                check_variable = {
+                                    var = food_currency
+                                    value = price_population_tower
+                                    compare = less_than
+                                }
+                                check_variable = {
+                                    var = current_population_tower_m
+                                    value = max_population_tower_m
+                                    compare = greater_than_or_equals
+                                }
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { food_currency = price_population_tower }
+                    add_to_variable = { current_population_tower_m = 0.025 }
+                    116 = {
+                        add_manpower = 25000
+                    }
+
+                    set_population_k_m_b = yes
+                }
             }
 
             # Resources
