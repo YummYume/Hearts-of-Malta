@@ -1,0 +1,20 @@
+MLT_is_on_historical_plan_trigger = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = MLT_ai_behavior
+				option = DEFAULT_MALTA
+			}
+		}
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = HISTORICAL_MALTA
+		}
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = MALTA_DEMOCRATIC
+		}
+		has_country_flag = MLT_historical_run
+	}
+}

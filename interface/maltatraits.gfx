@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_trait_MLT_janitor"
+		texturefile = "gfx/interfaces/traits/trait_janitor.dds"
+	}
+}

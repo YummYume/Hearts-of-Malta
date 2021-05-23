@@ -1,0 +1,44 @@
+MLT_ai_behavior = {
+	name = "MLT_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT_MALTA
+		text = "RULE_OPTION_DEFAULT_MALTA"
+		desc = "RULE_OPTION_DEFAULT_MALTA_DESC"
+	}
+	option = {
+		name = HISTORICAL_MALTA
+		text = "RULE_OPTION_HISTORICAL_MALTA"
+		desc = "RULE_OPTION_HISTORICAL_MALTA_AI_DESC"
+	}
+	option = {
+		name = MALTA_DEMOCRATIC
+		text = "RULE_OPTION_MALTA"
+		desc = "RULE_OPTION_MALTA_AI_DESC"
+	}
+	option = {
+		name = MALTA_COMMUNISM
+		text = "RULE_OPTION_MALTA_COMMUNISM"
+		desc = "RULE_OPTION_MALTA_COMMUNISM_AI_DESC"
+	}
+	option = {
+		name = MALTA_FASCISM
+		text = "RULE_OPTION_MALTA_FASCISM"
+		desc = "RULE_OPTION_MALTA_FASCISM_AI_DESC"
+	}
+	option = {
+		name = MALTA_NEUTRALITY
+		text = "RULE_OPTION_MALTA_NEUTRALITY"
+		desc = "RULE_OPTION_MALTA_NEUTRALITY_AI_DESC"
+	}
+	option = {
+		name = MALTA_LOYAL
+		text = "RULE_OPTION_MALTA_LOYAL"
+		desc = "RULE_OPTION_MALTA_LOYAL_AI_DESC"
+	}
+	option = {
+		name = MALTA_RANDOM
+		text = "RULE_OPTION_MALTA_RANDOM"
+		desc = "RULE_OPTION_MALTA_RANDOM_AI_DESC"
+	}
+}

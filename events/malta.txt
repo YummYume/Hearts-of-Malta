@@ -1718,7 +1718,7 @@ country_event = {
     option = {
         name = malta.31.a
         ai_chance = {
-            factor = 100
+            factor = 75
         }
 		add_timed_idea = { idea = MLT_Nationalist_sentiments days = 210 }
 		add_ideas = MLT_Maltese_language_official
@@ -1728,7 +1728,11 @@ country_event = {
     option = {
         name = malta.31.b
         ai_chance = {
-            factor = 100
+            factor = 25
+            modifier = {
+                has_country_flag = MLT_loyalty_run
+                factor = 100
+            }
         }
 		add_opinion_modifier = {
 	        target = ENG
@@ -1748,7 +1752,11 @@ country_event = {
     option = {
         name = malta.31.c
         ai_chance = {
-            factor = 100
+            factor = 25
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 100
+            }
         }
 		add_opinion_modifier = {
 	        target = ENG
@@ -1778,7 +1786,14 @@ country_event = {
     option = {
         name = malta.32.a
         ai_chance = {
-            factor = 100
+            factor = 25
+            modifier = {
+                OR = {
+                    has_country_flag = MLT_historical_run
+                    has_country_flag = MLT_loyalty_run
+                }
+                factor = 100
+            }
         }
         set_politics = {
             ruling_party = democratic
@@ -1792,7 +1807,14 @@ country_event = {
     option = {
         name = malta.32.b
         ai_chance = {
-            factor = 100
+            factor = 25
+            modifier = {
+                has_game_rule = {
+                    rule = MLT_ai_behavior
+                    option = MALTA_COMMUNISM
+                }
+                factor = 100
+            }
         }
 		set_politics = {
             ruling_party = communism
@@ -1803,7 +1825,14 @@ country_event = {
     option = {
         name = malta.32.c
         ai_chance = {
-            factor = 100
+            factor = 25
+            modifier = {
+                has_game_rule = {
+                    rule = MLT_ai_behavior
+                    option = MALTA_FASCISM
+                }
+                factor = 100
+            }
         }
 		set_politics = {
             ruling_party = fascism
@@ -1814,7 +1843,14 @@ country_event = {
     option = {
         name = malta.32.e
         ai_chance = {
-            factor = 100
+            factor = 25
+            modifier = {
+                has_game_rule = {
+                    rule = MLT_ai_behavior
+                    option = MALTA_NEUTRALITY
+                }
+                factor = 100
+            }
         }
         set_politics = {
             ruling_party = neutrality
@@ -2341,7 +2377,11 @@ country_event = {
     option = {
         name = malta.41.a
         ai_chance = {
-            factor = 50
+            factor = 95
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 100
+            }
         }
         MLT = {
             add_ideas = MLT_Towards_freedom
@@ -2352,7 +2392,11 @@ country_event = {
     option = {
         name = malta.41.b
         ai_chance = {
-            factor = 50
+            factor = 5
+            modifier = {
+                has_country_flag = MLT_loyalty_run
+                factor = 100
+            }
         }
         MLT = {
             add_ideas = MLT_Loyalty_to_britain
@@ -2503,7 +2547,7 @@ country_event = {
     option = {
         name = malta.43.a
         ai_chance = {
-            factor = 50
+            factor = 100
         }
         hidden_effect = {
             add_dynamic_modifier = { modifier = tower_of_malta_modifier }

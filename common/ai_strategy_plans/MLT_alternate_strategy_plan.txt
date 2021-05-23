@@ -1,0 +1,452 @@
+MLT_communist_plan = {
+	name = "Communist Path Malta"
+	desc = "Communist Path for Malta."
+
+	enable = {
+		original_tag = MLT
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = MALTA_COMMUNISM
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = MLT
+		}
+	}
+
+	ai_national_focuses = {
+		MLT_malta_awakens
+		MLT_heart_mediterraenean_sea
+		MLT_industry_in_valleta
+		MLT_maltese_shipbuilding
+		MLT_fishing_industry
+		MLT_political_turmoil
+		MLT_maltese_language_question
+		MLT_maltese_election
+		MLT_labour_party
+		#1937
+		MLT_maltese_strategy
+		MLT_study_stelmo_bridge
+		MLT_study_azure_window
+		MLT_study_dingli_cliffs
+		MLT_adopt_new_strategy
+		MLT_first_floor
+		MLT_second_floor
+		MLT_mediterranean_bastion
+		MLT_colonial_question
+		MLT_free_malta
+		#1938
+		MLT_seek_new_friendships
+		MLT_picking_a_side
+		MLT_third_floor
+		MLT_tenth_floor
+		MLT_attract_investors_tower
+		MLT_send_someone_journey
+		MLT_maltese_lira
+		MLT_improve_economy_tower
+		#1939
+		MLT_with_coastal_raids
+		MLT_with_fishing_boats
+		MLT_with_piratry
+		MLT_maltese_water_thus_legal
+		MLT_fiftieth_floor
+		MLT_land_air_and_sea
+		MLT_maltese_elite_marines
+		MLT_foreign_politics
+		MLT_invest_elevator_music
+		#1940
+		MLT_invest_in_jetpacks
+		MLT_hundreth_floor
+		#The following focuses are NOT taken into the 1940 date
+		MLT_thousandth_floor
+		MLT_leaning_tower
+		MLT_nine_thousand_nine_hundred_ninety_ninth_floor
+		MLT_neverending_tower
+		MLT_maltese_pride
+		MLT_maltese_league_of_nations
+		MLT_protectors_of_all_seas
+		MLT_bright_future
+	}
+
+	#To prevent the AI from spamming prospect for resources
+	research = {
+		excavation2 = -100
+		excavation3 = -100
+		excavation4 = -100
+		excavation5 = -100
+	}
+
+	ideas = {
+
+	}
+
+	traits = {
+		MLT_drug_baron = 10
+		MLT_tower_specialist = 10
+		MLT_tower_investor = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+MLT_fascist_plan = {
+	name = "Fascist Path Malta"
+	desc = "Fascist Path for Malta."
+
+	enable = {
+		original_tag = MLT
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = MALTA_FASCISM
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = MLT
+		}
+	}
+
+	ai_national_focuses = {
+		MLT_malta_awakens
+		MLT_heart_mediterraenean_sea
+		MLT_industry_in_valleta
+		MLT_maltese_shipbuilding
+		MLT_fishing_industry
+		MLT_political_turmoil
+		MLT_maltese_language_question
+		MLT_maltese_election
+		MLT_nationalist_party
+		#1937
+		MLT_maltese_strategy
+		MLT_study_stelmo_bridge
+		MLT_study_azure_window
+		MLT_study_dingli_cliffs
+		MLT_adopt_new_strategy
+		MLT_first_floor
+		MLT_second_floor
+		MLT_mediterranean_bastion
+		MLT_colonial_question
+		MLT_free_malta
+		#1938
+		MLT_seek_new_friendships
+		MLT_picking_a_side
+		MLT_third_floor
+		MLT_tenth_floor
+		MLT_attract_investors_tower
+		MLT_send_someone_journey
+		MLT_maltese_lira
+		MLT_improve_economy_tower
+		#1939
+		MLT_with_coastal_raids
+		MLT_with_fishing_boats
+		MLT_with_piratry
+		MLT_maltese_water_thus_legal
+		MLT_fiftieth_floor
+		MLT_land_air_and_sea
+		MLT_maltese_elite_marines
+		MLT_foreign_politics
+		MLT_invest_elevator_music
+		#1940
+		MLT_invest_in_jetpacks
+		MLT_hundreth_floor
+		#The following focuses are NOT taken into the 1940 date
+		MLT_thousandth_floor
+		MLT_leaning_tower
+		MLT_nine_thousand_nine_hundred_ninety_ninth_floor
+		MLT_neverending_tower
+		MLT_maltese_pride
+		MLT_maltese_league_of_nations
+		MLT_protectors_of_all_seas
+		MLT_bright_future
+	}
+
+	#To prevent the AI from spamming prospect for resources
+	research = {
+		excavation2 = -100
+		excavation3 = -100
+		excavation4 = -100
+		excavation5 = -100
+	}
+
+	ideas = {
+
+	}
+
+	traits = {
+		MLT_drug_baron = 10
+		MLT_tower_specialist = 10
+		MLT_tower_investor = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+MLT_neutral_plan = {
+	name = "Crusade Path Malta"
+	desc = "Crusade Path for Malta."
+
+	enable = {
+		original_tag = MLT
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = MALTA_NEUTRALITY
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = MLT
+		}
+	}
+
+	ai_national_focuses = {
+		MLT_malta_awakens
+		MLT_heart_mediterraenean_sea
+		MLT_industry_in_valleta
+		MLT_maltese_shipbuilding
+		MLT_fishing_industry
+		MLT_political_turmoil
+		MLT_maltese_language_question
+		MLT_maltese_election
+		MLT_independent_party
+		#1937
+		MLT_maltese_strategy
+		MLT_study_stelmo_bridge
+		MLT_study_azure_window
+		MLT_study_dingli_cliffs
+		MLT_adopt_new_strategy
+		MLT_first_floor
+		MLT_second_floor
+		MLT_mediterranean_bastion
+		MLT_colonial_question
+		MLT_free_malta
+		#1938
+		MLT_seek_new_friendships
+		MLT_picking_a_side
+		MLT_third_floor
+		MLT_tenth_floor
+		MLT_attract_investors_tower
+		MLT_send_someone_journey
+		MLT_maltese_lira
+		MLT_improve_economy_tower
+		#1939
+		MLT_with_coastal_raids
+		MLT_with_fishing_boats
+		MLT_with_piratry
+		MLT_maltese_water_thus_legal
+		MLT_fiftieth_floor
+		MLT_land_air_and_sea
+		MLT_maltese_elite_marines
+		MLT_foreign_politics
+		MLT_invest_elevator_music
+		#1940
+		MLT_invest_in_jetpacks
+		MLT_hundreth_floor
+		#The following focuses are NOT taken into the 1940 date
+		MLT_thousandth_floor
+		MLT_leaning_tower
+		MLT_nine_thousand_nine_hundred_ninety_ninth_floor
+		MLT_neverending_tower
+		MLT_maltese_pride
+		MLT_maltese_league_of_nations
+		MLT_protectors_of_all_seas
+		MLT_bright_future
+	}
+
+	#To prevent the AI from spamming prospect for resources
+	research = {
+		excavation2 = -100
+		excavation3 = -100
+		excavation4 = -100
+		excavation5 = -100
+	}
+
+	ideas = {
+
+	}
+
+	traits = {
+		MLT_drug_baron = 10
+		MLT_tower_specialist = 10
+		MLT_tower_investor = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+MLT_loyal_plan = {
+	name = "Loyal Path Malta"
+	desc = "Loyal Path for Malta."
+
+	enable = {
+		original_tag = MLT
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = MALTA_LOYAL
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = MLT
+		}
+	}
+
+	ai_national_focuses = {
+		MLT_malta_awakens
+		MLT_heart_mediterraenean_sea
+		MLT_industry_in_valleta
+		MLT_maltese_shipbuilding
+		MLT_fishing_industry
+		MLT_political_turmoil
+		MLT_maltese_language_question
+		MLT_maltese_election
+		MLT_constitutional_party
+		#1937
+		MLT_maltese_strategy
+		MLT_study_stelmo_bridge
+		MLT_study_azure_window
+		MLT_study_dingli_cliffs
+		MLT_adopt_new_strategy
+		MLT_first_floor
+		MLT_second_floor
+		MLT_mediterranean_bastion
+		MLT_colonial_question
+		MLT_free_malta
+		#1938
+		MLT_loayal_malta
+		MLT_share_secrets_town
+		MLT_mutual_aid
+		MLT_third_floor
+		MLT_tenth_floor
+		MLT_attract_investors_tower
+		MLT_send_someone_journey
+		MLT_british_pounds
+		MLT_improve_economy_tower
+		#1939
+		MLT_with_coastal_raids
+		MLT_with_fishing_boats
+		MLT_with_piratry
+		MLT_maltese_water_thus_legal
+		MLT_fiftieth_floor
+		MLT_land_air_and_sea
+		MLT_maltese_elite_marines
+		MLT_foreign_politics
+		MLT_invest_elevator_music
+		#1940
+		MLT_invest_in_jetpacks
+		MLT_hundreth_floor
+		#The following focuses are NOT taken into the 1940 date
+		MLT_thousandth_floor
+		MLT_leaning_tower
+		MLT_nine_thousand_nine_hundred_ninety_ninth_floor
+		MLT_neverending_tower
+		MLT_maltese_pride
+		MLT_maltese_league_of_nations
+		MLT_protectors_of_all_seas
+		MLT_bright_future
+	}
+
+	#To prevent the AI from spamming prospect for resources
+	research = {
+		excavation2 = -100
+		excavation3 = -100
+		excavation4 = -100
+		excavation5 = -100
+	}
+
+	ideas = {
+
+	}
+
+	traits = {
+		MLT_drug_baron = 10
+		MLT_tower_specialist = 10
+		MLT_tower_investor = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+MLT_random_plan = {
+	name = "Random Path Malta"
+	desc = "Random Path for Malta."
+
+	enable = {
+		original_tag = MLT
+		has_game_rule = {
+			rule = MLT_ai_behavior
+			option = MALTA_RANDOM
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = MLT
+		}
+	}
+
+	ai_national_focuses = {
+		MLT_malta_awakens
+		MLT_heart_mediterraenean_sea
+		MLT_industry_in_valleta
+		MLT_maltese_shipbuilding
+		MLT_fishing_industry
+		MLT_political_turmoil
+		MLT_maltese_language_question
+		MLT_maltese_election
+	}
+
+	#To prevent the AI from spamming prospect for resources
+	research = {
+		excavation2 = -100
+		excavation3 = -100
+		excavation4 = -100
+		excavation5 = -100
+	}
+
+	ideas = {
+
+	}
+
+	traits = {
+		MLT_drug_baron = 10
+		MLT_tower_specialist = 10
+		MLT_tower_investor = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

@@ -294,4 +294,9 @@ spriteTypes = {
 		name = "GFX_focus_bright_future_malta"
 		texturefile = "gfx/interfaces/goals/bright_future_malta.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_the_janitor_malta"
+		texturefile = "gfx/interfaces/goals/the_janitor_malta.dds"
+	}
 }
