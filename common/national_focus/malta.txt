@@ -20,7 +20,7 @@ focus_tree = {
         icon = GFX_focus_malta_awakens
         cost = 4
         ai_will_do = {
-            factor = 1
+            factor = 10
         }
         bypass = {
 
@@ -43,7 +43,7 @@ focus_tree = {
         icon = GFX_focus_The_Heart_of_the_Mediterranian_Sea
         cost = 4
         ai_will_do = {
-            factor = 1
+            factor = 10
         }
         bypass = {
 
@@ -66,7 +66,7 @@ focus_tree = {
         icon = GFX_focus_The_Industry_in_Valletta
         cost = 4
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
 
@@ -101,7 +101,7 @@ focus_tree = {
         icon = GFX_focus_Maltese_Railways
         cost = 4
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
             116 = {
@@ -132,7 +132,7 @@ focus_tree = {
         icon = GFX_focus_Maltese_Shipbuilding
         cost = 4
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
 
@@ -162,7 +162,7 @@ focus_tree = {
         icon = GFX_focus_Eradicate_Unemployment
         cost = 5
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
 
@@ -185,7 +185,7 @@ focus_tree = {
         icon = GFX_focus_Speech_for_the_Workers
         cost = 5
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
 
@@ -208,7 +208,7 @@ focus_tree = {
         icon = GFX_focus_Fishing_Industry
         cost = 5
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
 
@@ -238,7 +238,7 @@ focus_tree = {
         icon = GFX_focus_Under_the_Maltese_Flag
         cost = 8
         ai_will_do = {
-            factor = 1
+            factor = 5
         }
         bypass = {
 
@@ -284,7 +284,7 @@ focus_tree = {
         icon = GFX_focus_The_Maltese_Language_Question
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -307,7 +307,7 @@ focus_tree = {
         icon = GFX_focus_The_1936_Elections
         cost = 5
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -347,7 +347,7 @@ focus_tree = {
         icon = GFX_focus_Constitutional_Party
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -370,7 +370,7 @@ focus_tree = {
         icon = GFX_focus_The_Labour_Party
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -393,7 +393,7 @@ focus_tree = {
         icon = GFX_focus_Nationalist_Party
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -416,7 +416,7 @@ focus_tree = {
         icon = GFX_focus_Independents_Party
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -440,7 +440,7 @@ focus_tree = {
         icon = GFX_focus_The_British_Pounds
         cost = 8
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -464,7 +464,11 @@ focus_tree = {
         icon = GFX_focus_The_Maltese_Lira
         cost = 8
         ai_will_do = {
-            factor = 2
+            factor = 10
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
 
@@ -487,7 +491,7 @@ focus_tree = {
         icon = GFX_focus_maltese_strategy_beginning
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -510,7 +514,7 @@ focus_tree = {
         icon = GFX_focus_study_landmarks_malta
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -533,7 +537,7 @@ focus_tree = {
         icon = GFX_focus_study_landmarks_malta
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -556,7 +560,7 @@ focus_tree = {
         icon = GFX_focus_study_landmarks_malta
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -580,7 +584,7 @@ focus_tree = {
         icon = GFX_focus_adopt_new_strategy
         cost = 5
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -603,7 +607,7 @@ focus_tree = {
         icon = GFX_focus_tower_first_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -626,7 +630,7 @@ focus_tree = {
         icon = GFX_focus_tower_second_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -657,7 +661,7 @@ focus_tree = {
         icon = GFX_focus_Mediterranean_bastion
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -830,13 +834,13 @@ focus_tree = {
         }
     }
 
-    # Counteroffensive Tactics
+    # The Janitor
     focus = {
         id = MLT_the_janitor
         x = 6
         y = 11
         prerequisite = { focus = MLT_counteroffensive_tactics }
-        icon = GFX_focus_generic_provoke_border_clashes
+        icon = GFX_focus_the_janitor_malta
         cost = 8
         ai_will_do = {
             factor = 2
@@ -860,7 +864,7 @@ focus_tree = {
             add_political_power = -100
             create_field_marshal = {
                 name = "The Janitor"
-                picture = "gfx/leaders/MLT/Portrait_janitor_tower.dds"
+                picture = "Portrait_janitor_tower.dds"
                 traits = { MLT_janitor naval_invader urban_assault_specialist hill_fighter organizer trait_engineer skilled_staffer }
                 skill = 5
                 attack_skill = 2
@@ -880,7 +884,7 @@ focus_tree = {
         icon = GFX_focus_eng_decolonization
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 15
         }
         bypass = {
             MLT = {
@@ -909,7 +913,7 @@ focus_tree = {
         icon = GFX_focus_eng_move_to_secure_the_dominions
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
             MLT = {
@@ -947,7 +951,11 @@ focus_tree = {
         icon = GFX_focus_chi_british_cooperation
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 25
+            }
         }
         bypass = {
 
@@ -999,7 +1007,7 @@ focus_tree = {
         icon = GFX_focus_old_friend_still_friends
         cost = 5
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1027,7 +1035,7 @@ focus_tree = {
         icon = GFX_focus_seek_new_friendship
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
             NOT = {
@@ -1076,7 +1084,7 @@ focus_tree = {
         icon = GFX_focus_picking_side
         cost = 5
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1103,7 +1111,7 @@ focus_tree = {
         icon = GFX_focus_loyal_towards_britain_malta
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1133,7 +1141,7 @@ focus_tree = {
         icon = GFX_focus_share_tower_secrets
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1167,7 +1175,7 @@ focus_tree = {
         icon = GFX_focus_mutual_aid_malta
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1222,7 +1230,7 @@ focus_tree = {
         icon = GFX_focus_tower_third_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1253,7 +1261,7 @@ focus_tree = {
         icon = GFX_focus_tower_tenth_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1291,7 +1299,7 @@ focus_tree = {
         icon = GFX_focus_attract_investors
         cost = 7
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1322,7 +1330,7 @@ focus_tree = {
         icon = GFX_focus_the_journey_malta
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1346,7 +1354,7 @@ focus_tree = {
         icon = GFX_focus_fix_economy_malta
         cost = 2
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1373,7 +1381,7 @@ focus_tree = {
         icon = GFX_focus_coastal_raids_malta
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1396,7 +1404,7 @@ focus_tree = {
         icon = GFX_focus_fishing_boats_malta
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1419,7 +1427,7 @@ focus_tree = {
         icon = GFX_focus_with_privateering_malta
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1442,7 +1450,7 @@ focus_tree = {
         icon = GFX_focus_maltese_water_is_legal
         cost = 5
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1468,7 +1476,7 @@ focus_tree = {
         icon = GFX_focus_tower_fiftieth_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1493,7 +1501,7 @@ focus_tree = {
         icon = GFX_focus_generic_license_production
         cost = 10
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1874,7 +1882,7 @@ focus_tree = {
         icon = GFX_focus_generic_diplomatic_treaty
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -1901,7 +1909,11 @@ focus_tree = {
         icon = GFX_focus_befriend_italy
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
             OR = {
@@ -1961,7 +1973,11 @@ focus_tree = {
         icon = GFX_focus_chi_reach_out_to_france
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
             OR = {
@@ -2009,7 +2025,11 @@ focus_tree = {
         icon = GFX_focus_chi_mission_to_germany
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
             OR = {
@@ -2054,7 +2074,11 @@ focus_tree = {
         icon = GFX_focus_hol_the_foundations_of_defense
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 5
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
 
@@ -2088,7 +2112,11 @@ focus_tree = {
         icon = GFX_focus_approach_luxembourg
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 5
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
 
@@ -2130,7 +2158,11 @@ focus_tree = {
         icon = GFX_focus_approach_bhutan
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 5
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
 
@@ -2172,7 +2204,11 @@ focus_tree = {
         icon = GFX_focus_approach_elsalvador
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 5
+            modifier = {
+                has_country_flag = MLT_historical_run
+                factor = 0
+            }
         }
         bypass = {
 
@@ -2214,7 +2250,7 @@ focus_tree = {
         icon = GFX_focus_invest_elevator_music
         cost = 3
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2237,7 +2273,7 @@ focus_tree = {
         icon = GFX_focus_jetpack_tower_malta
         cost = 4
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2260,7 +2296,7 @@ focus_tree = {
         icon = GFX_focus_tower_hundreth_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2284,7 +2320,7 @@ focus_tree = {
         icon = GFX_focus_tower_thousandth_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2308,7 +2344,7 @@ focus_tree = {
         icon = GFX_focus_tower_lean_malta
         cost = 5
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2331,7 +2367,7 @@ focus_tree = {
         icon = GFX_focus_tower_9999_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2355,7 +2391,7 @@ focus_tree = {
         icon = GFX_focus_tower_neverending_floor
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2379,7 +2415,7 @@ focus_tree = {
         icon = GFX_focus_maltese_pride_malta
         cost = 8
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2402,7 +2438,7 @@ focus_tree = {
         icon = GFX_focus_master_mediterranean_communism
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
     
@@ -2465,7 +2501,7 @@ focus_tree = {
         icon = GFX_focus_maltese_league_nation
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2517,7 +2553,7 @@ focus_tree = {
         icon = GFX_focus_great_crusade_neutrality
         cost = 6
          ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
     
@@ -2598,7 +2634,7 @@ focus_tree = {
         icon = GFX_focus_master_of_the_shores
         cost = 6
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2688,7 +2724,7 @@ focus_tree = {
         icon = GFX_focus_protector_all_sea
         cost = 8
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2714,7 +2750,7 @@ focus_tree = {
         icon = GFX_focus_greater_malta_empire
         cost = 8
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
@@ -2759,7 +2795,7 @@ focus_tree = {
         icon = GFX_focus_bright_future_malta
         cost = 10
         ai_will_do = {
-            factor = 2
+            factor = 10
         }
         bypass = {
 
