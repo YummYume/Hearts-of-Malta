@@ -940,7 +940,7 @@ guiTypes = {
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_oil_price_display"
-                            position = { x = 0 y = 3 }
+                            position = { x = 2 y = 3 }
                             maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
@@ -1063,7 +1063,7 @@ guiTypes = {
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_aluminum_price_display"
-                            position = { x = 0 y = 3 }
+                            position = { x = 2 y = 3 }
                             maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
@@ -1186,7 +1186,7 @@ guiTypes = {
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_rubber_price_display"
-                            position = { x = 0 y = 3 }
+                            position = { x = 2 y = 3 }
                             maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
@@ -1309,7 +1309,7 @@ guiTypes = {
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_tungsten_price_display"
-                            position = { x = 0 y = 3 }
+                            position = { x = 2 y = 3 }
                             maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
@@ -1432,7 +1432,7 @@ guiTypes = {
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_steel_price_display"
-                            position = { x = 0 y = 3 }
+                            position = { x = 2 y = 3 }
                             maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"
@@ -1555,7 +1555,7 @@ guiTypes = {
 
                         instantTextBoxType = {
                             name = "mlt_tower_window_chromium_price_display"
-                            position = { x = 0 y = 3 }
+                            position = { x = 2 y = 3 }
                             maxHeight = 30
                             maxWidth = 85
                             orientation = "UPPER_LEFT"

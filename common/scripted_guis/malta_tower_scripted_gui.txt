@@ -791,6 +791,101 @@ scripted_gui = {
                 oil_calculate_price = yes
             }
 
+            mlt_tower_window_oil_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^0
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^0
+                                compare = less_than
+                            }
+                            check_variable = {
+                                var = purchase_count
+                                value = 5
+                                compare = greater_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^0 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^0 = 10 }
+                    add_resource = {
+                        type = oil
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^0 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^0
+                        min = 1
+                        max = 100
+                    }
+                    oil_calculate_price = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_oil_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^0
+                            compare = greater_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^0
+                                compare = less_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^0 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^0 = 10 }
+                    add_resource = {
+                        type = oil
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^0 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^0
+                        min = 1
+                        max = 100
+                    }
+                    oil_calculate_price = yes
+                }
+            }
+
             mlt_tower_window_aluminum_purchase_click = {
                 subtract_from_variable = { diamond_currency = MLT.resource_price^1 }
                 round_variable = diamond_currency
@@ -808,6 +903,101 @@ scripted_gui = {
                     max = 100
                 }
                 aluminum_calculate_price = yes
+            }
+
+            mlt_tower_window_aluminum_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+                
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^1
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^1
+                                compare = less_than
+                            }
+                            check_variable = {
+                                var = purchase_count
+                                value = 5
+                                compare = greater_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^1 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^1 = 10 }
+                    add_resource = {
+                        type = aluminium
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^1 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^1
+                        min = 1
+                        max = 100
+                    }
+                    aluminum_calculate_price = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_aluminum_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^1
+                            compare = greater_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^1
+                                compare = less_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^1 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^1 = 10 }
+                    add_resource = {
+                        type = aluminium
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^1 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^1
+                        min = 1
+                        max = 100
+                    }
+                    aluminum_calculate_price = yes
+                }
             }
 
             mlt_tower_window_rubber_purchase_click = {
@@ -829,6 +1019,101 @@ scripted_gui = {
                 rubber_calculate_price = yes
             }
 
+            mlt_tower_window_rubber_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+                
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^2
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^2
+                                compare = less_than
+                            }
+                            check_variable = {
+                                var = purchase_count
+                                value = 5
+                                compare = greater_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^2 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^2 = 10 }
+                    add_resource = {
+                        type = rubber
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^2 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^2
+                        min = 1
+                        max = 100
+                    }
+                    rubber_calculate_price = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_rubber_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^2
+                            compare = greater_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^2
+                                compare = less_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^2 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^2 = 10 }
+                    add_resource = {
+                        type = rubber
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^2 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^2
+                        min = 1
+                        max = 100
+                    }
+                    rubber_calculate_price = yes
+                }
+            }
+
             mlt_tower_window_tungsten_purchase_click = {
                 subtract_from_variable = { diamond_currency = MLT.resource_price^3 }
                 round_variable = diamond_currency
@@ -846,6 +1131,101 @@ scripted_gui = {
                     max = 100
                 }
                 tungsten_calculate_price = yes
+            }
+
+            mlt_tower_window_tungsten_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+                
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^3
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^3
+                                compare = less_than
+                            }
+                            check_variable = {
+                                var = purchase_count
+                                value = 5
+                                compare = greater_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^3 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^3 = 10 }
+                    add_resource = {
+                        type = tungsten
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^3 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^3
+                        min = 1
+                        max = 100
+                    }
+                    tungsten_calculate_price = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_tungsten_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^3
+                            compare = greater_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^3
+                                compare = less_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^3 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^3 = 10 }
+                    add_resource = {
+                        type = tungsten
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^3 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^3
+                        min = 1
+                        max = 100
+                    }
+                    tungsten_calculate_price = yes
+                }
             }
 
             mlt_tower_window_steel_purchase_click = {
@@ -867,6 +1247,101 @@ scripted_gui = {
                 steel_calculate_price = yes
             }
 
+            mlt_tower_window_steel_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+                
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^4
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^4
+                                compare = less_than
+                            }
+                            check_variable = {
+                                var = purchase_count
+                                value = 5
+                                compare = greater_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^4 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^4 = 10 }
+                    add_resource = {
+                        type = steel
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^4 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^4
+                        min = 1
+                        max = 100
+                    }
+                    steel_calculate_price = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_steel_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^4
+                            compare = greater_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^4
+                                compare = less_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^4 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^4 = 10 }
+                    add_resource = {
+                        type = steel
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^4 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^4
+                        min = 1
+                        max = 100
+                    }
+                    steel_calculate_price = yes
+                }
+            }
+
             mlt_tower_window_chromium_purchase_click = {
                 subtract_from_variable = { diamond_currency = MLT.resource_price^5 }
                 round_variable = diamond_currency
@@ -884,6 +1359,101 @@ scripted_gui = {
                     max = 100
                 }
                 chromium_calculate_price = yes
+            }
+
+            mlt_tower_window_chromium_purchase_shift_click = {
+                set_temp_variable = { purchase_count = 1 }
+                
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^5
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = purchase_count
+                            value = 5
+                            compare = less_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^5
+                                compare = less_than
+                            }
+                            check_variable = {
+                                var = purchase_count
+                                value = 5
+                                compare = greater_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^5 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^5 = 10 }
+                    add_resource = {
+                        type = chromium
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^5 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^5
+                        min = 1
+                        max = 100
+                    }
+                    chromium_calculate_price = yes
+                    add_to_temp_variable = { purchase_count = 1 }
+                }
+            }
+
+            mlt_tower_window_chromium_purchase_control_click = {
+                while_loop_effect = {
+                    break = cancel_loop
+                    limit = {
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^5
+                            compare = greater_than_or_equals
+                        }
+                    }
+
+                    if = {
+                        limit = {
+                            check_variable = {
+                                var = diamond_currency
+                                value = MLT.resource_price^5
+                                compare = less_than
+                            }
+                        }
+                        set_temp_variable = { cancel_loop = 1 }
+                    }
+
+                    subtract_from_variable = { diamond_currency = MLT.resource_price^5 }
+                    round_variable = diamond_currency
+                    add_to_variable = { MLT.resource_count^5 = 10 }
+                    add_resource = {
+                        type = chromium
+                        amount = 10
+                        state = 116
+                    }
+
+                    add_to_variable = { MLT.resource_inflation^5 = 0.25 }
+                    clamp_variable = {
+                        var = MLT.resource_inflation^5
+                        min = 1
+                        max = 100
+                    }
+                    chromium_calculate_price = yes
+                }
             }
 
             # Coastal Raids
