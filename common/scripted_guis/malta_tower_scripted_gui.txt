@@ -24,7 +24,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 100000
+                        add = 10000
                         OR = {
                             NOT = {
                                 has_full_control_of_state = 116
@@ -132,6 +132,76 @@ scripted_gui = {
                                             var = diamond_currency
                                             value = var:current_value
                                             compare = less_than
+                                        }
+                                    }
+                                }
+                                OR = {
+                                    AND = {
+                                        NOT = {
+                                            has_completed_focus = MLT_with_coastal_raids
+                                            has_completed_focus = MLT_with_fishing_boats
+                                            has_completed_focus = MLT_with_piratry
+                                        }
+                                    }
+                                    AND = {
+                                        has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                                        has_country_flag = MLT_ongoing_fishing_mission_event
+                                        has_country_flag = MLT_ongoing_privateering_mission_event
+                                    }
+                                    AND = {
+                                        OR = {
+                                            has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                                            NOT = {
+                                                has_completed_focus = MLT_with_coastal_raids
+                                            }
+                                            AND = {
+                                                has_completed_focus = MLT_with_coastal_raids
+                                                NOT = {
+                                                    has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                                                }
+                                                OR = {
+                                                    has_manpower < 1000
+                                                    has_equipment = {
+                                                        convoy < 5
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        OR = {
+                                            has_country_flag = MLT_ongoing_fishing_mission_event
+                                            NOT = {
+                                                has_completed_focus = MLT_with_fishing_boats
+                                            }
+                                            AND = {
+                                                has_completed_focus = MLT_with_fishing_boats
+                                                NOT = {
+                                                    has_country_flag = MLT_ongoing_fishing_mission_event
+                                                }
+                                                OR = {
+                                                    has_manpower < 1000
+                                                    has_equipment = {
+                                                        convoy < 5
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        OR = {
+                                            has_country_flag = MLT_ongoing_privateering_mission_event
+                                            NOT = {
+                                                has_completed_focus = MLT_with_piratry
+                                            }
+                                            AND = {
+                                                has_completed_focus = MLT_with_piratry
+                                                NOT = {
+                                                    has_country_flag = MLT_ongoing_privateering_mission_event
+                                                }
+                                                OR = {
+                                                    has_manpower < 1000
+                                                    has_equipment = {
+                                                        convoy < 5
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -687,7 +757,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 100
+                        add = 1000
                         NOT = {
                             has_country_flag = MLT_ongoing_coastal_raid_mission_event
                         }
@@ -737,6 +807,9 @@ scripted_gui = {
                             has_equipment = {
                                 convoy < temp_convoy_coastal_raid
                             }
+                            has_equipment = {
+                                convoy < 5
+                            }
                         }
                     }
                 }
@@ -746,7 +819,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 10000
+                        add = 100000
                         NOT = {
                             has_country_flag = MLT_ongoing_coastal_raid_mission_event
                         }
@@ -779,15 +852,123 @@ scripted_gui = {
                             }
                         }
                         OR = {
+                            AND = {
+                                set_temp_variable = { manpower_minus_mission = temp_manpower_coastal_raid }
+                                add_to_temp_variable = { manpower_minus_mission = 500 }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = manpower_minus_mission
+                                    compare = less_than_or_equals
+                                }
+                            }
+                            AND = {
+                                set_temp_variable = { convoy_minus_mission = temp_convoy_coastal_raid }
+                                add_to_temp_variable = { convoy_minus_mission = 5 }
+                                has_equipment = {
+                                    convoy < convoy_minus_mission
+                                }
+                            }
+                            AND = {
+                                check_variable = {
+                                    var = temp_manpower_coastal_raid
+                                    value = 100000
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = temp_manpower_coastal_raid
+                                    compare = greater_than_or_equals
+                                }
+                                OR = {
+                                    has_equipment = {
+                                        convoy > temp_convoy_coastal_raid
+                                    }
+                                    has_equipment = {
+                                        convoy = temp_convoy_coastal_raid
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    modifier = {
+                        add = 100000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                        }
+                        has_completed_focus = MLT_with_coastal_raids
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = jewelry_currency
+                            value = food_currency
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = jewelry_currency
+                            value = gold_currency
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = 100000
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower > temp_manpower_coastal_raid
                             check_variable = {
                                 var = MLT.manpower
-                                value = 1000
-                                compare = less_than_or_equals
-                            }
-                            check_variable = {
-                                var = temp_manpower_coastal_raid
-                                value = 100000
+                                value = temp_manpower_coastal_raid
                                 compare = equals
+                            }
+                        }
+                        OR = {
+                            has_equipment = {
+                                convoy > temp_convoy_coastal_raid
+                            }
+                            has_equipment = {
+                                convoy = temp_convoy_coastal_raid
+                            }
+                        }
+                        OR = {
+                            AND = {
+                                set_temp_variable = { manpower_minus_mission = temp_manpower_coastal_raid }
+                                add_to_temp_variable = { manpower_minus_mission = 500 }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = manpower_minus_mission
+                                    compare = less_than_or_equals
+                                }
+                            }
+                            AND = {
+                                set_temp_variable = { convoy_minus_mission = temp_convoy_coastal_raid }
+                                add_to_temp_variable = { convoy_minus_mission = 5 }
+                                has_equipment = {
+                                    convoy < convoy_minus_mission
+                                }
+                            }
+                            AND = {
+                                check_variable = {
+                                    var = temp_manpower_coastal_raid
+                                    value = 100000
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = temp_manpower_coastal_raid
+                                    compare = greater_than_or_equals
+                                }
+                                OR = {
+                                    has_equipment = {
+                                        convoy > temp_convoy_coastal_raid
+                                    }
+                                    has_equipment = {
+                                        convoy = temp_convoy_coastal_raid
+                                    }
+                                }
                             }
                         }
                     }
@@ -798,7 +979,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 100
+                        add = 1000
                         NOT = {
                             has_country_flag = MLT_ongoing_fishing_mission
                         }
@@ -848,6 +1029,9 @@ scripted_gui = {
                             has_equipment = {
                                 convoy < temp_convoy_fishing
                             }
+                            has_equipment = {
+                                convoy < 5
+                            }
                         }
                     }
                 }
@@ -857,7 +1041,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 10000
+                        add = 100000
                         NOT = {
                             has_country_flag = MLT_ongoing_fishing_mission_event
                         }
@@ -890,15 +1074,123 @@ scripted_gui = {
                             }
                         }
                         OR = {
+                            AND = {
+                                set_temp_variable = { manpower_minus_mission = temp_manpower_fishing }
+                                add_to_temp_variable = { manpower_minus_mission = 500 }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = manpower_minus_mission
+                                    compare = less_than_or_equals
+                                }
+                            }
+                            AND = {
+                                set_temp_variable = { convoy_minus_mission = temp_convoy_fishing }
+                                add_to_temp_variable = { convoy_minus_mission = 5 }
+                                has_equipment = {
+                                    convoy < convoy_minus_mission
+                                }
+                            }
+                            AND = {
+                                check_variable = {
+                                    var = temp_manpower_fishing
+                                    value = 100000
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = temp_manpower_fishing
+                                    compare = greater_than_or_equals
+                                }
+                                OR = {
+                                    has_equipment = {
+                                        convoy > temp_convoy_fishing
+                                    }
+                                    has_equipment = {
+                                        convoy = temp_convoy_fishing
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    modifier = {
+                        add = 100000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_fishing_mission_event
+                        }
+                        has_completed_focus = MLT_with_fishing_boats
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = food_currency
+                            value = jewelry_currency
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = food_currency
+                            value = gold_currency
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = 100000
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower > temp_manpower_fishing
                             check_variable = {
                                 var = MLT.manpower
-                                value = 1000
-                                compare = less_than_or_equals
-                            }
-                            check_variable = {
-                                var = temp_manpower_fishing
-                                value = 100000
+                                value = temp_manpower_fishing
                                 compare = equals
+                            }
+                        }
+                        OR = {
+                            has_equipment = {
+                                convoy > temp_convoy_fishing
+                            }
+                            has_equipment = {
+                                convoy = temp_convoy_fishing
+                            }
+                        }
+                        OR = {
+                            AND = {
+                                set_temp_variable = { manpower_minus_mission = temp_manpower_fishing }
+                                add_to_temp_variable = { manpower_minus_mission = 500 }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = manpower_minus_mission
+                                    compare = less_than_or_equals
+                                }
+                            }
+                            AND = {
+                                set_temp_variable = { convoy_minus_mission = temp_convoy_fishing }
+                                add_to_temp_variable = { convoy_minus_mission = 5 }
+                                has_equipment = {
+                                    convoy < convoy_minus_mission
+                                }
+                            }
+                            AND = {
+                                check_variable = {
+                                    var = temp_manpower_fishing
+                                    value = 100000
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = temp_manpower_fishing
+                                    compare = greater_than_or_equals
+                                }
+                                OR = {
+                                    has_equipment = {
+                                        convoy > temp_convoy_fishing
+                                    }
+                                    has_equipment = {
+                                        convoy = temp_convoy_fishing
+                                    }
+                                }
                             }
                         }
                     }
@@ -909,7 +1201,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 100
+                        add = 1000
                         NOT = {
                             has_country_flag = MLT_ongoing_privateering_mission_event
                         }
@@ -959,6 +1251,9 @@ scripted_gui = {
                             has_equipment = {
                                 convoy < temp_convoy_privateering
                             }
+                            has_equipment = {
+                                convoy < 5
+                            }
                         }
                     }
                 }
@@ -968,7 +1263,7 @@ scripted_gui = {
                 ai_will_do = {
                     base = 0
                     modifier = {
-                        add = 10000
+                        add = 100000
                         NOT = {
                             has_country_flag = MLT_ongoing_privateering_mission_event
                         }
@@ -1001,15 +1296,123 @@ scripted_gui = {
                             }
                         }
                         OR = {
+                            AND = {
+                                set_temp_variable = { manpower_minus_mission = temp_manpower_privateering }
+                                add_to_temp_variable = { manpower_minus_mission = 500 }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = manpower_minus_mission
+                                    compare = less_than_or_equals
+                                }
+                            }
+                            AND = {
+                                set_temp_variable = { convoy_minus_mission = temp_convoy_privateering }
+                                add_to_temp_variable = { convoy_minus_mission = 5 }
+                                has_equipment = {
+                                    convoy < convoy_minus_mission
+                                }
+                            }
+                            AND = {
+                                check_variable = {
+                                    var = temp_manpower_privateering
+                                    value = 100000
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = temp_manpower_privateering
+                                    compare = greater_than_or_equals
+                                }
+                                OR = {
+                                    has_equipment = {
+                                        convoy > temp_convoy_privateering
+                                    }
+                                    has_equipment = {
+                                        convoy = temp_convoy_privateering
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    modifier = {
+                        add = 100000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_privateering_mission_event
+                        }
+                        has_completed_focus = MLT_with_piratry
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = gold_currency
+                            value = jewelry_currency
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = gold_currency
+                            value = food_currency
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = 100000
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower > temp_manpower_privateering
                             check_variable = {
                                 var = MLT.manpower
-                                value = 1000
-                                compare = less_than_or_equals
-                            }
-                            check_variable = {
-                                var = temp_manpower_privateering
-                                value = 100000
+                                value = temp_manpower_privateering
                                 compare = equals
+                            }
+                        }
+                        OR = {
+                            has_equipment = {
+                                convoy > temp_convoy_privateering
+                            }
+                            has_equipment = {
+                                convoy = temp_convoy_privateering
+                            }
+                        }
+                        OR = {
+                            AND = {
+                                set_temp_variable = { manpower_minus_mission = temp_manpower_privateering }
+                                add_to_temp_variable = { manpower_minus_mission = 500 }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = manpower_minus_mission
+                                    compare = less_than_or_equals
+                                }
+                            }
+                            AND = {
+                                set_temp_variable = { convoy_minus_mission = temp_convoy_privateering }
+                                add_to_temp_variable = { convoy_minus_mission = 5 }
+                                has_equipment = {
+                                    convoy < convoy_minus_mission
+                                }
+                            }
+                            AND = {
+                                check_variable = {
+                                    var = temp_manpower_privateering
+                                    value = 100000
+                                    compare = greater_than_or_equals
+                                }
+                                check_variable = {
+                                    var = MLT.manpower
+                                    value = temp_manpower_privateering
+                                    compare = greater_than_or_equals
+                                }
+                                OR = {
+                                    has_equipment = {
+                                        convoy > temp_convoy_privateering
+                                    }
+                                    has_equipment = {
+                                        convoy = temp_convoy_privateering
+                                    }
+                                }
                             }
                         }
                     }

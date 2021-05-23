@@ -1,40 +1,40 @@
 on_actions = {
-		on_startup = {
-			effect = {
-				MLT = {
-					if = {
-						limit = {
-							OR = {
-								has_game_rule = {
-									rule = MLT_ai_behavior
-									option = DEFAULT_MALTA
-								}
-								has_game_rule = {
-									rule = MLT_ai_behavior
-									option = MALTA_DEMOCRATIC
-								}
-								has_game_rule = {
-									rule = MLT_ai_behavior
-									option = HISTORICAL_MALTA
-								}
-							}	
-						}
-						MLT = {
-							set_country_flag = MLT_historical_run
-						}
-					}
-					else_if = {
-						limit = {
+	on_startup = {
+		effect = {
+			MLT = {
+				if = {
+					limit = {
+						OR = {
 							has_game_rule = {
-									rule = MLT_ai_behavior
-									option = MALTA_LOYAL
-								}	
-						}
-						MLT = {
-							set_country_flag = MLT_loyalty_run
-						}
+								rule = MLT_ai_behavior
+								option = DEFAULT_MALTA
+							}
+							has_game_rule = {
+								rule = MLT_ai_behavior
+								option = MALTA_DEMOCRATIC
+							}
+							has_game_rule = {
+								rule = MLT_ai_behavior
+								option = HISTORICAL_MALTA
+							}
+						}	
+					}
+					MLT = {
+						set_country_flag = MLT_historical_run
+					}
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+								rule = MLT_ai_behavior
+								option = MALTA_LOYAL
+							}	
+					}
+					MLT = {
+						set_country_flag = MLT_loyalty_run
 					}
 				}
 			}
 		}
+	}
 }
