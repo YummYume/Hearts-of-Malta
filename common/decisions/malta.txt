@@ -15,6 +15,7 @@ MLT_tower_of_malta = {
                 value = 1
                 compare = greater_than_or_equals
             }
+			is_ai = no
 		}
 
 		available = {
@@ -24,9 +25,9 @@ MLT_tower_of_malta = {
             }
 		}
 
+		# AI will always use the Tower button instead
 		ai_will_do = {
-			factor = 10
-			#TODO
+			factor = 0
 		}
 
 		complete_effect = {
@@ -50,8 +51,15 @@ MLT_tower_of_malta = {
 		}
 
 		ai_will_do = {
-			factor = 10
-			#TODO
+			base = 0
+			modifier = {
+				add = 100
+				check_variable = {
+                    var = bitcoin_currency
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+			}
 		}
 
 		complete_effect = {
@@ -62,6 +70,11 @@ MLT_tower_of_malta = {
 	MLT_add_gold = {
 		visible = {
 			is_debug = yes
+			is_ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 
 		complete_effect = {
@@ -72,6 +85,11 @@ MLT_tower_of_malta = {
 	MLT_add_food = {
 		visible = {
 			is_debug = yes
+			is_ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 
 		complete_effect = {
@@ -82,6 +100,11 @@ MLT_tower_of_malta = {
 	MLT_add_jewelry = {
 		visible = {
 			is_debug = yes
+			is_ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 
 		complete_effect = {
@@ -92,6 +115,11 @@ MLT_tower_of_malta = {
 	MLT_add_diamond = {
 		visible = {
 			is_debug = yes
+			is_ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 
 		complete_effect = {
@@ -102,6 +130,11 @@ MLT_tower_of_malta = {
 	MLT_add_bitcoin = {
 		visible = {
 			is_debug = yes
+			is_ai = no
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 
 		complete_effect = {

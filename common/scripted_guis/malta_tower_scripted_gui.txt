@@ -10,6 +10,1013 @@ scripted_gui = {
             has_full_control_of_state = 116
         }
 
+        ai_enabled = {
+            tag = MLT
+        }
+
+        # AI checks every 2 days
+        ai_test_interval = 48
+
+        ai_max_weight_taken_per_test = 50
+
+        ai_weights = {
+            mlt_close_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100000
+                        OR = {
+                            NOT = {
+                                has_full_control_of_state = 116
+                            }
+                            AND = {
+                                OR = {
+                                    check_variable = {
+                                        var = gold_currency
+                                        value = price_tower_floor
+                                        compare = less_than
+                                    }
+                                    check_variable = {
+                                        var = current_tower_floor
+                                        value = max_tower_floor
+                                        compare = greater_than_or_equals
+                                    }
+                                }
+                                NOT = {
+                                    has_country_flag = MLT_can_purchase_in_tower
+                                }
+                            }
+                            AND = {
+                                OR = {
+                                    check_variable = {
+                                        var = gold_currency
+                                        value = price_tower_floor
+                                        compare = less_than
+                                    }
+                                    check_variable = {
+                                        var = current_tower_floor
+                                        value = max_tower_floor
+                                        compare = greater_than_or_equals
+                                    }
+                                }
+                                OR = {
+                                    check_variable = {
+                                        var = jewelry_currency
+                                        value = price_civilian_factory_tower
+                                        compare = less_than
+                                    }
+                                    check_variable = {
+                                        var = current_civilian_factory_tower
+                                        value = max_civilian_factory_tower
+                                        compare = greater_than_or_equals
+                                    }
+                                    check_variable = {
+                                        var = current_building_tower
+                                        value = max_building_tower
+                                        compare = greater_than_or_equals
+                                    }
+                                }
+                                OR = {
+                                    check_variable = {
+                                        var = jewelry_currency
+                                        value = price_military_factory_tower
+                                        compare = less_than
+                                    }
+                                    check_variable = {
+                                        var = current_military_factory_tower
+                                        value = max_military_factory_tower
+                                        compare = greater_than_or_equals
+                                    }
+                                    check_variable = {
+                                        var = current_building_tower
+                                        value = max_building_tower
+                                        compare = greater_than_or_equals
+                                    }
+                                }
+                                OR = {
+                                    check_variable = {
+                                        var = jewelry_currency
+                                        value = price_dockyard_tower
+                                        compare = less_than
+                                    }
+                                    check_variable = {
+                                        var = current_dockyard_tower
+                                        value = max_dockyard_tower
+                                        compare = greater_than_or_equals
+                                    }
+                                    check_variable = {
+                                        var = current_building_tower
+                                        value = max_building_tower
+                                        compare = greater_than_or_equals
+                                    }
+                                }
+                                OR = {
+                                    check_variable = {
+                                        var = food_currency
+                                        value = price_population_tower
+                                        compare = less_than
+                                    }
+                                    check_variable = {
+                                        var = current_population_tower_m
+                                        value = max_population_tower_m
+                                        compare = greater_than_or_equals
+                                    }
+                                }
+                                OR = {
+                                    all_of = {
+                                        array = MLT.resource_price
+                                        value = current_value
+                                        index = current_index
+                                        
+                                        check_variable = {
+                                            var = diamond_currency
+                                            value = var:current_value
+                                            compare = less_than
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_floor_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 1000
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = gold_currency
+                            value = price_tower_floor
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_tower_floor
+                            value = max_tower_floor
+                            compare = less_than
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_civilian_factory_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_civilian_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_civilian_factory_tower
+                            value = max_civilian_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+
+                    modifier = {
+                        add = 200
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_civilian_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_civilian_factory_tower
+                            value = current_military_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_civilian_factory_tower
+                            value = max_civilian_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_military_factory_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_military_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_military_factory_tower
+                            value = max_military_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+
+                    modifier = {
+                        add = 200
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_military_factory_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_military_factory_tower
+                            value = current_civilian_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_military_factory_tower
+                            value = max_military_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_dockyard_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_dockyard_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_dockyard_tower
+                            value = max_dockyard_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+
+                    modifier = {
+                        add = 400
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = jewelry_currency
+                            value = price_dockyard_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = jewelry_currency
+                            value = 10
+                            compare = equals
+                        }
+                        check_variable = {
+                            var = current_dockyard_tower
+                            value = current_civilian_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_dockyard_tower
+                            value = current_military_factory_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_dockyard_tower
+                            value = max_dockyard_tower
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = current_building_tower
+                            value = max_building_tower
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_population_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 1000
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = food_currency
+                            value = price_population_tower
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = current_population_tower_m
+                            value = max_population_tower_m
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_oil_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^0
+                            compare = greater_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^0
+                            compare = greater_than_or_equals
+                        }
+                        find_highest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_highest_v
+                            index = current_highest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^0
+                            value = current_highest_v
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^0
+                            compare = greater_than_or_equals
+                        }
+                        find_lowest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_lowest_v
+                            index = current_lowest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^0
+                            value = current_lowest_v
+                            compare = less_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_aluminum_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^1
+                            compare = greater_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^1
+                            compare = greater_than_or_equals
+                        }
+                        find_highest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_highest_v
+                            index = current_highest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^1
+                            value = current_highest_v
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^1
+                            compare = greater_than_or_equals
+                        }
+                        find_lowest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_lowest_v
+                            index = current_lowest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^1
+                            value = current_lowest_v
+                            compare = less_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_rubber_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^2
+                            compare = greater_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^2
+                            compare = greater_than_or_equals
+                        }
+                        find_highest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_highest_v
+                            index = current_highest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^2
+                            value = current_highest_v
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^2
+                            compare = greater_than_or_equals
+                        }
+                        find_lowest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_lowest_v
+                            index = current_lowest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^2
+                            value = current_lowest_v
+                            compare = less_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_tungsten_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^3
+                            compare = greater_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^3
+                            compare = greater_than_or_equals
+                        }
+                        find_highest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_highest_v
+                            index = current_highest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^3
+                            value = current_highest_v
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^3
+                            compare = greater_than_or_equals
+                        }
+                        find_lowest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_lowest_v
+                            index = current_lowest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^3
+                            value = current_lowest_v
+                            compare = less_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_steel_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^4
+                            compare = greater_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^4
+                            compare = greater_than_or_equals
+                        }
+                        find_highest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_highest_v
+                            index = current_highest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^4
+                            value = current_highest_v
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^4
+                            compare = greater_than_or_equals
+                        }
+                        find_lowest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_lowest_v
+                            index = current_lowest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^4
+                            value = current_lowest_v
+                            compare = less_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_chromium_purchase_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^5
+                            compare = greater_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^5
+                            compare = greater_than_or_equals
+                        }
+                        find_highest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_highest_v
+                            index = current_highest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^5
+                            value = current_highest_v
+                            compare = less_than
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                    modifier = {
+                        add = 50
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = diamond_currency
+                            value = MLT.resource_price^5
+                            compare = greater_than_or_equals
+                        }
+                        find_lowest_in_array = { 
+                            array = MLT.resource_count
+                            value = current_lowest_v
+                            index = current_lowest_i
+                        }
+                        check_variable = {
+                            var = MLT.resource_count^5
+                            value = current_lowest_v
+                            compare = less_than_or_equals
+                        }
+                        has_country_flag = MLT_can_purchase_in_tower
+                    }
+                }
+            }
+
+            mlt_tower_window_coastal_raid_add_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100
+                        NOT = {
+                            has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                        }
+                        has_completed_focus = MLT_with_coastal_raids
+                        has_full_control_of_state = 116
+                        has_manpower > 1000
+                        has_equipment = {
+                            convoy > temp_convoy_coastal_raid
+                        }
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = 100000
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = temp_manpower_fishing
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = temp_manpower_privateering
+                            compare = less_than_or_equals
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_coastal_raid_remove_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 1000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                        }
+                        has_completed_focus = MLT_with_coastal_raids
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower < 1000
+                            has_manpower < var:temp_manpower_coastal_raid
+                            has_equipment = {
+                                convoy < temp_convoy_coastal_raid
+                            }
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_coastal_raid_confirm_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 10000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_coastal_raid_mission_event
+                        }
+                        has_completed_focus = MLT_with_coastal_raids
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = 100000
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_coastal_raid
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower > temp_manpower_coastal_raid
+                            check_variable = {
+                                var = MLT.manpower
+                                value = temp_manpower_coastal_raid
+                                compare = equals
+                            }
+                        }
+                        OR = {
+                            has_equipment = {
+                                convoy > temp_convoy_coastal_raid
+                            }
+                            has_equipment = {
+                                convoy = temp_convoy_coastal_raid
+                            }
+                        }
+                        OR = {
+                            check_variable = {
+                                var = MLT.manpower
+                                value = 1000
+                                compare = less_than_or_equals
+                            }
+                            check_variable = {
+                                var = temp_manpower_coastal_raid
+                                value = 100000
+                                compare = equals
+                            }
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_fishing_add_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100
+                        NOT = {
+                            has_country_flag = MLT_ongoing_fishing_mission
+                        }
+                        has_completed_focus = MLT_with_fishing_boats
+                        has_full_control_of_state = 116
+                        has_manpower > 1000
+                        has_equipment = {
+                            convoy > temp_convoy_fishing
+                        }
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = 100000
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = temp_manpower_coastal_raid
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = temp_manpower_privateering
+                            compare = less_than_or_equals
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_fishing_remove_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 1000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_fishing_mission
+                        }
+                        has_completed_focus = MLT_with_fishing_boats
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower < 1000
+                            has_manpower < var:temp_manpower_fishing
+                            has_equipment = {
+                                convoy < temp_convoy_fishing
+                            }
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_fishing_confirm_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 10000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_fishing_mission_event
+                        }
+                        has_completed_focus = MLT_with_fishing_boats
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = 100000
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_fishing
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower > temp_manpower_fishing
+                            check_variable = {
+                                var = MLT.manpower
+                                value = temp_manpower_fishing
+                                compare = equals
+                            }
+                        }
+                        OR = {
+                            has_equipment = {
+                                convoy > temp_convoy_fishing
+                            }
+                            has_equipment = {
+                                convoy = temp_convoy_fishing
+                            }
+                        }
+                        OR = {
+                            check_variable = {
+                                var = MLT.manpower
+                                value = 1000
+                                compare = less_than_or_equals
+                            }
+                            check_variable = {
+                                var = temp_manpower_fishing
+                                value = 100000
+                                compare = equals
+                            }
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_privateering_add_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 100
+                        NOT = {
+                            has_country_flag = MLT_ongoing_privateering_mission_event
+                        }
+                        has_completed_focus = MLT_with_piratry
+                        has_full_control_of_state = 116
+                        has_manpower > 1000
+                        has_equipment = {
+                            convoy > temp_convoy_privateering
+                        }
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = 100000
+                            compare = less_than
+                        }
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = temp_manpower_coastal_raid
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = temp_manpower_fishing
+                            compare = less_than_or_equals
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_privateering_remove_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 1000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_privateering_mission_event
+                        }
+                        has_completed_focus = MLT_with_piratry
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower < 1000
+                            has_manpower < var:temp_manpower_privateering
+                            has_equipment = {
+                                convoy < temp_convoy_privateering
+                            }
+                        }
+                    }
+                }
+            }
+
+            mlt_tower_window_privateering_confirm_button_click = {
+                ai_will_do = {
+                    base = 0
+                    modifier = {
+                        add = 10000
+                        NOT = {
+                            has_country_flag = MLT_ongoing_privateering_mission_event
+                        }
+                        has_completed_focus = MLT_with_piratry
+                        has_full_control_of_state = 116
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = 100000
+                            compare = less_than_or_equals
+                        }
+                        check_variable = {
+                            var = temp_manpower_privateering
+                            value = 0
+                            compare = greater_than
+                        }
+                        OR = {
+                            has_manpower > temp_manpower_privateering
+                            check_variable = {
+                                var = MLT.manpower
+                                value = temp_manpower_privateering
+                                compare = equals
+                            }
+                        }
+                        OR = {
+                            has_equipment = {
+                                convoy > temp_convoy_privateering
+                            }
+                            has_equipment = {
+                                convoy = temp_convoy_privateering
+                            }
+                        }
+                        OR = {
+                            check_variable = {
+                                var = MLT.manpower
+                                value = 1000
+                                compare = less_than_or_equals
+                            }
+                            check_variable = {
+                                var = temp_manpower_privateering
+                                value = 100000
+                                compare = equals
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         properties = {
             # Empty
         }
