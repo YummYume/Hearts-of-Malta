@@ -17,9 +17,7 @@ MLT_unit_production = {
 			has_manpower > 100000
 		}
 	}
-	abort = {
-		abort_when_not_enabled = yes
-	}
+	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = role_ratio
@@ -88,7 +86,7 @@ MLT_air_production = {
 		tag = MLT
 	}
 	abort = {
-		always = false
+		always = no
 	}
 	
 		#Air unit factors
@@ -128,7 +126,7 @@ MLT_military_production_equip = {
 		tag = MLT
 	}
 	abort = {
-		always = false
+		always = no
 	}
 	
 	ai_strategy = {
@@ -173,7 +171,7 @@ MLT_naval_production = {
 		tag = MLT
 	}
 	abort = {
-		always = false
+		always = no
 	}
 	
 	# Naval unit factors
