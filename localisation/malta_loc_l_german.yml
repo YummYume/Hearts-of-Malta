@@ -769,11 +769,17 @@
 
 #Cosmetic Tag
  MEDE:0 "Mediterranean Empire"
- MEDE_DEF:0 "The Mediterranean Empire"
+ MEDE_DEF:0 "the Mediterranean Empire"
  MEDE_ADJ:0 "Mediterranean"
- CCNM:0 "Crusaders Nation"
+ CCNM:0 "Knights Hospitaller"
+ CCNM_DEF:0 "the Knights of Rhodes"
  CCNM_ADJ:0 "Crusaders"
- CCNM_DEF:0 "The Crusaders Nation"
+ UOMT:0 "Union of Malta"
+ UOMT_DEF:0 "the Union of Malta"
+ UOMT_ADJ:0 "Maltese"
+ ROMT:0 "Republic of Malta"
+ ROMT_DEF:0 "the Republic of Malta"
+ ROMT_ADJ:0 "Maltese"
 
 #Autonomy
  autonomy_tower_republic:0 "Tower Republic"
