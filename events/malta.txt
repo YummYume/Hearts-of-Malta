@@ -2763,3 +2763,95 @@ country_event = {
         custom_effect_tooltip = show_factories_gained_from_tower
     }
 }
+
+# Puppet in case on_action didn't work
+country_event = {
+    id = malta.50
+
+    hidden = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    trigger = {
+        MLT = {
+            is_subject = no
+        }
+        if = {
+            limit = {
+                MLT = {
+                    has_completed_focus = MLT_maltese_league_of_nations
+                    has_government = democratic
+                }
+            }
+            any_country = {
+                is_subject_of = MLT
+                NOT = {
+                    has_autonomy_state = autonomy_tower_republic
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                MLT = {
+                    has_completed_focus = MLT_master_of_mediterranean_sea
+                    has_government = communism
+                }
+            }
+            any_country = {
+                is_subject_of = MLT
+                NOT = {
+                    has_autonomy_state = autonomy_tower_union
+                }
+            }
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                MLT = {
+                    has_completed_focus = MLT_maltese_league_of_nations
+                    has_government = democratic
+                    is_subject = no
+                }
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = MLT
+                    NOT = {
+                        has_autonomy_state = autonomy_tower_republic
+                    }
+                }
+                MLT = {
+                    set_autonomy = {
+                        target = PREV
+                        autonomy_state = autonomy_tower_republic
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                MLT = {
+                    has_completed_focus = MLT_master_of_mediterranean_sea
+                    has_government = communism
+                    is_subject = no
+                }
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = MLT
+                    NOT = {
+                        has_autonomy_state = autonomy_tower_union
+                    }
+                }
+                MLT = {
+                    set_autonomy = {
+                        target = PREV
+                        autonomy_state = autonomy_tower_union
+                    }
+                }
+            }
+        }
+    }
+}

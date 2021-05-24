@@ -2738,6 +2738,18 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_ANNEXATION }
         completion_reward = {
             custom_effect_tooltip = unlock_decision_faction_expansion
+            if = {
+                limit = {
+                    has_government = democratic
+                }
+                set_cosmetic_tag = ROMT
+            }
+            else_if = {
+                limit = {
+                    has_government = communism
+                }
+                set_cosmetic_tag = UOMT
+            }
         }
     }
 

@@ -51,7 +51,7 @@ on_actions = {
 		}
 	}
 
-	on_release_as_puppet = { #release a nation as communist malta
+	on_release_as_puppet = { #Release a nation as Communist Malta
 		effect = {
 			if = {
 				limit = {
@@ -83,7 +83,7 @@ on_actions = {
 		}
 	}
 
-	on_release_as_puppet = { #release a nation as democratic malta
+	on_release_as_puppet = { #Release a nation as Democratic Malta
 		effect = {
 			if = {
 				limit = {
