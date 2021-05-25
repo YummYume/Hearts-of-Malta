@@ -178,29 +178,29 @@ MLT_naval_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 1
+		value = 20
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 1
+		value = 15
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 50 
+		value = 40
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 20
+		value = 30
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 30
+		value = 50
 	}
 }
 
@@ -398,7 +398,7 @@ MLT_naval_role_ratios_historical = {
 }
 
 #Garrison territory
-SOV_home_land_is_not_safe = {
+MLT_home_land_is_not_safe = {
 	enable = {
 		tag = MLT
 	}
@@ -407,6 +407,43 @@ SOV_home_land_is_not_safe = {
 	
 	ai_strategy = {
 		type = garrison
-		value = 50
+		value = 5
+	}
+}
+
+MLT_kill_kill_kill = {
+	enable = {
+		NOT = {
+			tag = MLT
+		}
+		any_state = {
+			OR = {
+				is_controlled_by = ROOT
+				is_owned_by = ROOT
+			}
+			is_claimed_by = MLT
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	reversed = yes
+
+	ai_strategy = {
+		type = invade
+		id = "MLT"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "MLT"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "MLT"
+		value = 100
 	}
 }

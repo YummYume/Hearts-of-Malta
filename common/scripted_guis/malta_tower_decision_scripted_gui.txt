@@ -18,8 +18,8 @@ scripted_gui = {
             tag = MLT
         }
 
-        # AI checks every 5 days
-        ai_test_interval = 120
+        # AI checks every day
+        ai_test_interval = 24
 
         ai_max_weight_taken_per_test = 1
 
