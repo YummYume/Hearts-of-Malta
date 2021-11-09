@@ -98,32 +98,24 @@ on_actions = {
 							tag = MLT
 						}
 					}
-					remove_province_modifier = {
-						static_modifiers = { maltese_resistance }
-						province = {
-							id = 12003
-						}      
+					116 = {
+						remove_dynamic_modifier = {
+							modifier = maltese_resistance
+						}
 					}
-					add_province_modifier = { 
-						static_modifiers = { tower_defense }
-						province = {
-							id = 12003
-						}      
+					116 = {
+						add_dynamic_modifier = {
+							modifier = tower_defense
+						}
 					}
 				}
 				else = {
 					116 = {
-						remove_province_modifier = { 
-							static_modifiers = { tower_defense }
-							province = {
-								id = 12003
-							}      
+						remove_dynamic_modifier = {
+							modifier = tower_defense
 						}
-						add_province_modifier = { 
-							static_modifiers = { maltese_resistance }
-							province = {
-								id = 12003
-							}      
+						add_dynamic_modifier = {
+							modifier = maltese_resistance
 						}
 					}
 				}

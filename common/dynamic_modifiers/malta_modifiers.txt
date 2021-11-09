@@ -11,3 +11,27 @@ share_tower_of_malta_modifier = {
 	drift_defence_factor = share_drift_defence_factor_tower_malta
 	trade_opinion_factor = share_trade_opinion_factor_tower_malta
 }
+
+tower_defense = {
+	enable = {
+		always = yes
+	}
+
+    icon = GFX_modifiers_tower_defense_icon
+
+	army_defence_factor = 0.25
+	dig_in_speed_factor = 0.1
+}
+
+maltese_resistance = {
+	enable = {
+		always = yes
+	}
+
+    icon = GFX_modifiers_maltese_resistance_icon
+
+	resistance_growth = 0.35
+	resistance_damage_to_garrison = 0.5
+	state_resources_factor = -0.5
+	resistance_garrison_penetration_chance = 0.25
+}

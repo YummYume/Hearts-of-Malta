@@ -1456,11 +1456,8 @@ scripted_gui = {
                     country_event = malta.43
                     hidden_effect = {
                         116 = {
-                            add_province_modifier = { 
-                                static_modifiers = { tower_defense }
-                                province = {
-                                    id = 12003
-                                }      
+                            add_dynamic_modifier = {
+                                modifier = tower_defense
                             }
                         }
                         news_event = { id = newsmalta.1 days = 2 }
@@ -1553,11 +1550,8 @@ scripted_gui = {
                         country_event = malta.43
                         hidden_effect = {
                             116 = {
-                                add_province_modifier = { 
-                                    static_modifiers = { tower_defense }
-                                    province = {
-                                        id = 12003
-                                    }      
+                                add_dynamic_modifier = {
+                                    modifier = tower_defense
                                 }
                             }
                             news_event = { id = newsmalta.1 days = 2 }
@@ -1641,11 +1635,8 @@ scripted_gui = {
                         country_event = malta.43
                         hidden_effect = {
                             116 = {
-                                add_province_modifier = { 
-                                    static_modifiers = { tower_defense }
-                                    province = {
-                                        id = 12003
-                                    }      
+                                add_dynamic_modifier = {
+                                    modifier = tower_defense
                                 }
                             }
                             news_event = { id = newsmalta.1 days = 2 }
