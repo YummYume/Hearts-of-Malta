@@ -1,4 +1,31 @@
 on_actions = {
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hearts_of_malta_enabled
+					}
+				}
+				set_global_flag = hearts_of_malta_enabled
+			}
+		}
+	}
+
+	on_weekly_MLT = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = hearts_of_malta_enabled
+					}
+				}
+				set_global_flag = hearts_of_malta_enabled
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			MLT = {

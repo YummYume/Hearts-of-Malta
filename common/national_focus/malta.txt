@@ -105,7 +105,7 @@ focus_tree = {
         }
         bypass = {
             116 = {
-                infrastructure > 9
+                infrastructure > 4
             }
         }
         available = {
@@ -836,7 +836,7 @@ focus_tree = {
 
     # The Janitor
     focus = {
-        id = MLT_the_janitor
+        id = MLT_the_janitor_focus
         x = 6
         y = 11
         prerequisite = { focus = MLT_counteroffensive_tactics }
@@ -862,10 +862,17 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_MILITARY_MALTA }
         completion_reward = {
             add_political_power = -100
-            create_field_marshal = {
-                name = "The Janitor"
-                picture = "Portrait_janitor_tower.dds"
-                traits = { MLT_janitor naval_invader urban_assault_specialist hill_fighter organizer trait_engineer skilled_staffer }
+            add_field_marshal_role = {
+                character = MLT_the_janitor
+                traits = {
+                    MLT_janitor
+                    naval_invader
+                    urban_assault_specialist
+                    hill_fighter
+                    organizer
+                    trait_engineer
+                    skilled_staffer
+                }
                 skill = 5
                 attack_skill = 2
                 defense_skill = 3

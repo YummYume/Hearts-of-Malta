@@ -1,4 +1,4 @@
-﻿l_polish:
+﻿l_braz_por:
 
 #Focus
  MLT_malta_awakens:0 "Malta Awakens"
@@ -66,8 +66,8 @@
  MLT_where_none_shall_land_desc:0 "The new addition of nationality-recognizing landmines can now prevent the enemy from landing on [MLT.GetAdjective] beaches while allowing our people to relax on those sands. However, an accident occurred where a mine killed a [MLT.GetAdjective] person. It’s okay though, they probably weren’t true [MLT.GetAdjective] anyway!"
  MLT_counteroffensive_tactics:0 "Counteroffensive Tactics"
  MLT_counteroffensive_tactics_desc:0 "We must plan pre-emptively for an aftermath of an enemy offensive. After exhausting the enemy attack, we can counterattack and push them back into the sea. Let’s hope the enemy did not pass the swimming course."
- MLT_the_janitor:0 "The Janitor"
- MLT_the_janitor_desc:0 "One woman, here since the beginning, is proving to be a good general. She was the first one to believe in the Tower, and officially the first one to get a job in the Tower. She often greets the military, and sometimes even helps them during their training. Crazy right? Well, stories tell that she is so strong, she could split the sea in half. Useful for naval invasions."
+ MLT_the_janitor_focus:0 "The Janitor"
+ MLT_the_janitor_focus_desc:0 "One woman, here since the beginning, is proving to be a good general. She was the first one to believe in the Tower, and officially the first one to get a job in the Tower. She often greets the military, and sometimes even helps them during their training. Crazy right? Well, stories tell that she is so strong, she could split the sea in half. Useful for naval invasions."
  MLT_colonial_question:0 "The Colonial Question"
  MLT_colonial_question_desc:0 "The main divisive question between the people of [MLT.GetNameDef] is whether to remain within the British Commonwealth or seek out or own path."
  MLT_free_malta:0 "A Free Malta"
@@ -668,28 +668,6 @@
  MLT_proclaim_leader_tower_desc:0 "It is time. There is no other capable of ruling Malta, then the Tower itself."
  tower_takes_control_of_malta:0 "£tower_texticon §OThe Tower§! takes control of §YMalta§!."
 
-#Leaders
- POLITICS_GERALD_STRICKLAND_DESC:0 "Gerald Paul Joseph Cajetan Carmel Antony Martin Strickland, 6th Count della Catena, 1st Baron Strickland was born in Valletta, the son of naval officer Commander Walter Strickland, from the ancient English Strickland family of Sizergh, and Maria Aloysia Bonici-Mompalao, the niece and heiress of Sir Nicholas Sceberras Bologna, fifth Count della Catena in Malta, whom Gerald succeeded in 1875. He is now a Maltese and British politician and peer, who serves as Prime Minister of Malta, in addition to sitting successively in the House of Commons and House of Lords in the Parliament of the United Kingdom."
- POLITICS_GEORGE_BORG_OLIVIER_DESC:0 "George Borg Olivier was born in Valletta, the son of Olivier Borg Olivier de Puget Paleologo and Rosa. Borg Olivier grew up in a family steeped in Nationalist politics. His uncle Salvatore was speaker of the house and then a senator, and led the opposition to Lord Strickland's Constitutional Party in the 1920s before becoming a cabinet minister during the premiership of Ugo P. Mifsud in the early 1930s. He now is a Maltese statesman and leading politician. He is the leader of the Nationalist Party and is also known for his opposition to the democratic rules over the island."
- POLITICS_PAUL_BOFFA_DESC:0 "Born in Vittoriosa on 30 June 1890, Paul Boffa was educated at the Lyceum and at the University of Malta from where he graduated as a medical doctor in 1912. During World War I, he served with the Royal Medical Corps in Malta, Salonika and on hospital ships. After the war, he set up in private practice in Paola. Sir Paul Boffa is now leader of the Labour Party and prime minister of Malta."
- POLITICS_JORGI_PRECA_DESC:0 "George Preca was born in Valletta on 12 February 1880 as the seventh of nine children of Vincent and Nathalie Ceravolo Preca. His father was both a merchant and a health inspector. He received his baptism on 17 February 1880 in the Church of Our Lady of Porto Salvo. He is a Maltese Catholic priest and the founder of the Society of Christian Doctrine as well as a Third Order Carmelite. He is known as "Dun Ġorġ" in Maltese and Pope John Paul II dubbed him \"Malta’s second father in faith\". He is now the leader of the Independents Party of Malta."
- POLITICS_THE_TOWER_DESC:0 "The Tower is the savior and protector of Malta. All Maltese people only wish to see it grow more and more, and they will make sure to defend it with their lives. With such dedication, it could only be clear who the true leader of Malta had to be. The Tower conquered all the foes of the island and dominated the Mediterranean sea, perhaps even the world. Many fear it and many admire it. But whatever people think, the great thing about a tower is that it does not need a statue of itself to feel great."
-
-#Traits
- MLT_sixth_count_della_catena:0 "Sixth Count Della Catena"
- MLT_nationalist:0 "Nationalist"
- MLT_doctor_degree:0 "Doctor's Degree"
- MLT_motivational_figure_for_the_youth:0 "Motivational Figure for the Youth"
- MLT_sent_by_the_gods:0 "Sent by the Gods"
- MLT_shiny_head:0 "Shiny Head"
- MLT_tower_leader_trait:0 "Tower of Malta, Tower of the Mediterranean, Tower of all Seas, Sixth Count Della Catena, Nationalist Tower, Tower with a Doctor's Degree, Motivational Figure for the Youth, Tower of Gods, Shiny Tower, Destroyer of all Worlds, Destroyer of all Realms, Tower of Hope and Despair, Tower of the Skies and Above, The Tower of Liberty"
- MLT_drug_baron:0 "Pirate Baron"
- MLT_tower_investor:0 "Tower Investor"
- MLT_tower_specialist:0 "Tower Specialist"
- MLT_on_a_journey:0 "On a Journey"
- MLT_janitor:0 "Janitor"
- MLT_janitor_desc:0 "She's the Janitor. The only one. And she will make sure the Tower does not fall."
-
 #Countries
  MLT_fascism:2 "Tenth Crusade"
  MLT_fascism_DEF:2 "the Tenth Crusade"
@@ -707,12 +685,21 @@
  MLT_DEF:0 "Malta"
  MLT_ADJ:0 "Maltese"
 
-#Advisors
+#Characters
+ #Country Leaders
  MLT_Gerald_strickland:0 "Gerald Strickland"
+ MLT_Gerald_strickland_desc:0 "§LGerald Paul Joseph Cajetan Carmel Antony Martin Strickland, 6th Count della Catena, 1st Baron Strickland was born in Valletta, the son of naval officer Commander Walter Strickland, from the ancient English Strickland family of Sizergh, and Maria Aloysia Bonici-Mompalao, the niece and heiress of Sir Nicholas Sceberras Bologna, fifth Count della Catena in Malta, whom Gerald succeeded in 1875. He is now a Maltese and British politician and peer, who serves as Prime Minister of Malta, in addition to sitting successively in the House of Commons and House of Lords in the Parliament of the United Kingdom.§!"
  MLT_Paul_boffa:0 "Paul Boffa"
+ MLT_Paul_boffa_desc:0 "§LBorn in Vittoriosa on 30 June 1890, Paul Boffa was educated at the Lyceum and at the University of Malta from where he graduated as a medical doctor in 1912. During World War I, he served with the Royal Medical Corps in Malta, Salonika and on hospital ships. After the war, he set up in private practice in Paola. Sir Paul Boffa is now leader of the Labour Party and prime minister of Malta.§!"
  MLT_George_borg:0 "George Borg Olivier"
+ MLT_George_borg_desc:0 "§LGeorge Borg Olivier was born in Valletta, the son of Olivier Borg Olivier de Puget Paleologo and Rosa. Borg Olivier grew up in a family steeped in Nationalist politics. His uncle Salvatore was speaker of the house and then a senator, and led the opposition to Lord Strickland's Constitutional Party in the 1920s before becoming a cabinet minister during the premiership of Ugo P. Mifsud in the early 1930s. He now is a Maltese statesman and leading politician. He is the leader of the Nationalist Party and is also known for his opposition to the democratic rules over the island.§!"
  MLT_Jorgi_preca:0 "Jorgi Preca"
+ MLT_Jorgi_preca_desc:0 "§LGeorge Preca was born in Valletta on 12 February 1880 as the seventh of nine children of Vincent and Nathalie Ceravolo Preca. His father was both a merchant and a health inspector. He received his baptism on 17 February 1880 in the Church of Our Lady of Porto Salvo. He is a Maltese Catholic priest and the founder of the Society of Christian Doctrine as well as a Third Order Carmelite. He is known as "Dun Ġorġ" in Maltese and Pope John Paul II dubbed him \"Malta’s second father in faith\". He is now the leader of the Independents Party of Malta.§!"
  MLT_someone_returned_from_journey:0 "§YOur Leader§! §GReturned§! from the §YJourney§!"
+ MLT_The_tower:0 "The Tower of Malta"
+ MLT_The_tower_desc:0 "§LThe Tower is the savior and protector of Malta. All Maltese people only wish to see it grow more and more, and they will make sure to defend it with their lives. With such dedication, it could only be clear who the true leader of Malta had to be. The Tower conquered all the foes of the island and dominated the Mediterranean sea, perhaps even the world. Many fear it and many admire it. But whatever people think, the great thing about a tower is that it does not need a statue of itself to feel great.§!"
+
+ #Advisors
  MLT_Tommy_navarro:0 "Tommy Navarro"
  MLT_Kayden_fantino:0 "Kayden Fantino"
  MLT_Gerardu_tabone:0 "Gerardu Tabone"
@@ -739,8 +726,28 @@
  MLT_Jamie_portughes:0 "Jamie Portughes"
  MLT_Kai_degiovanni:0 "Kai Degiovanni"
  MLT_Xand_leonardis:0 "Xand Leonardis"
+ MLT_Xand_leonardis_desc:0 "§LI am Xand Leonardis, the Tower Investor. I dislike Luke Serge.§!"
  MLT_Luke_serge:0 "Luke Serge"
- generic_neutrality_demagogue:0 "Neutral Politician"
+ MLT_Luke_serge_desc:0 "§LI am Luke Serge, the Tower Specialist. I dislike Xand Leonardis.§!"
+
+ #Field Marshals
+ MLT_the_janitor:0 "The Janitor"
+ MLT_the_janitor_desc:0 "§LOne woman, here since the beginning, is proving to be a good general. She was the first one to believe in the Tower, and officially the first one to get a job in the Tower. She often greets the military, and sometimes even helps them during their training. Crazy right? Well, stories tell that she is so strong, she could split the sea in half. Useful for naval invasions.§!"
+
+#Traits
+ MLT_sixth_count_della_catena:0 "Sixth Count Della Catena"
+ MLT_nationalist:0 "Nationalist"
+ MLT_doctor_degree:0 "Doctor's Degree"
+ MLT_motivational_figure_for_the_youth:0 "Motivational Figure for the Youth"
+ MLT_sent_by_the_gods:0 "Sent by the Gods"
+ MLT_shiny_head:0 "Shiny Head"
+ MLT_tower_leader_trait:0 "Tower of Malta, Tower of the Mediterranean, Tower of all Seas, Sixth Count Della Catena, Nationalist Tower, Tower with a Doctor's Degree, Motivational Figure for the Youth, Tower of Gods, Shiny Tower, Destroyer of all Worlds, Destroyer of all Realms, Tower of Hope and Despair, Tower of the Skies and Above, The Tower of Liberty"
+ MLT_drug_baron:0 "Pirate Baron"
+ MLT_tower_investor:0 "Tower Investor"
+ MLT_tower_specialist:0 "Tower Specialist"
+ MLT_on_a_journey:0 "On a Journey"
+ MLT_janitor:0 "Janitor"
+ MLT_janitor_desc:0 "§LShe's the Janitor. The only one. And she will make sure the Tower does not fall.§!"
 
 #Research Bonus
  MAL_counteroffensive_military_tact:0 "Counter-offensive Tactics"
@@ -845,8 +852,6 @@
  MLT_POPULATION_PRICE_INCREASED:0 "The current §YPrice§! is §Y[?price_population_tower]§!£tower_food_texticon §YFood§! due to the §RMassive Increase§! of §YPopulation§! in the §YTower§!."
  MLT_FLOOR_PRICE:0 "The current §YPrice§! is §Y[?price_tower_floor]§!£tower_gold_texticon §YGold§!."
  MLT_FLOOR_PRICE_INCREASED:0 "The current §YPrice§! is §Y[?price_tower_floor]§!£tower_gold_texticon §YGold§! due to the §RLeaning Tower§!."
- MTL_TRADE_OPINION_TOWER_MALTA_LOC:0 "§WTrade deal opinion factor:§! §Y+[?trade_opinion_factor_tower_malta|%Y2]§!"
- MTL_TRADE_OPINION_TOWER_MALTA_LOC_NOT:0 ""
  MLT_TRIGGER_YES:0 "£trigger_yes"
  MLT_TRIGGER_NO:0 "£trigger_no"
  MLT_TRIGGER_UNSET:0 "£trigger_unset_texticon"

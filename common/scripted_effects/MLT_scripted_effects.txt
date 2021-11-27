@@ -40,7 +40,7 @@ coastal_raids_calculate_days = {
             max = 45
         }
     }
-    else {
+    else = {
         set_variable = { current_days_coastal_raid = 0 }
     }
 }

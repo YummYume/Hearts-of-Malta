@@ -17,6 +17,49 @@ if = {
 
 set_global_flag = hearts_of_malta_enabled
 
+#Country Leaders
+recruit_character = MLT_Gerald_strickland
+recruit_character = MLT_Paul_boffa
+recruit_character = MLT_George_borg
+recruit_character = MLT_Jorgi_preca
+recruit_character = MLT_The_tower
+
+#Advisors
+recruit_character = MLT_democratic_guy
+recruit_character = MLT_neutral_guy
+recruit_character = MLT_communist_guy
+recruit_character = MLT_fascist_guy
+recruit_character = MLT_Tommy_navarro
+recruit_character = MLT_Kayden_fantino
+recruit_character = MLT_Gerardu_tabone
+recruit_character = MLT_Gabrijel_faure
+recruit_character = MLT_Alfred_preziosi
+recruit_character = MLT_Isaac_dimech
+recruit_character = MLT_Xand_leonardis
+recruit_character = MLT_Luke_serge
+recruit_character = MLT_Nicholas_turkett
+recruit_character = MLT_Jean_darmenia
+recruit_character = MLT_Nathan_bosco
+recruit_character = MLT_Saverju_bonell
+recruit_character = MLT_Redent_Pulo
+recruit_character = MLT_Lewis_casha
+recruit_character = MLT_Nicolai_degabriele
+recruit_character = MLT_Antnin_martin
+recruit_character = MLT_Julien_pellerano
+recruit_character = MLT_Bert_giardino
+recruit_character = MLT_Rikkardu_lisano
+recruit_character = MLT_Leonardo_facciol
+recruit_character = MLT_Indrija_lombardo
+recruit_character = MLT_Matthias_robert
+recruit_character = MLT_Gori_schembri
+recruit_character = MLT_Aiden_crescimano
+recruit_character = MLT_Jamie_portughes
+recruit_character = MLT_Kai_degiovanni
+recruit_character = MLT_Marjanu_rioli
+
+#Field Marshals
+recruit_character = MLT_the_janitor
+
 # Starting tech
 set_technology = {
 	electronic_mechanical_engineering = 1
@@ -344,52 +387,6 @@ ENG = {
 		target = MLT
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
-	}
-}
-
-create_country_leader = {
-	name = "Gerald Strickland"
-	desc = "POLITICS_GERALD_STRICKLAND_DESC"
-	picture = "gfx/leaders/MLT/Portrait_gerald_strickland.dds"
-	expire = "1965.1.1"
-	ideology = conservatism 
-	traits = {
-		MLT_sixth_count_della_catena
-	}
-}
-
-create_country_leader = {
-	name = "George Borg Olivier"
-	desc = "POLITICS_GEORGE_BORG_OLIVIER_DESC"
-	picture = "gfx/leaders/MLT/Portrait_george_borg_olivier.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		MLT_nationalist
-	}
-}
-
-create_country_leader = {
-	name = "Paul Boffa"
-	desc = "POLITICS_PAUL_BOFFA_DESC"
-	picture = "gfx/leaders/MLT/Portrait_paul_boffa.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		MLT_doctor_degree
-	}
-}
-
-create_country_leader = {
-	name = "Jorgi Preca"
-	desc = "POLITICS_JORGI_PRECA_DESC"
-	picture = "gfx/leaders/MLT/Portrait_Jorgi_Preca.dds"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		MLT_motivational_figure_for_the_youth
-		MLT_sent_by_the_gods
-		MLT_shiny_head
 	}
 }
 

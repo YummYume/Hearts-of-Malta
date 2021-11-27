@@ -1,0 +1,1092 @@
+characters = {
+
+	#Country Leaders
+	MLT_Gerald_strickland = {
+		name = MLT_Gerald_strickland
+
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				MLT_sixth_count_della_catena
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Gerald_strickland
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			visible = {
+				has_government = democratic
+			}
+
+			available = {
+				has_country_flag = MLT_someone_returned_from_journey
+			}
+
+			traits = {
+				MLT_drug_baron
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLT/Portrait_gerald_strickland.dds"
+			}
+
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+
+	MLT_George_borg = {
+		name = MLT_George_borg
+
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				MLT_nationalist
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_George_borg
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			visible = {
+				has_government = fascism
+			}
+
+			available = {
+				has_country_flag = MLT_someone_returned_from_journey
+			}
+
+			traits = {
+				MLT_drug_baron
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLT/Portrait_george_borg_olivier.dds"
+			}
+
+			army = {
+				small = "GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+
+	MLT_Paul_boffa = {
+		name = MLT_Paul_boffa
+
+		country_leader = {
+			ideology = marxism
+			traits = {
+				MLT_doctor_degree
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Paul_boffa
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			visible = {
+				has_government = communism
+			}
+
+			available = {
+				has_country_flag = MLT_someone_returned_from_journey
+			}
+
+			traits = {
+				MLT_drug_baron
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLT/Portrait_paul_boffa.dds"
+			}
+
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+	}
+
+	MLT_Jorgi_preca = {
+		name = MLT_Jorgi_preca
+
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+				MLT_motivational_figure_for_the_youth
+				MLT_sent_by_the_gods
+				MLT_shiny_head
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Jorgi_preca
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			visible = {
+				has_government = neutrality
+			}
+
+			available = {
+				has_country_flag = MLT_someone_returned_from_journey
+			}
+
+			traits = {
+				MLT_drug_baron
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLT/Portrait_Jorgi_Preca.dds"
+			}
+
+			army = {
+				small = "GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+
+	MLT_The_tower = {
+		name = MLT_The_tower
+
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLT/Portrait_the_tower.dds"
+			}
+		}
+	}
+
+	#Political Advisors
+	MLT_democratic_guy = { #Name generated automatically
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_democratic_guy
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+				has_government = democratic
+			}
+			
+			traits = { democratic_reformer }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+
+	MLT_neutral_guy = { #Name generated automatically
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_neutral_guy
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+				has_government = neutrality
+			}
+			
+			traits = { staunch_monarchist }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+
+	MLT_communist_guy = { #Name generated automatically
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_communist_guy
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+				has_government = communism
+			}
+			
+			traits = { communist_revolutionary }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+
+	MLT_fascist_guy = { #Name generated automatically
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_fascist_guy
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { fascist_demagogue }
+			
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+
+	MLT_Tommy_navarro = {
+		name = MLT_Tommy_navarro
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Tommy_navarro
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				prince_of_terror
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+
+	MLT_Kayden_fantino = {
+		name = MLT_Kayden_fantino
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Kayden_fantino
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				silent_workhorse
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_south_america_2"
+			}
+		}
+	}
+
+	MLT_Gerardu_tabone = {
+		name = MLT_Gerardu_tabone
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Gerardu_tabone
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+                NOT = {
+                    has_character = MLT_Luke_serge
+                }
+            }
+
+			traits = {
+				propaganda_expert
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+
+	MLT_Gabrijel_faure = {
+		name = MLT_Gabrijel_faure
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Gabrijel_faure
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				captain_of_industry
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+	}
+
+	MLT_Alfred_preziosi = {
+		name = MLT_Alfred_preziosi
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Alfred_preziosi
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				war_industrialist
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+	}
+
+	MLT_Isaac_dimech = {
+		name = MLT_Isaac_dimech
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Isaac_dimech
+			cost = 150
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				fortification_engineer
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+
+	MLT_Xand_leonardis = {
+		name = MLT_Xand_leonardis
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Xand_leonardis
+			cost = 250
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+                has_full_control_of_state = 116
+                has_country_flag = MLT_tower_built
+                has_country_flag = MLT_plans_for_economy_started
+                NOT = {
+					has_idea = MLT_Luke_serge
+                }
+            }
+
+			traits = {
+				MLT_tower_investor
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+
+	MLT_Luke_serge = {
+		name = MLT_Luke_serge
+
+		advisor = {
+			slot = political_advisor
+			idea_token = MLT_Luke_serge
+			cost = 500
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			available = {
+                has_full_control_of_state = 116
+                has_country_flag = MLT_tower_built
+                has_country_flag = MLT_plans_for_economy_started
+                NOT = {
+                    has_idea = MLT_Xand_leonardis
+                    has_idea = MLT_Gerardu_tabone
+                }
+            }
+
+			traits = {
+				MLT_tower_specialist
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_arab_1"
+			}
+		}
+	}
+	
+	#Army Chiefs
+	MLT_Nicholas_turkett = {
+		name = MLT_Nicholas_turkett
+
+		advisor = {
+
+			slot = army_chief
+			idea_token = MLT_Nicholas_turkett
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_chief_offensive_2
+			}
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+
+	MLT_Jean_darmenia = {
+		name = MLT_Jean_darmenia
+
+		advisor = {
+			slot = army_chief
+			idea_token = MLT_Jean_darmenia
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_chief_maneuver_2
+			}
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	MLT_Nathan_bosco = {
+		name = MLT_Nathan_bosco
+
+		advisor = {
+			slot = army_chief
+			idea_token = MLT_Nathan_bosco
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_chief_defensive_2
+			}
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+
+	#Navy Chiefs
+	MLT_Saverju_bonell = {
+		name = MLT_Saverju_bonell
+
+		advisor = {
+			slot = navy_chief
+			idea_token = MLT_Saverju_bonell
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+
+	MLT_Redent_pulo = {
+		name = MLT_Redent_pulo
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = MLT_Redent_pulo
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+
+	MLT_Lewis_casha = {
+		name = MLT_Lewis_casha
+
+		advisor = {
+			slot = navy_chief
+			idea_token = MLT_Lewis_casha
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				navy_chief_reform_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+
+	#Air chiefs
+	MLT_Nicolai_degabriele = {
+		name = MLT_Nicolai_degabriele
+
+		advisor = {
+			slot = air_chief
+			idea_token = MLT_Nicolai_degabriele
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				air_airborne_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+
+	MLT_Antnin_martin = {
+		name = MLT_Antnin_martin
+
+		advisor = {
+			slot = air_chief
+			idea_token = MLT_Antnin_martin
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				air_air_superiority_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+
+	MLT_Julien_pellerano = {
+		name = MLT_Julien_pellerano
+
+		advisor = {
+			slot = air_chief
+			idea_token = MLT_Julien_pellerano
+			cost = 100
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				air_chief_night_operations_3
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+
+	#High Command
+	MLT_Bert_giardino = {
+		name = MLT_Bert_giardino
+
+		advisor = {
+			slot = high_command
+			idea_token = MLT_Bert_giardino
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_logistics_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+
+	MLT_Rikkardu_lisano = {
+		name = MLT_Rikkardu_lisano
+
+		advisor = {
+			slot = high_command
+			idea_token = MLT_Rikkardu_lisano
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_regrouping_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	MLT_Leonardo_facciol = {
+		name = MLT_Leonardo_facciol
+
+		advisor = {
+			slot = high_command
+			idea_token = MLT_Leonardo_facciol
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_commando_2
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+
+	MLT_Indrija_lombardo = {
+		name = MLT_Indrija_lombardo
+
+		advisor = {
+			slot = high_command
+			idea_token = MLT_Indrija_lombardo
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_artillery_1
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+
+	MLT_Matthias_robert = {
+		name = MLT_Matthias_robert
+
+		advisor = {
+			slot = high_command
+			idea_token = MLT_Matthias_robert
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				army_armored_1
+			}
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+
+	#Theorists
+	MLT_Gori_schembri = {
+		name = MLT_Gori_schembri
+
+		advisor = {
+			slot = theorist
+			idea_token = MLT_Gori_schembri
+			cost = 200
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				grand_battle_plan_expert
+			}
+
+			research_bonus = {
+                cat_grand_battle_plan = 0.15
+            }
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+
+	MLT_Aiden_crescimano = {
+		name = MLT_Aiden_crescimano
+
+		advisor = {
+			slot = theorist
+			idea_token = MLT_Aiden_crescimano
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				military_theorist
+			}
+
+			research_bonus = {
+                land_doctrine = 0.10
+            }
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	MLT_Jamie_portughes = {
+		name = MLT_Jamie_portughes
+
+		advisor = {
+			slot = theorist
+			idea_token = MLT_Jamie_portughes
+			cost = 100
+			ledger = navy
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				naval_theorist
+			}
+
+			research_bonus = {
+                naval_doctrine = 0.10
+            }
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+
+	MLT_Kai_degiovanni = {
+		name = MLT_Kai_degiovanni
+
+		advisor = {
+			slot = theorist
+			idea_token = MLT_Kai_degiovanni
+			cost = 100
+			ledger = air
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				assault_avaition
+			}
+
+			research_bonus = {
+                air_doctrine = 0.10
+            }
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+
+	MLT_Marjanu_rioli = {
+		name = MLT_Marjanu_rioli
+
+		advisor = {
+			slot = theorist
+			idea_token = MLT_Marjanu_rioli
+			cost = 100
+			ledger = army
+
+			allowed = {
+				original_tag = MLT
+			}
+
+			traits = {
+				nuclear_scientist
+			}
+
+			research_bonus = {
+                nuclear = 0.15
+            }
+		}
+
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+
+	#Field Marshals
+	MLT_the_janitor = {
+		name = MLT_the_janitor
+
+		portraits = {
+			army = {
+				large = "gfx/leaders/MLT/Portrait_janitor_tower.dds"
+			}
+		}
+	}
+}
