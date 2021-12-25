@@ -6,4 +6,4 @@ tags={
 	"National Focuses"
 }
 name="Hearts of Malta Dev"
-supported_version="1.11.2"
+supported_version="1.11.4"

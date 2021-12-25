@@ -364,6 +364,7 @@ MLT_tower_of_malta = {
 				add_country_leader_role = {
 					character = MLT_The_tower
 					country_leader = {
+						desc = MLT_The_tower_desc
 						ideology = conservatism
 						traits = {
 							MLT_tower_leader_trait
@@ -376,6 +377,7 @@ MLT_tower_of_malta = {
 				add_country_leader_role = {
 					character = MLT_The_tower
 					country_leader = {
+						desc = MLT_The_tower_desc
 						ideology = oligarchism
 						traits = {
 							MLT_tower_leader_trait
@@ -388,6 +390,7 @@ MLT_tower_of_malta = {
 				add_country_leader_role = {
 					character = MLT_The_tower
 					country_leader = {
+						desc = MLT_The_tower_desc
 						ideology = marxism
 						traits = {
 							MLT_tower_leader_trait
@@ -400,6 +403,7 @@ MLT_tower_of_malta = {
 				add_country_leader_role = {
 					character = MLT_The_tower
 					country_leader = {
+						desc = MLT_The_tower_desc
 						ideology = fascism_ideology
 						traits = {
 							MLT_tower_leader_trait
